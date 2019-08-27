@@ -1,0 +1,1117 @@
+sysCpuLib.c:772:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int os_get_mmu()
+     ^
+sysCpuLib.c:777:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int os_get_mno()
+     ^
+sysCpuLib.c:782:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void os_update_mno()
+      ^
+sysCpuLib.c: In function 'os_change_mmu':
+sysCpuLib.c:794:9: warning: implicit declaration of function 'mmuE500TlbStaticInit1' [-Wimplicit-function-declaration]
+         mmuE500TlbStaticInit1(0,sysStaticTlbDescNumEnt, &sysStaticTlbDesc[0], TRUE);
+         ^
+sysCpuLib.c:820:9: warning: implicit declaration of function 'powerpcIntDisable' [-Wimplicit-function-declaration]
+         powerpcIntDisable();
+         ^
+sysCpuLib.c: In function 'os_get_mmu':
+sysCpuLib.c:775:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+sysCacheE500Lib.c: In function 'cacheE500EnableD':
+sysCacheE500Lib.c:179:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("l2 enable\n");
+     ^
+sysExcArchLib.c: In function 'excVecInit':
+sysExcArchLib.c:155:5: warning: implicit declaration of function 'exceInit' [-Wimplicit-function-declaration]
+     exceInit();
+     ^
+sysEntry.c: In function 'sysOs':
+sysEntry.c:88:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(KERNEL_STACK_HIGH,0xbb,IRQ_STACK_HIGH-KERNEL_STACK_LOW);
+     ^
+sysEntry.c:89:5: warning: implicit declaration of function 'os_gap_fill' [-Wimplicit-function-declaration]
+     os_gap_fill();
+     ^
+sysEntry.c: At top level:
+sysEntry.c:180:13: warning: 'AppTaskStart' defined but not used [-Wunused-function]
+ static void AppTaskStart (void *p_arg)
+             ^
+sysOsSwitchLib.c: In function 'OSTaskStkInit':
+sysOsSwitchLib.c:323:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;
+              ^
+sysOsSwitchLib.c:324:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r31 */
+              ^
+sysOsSwitchLib.c:325:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r30 */
+              ^
+sysOsSwitchLib.c:326:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r29 */
+              ^
+sysOsSwitchLib.c:327:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r28 */
+              ^
+sysOsSwitchLib.c:328:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r27 */
+              ^
+sysOsSwitchLib.c:329:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r26 */
+              ^
+sysOsSwitchLib.c:330:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r25 */
+              ^
+sysOsSwitchLib.c:331:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r24 */
+              ^
+sysOsSwitchLib.c:332:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r23 */
+              ^
+sysOsSwitchLib.c:333:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r22 */
+              ^
+sysOsSwitchLib.c:334:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r21 */
+              ^
+sysOsSwitchLib.c:335:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r20 */
+              ^
+sysOsSwitchLib.c:336:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r19 */
+              ^
+sysOsSwitchLib.c:337:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r18 */
+              ^
+sysOsSwitchLib.c:338:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r17 */
+              ^
+sysOsSwitchLib.c:339:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r16 */
+              ^
+sysOsSwitchLib.c:340:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r15 */
+              ^
+sysOsSwitchLib.c:341:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r14 */
+              ^
+sysOsSwitchLib.c:342:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;
+              ^
+sysOsSwitchLib.c:343:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r12 */
+              ^
+sysOsSwitchLib.c:344:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r11 */
+              ^
+sysOsSwitchLib.c:345:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r10 */
+              ^
+sysOsSwitchLib.c:346:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r09 */
+              ^
+sysOsSwitchLib.c:347:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r08 */
+              ^
+sysOsSwitchLib.c:348:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r07 */
+              ^
+sysOsSwitchLib.c:349:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r06 */
+              ^
+sysOsSwitchLib.c:350:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r05 */
+              ^
+sysOsSwitchLib.c:351:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;                   /* r04 */
+              ^
+sysOsSwitchLib.c:352:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_STK)p_arg;       /* r03 */
+              ^
+sysOsSwitchLib.c:353:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_INT32U)&_SDA2_BASE_; /* r02 */
+              ^
+sysOsSwitchLib.c:354:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_INT32U)OS_TaskReturn; /* LR */
+              ^
+sysOsSwitchLib.c:358:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_INT32U)msr;      /* SRR1 */
+              ^
+sysOsSwitchLib.c:359:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_INT32U)p_task;   /* SRR0 */
+              ^
+sysOsSwitchLib.c:362:14: warning: assignment makes integer from pointer without a cast [enabled by default]
+     *--p_stk = p_task;//(CPU_INT32U)p_stk_base;   /* Stack Ptr */
+              ^
+sysApi.c: In function 'os_version':
+sysApi.c:836:5: warning: return discards 'const' qualifier from pointer target type [enabled by default]
+     return version_string;
+     ^
+sysApi.c: In function 'os_copy_data':
+sysApi.c:845:5: warning: implicit declaration of function 'os_get_mno' [-Wimplicit-function-declaration]
+     switch (os_get_mno()){
+     ^
+sysApi.c:849:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+         to = from + 2 * OS_BLOCK_SIZE;
+            ^
+sysApi.c:864:9: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+         memcpy(to,from,size);
+         ^
+sysApi.c: In function 'os_copy_stack':
+sysApi.c:880:14: warning: assignment makes pointer from integer without a cast [enabled by default]
+         from = KERNEL_STACK_LOW;
+              ^
+sysApi.c:881:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+         to = KERNEL_STACK_LOW + 2 * OS_BLOCK_SIZE,
+            ^
+sysApi.c: In function 'os_clear_stack':
+sysApi.c:916:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+         to = KERNEL_STACK_LOW + OS_BLOCK_SIZE;
+            ^
+sysApi.c:938:9: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+         memset(to,0,size);
+         ^
+sysApi.c: In function 'os_clear_data':
+sysApi.c:950:12: warning: assignment makes pointer from integer without a cast [enabled by default]
+         to = from + OS_BLOCK_SIZE;
+            ^
+sysTbl.c: In function 'get_fpga':
+sysTbl.c:126:12: warning: variable 'time3' set but not used [-Wunused-but-set-variable]
+     UINT16 time3   = 0;
+            ^
+sysTbl.c: In function 'get_free':
+sysTbl.c:158:12: warning: variable 'time3' set but not used [-Wunused-but-set-variable]
+     UINT16 time3  = 0;
+            ^
+sysPic.c: In function 'sysEpicInit':
+sysPic.c:102:5: warning: implicit declaration of function 'irqInit' [-Wimplicit-function-declaration]
+     irqInit();/*initialize irq related variables*/
+     ^
+sysPic.c: In function 'sysEpicConfig':
+sysPic.c:422:5: warning: implicit declaration of function 'irqRregister' [-Wimplicit-function-declaration]
+     irqRregister(irq, OSTimeTick, NULL, "FPGA_EXT");
+     ^
+sysInt.c:54:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void irqInit()
+      ^
+vsprintf.c:292:0: warning: "SMALL" redefined [enabled by default]
+ #define SMALL 32  /* Must be 32 == 0x20 */
+ ^
+In file included from vsprintf.c:15:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/printk.h:61:0: note: this is the location of the previous definition
+ #define SMALL   64  /* use 'abcdef' instead of 'ABCDEF' */
+ ^
+vsprintf.c:293:0: warning: "SPECIAL" redefined [enabled by default]
+ #define SPECIAL 64  /* 0x */
+ ^
+In file included from vsprintf.c:15:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/printk.h:59:0: note: this is the location of the previous definition
+ #define SPECIAL 32  /* 0x */
+ ^
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/printk.h:42:15: warning: 'number' declared 'static' but never defined [-Wunused-function]
+ static char * number (char * str, long num, int base, int size, int precision ,int type);
+               ^
+abort.c: In function 'abort':
+abort.c:32:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("Shut down here,%s\n",__FUNCTION__);
+     ^
+update.c:35:0: warning: "NULL" redefined [enabled by default]
+ #define NULL     0
+ ^
+In file included from /os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/gpio.h:33:0,
+                 from update.c:33:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/stddef.h:49:0: note: this is the location of the previous definition
+ #define NULL ((void *)0)
+ ^
+update.c:62:0: warning: "ESPI_COM_CS" redefined [enabled by default]
+ #define ESPI_COM_CS(x)  ((x) << 30)
+ ^
+In file included from update.c:30:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/p1020rdb.h:876:0: note: this is the location of the previous definition
+ #define ESPI_COM_CS(n)                  (n<<30)
+ ^
+update.c:63:0: warning: "ESPI_COM_TRANLEN" redefined [enabled by default]
+ #define ESPI_COM_TRANLEN(x) ((x) << 0)
+ ^
+In file included from update.c:30:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/p1020rdb.h:881:0: note: this is the location of the previous definition
+ #define ESPI_COM_TRANLEN(n)             (n)
+ ^
+update.c: In function 'sysCycloneInit':
+update.c:108:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("SPMODE0:%x,pram:%x\n", spmode0, ~(ESPI_CSMODE_PM(0xF) | ESPI_CSMODE_DIV16 | ESPI_CSMODE_POL_ASSERTED_LOW \
+     ^
+update.c:113:5: warning: implicit declaration of function 'sysGpioLineConfig' [-Wimplicit-function-declaration]
+     sysGpioLineConfig (GPIO_11, GPIO_IN);
+     ^
+update.c:116:5: warning: implicit declaration of function 'sysGpioLineSet' [-Wimplicit-function-declaration]
+     sysGpioLineSet (GPIO_13, GPIO_HIGH);
+     ^
+update.c:105:12: warning: unused variable 'freq' [-Wunused-variable]
+     UINT32 freq = 0;
+            ^
+update.c:104:11: warning: unused variable 'div16' [-Wunused-variable]
+     BOOL  div16 = FALSE;
+           ^
+update.c:103:11: warning: unused variable 'pm' [-Wunused-variable]
+     UINT8 pm = 0;
+           ^
+update.c:102:12: warning: unused variable 'divideRatio' [-Wunused-variable]
+     UINT16 divideRatio = 0;
+            ^
+update.c:101:12: warning: unused variable 'clkFreq' [-Wunused-variable]
+     UINT32 clkFreq;
+            ^
+update.c:100:12: warning: unused variable 'temp' [-Wunused-variable]
+     UINT32 temp = 0;
+            ^
+update.c:99:12: warning: unused variable 'clk' [-Wunused-variable]
+     UINT32 clk = 0;
+            ^
+update.c: In function 'sysSpiReadData':
+update.c:143:12: warning: unused variable 'mode' [-Wunused-variable]
+     UINT32 mode = 0;
+            ^
+update.c:142:12: warning: unused variable 'command' [-Wunused-variable]
+     UINT32 command;
+            ^
+update.c: In function 'sysSpiWriteData':
+update.c:218:12: warning: unused variable 'cmdCount' [-Wunused-variable]
+     UINT32 cmdCount = (cmdlen / 4 + ((cmdlen % 4 != 0) ? 1 : 0));
+            ^
+update.c:216:12: warning: unused variable 't' [-Wunused-variable]
+     UINT32 t = 0;
+            ^
+update.c:214:13: warning: unused variable 'gpioStatus' [-Wunused-variable]
+     UINT32  gpioStatus;
+             ^
+update.c: At top level:
+update.c:348:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void sysCycloneFlush()
+      ^
+In file included from update.c:31:0:
+update.c: In function 'sysCycloneFlush':
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/config.h:92:33: warning: initialization makes pointer from integer without a cast [enabled by default]
+ #define CYCLONE_BIN_RAM_HIGH    0x12c00000
+                                 ^
+update.c:353:19: note: in expansion of macro 'CYCLONE_BIN_RAM_HIGH'
+     UINT8 * pSrc =CYCLONE_BIN_RAM_HIGH;
+                   ^
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/config.h:92:33: warning: initialization makes pointer from integer without a cast [enabled by default]
+ #define CYCLONE_BIN_RAM_HIGH    0x12c00000
+                                 ^
+update.c:354:20: note: in expansion of macro 'CYCLONE_BIN_RAM_HIGH'
+     UINT8 * pDest =CYCLONE_BIN_RAM_HIGH + 0x400000;
+                    ^
+update.c:356:21: warning: initialization from incompatible pointer type [enabled by default]
+     UINT32 * aSrc = pSrc;
+                     ^
+update.c:357:21: warning: initialization from incompatible pointer type [enabled by default]
+     UINT32 * aDst = pDest;
+                     ^
+update.c:369:5: warning: implicit declaration of function 'sysGpioLineGet' [-Wimplicit-function-declaration]
+     sysGpioLineGet (&gpioStatus, GPIO_12);
+     ^
+update.c:388:20: warning: initialization makes pointer from integer without a cast [enabled by default]
+     UINT32 *preg = 0xffe07000;
+                    ^
+update.c:394:1: warning: label 'TryTx' defined but not used [-Wunused-label]
+ TryTx:
+ ^
+update.c:357:14: warning: unused variable 'aDst' [-Wunused-variable]
+     UINT32 * aDst = pDest;
+              ^
+update.c:356:14: warning: unused variable 'aSrc' [-Wunused-variable]
+     UINT32 * aSrc = pSrc;
+              ^
+update.c:351:16: warning: unused variable 'j' [-Wunused-variable]
+     UINT32  i, j;
+                ^
+duart.c: In function 'init_uart':
+duart.c:16:5: warning: implicit declaration of function 'sysUartClkRateGet' [-Wimplicit-function-declaration]
+     UINT32 uartClk = sysUartClkRateGet();
+     ^
+duart.c:33:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("base %x\n",base);
+         ^
+duart.c: In function 'uart_send':
+duart.c:60:13: warning: implicit declaration of function 'getTblus' [-Wimplicit-function-declaration]
+             UINT32 t1 = getTblus();
+             ^
+duart.c: In function 'uart_recv':
+duart.c:104:13: warning: implicit declaration of function 'uart_clear_fifo' [-Wimplicit-function-declaration]
+             uart_clear_fifo(2);
+             ^
+duart.c:86:11: warning: unused variable 'ret' [-Wunused-variable]
+     INT16 ret=0,i=0;
+           ^
+duart.c: At top level:
+duart.c:117:6: warning: conflicting types for 'uart_clear_fifo' [enabled by default]
+ void uart_clear_fifo(int no)
+      ^
+duart.c:104:13: note: previous implicit declaration of 'uart_clear_fifo' was here
+             uart_clear_fifo(2);
+             ^
+lld.c: In function 'lld_WriteBufferProgramOp':
+lld.c:967:5: warning: implicit declaration of function 'get_free' [-Wimplicit-function-declaration]
+     t1=get_free();
+     ^
+lld.c: In function 'lld_SectorEraseOp':
+lld.c:1059:20: error: expected '=', ',', ';', 'asm' or '__attribute__' before '.' token
+     unsigned int t1.t2;
+                    ^
+lld.c:1059:20: error: expected expression before '.' token
+lld.c:1060:5: error: 't1' undeclared (first use in this function)
+     t1=get_free();
+     ^
+lld.c:1060:5: note: each undeclared identifier is reported only once for each function it appears in
+lld.c:1064:5: error: 't2' undeclared (first use in this function)
+     t2=get_free();
+     ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:503:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ INT32 os_get_mno();
+ ^
+../cagos.h:505:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void os_update_mno();
+ ^
+sffs_demo.c:39:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+ int *sffs_test_data =0x10000000;
+                      ^
+sffs_demo.c:40:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+ int *sffs_test_data2=0x13000000;
+                      ^
+sffs_demo.c: In function 'fs_multi_demo':
+sffs_demo.c:57:20: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+                    ^
+sffs_demo.c:57:35: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+                                   ^
+sffs_demo.c:57:51: warning: pointer targets in initialization differ in signedness [-Wpointer-sign]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+                                                   ^
+sffs_demo.c:91:17: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+                 printf("%s\n",lname[kk]);
+                 ^
+sffs_demo.c:106:9: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+         rd = rand()%20;
+         ^
+sffs_demo.c:110:9: warning: pointer targets in passing argument 1 of 'fs_open' differ in signedness [-Wpointer-sign]
+         fd1 = fs_open(lname[rd],FS_OPEN_CREATE,FS_WRONLY);
+         ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:247:7: note: expected 'const signed char *' but argument is of type 'const char *'
+ INT32 fs_open(const INT8 *fname, INT32 flags, INT32 mode);
+       ^
+sffs_demo.c:163:9: warning: pointer targets in passing argument 1 of 'fs_open' differ in signedness [-Wpointer-sign]
+         fd1 = fs_open(lname[rd],FS_OPEN_NORMAL,FS_RDONLY);
+         ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:247:7: note: expected 'const signed char *' but argument is of type 'const char *'
+ INT32 fs_open(const INT8 *fname, INT32 flags, INT32 mode);
+       ^
+sffs_demo.c:208:9: warning: pointer targets in passing argument 1 of 'fs_rename' differ in signedness [-Wpointer-sign]
+         ret = fs_rename(lname[rd],lname[rd2]);
+         ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:243:7: note: expected 'const signed char *' but argument is of type 'const char *'
+ INT32 fs_rename(const INT8 *old_name,const INT8 *new_name);
+       ^
+sffs_demo.c:208:9: warning: pointer targets in passing argument 2 of 'fs_rename' differ in signedness [-Wpointer-sign]
+         ret = fs_rename(lname[rd],lname[rd2]);
+         ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:243:7: note: expected 'const signed char *' but argument is of type 'const char *'
+ INT32 fs_rename(const INT8 *old_name,const INT8 *new_name);
+       ^
+sffs_demo.c:234:13: warning: pointer targets in passing argument 1 of 'fs_remove' differ in signedness [-Wpointer-sign]
+             ret = fs_remove(lname[rd2]);
+             ^
+In file included from sffs_demo.c:29:0:
+../cagos.h:248:7: note: expected 'const signed char *' but argument is of type 'const char *'
+ INT32 fs_remove(const INT8 *fname);
+       ^
+sffs_demo.c:248:1: warning: label 'xxx' defined but not used [-Wunused-label]
+ xxx:    ii++;
+ ^
+sffs_demo.c:232:1: warning: label 'rmf' defined but not used [-Wunused-label]
+ rmf :   rd2=rand()%20;
+ ^
+sffs_demo.c:60:17: warning: unused variable 'fd2' [-Wunused-variable]
+     int32_t fd1,fd2;
+                 ^
+sffs_demo.c:57:44: warning: unused variable 'fname3' [-Wunused-variable]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+                                            ^
+sffs_demo.c:57:28: warning: unused variable 'fname2' [-Wunused-variable]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+                            ^
+sffs_demo.c:57:13: warning: unused variable 'fname1' [-Wunused-variable]
+     int8_t *fname1="test",*fname2="test2",*fname3="deled";
+             ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:30:0: warning: "NULL" redefined [enabled by default]
+ #define NULL 0 
+ ^
+In file included from /os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/stdio.h:33:0,
+                 from ../driver/device/spiflash/../../fs/sffs/sffs.h:35,
+                 from ../driver/device/spiflash/sf.h:38,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/stddef.h:49:0: note: this is the location of the previous definition
+ #define NULL ((void *)0)
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:175:0: warning: "SFFS_NO_FREEHDRSS_ERR" redefined [enabled by default]
+ #define SFFS_NO_FREEHDRSS_ERR           -5
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:159:0: note: this is the location of the previous definition
+ #define SFFS_NO_FREEHDRSS_ERR           (LOG_ERR_SFFS|0x36)//-5
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:177:0: warning: "SFFS_FILE_NUM_FULL_ERR" redefined [enabled by default]
+ #define SFFS_FILE_NUM_FULL_ERR          -6
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:162:0: note: this is the location of the previous definition
+ #define SFFS_FILE_NUM_FULL_ERR          (LOG_ERR_SFFS|0x9)//-6
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:179:0: warning: "SFFS_PARA_ERR" redefined [enabled by default]
+ #define SFFS_PARA_ERR                   -1
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:164:0: note: this is the location of the previous definition
+ #define SFFS_PARA_ERR                   (LOG_ERR_SFFS|0x35)//-1
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:181:0: warning: "SFFS_FILENAME_NOT_EXIST_ERR1" redefined [enabled by default]
+ #define SFFS_FILENAME_NOT_EXIST_ERR1     -38
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:173:0: note: this is the location of the previous definition
+ #define SFFS_FILENAME_NOT_EXIST_ERR1     (LOG_ERR_SFFS|0xf)//-38
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:182:0: warning: "SFFS_FILENAME_NOT_EXIST_ERR2" redefined [enabled by default]
+ #define SFFS_FILENAME_NOT_EXIST_ERR2     -39
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:174:0: note: this is the location of the previous definition
+ #define SFFS_FILENAME_NOT_EXIST_ERR2     (LOG_ERR_SFFS|0x10)//-39
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:183:0: warning: "SFFS_FILENAME_NOT_EXIST_ERR3" redefined [enabled by default]
+ #define SFFS_FILENAME_NOT_EXIST_ERR3     -40
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:175:0: note: this is the location of the previous definition
+ #define SFFS_FILENAME_NOT_EXIST_ERR3     (LOG_ERR_SFFS|0x11)//-40
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:184:0: warning: "SFFS_FILENAME_NOT_EXIST_ERR4" redefined [enabled by default]
+ #define SFFS_FILENAME_NOT_EXIST_ERR4     -41
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:176:0: note: this is the location of the previous definition
+ #define SFFS_FILENAME_NOT_EXIST_ERR4     (LOG_ERR_SFFS|0x12)//-41
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:185:0: warning: "SFFS_FILENAME_NOT_EXIST_ERR5" redefined [enabled by default]
+ #define SFFS_FILENAME_NOT_EXIST_ERR5     -42
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:177:0: note: this is the location of the previous definition
+ #define SFFS_FILENAME_NOT_EXIST_ERR5     (LOG_ERR_SFFS|0x13)//-42
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:186:0: warning: "SFFS_FD_ERR" redefined [enabled by default]
+ #define SFFS_FD_ERR                     -9
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:179:0: note: this is the location of the previous definition
+ #define SFFS_FD_ERR                     (LOG_ERR_SFFS|0x14)//-9
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:188:0: warning: "SFFS_READMODE_ERROR" redefined [enabled by default]
+ #define SFFS_READMODE_ERROR             -18
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:182:0: note: this is the location of the previous definition
+ #define SFFS_READMODE_ERROR             (LOG_ERR_SFFS|0x15)//-18
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:190:0: warning: "SFFS_FILE_REWRITE_ERR" redefined [enabled by default]
+ #define SFFS_FILE_REWRITE_ERR           -12
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:185:0: note: this is the location of the previous definition
+ #define SFFS_FILE_REWRITE_ERR           (LOG_ERR_SFFS|0x18)//-12
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:191:0: warning: "SFFS_UNALIGN_WRITE_ERR" redefined [enabled by default]
+ #define SFFS_UNALIGN_WRITE_ERR          -14
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:186:0: note: this is the location of the previous definition
+ #define SFFS_UNALIGN_WRITE_ERR          (LOG_ERR_SFFS|0x19)//-14
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:192:0: warning: "SFFS_DEL_ERR" redefined [enabled by default]
+ #define SFFS_DEL_ERR                    -21
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:187:0: note: this is the location of the previous definition
+ #define SFFS_DEL_ERR                    (LOG_ERR_SFFS|0x1a)//-21
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:193:0: warning: "SFFS_FILE_LOCKED_ERR" redefined [enabled by default]
+ #define SFFS_FILE_LOCKED_ERR            -2
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:188:0: note: this is the location of the previous definition
+ #define SFFS_FILE_LOCKED_ERR            (LOG_ERR_SFFS|0x37)//-2
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:194:0: warning: "SFFS_FILE_NOT_COMMIT_ERR" redefined [enabled by default]
+ #define SFFS_FILE_NOT_COMMIT_ERR        -20
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:189:0: note: this is the location of the previous definition
+ #define SFFS_FILE_NOT_COMMIT_ERR        (LOG_ERR_SFFS|0x1b)//-20
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:197:0: warning: "SFFS_NOT_NOT_MOUNTED" redefined [enabled by default]
+ #define SFFS_NOT_NOT_MOUNTED            -23
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:193:0: note: this is the location of the previous definition
+ #define SFFS_NOT_NOT_MOUNTED            (LOG_ERR_SFFS|0x38)//-23
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:203:0: warning: "SFFS_WRITE_DATA_ERR1" redefined [enabled by default]
+ #define SFFS_WRITE_DATA_ERR1             -32
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:212:0: note: this is the location of the previous definition
+ #define SFFS_WRITE_DATA_ERR1             (LOG_ERR_SFFS|0x2b)//-32
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:204:0: warning: "SFFS_WRITE_DATA_ERR2" redefined [enabled by default]
+ #define SFFS_WRITE_DATA_ERR2             -33
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:213:0: note: this is the location of the previous definition
+ #define SFFS_WRITE_DATA_ERR2             (LOG_ERR_SFFS|0x2c)//-33
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:205:0: warning: "SFFS_WRITE_DATA_ERR3" redefined [enabled by default]
+ #define SFFS_WRITE_DATA_ERR3             -34
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:214:0: note: this is the location of the previous definition
+ #define SFFS_WRITE_DATA_ERR3             (LOG_ERR_SFFS|0x2d)//-34
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:206:0: warning: "SFFS_WRITE_DATA_ERR4" redefined [enabled by default]
+ #define SFFS_WRITE_DATA_ERR4             -35
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:215:0: note: this is the location of the previous definition
+ #define SFFS_WRITE_DATA_ERR4             (LOG_ERR_SFFS|0x2e)//-35
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:207:0: warning: "SFFS_WRITE_DATA_ERR5" redefined [enabled by default]
+ #define SFFS_WRITE_DATA_ERR5             -36
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:216:0: note: this is the location of the previous definition
+ #define SFFS_WRITE_DATA_ERR5             (LOG_ERR_SFFS|0x2f)//-36
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:209:0: warning: "SFFS_OFFSET_ERR" redefined [enabled by default]
+ #define SFFS_OFFSET_ERR                 -30
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:219:0: note: this is the location of the previous definition
+ #define SFFS_OFFSET_ERR                 (LOG_ERR_SFFS|0x30)//-30
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:211:0: warning: "SFFS_GLOBAL_ERR" redefined [enabled by default]
+ #define SFFS_GLOBAL_ERR                 -24 //global vars are inconsistent
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:221:0: note: this is the location of the previous definition
+ #define SFFS_GLOBAL_ERR                 (LOG_ERR_SFFS|0x31)//-24 //global vars are inconsistent
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:212:0: warning: "SFFS_BUF_ERR" redefined [enabled by default]
+ #define SFFS_BUF_ERR                    -25
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:222:0: note: this is the location of the previous definition
+ #define SFFS_BUF_ERR                    (LOG_ERR_SFFS|0x39)//-25
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:213:0: warning: "SFFS_FNAME_DUPLICATE_ERR" redefined [enabled by default]
+ #define SFFS_FNAME_DUPLICATE_ERR        -26
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:223:0: note: this is the location of the previous definition
+ #define SFFS_FNAME_DUPLICATE_ERR        (LOG_ERR_SFFS|0x32)//-26
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:214:0: warning: "SFFS_RENAME_FAIL1" redefined [enabled by default]
+ #define SFFS_RENAME_FAIL1               -27
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:224:0: note: this is the location of the previous definition
+ #define SFFS_RENAME_FAIL1               (LOG_ERR_SFFS|0x33)//-27
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:215:0: warning: "SFFS_RENAME_FAIL2" redefined [enabled by default]
+ #define SFFS_RENAME_FAIL2               -28
+ ^
+In file included from ../driver/device/spiflash/sf.h:31:0,
+                 from fsf_demo.c:3:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/logh.h:225:0: note: this is the location of the previous definition
+ #define SFFS_RENAME_FAIL2               (LOG_ERR_SFFS|0x34)//-28
+ ^
+In file included from fsf_demo.c:4:0:
+../cagos.h:503:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ INT32 os_get_mno();
+ ^
+../cagos.h:505:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void os_update_mno();
+ ^
+fsf_demo.c:6:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void fsf_demo()
+      ^
+fsf_demo.c: In function 'fsf_demo':
+fsf_demo.c:9:5: warning: 'return' with a value, in function returning void [enabled by default]
+     return 
+     ^
+fsf_demo.c:22:5: warning: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+     memset(buf,0x15,4096);
+     ^
+fsf_demo.c:154:5: warning: 'return' with a value, in function returning void [enabled by default]
+     return 0;
+     ^
+demo.c: In function 'main':
+demo.c:43:5: warning: implicit declaration of function 'cacheE500EnableD' [-Wimplicit-function-declaration]
+     cacheE500EnableD();
+     ^
+demo.c:44:5: warning: implicit declaration of function 'do_demo_nor1' [-Wimplicit-function-declaration]
+     do_demo_nor1();
+     ^
+demo.c:45:5: warning: implicit declaration of function 'dual_test' [-Wimplicit-function-declaration]
+     dual_test();
+     ^
+demo.c:46:5: warning: implicit declaration of function 'os_gap_fill' [-Wimplicit-function-declaration]
+     os_gap_fill();
+     ^
+oscheck.c:12:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag1=0x1100000;
+                            ^
+oscheck.c:13:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag2=0x2100000;
+                            ^
+oscheck.c:14:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag3=0x3100000;
+                            ^
+oscheck.c:15:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag4=0x5100000;
+                            ^
+oscheck.c:16:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag5=0x6100000;
+                            ^
+oscheck.c:17:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+ unsigned int * const flag6=0x7100000;
+                            ^
+oscheck.c:21:7: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void  jumpos()
+       ^
+oscheck.c: In function 'jumpos':
+oscheck.c:30:5: warning: implicit declaration of function 'os_copy_stack' [-Wimplicit-function-declaration]
+     os_copy_stack();
+     ^
+oscheck.c:33:5: warning: implicit declaration of function 'os_change_mmu' [-Wimplicit-function-declaration]
+     os_change_mmu();
+     ^
+oscheck.c:37:5: warning: implicit declaration of function 'os_clear_stack' [-Wimplicit-function-declaration]
+     os_clear_stack();
+     ^
+oscheck.c:38:5: warning: implicit declaration of function 'os_update_mno' [-Wimplicit-function-declaration]
+     os_update_mno();
+     ^
+oscheck.c:23:21: warning: unused variable 't4' [-Wunused-variable]
+     UINT32 t1,t2,t3,t4;
+                     ^
+oscheck.c:23:18: warning: unused variable 't3' [-Wunused-variable]
+     UINT32 t1,t2,t3,t4;
+                  ^
+oscheck.c:23:15: warning: unused variable 't2' [-Wunused-variable]
+     UINT32 t1,t2,t3,t4;
+               ^
+oscheck.c:23:12: warning: unused variable 't1' [-Wunused-variable]
+     UINT32 t1,t2,t3,t4;
+            ^
+oscheck.c: In function 'os_switch':
+oscheck.c:61:5: warning: implicit declaration of function 'powerpcIntDisable' [-Wimplicit-function-declaration]
+     powerpcIntDisable();
+     ^
+oscheck.c:63:5: warning: implicit declaration of function 'os_gap_check' [-Wimplicit-function-declaration]
+     os_gap_check();
+     ^
+oscheck.c:65:5: warning: implicit declaration of function 'powerpcIntEnable' [-Wimplicit-function-declaration]
+     powerpcIntEnable();
+     ^
+oscheck.c: At top level:
+oscheck.c:76:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void others()
+      ^
+oscheck.c: In function 'others':
+oscheck.c:82:5: warning: implicit declaration of function 'OSTaskCreate' [-Wimplicit-function-declaration]
+     OSTaskCreate(temp,
+     ^
+oscheck.c: In function 'task_void':
+oscheck.c:116:13: warning: pointer targets in passing argument 2 of 'os_delay_task' differ in signedness [-Wpointer-sign]
+             os_delay_task(1,&err);
+             ^
+In file included from oscheck.c:10:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/kernel/sysApi.h:38:6: note: expected 'UINT32 *' but argument is of type 'int *'
+ void os_delay_task(INT32 ticks, UINT32 *err);
+      ^
+oscheck.c: In function 'task_void1':
+oscheck.c:132:9: warning: pointer targets in passing argument 2 of 'os_delay_task' differ in signedness [-Wpointer-sign]
+         os_delay_task(1,&err);
+         ^
+In file included from oscheck.c:10:0:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/kernel/sysApi.h:38:6: note: expected 'UINT32 *' but argument is of type 'int *'
+ void os_delay_task(INT32 ticks, UINT32 *err);
+      ^
+oscheck.c:124:9: warning: unused variable 'i' [-Wunused-variable]
+     int i=0;
+         ^
+oscheck.c: At top level:
+oscheck.c:169:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void os_gap_fill()
+      ^
+oscheck.c: In function 'os_gap_fill':
+oscheck.c:171:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_0,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:172:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_1,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:173:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_2,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:174:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_3,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:175:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_4,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:176:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_5,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:177:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_6,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:178:5: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+     memset(GAP_7,0x5a,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:185:9: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+         memset(TASK_STACK_HIGH- i *(GAP_SIZE+TASK_STACK_SIZE),0x5a,GAP_SIZE);
+         ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c:188:9: warning: passing argument 1 of 'memset' makes pointer from integer without a cast [enabled by default]
+         memset(TASK_SPESTACK_HIGH- i *(GAP_SIZE+TASK_SPESTACK_SIZE),0x5a,GAP_SIZE);
+         ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:46:10: note: expected 'void *' but argument is of type 'int'
+ void    *memset(void *, int, size_t);
+          ^
+oscheck.c: At top level:
+oscheck.c:192:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void os_gap_check()
+      ^
+oscheck.c:192:6: warning: conflicting types for 'os_gap_check' [enabled by default]
+oscheck.c:63:5: note: previous implicit declaration of 'os_gap_check' was here
+     os_gap_check();
+     ^
+oscheck.c: In function 'os_gap_check':
+oscheck.c:198:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_0,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:207:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_1,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:216:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_2,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:226:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_3,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:235:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_4,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:244:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_5,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:253:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_6,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:262:5: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+     ret=memcmp(GAP_7,buf,GAP_SIZE);
+     ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:277:9: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+         ret=memcmp(TASK_STACK_HIGH- i *(GAP_SIZE+TASK_STACK_SIZE),buf,GAP_SIZE);
+         ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+oscheck.c:288:9: warning: passing argument 1 of 'memcmp' makes pointer from integer without a cast [enabled by default]
+         ret=memcmp(TASK_SPESTACK_HIGH- i *(GAP_SIZE+TASK_SPESTACK_SIZE),buf,GAP_SIZE);
+         ^
+In file included from ./demo.h:32:0,
+                 from oscheck.c:2:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/cagOS/include/libc/string.h:43:10: note: expected 'const void *' but argument is of type 'int'
+ int      memcmp(const void *, const void *, size_t);
+          ^
+nor_demo.c:40:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ int do_demo_nor1()
+     ^
+nor_demo.c: In function 'do_demo_nor1':
+nor_demo.c:51:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     ret = lld_write(0xede00000,buf,128*1024);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:65:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         ret = lld_write(0xec040000+i*300,buf,300);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:74:9: warning: implicit declaration of function 'get_free' [-Wimplicit-function-declaration]
+         t1 = getTblus();
+         ^
+nor_demo.c:75:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         lld_write(0xEDE00000+i*0x600,buf,224);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:80:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         lld_write(0xEDE00100+i*0x600,buf,196);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:85:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         lld_write(0xEDE00200+i*0x600,buf,192);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:90:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         lld_write(0xEDE00300+i*0x600,buf,64);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:95:9: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+         lld_write(0xEDE00400+i*0x600,buf,32);
+         ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:103:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00200,buf,320);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:108:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00400,buf,300);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:113:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00600,buf,240);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:118:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00800,buf,224);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:123:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00a00,buf,200);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:128:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00c00,buf,196);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:133:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE00e00,buf,192);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:138:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE01000,buf,180);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+nor_demo.c:143:5: warning: passing argument 2 of 'lld_write' from incompatible pointer type [enabled by default]
+     lld_write(0xEDE01200,buf,160);
+     ^
+In file included from nor_demo.c:33:0:
+../driver/device/norflash/lld.h:957:5: note: expected 'uchar *' but argument is of type 'unsigned int *'
+ int lld_write ( ADDRESS addr ,uchar *src, unsigned int cnt );
+     ^
+make[1]: *** No rule to make target `driver/device/norflash/libnor.a', needed by `cagOs'.  Stop.
+make: *** [ALL] Error 2

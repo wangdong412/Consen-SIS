@@ -1,0 +1,58 @@
+#pragma once
+#include "afxwin.h"
+
+
+// CCalVerDlg 对话框
+
+class CCalVerDlg : public CPropertyPage
+{
+	DECLARE_DYNAMIC(CCalVerDlg)
+
+public:
+	CCalVerDlg();
+	virtual ~CCalVerDlg();
+
+// 对话框数据
+	enum { IDD = IDD_CAL_VER };
+
+private:
+	CFont m_boldFont;
+	CFont m_norFont;
+	CImage m_imgPassing;
+	CImage m_imgPass;
+	CImage m_imgUnPass;
+
+	CAliasItem* m_pAliasDemand;     // 42123
+	CAliasItem* m_pAliasActNull;    // 42159
+	CAliasItem* m_pAliasAI01;       // 35001
+	CAliasItem* m_pAliasAI02;       // 35003
+	CAliasItem* m_pAliasAI01V;      // 35011
+	CAliasItem* m_pAliasAI02V;      // 35013
+	CAliasItem* m_pAliasPV;         // 35081
+	CAliasItem* m_pAliasActCur;     // 35039
+
+	UINT m_uUpdateCounts;
+
+protected:
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 支持
+
+	DECLARE_MESSAGE_MAP()
+public:
+	virtual BOOL OnInitDialog();
+	afx_msg void OnPaint();
+	virtual BOOL OnSetActive();
+	virtual LRESULT OnWizardNext();
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+
+public:
+	CEdit m_stcDemand;
+	CEdit m_stcActNull;
+	CStatic m_stcAI01P;
+	CStatic m_stcAI01V;
+	CStatic m_stcAI02P;
+	CStatic m_stcAI02V;
+	CStatic m_stcPV;
+	CStatic m_stcActCur;
+
+	virtual BOOL PreTranslateMessage(MSG* pMsg);
+};

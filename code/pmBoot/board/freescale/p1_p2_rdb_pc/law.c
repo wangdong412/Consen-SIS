@@ -1,0 +1,39 @@
+/*
+ * Copyright 2010-2011 Freescale Semiconductor, Inc.
+ *
+ * SPDX-License-Identifier:	GPL-2.0+
+ */
+
+#include <common.h>
+#include <asm/fsl_law.h>
+#include <asm/mmu.h>
+
+//ezio comments 03.31
+
+#if !defined(FSL_CONFIG_SOC)
+struct law_entry law_table[] = {
+    SET_LAW_ENTRY(0, CONFIG_SYS_FLASH_BASE_PHYS, LAW_SIZE_64M, LAW_TRGT_IF_LBC),
+    SET_LAW_ENTRY(1, CAG_SYS_SRAM_BASE1, LAW_SIZE_1M, LAW_TRGT_IF_LBC),  /*sram*/
+    SET_LAW_ENTRY(2, CAG_SYS_FPGA_BASE1, LAW_SIZE_64K, LAW_TRGT_IF_LBC)   /*fpga*/
+#ifdef CONFIG_VSC7385_ENET
+	SET_LAW(CONFIG_SYS_VSC7385_BASE_PHYS, LAW_SIZE_1M, LAW_TRGT_IF_LBC),
+#endif
+#ifdef CONFIG_SYS_NAND_BASE_PHYS
+	SET_LAW(CONFIG_SYS_NAND_BASE_PHYS, LAW_SIZE_32K, LAW_TRGT_IF_LBC),
+#endif
+};
+#else
+struct law_entry law_table[] = {
+	SET_LAW(CONFIG_SYS_CPLD_BASE_PHYS, LAW_SIZE_1M, LAW_TRGT_IF_LBC),
+	SET_LAW(CONFIG_SYS_PMC_BASE_PHYS, LAW_SIZE_64K, LAW_TRGT_IF_LBC),
+#ifdef CONFIG_VSC7385_ENET
+	SET_LAW(CONFIG_SYS_VSC7385_BASE_PHYS, LAW_SIZE_1M, LAW_TRGT_IF_LBC),
+#endif
+	SET_LAW(CONFIG_SYS_FLASH_BASE_PHYS, LAW_SIZE_64M, LAW_TRGT_IF_LBC),
+#ifdef CONFIG_SYS_NAND_BASE_PHYS
+	SET_LAW(CONFIG_SYS_NAND_BASE_PHYS, LAW_SIZE_32K, LAW_TRGT_IF_LBC),
+#endif
+};
+#endif
+
+int num_law_entries = ARRAY_SIZE(law_table);

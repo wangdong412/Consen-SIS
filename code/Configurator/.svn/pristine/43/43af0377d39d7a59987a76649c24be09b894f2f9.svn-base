@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title> DSC100跳线设置 </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="3_Installation-Terminal_Module.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="3_Installation-Station_IP_Baud.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159621"> </a><h3 class="pHeading2">
+DSC100跳线设置
+</h3>
+<hr />
+<a name="wp1159622"> </a><p class="pBody">
+DSC100 伺服控制器共有4个跳线器，各功能设置如表下所示：
+</p>
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1183499table1174020">
+  <caption><a name="wp1183499"> </a><div class="pTableTitle">
+DSC100 伺服控制器跳线设置</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1183503"> </a><div class="pCellHeading">
+名称
+</div>
+</th>
+    <th><a name="wp1183505"> </a><div class="pCellHeading">
+通道
+</div>
+</th>
+    <th><a name="wp1183543"> </a><div class="pCellHeading">
+跳线位置
+</div>
+</th>
+    <th><a name="wp1183545"> </a><div class="pCellHeading">
+描述
+</div>
+</th>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183507"> </a><div class="pCellBody"> J9    </div></td>
+  <td><a name="wp1183509"> </a><div class="pCellBody"> 模拟位置输入02 </div></td>
+  <td><a name="wp1183547"> </a><div class="pCellBody">  <a name="wp1159602"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J9_1.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183551"> </a><div class="pCellBody">  AI02信号类型:电流输入   </br>
+                                                        采样电阻: 250<span style="font-family: Symbol">W</span>        </br>
+                                                        电流范围:&plusmn;40mA </br>
+                                                        端子电流信号: PV2+, PV2- </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183511"> </a><div class="pCellBody"> &#160;  </div></td>
+	<td><a name="wp1183515"> </a><div class="pCellBody"> &#160;  </div></td>
+	<td><a name="wp1183519"> </a><div class="pCellBody">  <a name="wp1159604"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J9_2.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183523"> </a><div class="pCellBody">   AI02 信号类型:电压输入     </br>
+                                                         范围: &plusmn;10V     </br>
+                                                         端子电压信号: PV2+, PV2- </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183527"> </a><div class="pCellBody"> &#160; </div></td>
+	<td><a name="wp1183531"> </a><div class="pCellBody"> &#160;  </div></td>
+	<td><a name="wp1183535"> </a><div class="pCellBody">  <a name="wp1159606"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J9_3.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183539"> </a><div class="pCellBody">   AI02 信号类型: LVDT 输入                  </br>
+                                                         LVDT端子: </br>
+                                                         L2E+, L2E-, L2A+,L2A-,L2B+, L2B-                    </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183543"> </a><div class="pCellBody"> &#160;   </div></td>
+	<td><a name="wp1183547"> </a><div class="pCellBody"> &#160;   </div></td>
+	<td><a name="wp1183551"> </a><div class="pCellBody">  <a name="wp1159608"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J9_4.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183555"> </a><div class="pCellBody">   AI02 信号类型: LVDT 输入并且输出调制后的直流电压    </br>
+  	                                                 LVDT 端子:L2E+, L2E-, L2A+,L2A-,L2B+, L2B- </br>
+                                                         直流电压输出端子: PV2+, PV2-     </div></td>
+</tr>
+
+<tr align="left">    
+	<td><a name="wp1183511"> </a><div class="pCellBody"> J10 </div></td>
+  <td><a name="wp1183513"> </a><div class="pCellBody">  模拟位置输入01 </div></td>
+  <td><a name="wp1183551"> </a><div class="pCellBody"> <a name="wp1159610"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J10_1.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183553"> </a><div class="pCellBody"> AI01信号类型:电流输入  </br> 
+  	                                               采样电阻: 250<span style="font-family: Symbol">W</span>      </br> 
+  	                                               电流范围: &plusmn;40mA  </br>                          
+  	                                               端子: PV1+, PV1-  </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183511"> </a><div class="pCellBody"> &#160;   </div></td>
+	<td><a name="wp1183515"> </a><div class="pCellBody">  &#160;  </div></td>
+	<td><a name="wp1183519"> </a><div class="pCellBody">  <a name="wp1159612"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J10_2.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183523"> </a><div class="pCellBody">   AI01 信号类型:电压输入        </br>
+                                                         范围: &plusmn;10V              </br>
+                                                         端子:PV1+, PV1- </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183527"> </a><div class="pCellBody"> &#160;   </div></td>
+	<td><a name="wp1183531"> </a><div class="pCellBody"> &#160;  </div></td>
+	<td><a name="wp1183535"> </a><div class="pCellBody">  <a name="wp1159614"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J10_3.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183539"> </a><div class="pCellBody">   AI01 信号类型: LVDT 输入                  </br>
+                                                         LVDT 端子:      </br>
+                                                        L1E+, L1E-, L1A+,L1A-,L1B+, L1B-                  </div></td>
+</tr>
+<tr align="left"> 
+	<td><a name="wp1183543"> </a><div class="pCellBody">  &#160;  </div></td>
+	<td><a name="wp1183547"> </a><div class="pCellBody">  &#160;  </div></td>
+	<td><a name="wp1183551"> </a><div class="pCellBody">   <a name="wp1159616"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J10_4.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183555"> </a><div class="pCellBody">    AI 01信号: LVDT 输入并且有调制后的直流电压输出   </br>                
+  	                                                  LVDT 端子:L1E+, L1E-, L1A+,L1A-,L1B+, L1B-       </br>
+                                                          直流电压输出端子: PV1+, PV1-      </div></td>
+</tr>
+
+<tr align="left">    
+	<td><a name="wp1183515"> </a><div class="pCellBody"> J11 </div></td>
+  <td><a name="wp1183517"> </a><div class="pCellBody"> 控制AO2输出  </div></td>
+  <td><a name="wp1183555"> </a><div class="pCellBody">   <a name="wp1159618"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J11_1.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183557"> </a><div class="pCellBody">  电流输出范围: &plusmn;250mA	 </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183519"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183521"> </a><div class="pCellBody">  &#160;  </div></td>
+  <td><a name="wp1183559"> </a><div class="pCellBody">  <a name="wp1159620"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J11_2.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183561"> </a><div class="pCellBody">  电流输出范围: &plusmn;100mA		 </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183523"> </a><div class="pCellBody">  &#160;  </div></td>
+  <td><a name="wp1183525"> </a><div class="pCellBody">  &#160;  </div></td>
+  <td><a name="wp1183563"> </a><div class="pCellBody">  <a name="wp1159622"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J11_3.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183565"> </a><div class="pCellBody"> 电流输出范围: &plusmn;50mA		 </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183527"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183529"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183567"> </a><div class="pCellBody">  <a name="wp1159624"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J11_4.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183569"> </a><div class="pCellBody">  电流输出范围: &plusmn;25mA		 </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183531"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183533"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183571"> </a><div class="pCellBody">  <a name="wp1159626"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J11_5.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183573"> </a><div class="pCellBody"> 电流输出范围: &plusmn;10mA	 </div></td>
+</tr>
+
+
+<tr align="left">    
+	<td><a name="wp1183535"> </a><div class="pCellBody"> J12 </div></td>
+  <td><a name="wp1183537"> </a><div class="pCellBody"> 控制AO1输出</div></td>
+  <td><a name="wp1183575"> </a><div class="pCellBody"> <a name="wp1159628"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J12_1.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183577"> </a><div class="pCellBody"> 电流输出范围: &plusmn;250mA </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183535"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183537"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183575"> </a><div class="pCellBody"> <a name="wp1159630"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J12_2.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183577"> </a><div class="pCellBody"> 电流输出范围: &plusmn;100mA </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183535"> </a><div class="pCellBody">  &#160;  </div></td>
+  <td><a name="wp1183537"> </a><div class="pCellBody">  &#160;  </div></td>
+  <td><a name="wp1183575"> </a><div class="pCellBody"> <a name="wp1159602"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J12_3.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183577"> </a><div class="pCellBody"> 电流输出范围: &plusmn;50mA	 </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183535"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183537"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183575"> </a><div class="pCellBody"> <a name="wp1159632"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J12_4.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183577"> </a><div class="pCellBody"> 电流输出范围: &plusmn;25mA </div></td>
+</tr>
+<tr align="left">    
+	<td><a name="wp1183535"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183537"> </a><div class="pCellBody">  &#160; </div></td>
+  <td><a name="wp1183575"> </a><div class="pCellBody"> <a name="wp1159634"> </a><p class="pBodyRelative">
+  	<img src="images/DSC100-J12_5.png" height="52" width="125" id="wp1159569" border="0" hspace="0" vspace="0"/> </p>    </div></td>
+  <td><a name="wp1183577"> </a><div class="pCellBody">电流输出范围: &plusmn;10mA </div></td>
+</tr>
+</table>
+</div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

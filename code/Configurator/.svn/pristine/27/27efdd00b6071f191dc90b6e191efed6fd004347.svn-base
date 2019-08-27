@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>Boolean Memory Read-Only Aliases</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Digital_Input_Read-Only_Aliases.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_Read-Only_Aliases.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp2114016"> </a><h3 class="pHeading2">
+Boolean Memory Read-Only Aliases
+</h3>
+<hr />
+<a name="wp2114017"> </a><p class="pBody">
+This table describes boolean memory read-only aliases.
+</p>
+<a name="wp2114934"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp2114023table2114018">
+  <caption><a name="wp2114023"> </a><div class="pTableTitle">
+Boolean Memory Read-Only Aliases&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    
+    <th><a name="wp2114029"> </a><div class="pCellHeading"> Alias </div></th>
+    <th><a name="wp2114031"> </a><div class="pCellHeading"> Tag Name </div></th>
+    <th><a name="wp2114033"> </a><div class="pCellHeading"> Description </div></th>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114035"> </a><div class="pCellBody"> 12001 </div></td>
+    <td><a name="wp2114037"> </a><div class="pCellBody"> dAPI1ARMOPEN </div></td>
+    <td><a name="wp2114039"> </a><div class="pCellBody"> Analog Position Input 01 Open </div></td></tr>
+  <tr align="left">    
+    <td><a name="wp2114041"> </a><div class="pCellBody"> 12002 </div></td>
+    <td><a name="wp2114043"> </a><div class="pCellBody"> dAPI1ARMOR </div></td>
+    <td><a name="wp2114045"> </a><div class="pCellBody"> Analog Position Input 01 Over Range </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114047"> </a><div class="pCellBody"> 12003 </div></td>
+    <td><a name="wp2114049"> </a><div class="pCellBody"> dAPI2ARMOPEN </div></td>
+    <td><a name="wp2114051"> </a><div class="pCellBody"> Analog Position Input 02 Open </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114053"> </a><div class="pCellBody"> 12004 </div></td>
+    <td><a name="wp2114055"> </a><div class="pCellBody"> dAPI2ARMOR </div></td>
+    <td><a name="wp2114057"> </a><div class="pCellBody"> Analog Position Input 02 Over Range </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114059"> </a><div class="pCellBody"> 12005 </div></td>
+    <td><a name="wp2114061"> </a><div class="pCellBody"> dSPARMOR </div></td>
+    <td><a name="wp2114063"> </a><div class="pCellBody"> Analog Position Demand Over Range </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114065"> </a><div class="pCellBody"> 12006 </div></td>
+    <td><a name="wp2114067"> </a><div class="pCellBody"> dCFARM </div></td>
+    <td><a name="wp2114069"> </a><div class="pCellBody"> SP(Position Demand) Communication Failure </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114071"> </a><div class="pCellBody"> 12007 </div></td>
+    <td><a name="wp2114073"> </a><div class="pCellBody"> dDARM </div></td>
+    <td><a name="wp2114075"> </a><div class="pCellBody"> SP(Position Demand) Redundant Tracking Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114077"> </a><div class="pCellBody"> 12008 </div></td>
+    <td><a name="wp2114079"> </a><div class="pCellBody"> dSPPVDARM </div></td>
+    <td><a name="wp2114081"> </a><div class="pCellBody"> PID SP/PV Tracking Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114083"> </a><div class="pCellBody"> 12009 </div></td>
+    <td><a name="wp2114085"> </a><div class="pCellBody"> dDevARM </div></td>
+    <td><a name="wp2114087"> </a><div class="pCellBody"> PV01/PV02 Deviation Alarm </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114189"> </a><div class="pCellBody"> 12021 </div></td>
+    <td><a name="wp2114191"> </a><div class="pCellBody"> dAPI1SD </div></td>
+    <td><a name="wp2114193"> </a><div class="pCellBody"> Analog Position Input 01 Open/Over Range </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114195"> </a><div class="pCellBody"> 12022 </div></td>
+    <td><a name="wp2114197"> </a><div class="pCellBody"> dAPI2SD </div></td>
+    <td><a name="wp2114199"> </a><div class="pCellBody"> Analog Position Input 01 Open/Over Range </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114201"> </a><div class="pCellBody"> 12023 </div></td>
+    <td><a name="wp2114203"> </a><div class="pCellBody"> dSPCOMSD </div></td>
+    <td><a name="wp2114205"> </a><div class="pCellBody"> SP Communication Shutdown </div></td>
+  </tr>
+  <!--
+  <tr align="left">    
+    <td><a name="wp2114207"> </a><div class="pCellBody"> 12024 </div></td>
+    <td><a name="wp2114209"> </a><div class="pCellBody"> dSPAISD </div></td>
+    <td><a name="wp2114211"> </a><div class="pCellBody"> Analog Position Demand AI Over Range </div></td>
+  </tr>
+  -->
+  <tr align="left">    
+    <td><a name="wp2114213"> </a><div class="pCellBody"> 12025 </div></td>
+    <td><a name="wp2114215"> </a><div class="pCellBody"> dSPPVSD </div></td>
+    <td><a name="wp2114217"> </a><div class="pCellBody"> PID SP/PV Tracking Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114219"> </a><div class="pCellBody"> 12026 </div></td>
+    <td><a name="wp2114221"> </a><div class="pCellBody"> dSPAICOMSD </div></td>
+    <td><a name="wp2114223"> </a><div class="pCellBody"> Position Demand Fault </div></td>
+  </tr>
+  <!--
+  <tr align="left">    
+    <td><a name="wp2114225"> </a><div class="pCellBody"> 12029 </div></td>
+    <td><a name="wp2114227"> </a><div class="pCellBody"> dAO3RB </div></td>
+    <td><a name="wp2114229"> </a><div class="pCellBody"> Position Monitor Output ReadBack Error </div></td>
+  </tr>
+  -->
+  <tr align="left">    
+    <td><a name="wp2114231"> </a><div class="pCellBody"> 12030 </div></td>
+    <td><a name="wp2114233"> </a><div class="pCellBody"> dPVSelChg </div></td>
+    <td><a name="wp2114235"> </a><div class="pCellBody"> PV Select Algorithm Changed </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114237"> </a><div class="pCellBody"> 12041 </div></td>
+    <td><a name="wp2114239"> </a><div class="pCellBody"> dAO1ARMOR </div></td>
+    <td><a name="wp2114241"> </a><div class="pCellBody"> Actuator 01 ReadBack Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114243"> </a><div class="pCellBody"> 12042 </div></td>
+    <td><a name="wp2114245"> </a><div class="pCellBody"> dAO2ARMOR </div></td>
+    <td><a name="wp2114247"> </a><div class="pCellBody"> Actuator 02 ReadBack Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114249"> </a><div class="pCellBody"> 12043 </div></td>
+    <td><a name="wp2114251"> </a><div class="pCellBody"> dAO3ARMOR </div></td>
+    <td><a name="wp2114253"> </a><div class="pCellBody"> Position Monitor Output ReadBack Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114255"> </a><div class="pCellBody"> 12044 </div></td>
+    <td><a name="wp2114257"> </a><div class="pCellBody"> dAO1Open </div></td>
+    <td><a name="wp2114259"> </a><div class="pCellBody"> Actuator 01 Open </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114261"> </a><div class="pCellBody"> 12045 </div></td>
+    <td><a name="wp2114263"> </a><div class="pCellBody"> dAO2Open </div></td>
+    <td><a name="wp2114265"> </a><div class="pCellBody"> Actuator 02 Open </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114267"> </a><div class="pCellBody"> 12046 </div></td>
+    <td><a name="wp2114269"> </a><div class="pCellBody"> dAO2Open </div></td>
+    <td><a name="wp2114271"> </a><div class="pCellBody"> Position Monitor Output Open </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114273"> </a><div class="pCellBody"> 12051 </div></td>
+    <td><a name="wp2114275"> </a><div class="pCellBody"> dEEPROMErr </div></td>
+    <td><a name="wp2114277"> </a><div class="pCellBody"> EEPROM Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114279"> </a><div class="pCellBody"> 12052 </div></td>
+    <td><a name="wp2114281"> </a><div class="pCellBody"> dAO1Err </div></td>
+    <td><a name="wp2114283"> </a><div class="pCellBody"> Actuator 01 Hardware Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114285"> </a><div class="pCellBody"> 12053 </div></td>
+    <td><a name="wp2114287"> </a><div class="pCellBody"> dAO2Err </div></td>
+    <td><a name="wp2114289"> </a><div class="pCellBody"> Actuator 02 Hardware Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114291"> </a><div class="pCellBody"> 12054 </div></td>
+    <td><a name="wp2114293"> </a><div class="pCellBody"> dAO3Err </div></td>
+    <td><a name="wp2114295"> </a><div class="pCellBody"> Position Monitor Output Hardware Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114297"> </a><div class="pCellBody"> 12055 </div></td>
+    <td><a name="wp2114299"> </a><div class="pCellBody"> dSysNoPar </div></td>
+    <td><a name="wp2114301"> </a><div class="pCellBody"> System No Parameters </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114303"> </a><div class="pCellBody"> 12061 </div></td>
+    <td><a name="wp2114305"> </a><div class="pCellBody"> dDO1V </div></td>
+    <td><a name="wp2114307"> </a><div class="pCellBody"> Alarm Output </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114309"> </a><div class="pCellBody"> 12062 </div></td>
+    <td><a name="wp2114311"> </a><div class="pCellBody"> dDO2V </div></td>
+    <td><a name="wp2114313"> </a><div class="pCellBody"> ShutDown Output </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2114315"> </a><div class="pCellBody"> 12063 </div></td>
+    <td><a name="wp2114317"> </a><div class="pCellBody"> dDO1ARMEO </div></td>
+    <td><a name="wp2114321"> </a><div class="pCellBody"> Alarm Relay ReadBack Error</div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114323"> </a><div class="pCellBody"> 12064 </div></td>
+    <td><a name="wp2114325"> </a><div class="pCellBody"> dDO2ARMEO </div></td>
+    <td><a name="wp2114327"> </a><div class="pCellBody"> ShutDown Relay ReadBack Error </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2114329"> </a><div class="pCellBody"> 12065 </div></td>
+    <td><a name="wp2114331"> </a><div class="pCellBody"> dCanRun </div></td>
+    <td><a name="wp2114333"> </a><div class="pCellBody"> Can not Run? </div></td>
+  </tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

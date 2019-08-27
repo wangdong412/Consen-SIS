@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>Modbus Bins</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Read_and_Write_Function_Codes.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Floating_Point_Reference_Bins.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161281"> </a><h3 class="pHeading2">
+Modbus Bins
+</h3>
+<hr />
+<a name="wp1161283"> </a><p class="pBody">
+The Modbus bins are divided into sections based on the data format as shown in this table.
+</p>
+<a name="wp1161373"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161286table1161284">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161286"> </a><div class="pCellHeading">
+Alias Range
+</div>
+</th>
+    <th><a name="wp1161288"> </a><div class="pCellHeading">
+Bin Type
+</div>
+</th>
+    <th><a name="wp1161290"> </a><div class="pCellHeading">
+Read/Write Status
+</div>
+</th>
+    <th><a name="wp1161292"> </a><div class="pCellHeading">
+Data Format
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161294"> </a><div class="pCellBody">
+00001-10000
+</div>
+</td>
+    <td><a name="wp1161296"> </a><div class="pCellBody">
+Digital
+</div>
+</td>
+    <td><a name="wp1161298"> </a><div class="pCellBody">
+Read/Write
+</div>
+</td>
+    <td><a name="wp1161300"> </a><div class="pCellBody">
+1-bit (Boolean)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161302"> </a><div class="pCellBody">
+10001-20000
+</div>
+</td>
+    <td><a name="wp1161304"> </a><div class="pCellBody">
+Digital
+</div>
+</td>
+    <td><a name="wp1161306"> </a><div class="pCellBody">
+Read-Only
+</div>
+</td>
+    <td><a name="wp1161308"> </a><div class="pCellBody">
+1-bit (Boolean)
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161310"> </a><div class="pCellBody">
+30001-35000
+</div>
+</td>
+    <td><a name="wp1161312"> </a><div class="pCellBody">
+Analog
+</div>
+</td>
+    <td><a name="wp1161314"> </a><div class="pCellBody">
+Read-Only
+</div>
+</td>
+    <td><a name="wp1161316"> </a><div class="pCellBody">
+16-bit Scaled Integer
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161326"> </a><div class="pCellBody">
+35001-40000
+</div>
+</td>
+    <td><a name="wp1161328"> </a><div class="pCellBody">
+Analog
+</div>
+</td>
+    <td><a name="wp1161330"> </a><div class="pCellBody">
+Read-Only
+</div>
+</td>
+    <td><a name="wp1161332"> </a><div class="pCellBody">
+32-bit Floating Point
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161342"> </a><div class="pCellBody">
+40001-42000
+</div>
+</td>
+    <td><a name="wp1161344"> </a><div class="pCellBody">
+Analog
+</div>
+</td>
+    <td><a name="wp1161346"> </a><div class="pCellBody">
+Read/Write
+</div>
+</td>
+    <td><a name="wp1161348"> </a><div class="pCellBody">
+16-bit Scaled Integer
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161358"> </a><div class="pCellBody">
+42001-50000
+</div>
+</td>
+    <td><a name="wp1161360"> </a><div class="pCellBody">
+Analog
+</div>
+</td>
+    <td><a name="wp1161362"> </a><div class="pCellBody">
+Read/Write
+</div>
+</td>
+    <td><a name="wp1161364"> </a><div class="pCellBody">
+32-bit Floating Point
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

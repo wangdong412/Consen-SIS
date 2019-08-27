@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:09:43" />
+    <title>Using Advanced Search Options</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="UsingHTMLHelp-Turning_Highlighting_On_and_Off.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="UsingHTMLHelp-Creating_a_List_of_Favorite_Topics.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1148353"> </a><h3 class="pHeading2">
+Using Advanced Search Options
+</h3>
+<hr />
+<a name="wp1148226"> </a><p class="pBody">
+You can further limit search results by using wildcard, Boolean and nested expressions. 
+</p>
+<a name="wp1147527"> </a><h5 class="pHeading5">
+Wildcard Expressions
+</h5>
+<a name="wp1148235"> </a><p class="pPopup">
+Wildcard expressions allow you to search for one or more characters using a question mark or asterisk. A question mark represents any single character. For example, a search for 80?86 will find topics containing 80186, 80286, 80386, and so on. An asterisk represents any number of characters. For example, a search for tri* will find topics containing Tri-Sen, TriStation, Tricon, and Trident.
+</p>
+<a name="wp1144075"> </a><h5 class="pHeading5">
+Boolean Expressions
+</h5>
+<a name="wp1148218"> </a><p class="pBody">
+To add Boolean expressions to your search, click the right-arrow button, next to the search entry field. The AND, OR, NOT, and NEAR operators enable you to precisely define your search by creating a relationship between search terms. This table shows how to use each of these operators. If no operator is specified, AND is used. 
+</p>
+<a name="wp1148065"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1148026table1148024">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1148026"> </a><div class="pCellHeading">
+Operator
+</div>
+</th>
+    <th><a name="wp1148028"> </a><div class="pCellHeading">
+Searches For
+</div>
+</th>
+    <th><a name="wp1148030"> </a><div class="pCellHeading">
+Example
+</div>
+</th>
+    <th><a name="wp1148032"> </a><div class="pCellHeading">
+Results
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1148034"> </a><div class="pCellBody">
+AND
+</div>
+</td>
+    <td><a name="wp1148036"> </a><div class="pCellBody">
+Both terms in the same topic
+</div>
+</td>
+    <td><a name="wp1148038"> </a><div class="pCellBody">
+control AND safety
+</div>
+</td>
+    <td><a name="wp1148040"> </a><div class="pCellBody">
+Topics containing both the words &quot;control&quot; and &quot;safety&quot;
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1148042"> </a><div class="pCellBody">
+OR
+</div>
+</td>
+    <td><a name="wp1148044"> </a><div class="pCellBody">
+Either term in a topic
+</div>
+</td>
+    <td><a name="wp1148046"> </a><div class="pCellBody">
+control OR safety
+</div>
+</td>
+    <td><a name="wp1148048"> </a><div class="pCellBody">
+Topics containing either the word &quot;control&quot; or the word &quot;safety&quot; or both
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1148050"> </a><div class="pCellBody">
+NEAR
+</div>
+</td>
+    <td><a name="wp1148052"> </a><div class="pCellBody">
+Terms close together in the same topic
+</div>
+</td>
+    <td><a name="wp1148054"> </a><div class="pCellBody">
+control NEAR safety
+</div>
+</td>
+    <td><a name="wp1148056"> </a><div class="pCellBody">
+Topics containing the word &quot;control&quot; within eight words of the word &quot;safety.&quot;
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1148058"> </a><div class="pCellBody">
+NOT
+</div>
+</td>
+    <td><a name="wp1148060"> </a><div class="pCellBody">
+The first term without the second term
+</div>
+</td>
+    <td><a name="wp1148062"> </a><div class="pCellBody">
+control NOT safety
+</div>
+</td>
+    <td><a name="wp1148064"> </a><div class="pCellBody">
+Topics containing the word &quot;control,&quot; but not the word &quot;safety.&quot;
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1148098"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>Note	</b>
+    </td>
+    <td>
+      The |, &amp;, and ! characters do not work as Boolean operators. You must use OR, AND, and NOT. 
+    </td>
+  </tr>
+</table>
+<a name="wp1144152"> </a><h5 class="pHeading5">
+Nested Expressions
+</h5>
+<a name="wp1148214"> </a><p class="pBody">
+Nested expressions allow you to create complex searches. For example, &quot;control AND ((active OR dde) NEAR window)&quot; finds topics containing the word &quot;control&quot; along with the words &quot;active&quot; and &quot;window&quot; close together, or containing &quot;control&quot; along with the words &quot;dde&quot; and &quot;window&quot; close together.
+</p>
+<a name="wp1144153"> </a><p class="pBody">
+The basic rules for using nested expressions are:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1144154"> </a><div class="pSmartList1"><li>You can use parentheses to nest expressions within a query. The expressions in parentheses are evaluated before the rest of the query. </li></div>
+<a name="wp1144155"> </a><div class="pSmartList1"><li>If a query does not contain a nested expression, it is evaluated from left to right. For example: &quot;Control NOT active OR dde&quot; finds topics containing the word &quot;control&quot; without the word &quot;active,&quot; or topics containing the word &quot;dde.&quot; On the other hand, &quot;control NOT (active OR dde)&quot; finds topics containing the word &quot;control&quot; without either of the words &quot;active&quot; or &quot;dde.&quot; </li></div>
+<a name="wp1144156"> </a><div class="pSmartList1"><li>You cannot nest expressions more than five levels deep. </li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

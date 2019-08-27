@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title> Control Logic </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="2_Control_Application_Fault_Logic.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="3_Installation-Installation.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159555"> </a><h2 class="pHeading1">
+Control Logic
+</h2>
+<hr />
+<a name="wp1159558"> </a><p class="pBody">
+This section describes the control logic and the standard function modules that operate in the servo card control application. The control logic consists of modular functions that perform the actual control calculations, such as collecting, analog output, and proportional integral derivative (PID) control. These functions are interconnected and build on one another's calculations to provide the AO1 and AO2 valve signals. The decision logic activates and selects the appropriate functions, depending on the configuration. This function module block diagram illustrates the interaction of the standard functions in a servo card controller application.
+</p>
+<a name="wp1159567"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Control_Logic.png" height="465" width="577" id="wp1159565" border="0" hspace="0" vspace="0"/>
+</p>
+<a name="wp1159580"> </a><p class="pBody"><b class="cBold">
+PV Algorithm
+</b></p>
+<p class="pBody">
+It has four modes: </br>
+HiSelect =Select higher value between AI01 and AI02, </br>
+AI01 Only= Select AI01;                              </br>
+AI02 Only=Select AI02;                               </br>
+(AI01+AI02)/2=Select average value                   </br>	
+</p>
+<a name="wp1159582"> </a><p class="pBody"><b class="cBold">
+SP Algorithm
+</b></p>
+<p class="pBody">
+The Position Demand Source has four modes. 
+</p>
+<p class="pBody">
+&#160;&#160;&#160;&#160; <b class="cBold">Communication Only  </b></br>
+&#160;&#160;&#160;&#160; 0: The DSC100 Position Demand is received via the Modbus Network. </br>
+&#160;&#160;&#160;&#160; <b class="cBold">Communication Primary  </b></br>
+&#160;&#160;&#160;&#160; 1: The DSC100 position demand is received via the Modbus Serial Port or Network. The Analog Demand is used as backup. </br>
+&#160;&#160;&#160;&#160; <b class="cBold">Analog Only   </b></br>                                      
+&#160;&#160;&#160;&#160; 2: The DSC100 position demand is received on the Analog Demand Input.                              </br>
+&#160;&#160;&#160;&#160; <b class="cBold">Analog Primary   </b></br> 
+&#160;&#160;&#160;&#160; 3: The DSC100 position demand is received on the Analog Demand Input and uses the Modbus Serial Port or Network as the backup.     </br>	
+</p>
+
+
+<a name="wp1159700"> </a><p class="pBody"><b class="cBold">
+Scale Alogrithm
+</b></p>
+<p class="pBody">
+&#160;&#160;&#160;&#160; This logic scales the position demand input current to the actuator control output current based on the input range and output range. In this mode (Open Loop), DSC100 can be as a current amplifier.
+</p>
+
+
+<a name="wp1159584"> </a><p class="pBody"><b class="cBold">
+PID Algorithm
+</b></p>
+<p class="pBody">
+&#160;&#160;&#160;&#160; The PID function is a standard PID controller, which is always enabled.The null current is PID output offset item. According to deviation between SP and PV, PID controller uses two sets of tune parameters. Usually, when the deviation is greater than the Tuning Error Threshold, the PID action should be slow response, otherwise the PID action shoud be quick response.
+</p>
+
+
+
+<a name="wp1159702"> </a><p class="pBody"><b class="cBold">
+Current Balance Control
+</b></p>
+<p class="pBody">
+&#160;&#160;&#160;&#160; Current Balance Control logic is built into PID algorithm. When the deviation between SP and PV is lower than Stability Deadband, the PID integral item begins to adjust to 0.0 as the Balance Step value.
+&#160;&#160;&#160;&#160; This function is used in redundant DSC100s application, Two or Three DSC100s actuate dual or triplex winding coil actuator.For each DSC100, the null current should be equal to the actual stable current. This fucntion can guarantee the minimum disturbance when one or two winding loop is failure. 
+</p>
+
+
+<a name="wp1159704"> </a><p class="pBody"><b class="cBold">
+Current Average Control
+</b></p>
+<p class="pBody">
+&#160;&#160;&#160;&#160; When AO01 and AO02 work in current average mode, the caculated control current will be shared equally by the two AO channels. The healthy AO will fully take the load when one of AO channels is failure (fault or open). The two AO channels can be seem as redundant ones.
+&#160;&#160;&#160;&#160; This function is used in a simplex DSC100 controlling two-coil actuator application. The fucntion can guarantee the minimum disturbance when one winding loop is failure.
+</p>
+
+
+
+<a name="wp1159586"> </a><p class="pBody"><b class="cBold">
+DO
+</b></p>
+<p class="pBody">
+	 &#160;&#160;&#160;&#160; Alarm Output = indicates a common alarm state, meaning at least one of the alarm conditions may be active.</br>
+         &#160;&#160;&#160;&#160; ShutDown Output= indicates that the servo card controller has stopped. When DSC100 is in shutdown mode, the control ouput current is Shutdown Current supposed that the AO loop is OK.
+</p>
+
+<a name="wp1159588"> </a><p class="pBody"><b class="cBold">
+AO
+</b></p>
+<p class="pBody">
+	 &#160;&#160;&#160;&#160; They are Actuator 01, Actuator 02 and Position Monitor.
+</p>
+
+<a name="wp1159588"> </a><p class="pBody"><b class="cBold">
+DI
+</b></p>
+<p class="pBody">
+         &#160;&#160;&#160;&#160; Reset Input = reset the digital output indicating a shutdown condition. Also resets any latched switches. </br>
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 Hardware: Short on RS+ and RS- of terminal; </br>
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 Communication software: Modbus address 2083, give a high pluse; </br>
+         &#160;&#160;&#160;&#160; Servo card Shutdown Input = initiates a controlled normal stop of the controller. </br>
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1 Hardware: short on SDI+ and SDI- of terminal; </br>
+         &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 Communication software: Modbus address 2086, give a high pluse.
+</p>
+
+<a name="wp1159600"> </a><p class="pBody"><b class="cBold">
+Communication process
+</b></p>
+<p class="pBody">
+The module function is mainly responsible for data communication based on Modbus TCP and Modbus RTU protocol. So, while the servo card controller is connected to the PC, you can view real-time run data by using the DCS100 Configurator.
+</p>
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

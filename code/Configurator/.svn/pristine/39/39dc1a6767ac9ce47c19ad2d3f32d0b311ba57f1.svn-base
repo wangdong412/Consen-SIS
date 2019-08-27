@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>Modbus Aliases in Generator Applications</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Recording_Real-Time_Data.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Modbus_Implementation.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1160116"> </a><h2 class="pTitle">
+Modbus Aliases
+</h2>
+<hr />
+<a name="wp1161070"> </a><p class="pBody">
+Most DSC100 controller program variables are stored in Modbus aliases so they can be accessed outside the controller using industry-standard Modbus protocol. This section contains a description of the Modbus implementation in the DSC100 controller and tables that list the aliases of all available tags in the DSC100 controller. 
+</p>
+<a name="wp1161073"> </a><p class="pBody">
+A complete Modbus manual is available from Modicon at: 
+</p>
+<a name="wp1161075"> </a><p class="pBody">
+<span style="font-family: Verdana, Arial, Helvetica, sans-seri"><a href="http://www.modicon.com" target="_window">http://www.modicon.com</a></span>
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Configurator", "Configurator\Configurator.vcxproj", "{0FD416DA-6BD9-4535-A7C7-9BCC47A3E93D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Configurator_Chs", "Configurator_Chs\Configurator_Chs.vcxproj", "{12AF48C4-E3D0-4C5D-9DDB-F40A6B22F3BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FD416DA-6BD9-4535-A7C7-9BCC47A3E93D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FD416DA-6BD9-4535-A7C7-9BCC47A3E93D}.Debug|Win32.Build.0 = Debug|Win32
+		{0FD416DA-6BD9-4535-A7C7-9BCC47A3E93D}.Release|Win32.ActiveCfg = Release|Win32
+		{0FD416DA-6BD9-4535-A7C7-9BCC47A3E93D}.Release|Win32.Build.0 = Release|Win32
+		{12AF48C4-E3D0-4C5D-9DDB-F40A6B22F3BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{12AF48C4-E3D0-4C5D-9DDB-F40A6B22F3BF}.Debug|Win32.Build.0 = Debug|Win32
+		{12AF48C4-E3D0-4C5D-9DDB-F40A6B22F3BF}.Release|Win32.ActiveCfg = Release|Win32
+		{12AF48C4-E3D0-4C5D-9DDB-F40A6B22F3BF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

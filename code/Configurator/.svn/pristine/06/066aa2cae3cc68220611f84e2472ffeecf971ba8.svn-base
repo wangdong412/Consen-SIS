@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>文件(File)菜单 </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Menus_and_Commands.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Device_Menu.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161312"> </a><h3 class="pHeading2">
+文件(File)菜单</h3>
+<hr />
+<a name="wp1161314"> </a><p class="pBody">
+文件(File)菜单包含如下命令：</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161315"> </a><div class="pSmartList1"><li>新建(New) </li></div>
+<a name="wp1161316"> </a><div class="pSmartList1"><li>打开(Open)</li></div>
+<a name="wp1161317"> </a><div class="pSmartList1"><li>保存(Save) </li></div>
+<a name="wp1161318"> </a><div class="pSmartList1"><li>另存为(Save As…) </li></div>
+<a name="wp1161319"> </a><div class="pSmartList1"><li>打印(Print)</li></div>
+<a name="wp1161320"> </a><div class="pSmartList1"><li>打印预览(Print Preview)</li></div>
+<a name="wp1161321"> </a><div class="pSmartList1"><li>打印设置(Print Setup) </li></div>
+<a name="wp1161322"> </a><div class="pSmartList1"><li>最近文件列表(Recent files list)</li></div>
+<a name="wp1161323"> </a><div class="pSmartList1"><li>退出(Exit)</li></div>
+</ul></div>
+<a name="wp1161325"> </a><h5 class="pBody"><bold>
+新建(New)命令
+</bold></h5>
+<a name="wp1161326"> </a><p class="pBody">
+新建(New)命令首先关闭当前文件，然后创建一个新的文件 - 文件中的参数初始化为默认值。如果当前文件中存在未保存的数据，DSC100 Configurator 会弹出保存文件警示框。</p>
+<a name="wp1161327"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>注意</b>
+    </td>
+    <td>
+      每次只能打开一个文件。
+    </td>
+  </tr>
+</table>
+
+<a name="wp1161329"> </a><h5 class="pBody"><bold>
+打开(Open)命令
+</bold></h5>
+<a name="wp1161330"> </a><p class="pBody">
+打开(Open)命令首先关闭当前文件，然后选择打开一个已存在的文件。如果当前文件中存在未保存的数据，DSC100 Configurator 会弹出保存文件警示框。</p>
+
+<a name="wp1161332"> </a><h5 class="pBody"><bold>
+保存(Save)命令
+</bold></h5>
+<a name="wp1161333"> </a><p class="pBody">
+保存(Save)命令保存当前文件。如果当前文件没有被保存过，DSC100 Configurator 会弹出Save As对话框，用于指定文件名和保存路径。</p>
+
+<a name="wp1161335"> </a><h5 class="pBody"><bold>
+另存为(Save As)命令
+</bold></h5>
+<a name="wp1161336"> </a><p class="pBody">
+用于重新命名当前文件，并保存到指定的路径。</p>
+<a name="wp1161337"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>注意	</b>
+    </td>
+    <td>
+默认的保存路径为软件的安装路径。典型安装路径为：C:\Program Files\Tri-Sen\DSC100。    </td>
+  </tr>
+</table>
+
+<a name="wp1161339"> </a><h5 class="pBody"><bold>
+打印(Print)命令 
+</bold></h5>
+<a name="wp1161340"> </a><p class="pBody">
+用于打印配置(Configuration)视图中的参。</p>
+<a name="wp1172896"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>注意	</b>
+    </td>
+    <td>
+	打印视图中列的宽度与配置(Configuration)视图中列的宽度成正比。    </td>
+  </tr>
+</table>
+
+<a name="wp1161342"> </a><h5 class="pBody"><bold>
+打印预览(Print Preview)命令 
+</bold></h5>
+<a name="wp1161343"> </a><p class="pBody">
+用于预览打印内容。</p>
+
+<a name="wp1161345"> </a><h5 class="pBody"><bold>
+打印设置(Print Setup)命令</bold></h5>
+<a name="wp1161346"> </a><p class="pBody">
+用于设置打印机。</p>
+
+<a name="wp1161348"> </a><h5 class="pBody"><bold>
+最近文件列表(Recent Files)命令 </bold></h5>
+<a name="wp1161349"> </a><p class="pBody">
+通过此命令可打开最近打开过的文件。 </p>
+
+<a name="wp1161351"> </a><h5 class="pBody"><bold>
+退出(Exit)命令 </bold></h5>
+<a name="wp1161352"> </a><p class="pBody">
+用于关闭DSC100 Configurator 及当前文件。如果当前文件中存在未保存的数据，DSC100 Configurator 会弹出保存文件警示框。</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Trending (Graphing) Real-Time Data</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Real-Time_Actuator_Data.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Recording_Real-Time_Data.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1167209"> </a><h3 class="pHeading2">
+Trending (Graphing) Real-Time Data
+</h3>
+<hr />
+<a name="wp1167212"> </a><p class="pBody">
+This procedure explains how to trend (graph) real-time actuator data from the controller. You can select up to eight properties to trend and assign each of them a different trend-line color. By default, percent of Analog Position Input 01, SP( Position Demand ) and Actuator 01 are selected to trend.
+</p>
+<a name="wp1167213"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1167214"> </a><div class="pSmartList1"><li>On the View menu, click Trend. The Trend view appears.</li></div>
+<a name="wp1167215"> </a><div class="pSmartList1"><li>In the left pane, right-click a property you want to trend. A shortcut menu appears.</li></div>
+<a name="wp1167216"> </a><div class="pSmartList1"><li>On the shortcut menu, click a color to use for the trace line, and then click right axis or left axis to choose the scale the trend line uses.</li></div>
+<a name="wp1167217"> </a><table cellspacing="6" class="plistNote">
+  <tr valign="top">
+    <td>
+      <b>Note	</b>
+    </td>
+    <td>
+      Assign to the left y-axis properties whose values have a range between 0 and 100. Assign to the right y-axis properties whose values have a range greater than 0 to 100.
+    </td>
+  </tr>
+</table>
+<a name="wp1167218"> </a><div class="pSmartList1"><li>Repeat steps 2 and 3 for other properties you want to trend. You can trend a total of eight properties.</li></div>
+<a name="wp1167219"> </a><div class="pSmartList1"><li>If the DSC100 Configurator is not connected to the controller, click the Device menu and then click Connect.</li></div>
+<a name="wp1167220"> </a><div class="pSmartList1"><li>On the Monitor menu, click Start Monitoring. Trend lines appear for the properties you selected. The scale on the left axis automatically adjusts to accommodate the values of the properties assigned to it.</li></div>
+</ol></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

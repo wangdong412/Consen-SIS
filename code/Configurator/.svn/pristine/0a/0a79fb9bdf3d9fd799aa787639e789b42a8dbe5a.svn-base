@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:17" />
+    <title>硬件安装</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="3_Installation-Installation.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="3_Installation-Controller_Installation_and_Remove.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159814"> </a><h2 class="pHeading1">
+硬件安装
+</h2>
+<hr />
+<a name="wp1160815"> </a><p class="pBody">
+本节解释如何对DSC100安装、拆卸、设置和接线。
+</p>
+
+
+<a name="wp1160017"> </a><p class="pBody">
+主要内容: 
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1160022"> </a><div class="pSmartList1"><li><a href="3_Installation-Controller_Installation_and_Remove.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  DSC100 模块的安装与拆卸 </span></a></li></div>
+<a name="wp1160042"> </a><div class="pSmartList1"><li><a href="3_Installation-Terminal_Module.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  DSC100 底座的安装与拆卸 </span></a></li></div>
+<a name="wp1167986"> </a><div class="pSmartList1"><li><a href="3_Installation-Jumper_Settings.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  DSC100 跳线设置  </span></a></li></div>
+<a name="wp1168009"> </a><div class="pSmartList1"><li><a href="3_Installation-Station_IP_Baud.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  DSC100 伺服控制器IP地址和波特率设置 </span></a></li></div>
+<a name="wp1168030"> </a><div class="pSmartList1"><li><a href="3_Installation-Connection_Definition.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri"> DSC100接线端子  </span></a></li></div>
+<a name="wp1168051"> </a><div class="pSmartList1"><li><a href="3_Installation-LVDT_Connection_Method.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">三线、四线、五线及六线的LVDT接线方法 </span></a></li></div>
+<a name="wp1168064"> </a><div class="pSmartList1"><li><a href="3_Installation-Ethernet_connection.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  MODBUS (TCP/IP) 以太网连接定义  </span></a></li></div>
+<a name="wp1168077"> </a><div class="pSmartList1"><li><a href="3_Installation-Redundancy_Power_Input_Definition.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">24VDC 冗余电源输入  </span></a></li></div>
+<a name="wp1168093"> </a><div class="pSmartList1"><li><a href="3_Installation-Modbus_Connection_Definition.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">  MODBUS/RTU RS485接线定义 </span></a></li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

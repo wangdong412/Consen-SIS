@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:09:43" />
+    <title>Using the Contents Tree</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="UsingHTMLHelp-The_Help_Window.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="UsingHTMLHelp-Finding_Help_Topics.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1149469"> </a><h2 class="pHeading1">
+Using the Contents Tree
+</h2>
+<hr />
+<a name="wp1152468"> </a><p class="pBody">
+The tree on the Contents tab is similar to a printed book&#39;s table of contents. It lists the titles of all topics in the Help system, organized into a hierarchy of topics and subtopics. To display a topic, click on its name in the tree. 
+</p>
+<a name="wp1152501"> </a><p class="pBody">
+If a topic contains subtopics, it is represented by a book-shaped icon (<img src="images/help-BookIcon.gif" id="wp1151282" border="0" hspace="0" vspace="0"/>). To expand the topic, click the small plus sign to the left of the icon or double-click the topic name. To collapse it again, click the minus sign. You can also expand or collapse all topics and subtopics by right-clicking anywhere inside the Contents tab and then clicking Open all or Close all.
+</p>
+<a name="wp1152519"> </a><p class="pBody">
+The Contents tree is automatically synchronized with the topic you are viewing so you always know where you are in the &quot;big picture.&quot; For example, if you display a topic by doing a search on the Search tab and then return to the Contents tab, the tree will be expanded to the topic and the title will be selected.
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

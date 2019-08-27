@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>模拟32-位浮点读/写地址</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_ReadWrite_Aliases.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="D_Specifications-Specifications.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp2124676"> </a><h3 class="pHeading2">
+模拟32-位浮点读/写地址
+</h3>
+<hr />
+<a name="wp2124677"> </a><p class="pBody">
+下表描述模拟32-位浮点读/写地址：</p>
+<a name="wp2126284"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp2124683table2124678">
+  <caption><a name="wp2124683"> </a><div class="pTableTitle">
+模拟32-位浮点读/写地址</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp2124689"> </a><div class="pCellHeading">
+Modbus地址
+</div>
+</th>
+    <th><a name="wp2124691"> </a><div class="pCellHeading">
+标签名
+</div>
+</th>
+    <th><a name="wp2124693"> </a><div class="pCellHeading">
+描述
+</div>
+</th>
+</tr>
+  <tr align="left">    
+    <td><a name="wp2124695"> </a><div class="pCellBody"> 42001 </div></td>
+    <td><a name="wp2124697"> </a><div class="pCellBody"> kPID1RES </div></td>
+    <td><a name="wp2124699"> </a><div class="pCellBody"> PID1 Reset </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124701"> </a><div class="pCellBody"> 42003 </div></td>
+    <td><a name="wp2124703"> </a><div class="pCellBody"> kPID1RATE </div></td>
+    <td><a name="wp2124705"> </a><div class="pCellBody"> PID1 Rate </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124707"> </a><div class="pCellBody"> 42005 </div></td>
+    <td><a name="wp2124709"> </a><div class="pCellBody"> kPID1PB </div></td>
+    <td><a name="wp2124711"> </a><div class="pCellBody"> PID1 Proportional Band </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124713"> </a><div class="pCellBody"> 42007 </div></td>
+    <td><a name="wp2124715"> </a><div class="pCellBody"> kPID2RES </div></td>
+    <td><a name="wp2124717"> </a><div class="pCellBody"> PID2 Reset </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124719"> </a><div class="pCellBody"> 42009 </div></td>
+    <td><a name="wp2124721"> </a><div class="pCellBody"> kPID2RATE </div></td>
+    <td><a name="wp2124723"> </a><div class="pCellBody"> PID2 Rate </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124725"> </a><div class="pCellBody"> 42011 </div></td>
+    <td><a name="wp2124727"> </a><div class="pCellBody"> kPID2PB </div></td>
+    <td><a name="wp2124729"> </a><div class="pCellBody"> PID2 Proportional Band </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124731"> </a><div class="pCellBody"> 42013 </div></td>
+    <td><a name="wp2124733"> </a><div class="pCellBody"> kPIDMINP </div></td>
+    <td><a name="wp2124735"> </a><div class="pCellBody"> PID Minimum Output </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124737"> </a><div class="pCellBody"> 42015 </div></td>
+    <td><a name="wp2124739"> </a><div class="pCellBody"> kPIDMAXP </div></td>
+    <td><a name="wp2124741"> </a><div class="pCellBody"> PID Maximum Output </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124743"> </a><div class="pCellBody"> 42017 </div></td>
+    <td><a name="wp2124745"> </a><div class="pCellBody"> kPIDErrT </div></td>
+    <td><a name="wp2124747"> </a><div class="pCellBody"> Error Threshold </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124749"> </a><div class="pCellBody"> 42031</div></td>
+    <td><a name="wp2124751"> </a><div class="pCellBody"> kPD </div></td>
+    <td><a name="wp2124753"> </a><div class="pCellBody"> Dither Current Amplitude </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124749"> </a><div class="pCellBody"> 42033</div></td>
+    <td><a name="wp2124751"> </a><div class="pCellBody"> kSPDBS	</div></td>
+    <td><a name="wp2124753"> </a><div class="pCellBody"> SP Demand Active Threshold </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124755"> </a><div class="pCellBody"> 42041 </div></td>
+    <td><a name="wp2124757"> </a><div class="pCellBody"> kDEV_TS </div></td>
+    <td><a name="wp2124759"> </a><div class="pCellBody"> Error Threshold </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125025"> </a><div class="pCellBody"> 42043 </div></td>
+    <td><a name="wp2125027"> </a><div class="pCellBody"> kAI_APDMIN </div></td>
+    <td><a name="wp2125029"> </a><div class="pCellBody"> Minimum Current (Analog Position Demand) </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125031"> </a><div class="pCellBody"> 42045 </div></td>
+    <td><a name="wp2125033"> </a><div class="pCellBody"> kAI_APDMAX </div></td>
+    <td><a name="wp2125035"> </a><div class="pCellBody"> Maximum Current (Analog Position Demand) </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42047 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kPF </div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> Dither Frequency </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42049		</div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kStaDB	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> Stability Deadband </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42051 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kCBStep	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> Current Balance Step </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42053 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kAI01Min	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> AI01 Minimum Position Voltage </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42055 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kAI01Max	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> AI01 Maximum Position Voltage </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42057 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kAI02Min	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> AI02 Minimum Position Voltage </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2125037"> </a><div class="pCellBody"> 42059 </div></td>
+    <td><a name="wp2125039"> </a><div class="pCellBody"> kAI02Max	</div></td>
+    <td><a name="wp2125041"> </a><div class="pCellBody"> AI02 Maximum Position Voltage </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124761"> </a><div class="pCellBody"> 42101 </div></td>
+    <td><a name="wp2124763"> </a><div class="pCellBody"> kAlmRD </div></td>
+    <td><a name="wp2124765"> </a><div class="pCellBody"> Readback Alarm Threshold </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124773"> </a><div class="pCellBody"> 42105 </div></td>
+    <td><a name="wp2124775"> </a><div class="pCellBody"> kAPI1R </div></td>
+    <td><a name="wp2124777"> </a><div class="pCellBody"> Over Range Threshold AI01 </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124779"> </a><div class="pCellBody"> 42107 </div></td>
+    <td><a name="wp2124781"> </a><div class="pCellBody"> kSDCurrent </div></td>
+    <td><a name="wp2124783"> </a><div class="pCellBody"> ShutDown Current </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124791"> </a><div class="pCellBody"> 42111 </div></td>
+    <td><a name="wp2124793"> </a><div class="pCellBody"> kAPI2R </div></td>
+    <td><a name="wp2124795"> </a><div class="pCellBody"> Over Range Threshold AI02 </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124809"> </a><div class="pCellBody"> 42117 </div></td>
+    <td><a name="wp2124811"> </a><div class="pCellBody"> kAI_SPET </div></td>
+    <td><a name="wp2124813"> </a><div class="pCellBody"> SP Redundant Tracking Error Threshold </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124815"> </a><div class="pCellBody"> 42121 </div></td>
+    <td><a name="wp2124817"> </a><div class="pCellBody"> kAPDAIORT </div></td>
+    <td><a name="wp2124819"> </a><div class="pCellBody"> Over Range Threshold (Analog Position Demand) </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124901"> </a><div class="pCellBody"> 42123 </div></td>
+    <td><a name="wp2124903"> </a><div class="pCellBody"> kDemand </div></td>
+    <td><a name="wp2124905"> </a><div class="pCellBody"> Demand (%)  </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124907"> </a><div class="pCellBody"> 42125     </div></td>
+    <td><a name="wp2124909"> </a><div class="pCellBody"> kDEVARMSP </div></td>
+    <td><a name="wp2124911"> </a><div class="pCellBody"> Deviation Alarm Setpoint  </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124821"> </a><div class="pCellBody"> 42145 </div></td>
+    <td><a name="wp2124823"> </a><div class="pCellBody"> kAO3RB </div></td>
+    <td><a name="wp2124825"> </a><div class="pCellBody"> Readback ThreShold Position Monitor </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2124839"> </a><div class="pCellBody"> 42147 </div></td>
+    <td><a name="wp2124841"> </a><div class="pCellBody"> kAO1MIN </div></td>
+    <td><a name="wp2124843"> </a><div class="pCellBody"> Actuator Min Current </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124845"> </a><div class="pCellBody"> 42149 </div></td>
+    <td><a name="wp2124847"> </a><div class="pCellBody"> kBKPRES </div></td>
+    <td><a name="wp2124849"> </a><div class="pCellBody"> Actuator Max Current </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124863"> </a><div class="pCellBody"> 42155 </div></td>
+    <td><a name="wp2124865"> </a><div class="pCellBody"> kAO3MIN </div></td>
+    <td><a name="wp2124867"> </a><div class="pCellBody"> Min Current Position Monitor </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp2124869"> </a><div class="pCellBody"> 42157 </div></td>
+    <td><a name="wp2124871"> </a><div class="pCellBody"> kAO3MAX </div></td>
+    <td><a name="wp2124873"> </a><div class="pCellBody"> Max Current Position Monitor </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2124869"> </a><div class="pCellBody"> 42159 </div></td>
+    <td><a name="wp2124871"> </a><div class="pCellBody"> kAONULL1 </div></td>
+    <td><a name="wp2124873"> </a><div class="pCellBody"> Actuator Null Current 01 </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2124875"> </a><div class="pCellBody"> 42161 </div></td>
+    <td><a name="wp2124877"> </a><div class="pCellBody"> kNull1 </div></td>
+    <td><a name="wp2124879"> </a><div class="pCellBody"> Null Current Offset Actuator 01/02 </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2124875"> </a><div class="pCellBody"> 42163 </div></td>
+    <td><a name="wp2124877"> </a><div class="pCellBody"> kAONULL2	</div></td>
+    <td><a name="wp2124879"> </a><div class="pCellBody"> Actuator Null Current 02 </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp2124875"> </a><div class="pCellBody"> 42165          </div></td>
+    <td><a name="wp2124877"> </a><div class="pCellBody"> kAONULL12	</div></td>
+    <td><a name="wp2124879"> </a><div class="pCellBody"> AO01/02 Null Current </div></td>
+  </tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1493581"> </a><p class="pBody">
+
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>Digital Output Properties</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Digital_Input_Properties.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Control_Control_Period.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1404101"> </a><h3 class="pHeading2">
+Digital Output Properties
+</h3>
+<hr />
+<a name="wp1404102"> </a><p class="pBody">
+This table describes the properties you can configure for the digital outputs.
+</p>
+
+
+<a name="wp1404160"> </a>
+<p class="pBodyRelative"></p>
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1404108table1404103">
+  <caption><a name="wp1404108"> </a><div class="pTableTitle">
+Digital Output Properties&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1404112"> </a><div class="pCellHeading">
+Property
+</div>
+</th>
+    <th><a name="wp1404114"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+<tr align="left">    
+  	<td><a name="wp1404116"> </a><div class="pCellBody"><b class="cBold">  Alarm Relay Output  </b></div></td>
+  	<td><a name="wp1404118"> </a><div class="pCellBody">  &#160                       </div></td>
+  </tr>
+  <tr align="left">
+  	<td><a name="wp1404120"> </a><div class="pCellBody">  Alarm Output Latch                     </div></td>
+  	<td><a name="wp1404122"> </a><div class="pCellBody">  No Latch[0] = the alarm will not be latched when the faults happens.           </div>
+  		  <a name="wp1404124"> </a><div class="pCellBody">  Latch[1] = the alarm will be latched when the faults happens.          </div></td>
+  </tr>
+</table>
+</div>
+
+
+<p class="pBodyRelative">
+</p>
+
+
+
+<!--
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1404108table1404103">
+  <caption><a name="wp1404108"> </a><div class="pTableTitle">
+Digital Output Properties&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1404112"> </a><div class="pCellHeading">
+Property
+</div>
+</th>
+    <th><a name="wp1404114"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1404116"> </a><div class="pCellBody">
+Assignment
+</div>
+</td>
+    <td><a name="wp1404118"> </a><div class="pCellBody">
+Not Used [0] = the <span style="font-family: Verdana, Arial, Helvetica, sans-seri">controller </span>does not use the digital signal in the control application.
+</div>
+<a name="wp1404119"> </a><div class="pCellBody">
+Trip Output #1 (Level) [1] = indicates that the turbine has tripped. The output is latched until Alarm Ack is pressed. Digital outputs can be used to trip the turbine if they are configured and wired to the trip circuit.
+</div>
+<a name="wp1404120"> </a><div class="pCellBody">
+Pickup Fail Alarm [2] = indicates at least one pickup signal has failed.
+</div>
+<a name="wp1404121"> </a><div class="pCellBody">
+Nozzle Output #1 [3] = activates nozzle valve number 1.
+</div>
+<a name="wp1404122"> </a><div class="pCellBody">
+Nozzle Output #2 [4] = activates nozzle valve number 2.
+</div>
+<a name="wp1404123"> </a><div class="pCellBody">
+Nozzle Output #3 [5] = activates nozzle valve number 3.
+</div>
+<a name="wp1404124"> </a><div class="pCellBody">
+Close Generator Breaker [6] = signal from the synchronizing logic to close the generator breaker when synch conditions have been met. Also, closes the breaker if there is a dead bus condition.
+</div>
+<a name="wp1404125"> </a><div class="pCellBody">
+Speed Switch #1 [7] = indicates speed switch number 1 is active.
+</div>
+<a name="wp1404126"> </a><div class="pCellBody">
+Speed Switch #2 [8] = indicates speed switch number 2 is active.
+</div>
+<a name="wp1404127"> </a><div class="pCellBody">
+Valve Limited [9] = indicates the control is limited due to the valve minimum or maximum positions.
+</div>
+<a name="wp1404128"> </a><div class="pCellBody">
+V1 Limited [10] = indicates whether the calculated V1 output has exceeded a high or low limit.
+</div>
+<a name="wp1404129"> </a><div class="pCellBody">
+V2 Limited [11] = indicates whether the calculated V2 output has exceeded a high or low limit.
+</div>
+<a name="wp1404130"> </a><div class="pCellBody">
+Alarm Output (Level) [12] = indicates a common alarm state, meaning at least one of the alarm conditions may be active.
+</div>
+<a name="wp1404131"> </a><div class="pCellBody">
+Trip Output #2 (Pulsed) [13] = indicates that the turbine has tripped. The output is pulsed for three seconds. Digital outputs can be used to trip the turbine if they are configured and wired to the trip circuit.
+</div>
+<a name="wp1404132"> </a><div class="pCellBody">
+Synchronizing [14] = indicates whether the generator is synchronizing with the grid.
+</div>
+<a name="wp1404133"> </a><div class="pCellBody">
+Generator Breaker Closed Status [15] = indicates whether the generator breaker is closed.
+</div>
+<a name="wp1404134"> </a><div class="pCellBody">
+Utility Breaker Closed Status [16] = indicates whether the utility breaker is closed.
+</div>
+<a name="wp1404135"> </a><div class="pCellBody">
+Cascade Enabled [17] = indicates the turbine is controlled by the local process setpoint.
+</div>
+<a name="wp1404136"> </a><div class="pCellBody">
+Overspeed Trip [18] = indicates the turbine tripped due to an overspeed condition.
+</div>
+<a name="wp1404137"> </a><div class="pCellBody">
+Overspeed Test Enabled [19] = indicates the turbine is in overspeed test mode, allowing the turbine to exceed the minimum governor speed and allow the setpoint to be raised to the specified overspeed test speed.
+</div>
+<a name="wp1404138"> </a><div class="pCellBody">
+External Trip [20] = indicates the turbine tripped due to an external digital input signal.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>&#160;</td>
+    <td><a name="wp1404142"> </a><div class="pCellBody">
+Load Limited [21] = indicates if the load limit block is actively limiting the controller output.
+</div>
+<a name="wp1404143"> </a><div class="pCellBody">
+Machine Running [22] = indicates the startup sequence is in any mode above Turbine Shutdown.
+</div>
+<a name="wp1404144"> </a><div class="pCellBody">
+Extraction / Induction Active [23] = indicates whether or not the extraction controller is active.
+</div>
+<a name="wp1404145"> </a><div class="pCellBody">
+Extraction Limited [24] = TRUE if the extraction demand has exceeded a high or low limit.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>&#160;</td>
+    <td><a name="wp1404149"> </a><div class="pCellBody">
+Close Field Breaker [25] = activates for three seconds when the speed exceeds the field breaker close speed.
+</div>
+<a name="wp1404150"> </a><div class="pCellBody">
+Open Field Breaker [26] = activates for three seconds when the speed falls below the Field Breaker Open Speed.
+</div>
+<a name="wp1404151"> </a><div class="pCellBody">
+Flash the Field [27] = activates for a configurable time when the speed has exceeded the flash speed.
+</div>
+<a name="wp1404152"> </a><div class="pCellBody">
+Open Generator Breaker [28] = The signal is ON if in Normal Stop mode the megawatts drop below the Minimum Setpoint specified in the Generator Drive Megawatt General properties, or if the turbine trips while the breaker is closed. The signal stays ON until the breaker opens.
+</div>
+<a name="wp1404153"> </a><div class="pCellBody">
+Sequence Halted [29] = indicates the startup sequence is halted.
+</div>
+<a name="wp1404154"> </a><div class="pCellBody">
+Custom Digital Output [99] = If the <span style="font-family: Verdana, Arial, Helvetica, sans-seri">controller </span>has a custom program, the output comes from the custom program. Note: Custom programming may be offered in a future release of the DSC100 <span style="font-family: Verdana, Arial, Helvetica, sans-seri">controller</span>.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1404156"> </a><div class="pCellBody">
+Shelf State
+</div>
+</td>
+    <td><a name="wp1404158"> </a><div class="pCellBody">
+Normally Open [0] = the output is off when the condition is False.
+</div>
+<a name="wp1404159"> </a><div class="pCellBody">
+Normally Closed [1] = the output is on when the condition is False.
+</div>
+</td>
+</tr>
+</table>
+</div>
+-->
+
+
+
+
+<p class="HTMLHelpRelatedTopic"><object
+  id=candomble
+  type="application/x-oleobject"
+  classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+  width=100
+  height=100
+ >
+  <param name="Command" value="Related Topics, MENU">
+  <param name="Button" value="Text:Related Topics">
+  <param name="Item1" value="Specifying Configuration Properties ;4_Configuration-Specifying_Configuration_Properties.html#wp1212206;4_Configuration-Specifying_Configuration_Properties.html#wp1212206">
+ </object></p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

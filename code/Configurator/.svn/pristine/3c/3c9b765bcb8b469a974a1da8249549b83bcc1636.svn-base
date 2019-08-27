@@ -1,0 +1,60 @@
+#pragma once
+#include "ConfiguratorView.h"
+
+// CNonTuningFra 视图
+class CSettingItem;
+class CAliasItem;
+
+class CNonTuningFra : public CConfiguratorView
+{
+	DECLARE_DYNCREATE(CNonTuningFra)
+
+public:
+	CNonTuningFra();           // 动态创建所使用的受保护的构造函数
+	virtual ~CNonTuningFra();
+
+	void Bind();
+	void RefreshTuning( bool bConnected );
+
+	virtual BOOL PreTranslateMessage( MSG* pMsg );
+
+private:
+	CStatic m_lblStatus;
+	CStatic m_lblHide;
+
+	CStatic m_lblNullCurrent;
+	CStatic m_lblAmplitude;
+	CStatic m_lblFrequency;
+	
+	CStatic m_lblUnitCurrent;
+	CStatic m_lblUnitAmplitude;
+	CStatic m_lblUnitFrequency;
+
+	// Edit
+	CEdit m_edtCurrent;
+	CEdit m_edtAmplitude;
+	CEdit m_edtFrequency;
+
+private:
+	CAliasItem* m_pAliasCurrent;
+	CAliasItem* m_pAliasAmplitude;
+	CAliasItem* m_pAliasFrequency;
+
+public:
+	virtual void OnDraw(CDC* pDC);      // 重写以绘制该视图
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+#ifndef _WIN32_WCE
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+#endif
+
+protected:
+	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+	afx_msg BOOL OnEraseBkgnd(CDC* pDC);
+	afx_msg void OnSize(UINT nType, int cx, int cy);
+};
+
+

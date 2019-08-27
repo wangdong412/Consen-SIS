@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title>Hardware Overview</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="1_DSC100Overview-Overview.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="1_DSC100Overview-Hardware_Function.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159555"> </a><h2 class="pHeading1">
+Hardware Overview
+</h2>
+<hr />
+<a name="wp1159556"> </a><p class="pBody">
+This section provides an overview of the DSC100 hardware.
+</p>
+
+<a name="wp1159557"> </a><p class="pBody">
+DSC100 Servo Controller adopts modularity design. The whole structure consists of Boxy plug-in construction, chassis mounting on rail and fixed block pin.
+</p>
+
+<a name="wp1159558"> </a><p class="pBody">
+This picture illustrates the appearance of DSC100 Servo Controller module.
+</p>
+
+<a name="wp1159567"> </a><p class="pBodyRelative">
+<img src="images/DSC100Hardware.png" height="515" width="442" id="wp1159565" border="0" hspace="0" vspace="0"/>
+</p>
+
+<a name="wp1159560"> </a><p class="pBody">
+The DSC100 Servo Controller is powered by 24VDC from the chassis by means of isolation DC/DC. The 24 VDC source is converted to digital voltage and analog voltage respectively in control module circuit. They are isolated from each other and greater than 500Vrms.
+</p>
+
+<a name="wp1159561"> </a><p class="pBody">
+The DSC100 is powered by 24VDC from the chassis. And the 24VDC is converted to digital voltage and analog voltage that are isolated from each other. The isolated voltage is more than 500Vrms.
+</p>
+
+<a name="wp1159960"> </a><p class="pBody">
+DSC100 Controller module adopts two kinds of communication modes of Modbus/TCP and Modbus (RS485), which include MODBUS1 RTU (RS485), MODBUS2 RTU (RS485) and MODBUS (TCP/IP). 
+</p>
+
+<a name="wp1159961"> </a><p class="pBody">
+DSC100 Servo Controller's terminal block also adopts modularity design and the standard method of 35mm rail fixed installation.
+</p>
+
+<a name="wp1159962"> </a><p class="pBody">
+This picture shows the outside structure of terminal block.
+</p>
+
+<a name="wp1159977"> </a><p class="pBodyRelative">
+<img src="images/DSC100_terminal_block.png" height="605" width="348" id="wp1159565" border="0" hspace="0" vspace="0"/>
+</p>
+
+<a name="wp1159962"> </a><p class="pBody">
+DSC100 Servo Controller module connects to terminal module via a 96-pin European Chassis, and fixed by screw.
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

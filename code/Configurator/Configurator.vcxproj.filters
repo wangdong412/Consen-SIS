@@ -1,0 +1,1781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\modbus">
+      <UniqueIdentifier>{1d98d61b-5fd5-48b4-b213-3739b18962df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\View">
+      <UniqueIdentifier>{6b1df6df-f14a-4ee0-959d-723aafb9487b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\History">
+      <UniqueIdentifier>{a37554c4-a035-4582-b27e-277dceee1d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\History\Record">
+      <UniqueIdentifier>{3d38a7a6-bb1f-4ad9-ba06-1cb3d75dcea1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\History">
+      <UniqueIdentifier>{918f0512-0d5e-412c-97eb-071e8dbf6916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Doc Data">
+      <UniqueIdentifier>{f1af55ea-acd6-497a-ba07-a7300513fa27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Calibrate">
+      <UniqueIdentifier>{0d473e10-d8e3-42d8-9b9b-ccb36bd1543c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Calibrate\DSC100">
+      <UniqueIdentifier>{cd13887e-ab26-45ff-99d2-90d4e288656a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Calibrate\DSC110">
+      <UniqueIdentifier>{371a284b-9247-425d-ba73-b461421f65cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\TeeChart">
+      <UniqueIdentifier>{96a1b7d1-3721-49ad-bf61-a0015838ca83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\View">
+      <UniqueIdentifier>{ef8c770a-34e1-48c5-82ed-5323a04e1373}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Comm">
+      <UniqueIdentifier>{c1e001a7-3248-4038-82ea-45b01cde345d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Modbus">
+      <UniqueIdentifier>{1868f265-1f53-48d5-b3aa-3f1593a16474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Doc">
+      <UniqueIdentifier>{68a387cd-4b06-44c3-b0fa-410db66de8d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Calibrate">
+      <UniqueIdentifier>{b5e098cd-4e9f-4faa-b0e0-0b226045e36d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Calibrate\DSC100 Calibrate">
+      <UniqueIdentifier>{309142a9-985e-4b5f-b229-e48c9e8af796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Calibrate\DSC110 Calibrate">
+      <UniqueIdentifier>{c2ffa6bb-9662-426b-bb4c-81eb1f381e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Comm">
+      <UniqueIdentifier>{d29b814e-7ab4-42bb-b815-028d47156891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\History\View">
+      <UniqueIdentifier>{2c532843-30d1-47e5-bc52-c2035dd20d6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\History\view">
+      <UniqueIdentifier>{9a3b3b9b-9cdb-497e-9d78-035b11045257}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\History\Record">
+      <UniqueIdentifier>{a3afbd42-dfb6-4454-a09d-e5bf741b791d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\History\Control">
+      <UniqueIdentifier>{0e88edbf-2d88-4643-a4c5-92fed6a612ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\History\Control">
+      <UniqueIdentifier>{76e8a6f6-f99d-4cad-bc62-e6948b5222f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\History\Dlg">
+      <UniqueIdentifier>{a0d008f2-987f-4046-95d1-a67942aa2f95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\History\Dlg">
+      <UniqueIdentifier>{56809140-c0c0-4485-8b05-eae5b4ee130e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\Configurator.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Configurator.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ConfiguratorDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Splash.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Configuration.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Configuration_Changed.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Configuration_Read.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Read_Only.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Tuning.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Tuning_Changed.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Tuning_Read.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\GridImage\Folder_Open.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gridimage\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gridimage\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace3.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace4.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace5.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace6.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace7.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\trace8.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TuneImage\down.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TuneImage\downfast.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TuneImage\up.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\TuneImage\upfast.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DSC100.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Logo\Tri-Sen Logo.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\connect16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\upload16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\download16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\compare16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\graph16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\play16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\stop16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\traceimage\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\New16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Open16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\saveHS.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\PrintPreView16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Print16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Retrieve16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Send16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Monitor16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\MonitorStop16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Help16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Configuration16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Trend16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Tuning16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Aliases16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Alarm16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Comm16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Font16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Refresh16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\About16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar 16-bit\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\save16_h.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar 16-bit\Save16_h.PNG">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ViewToolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar 16-bit\toolbar_.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar 16-bit\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Mech.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Gen.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Gen.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Mech.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Configurator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Splash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MySplitterWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mygridn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyStatic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ProgressDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SendDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SendStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CompareDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PasswordDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CfgSecurity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelAppTypeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CTRLDateTimeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="VersionCtl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlarmView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="AliasFileValue.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="AliasItem.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseGridView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="CalInfoDlg.h">
+      <Filter>头文件\Calibrate\DSC100</Filter>
+    </ClInclude>
+    <ClInclude Include="CalMinDlg.h">
+      <Filter>头文件\Calibrate\DSC100</Filter>
+    </ClInclude>
+    <ClInclude Include="CalMaxDlg.h">
+      <Filter>头文件\Calibrate\DSC100</Filter>
+    </ClInclude>
+    <ClInclude Include="CalSave.h">
+      <Filter>头文件\Calibrate\DSC100</Filter>
+    </ClInclude>
+    <ClInclude Include="CalibrateBase.h">
+      <Filter>头文件\Calibrate</Filter>
+    </ClInclude>
+    <ClInclude Include="CalSheet.h">
+      <Filter>头文件\Calibrate</Filter>
+    </ClInclude>
+    <ClInclude Include="CalVerDlg.h">
+      <Filter>头文件\Calibrate\DSC100</Filter>
+    </ClInclude>
+    <ClInclude Include="CAmountFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnnotationCallout.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAnnotationTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAntiAliasTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CADXFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAddFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAreaSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CArrowSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAspect.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAverageFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxes.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxis.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisArrowTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisGridPen.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisLabels.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisLabelsItem.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisScrollTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CAxisTitle.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBackImage.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBannerTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBar3DSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBarJoinSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBaseHighLowSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBevelFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBezierSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBlurFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBMPExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBollingerFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBoxPlotSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBrightnessFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBrush0.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBubble3DSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CBubbleSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCalendarCell.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCalendarCellUpper.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCalendarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCallout.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCandleSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCanvas.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCCIFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartAxisPen.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartEditorPanel.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartFont.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartGrid.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartGridCols.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartGridEvents.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartGridNavigator.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartGridRows.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartImageTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartHiddenPen.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CChartPageNavigator.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircledSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircleLabels.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCircularGauge.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CClipSeriesTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CClockSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCLVFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CColorBandTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CColorFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CColorGridSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CContourLevel.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CColorLineTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCompressFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CContourLevels.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CContourMarks.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CContourSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CContrastFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CConvolveFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCorrelationFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCountFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCropFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCrossPointsFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCrossTabSource.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCumulativeFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCursorTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustom3DGridSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustom3DPaletteSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCurveFittingFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustom3DSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomBoxSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomGauge.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomGaugeMinMax.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomImagePointSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomPolarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomSeriesList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomToolAxis.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomSortedFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CCustomToolSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDarvasSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDataExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDataTableTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDeltaPointSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDivideFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDonutSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDownSamplingFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDragMarksTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDragPointTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawLine.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawLineList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CDrawLineTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CEmbossFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CEnvironment.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CEPSExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CErrorBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CErrorSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExpAvgFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExplodedSlices.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExpMovAvgFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExportFormat.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExtraLegendTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFaderTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CExpTrendFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFastLineSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CfgMonitor.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CfgTrace.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="BasePage.h">
+      <Filter>头文件\Calibrate</Filter>
+    </ClInclude>
+    <ClInclude Include="CFibonacciItem.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFibonacciLevels.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFibonacciTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFilterItems.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFilterRegion.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFlipFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFloatXYZ.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrameBrush.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFramedBorder.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFrameTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFullScreenTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CFunnelSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGammaCorrectionFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGanttSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGanttTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGaugeHand.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGaugePointerRange.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGaugeSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGaugeSeriesPointer.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGIFExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGLLightSource.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGLPosition.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGLLight.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGradient.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGrayScaleFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGridBandBrush.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGridBandTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CGridTransposeTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHighFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHighLowLineSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHighLowSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHistogramFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHistogramSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHorizAreaSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHorizBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHorizBoxPlotSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHorizHistogramSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHorizLineSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHTMLExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CHueLumSatFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CImageBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CImagePointSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CImport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CInvertFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CIsoSurfaceSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CJPEGExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CKagiSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegend.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendItem.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendItems.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendPaletteTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendScrollBarTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendSymbol.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLegendTitle.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLevelSegment.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLightTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinearGauge.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLineSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinkTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CLowFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMACDFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMagnifyTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapPolygon.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapPolygonList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMapSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMargins.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarks.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarksCallout.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarksItem.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarksSymbol.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMarksTipTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMedianFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMetafileExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMirrorFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CModeFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMomentumDivFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMomentumFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMosaicFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMovingAvgFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CMultiplyFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CNativeExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CNearestTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CNumericGauge.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CNumericMarker.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="COBVFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="COrgItem.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="COrgItemCollection.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="COrgSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="COrgShape.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPage.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPageNumTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPanel.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPCXExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPDFExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPen0.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPerformanceFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPerimeterFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPieMarks.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPieOtherSlice.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPieSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPieTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPNGExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPoint3DSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPointArray.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPointer.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPointFigureSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPointSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPolarBarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPolarGridSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPrinter0.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPolarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRadarSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPyramidSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPVOFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRectangleTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenkoSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CResizeFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CReverseFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRMSFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CPrinterSettings.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CZoomFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CZoom.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CXMLExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CXLSExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CXAMLExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CWorldSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CWindRoseSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CWaterfallSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CWalls.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CWall.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVolumeSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVolumePipeSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVideoTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVideoPlayerTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVector3DSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CVarianceFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CValueLists.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CValueList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTowerSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTransposeSeriesTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTrendFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTriSurfaceSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTools.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CToolList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTitles.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTileFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextShape.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTextExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CText3DTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeShapePosition.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeShapePanel.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeShape.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeShadow.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeRectArray.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeRect.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePreviewPanelEvents.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePreviewPanel.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePreviewerOptions.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePreviewer.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePoint3D.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePoint2D.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePicture.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeePanelsList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeOpenGL.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeListBoxSection.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeListBoxEvents.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeListBox.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeLinked.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeFont.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeEditorShowPages.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeEditorOptions.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeEditor.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeCustomShape.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeCommanderEvents.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeCommanderButton.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTeeCommander.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTChartEvents.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTChart.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTagCloudSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CTableLegend.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSVGExport.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSurfaceSides.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSurfaceSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSurfaceNearestTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSubtractFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSubsetTeeFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSubGradient.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CStochasticFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CStdDeviationFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSpacing.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSoftenFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmoothPoints.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmoothingFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSmithSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSharpenFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CShapeSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesXMLSource.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesTextSource.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesTextFields.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesTextField.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesStatsTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesSourceFile.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesSource.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesRegionTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesMarksPositions.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesMarkPosition.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesList.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesGroups.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesGroup.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesBandTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeriesAnimationTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSeries.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSelectorTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CScrollBarThumb.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CScroll.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CSARFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRSIFunction.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRotateTool.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CRotateFilter.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="CfgProperty.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="CStrings.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="DSC110CalDlg.h">
+      <Filter>头文件\Calibrate\DSC110</Filter>
+    </ClInclude>
+    <ClInclude Include="DSC110SaveDlg.h">
+      <Filter>头文件\Calibrate\DSC110</Filter>
+    </ClInclude>
+    <ClInclude Include="DSC110VerDlg.h">
+      <Filter>头文件\Calibrate\DSC110</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguratorView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguratorDoc.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ComDriver.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="CommSettings.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="CommSettingsDlg.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="CtlCommSettingsDlg.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryServer.h">
+      <Filter>头文件\History</Filter>
+    </ClInclude>
+    <ClInclude Include="Modbus.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusClient.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusMessage.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusMsgVector.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusRange.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusStatus.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="ModbusThread.h">
+      <Filter>头文件\Modbus</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingTreeView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingGridView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TagsGridView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="ValuesView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TuneView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TuneFraView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="TrendView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="crc16.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="mytchart.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="NonTuningFra.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialDriver.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="SettingItem.h">
+      <Filter>头文件\Doc Data</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketDriver.h">
+      <Filter>头文件\Comm</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryRecordData.h">
+      <Filter>头文件\History\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryRecordDatas.h">
+      <Filter>头文件\History\Record</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryFileData.h">
+      <Filter>头文件\History\view</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryViewData.h">
+      <Filter>头文件\History\view</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryValueView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryTrendView.h">
+      <Filter>头文件\View</Filter>
+    </ClInclude>
+    <ClInclude Include="seriesxmlsource2.h">
+      <Filter>头文件\TeeChart</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewHistoryCtrl.h">
+      <Filter>头文件\History\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordHistoryCtrl.h">
+      <Filter>头文件\History\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryRecordDlg.h">
+      <Filter>头文件\History\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryTrendDlg.h">
+      <Filter>头文件\History\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryFileLoadCtrl.h">
+      <Filter>头文件\History\Control</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectTNDlg.h">
+      <Filter>头文件\History\Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="HistoryTrendDynDlg.h">
+      <Filter>头文件\History\Dlg</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Configurator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguratorView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Splash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mytchart.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MySplitterWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mygridn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SendDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SendStatus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CompareDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PasswordDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CfgSecurity.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelAppTypeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CtlCommSettingsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguratorDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CTRLDateTimeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="VersionCtl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Modbus.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusClient.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusMessage.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusMsgVector.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusStatus.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="ModbusThread.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="AlarmView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseGridView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="CalInfoDlg.cpp">
+      <Filter>源文件\Calibrate\DSC100 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalMaxDlg.cpp">
+      <Filter>源文件\Calibrate\DSC100 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalMinDlg.cpp">
+      <Filter>源文件\Calibrate\DSC100 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalSave.cpp">
+      <Filter>源文件\Calibrate\DSC100 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalVerDlg.cpp">
+      <Filter>源文件\Calibrate\DSC100 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="NonTuningFra.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingGridView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingTreeView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TagsGridView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TrendView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TuneFraView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="TuneView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="ValuesView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketDriver.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialDriver.cpp">
+      <Filter>源文件\modbus</Filter>
+    </ClCompile>
+    <ClCompile Include="DSC110CalDlg.cpp">
+      <Filter>源文件\Calibrate\DSC110 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="DSC110VerDlg.cpp">
+      <Filter>源文件\Calibrate\DSC110 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="DSC110SaveDlg.cpp">
+      <Filter>源文件\Calibrate\DSC110 Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalSheet.cpp">
+      <Filter>源文件\Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CalibrateBase.cpp">
+      <Filter>源文件\Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryRecordData.cpp">
+      <Filter>源文件\History\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryServer.cpp">
+      <Filter>源文件\History</Filter>
+    </ClCompile>
+    <ClCompile Include="AliasItem.cpp">
+      <Filter>源文件\Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="AliasFileValue.cpp">
+      <Filter>源文件\Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="BasePage.cpp">
+      <Filter>源文件\Calibrate</Filter>
+    </ClCompile>
+    <ClCompile Include="CfgMonitor.cpp">
+      <Filter>源文件\Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="CommSettings.cpp">
+      <Filter>源文件\Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="CommSettingsDlg.cpp">
+      <Filter>源文件\Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="SettingItem.cpp">
+      <Filter>源文件\Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionItem.cpp">
+      <Filter>源文件\Doc</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryRecordDatas.cpp">
+      <Filter>源文件\History\Record</Filter>
+    </ClCompile>
+    <ClCompile Include="crc16.cpp">
+      <Filter>源文件\Comm</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryFileData.cpp">
+      <Filter>源文件\History\View</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryViewData.cpp">
+      <Filter>源文件\History\View</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryValueView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryTrendView.cpp">
+      <Filter>源文件\View</Filter>
+    </ClCompile>
+    <ClCompile Include="seriesxmlsource2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryTrendDlg.cpp">
+      <Filter>源文件\History\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryRecordDlg.cpp">
+      <Filter>源文件\History\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryFileLoadCtrl.cpp">
+      <Filter>源文件\History\Control</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectTNDlg.cpp">
+      <Filter>源文件\History\Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="HistoryTrendDynDlg.cpp">
+      <Filter>源文件\History\Dlg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Configurator.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

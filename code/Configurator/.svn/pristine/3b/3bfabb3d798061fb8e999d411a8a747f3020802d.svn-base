@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>Floating Point Reference Bins</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Modbus_Bins.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Scaling_of_16_Bit_Integers.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161376"> </a><h3 class="pHeading2">
+Floating Point Reference Bins
+</h3>
+<hr />
+<a name="wp1161378"> </a><p class="pBody">
+The DSC100 Controller uses the IEEE 754 single precision (32-bit) standard for variables that require floating-point numbers. The floating-point number is also available through Modbus for devices that support floating point numbers. Modbus devices that do not support floating-point numbers must use the 16-bit scaled integer registers. The DSC100 Controller uses the swapped floating-point format where the HIWORD (upper 16-bits) is placed in the first register and then the LOWORD (lower 16-bits) is placed in the next register. The swapped floating-point format is the same format used in the Tricon and Trident. 
+</p>
+<a name="wp1161398"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1308269table1161379">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1308269"> </a><div class="pCellHeading">
+16-Bit Scaled Integer Range
+</div>
+</th>
+    <th><a name="wp1308271"> </a><div class="pCellHeading">
+32-Bit Floating Point Range
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1308273"> </a><div class="pCellBody">
+30001-35000
+</div>
+</td>
+    <td><a name="wp1308275"> </a><div class="pCellBody">
+35001-40000
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1308277"> </a><div class="pCellBody">
+40001-42000
+</div>
+</td>
+    <td><a name="wp1308279"> </a><div class="pCellBody">
+42001-5000
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1768060"> </a><p class="pBody">
+This table lists several examples of floating point and scaled integer values. The controller rounds floating point values to the nearest integer when transmitting data in a 16-bit range.</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1967682table1768061">
+  <caption><a name="wp1967682"> </a><div class="pTableTitle">
+Scaling Table
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1967692"> </a><div class="pCellHeading">
+Value
+</div>
+</th>
+    <th><a name="wp1967694"> </a><div class="pCellHeading">
+32-Bit Floating Point Hex
+</div>
+</th>
+    <th><a name="wp1967696"> </a><div class="pCellHeading">
+Minimum Span
+</div>
+</th>
+    <th><a name="wp1967698"> </a><div class="pCellHeading">
+Maximum Span
+</div>
+</th>
+    <th><a name="wp1967700"> </a><div class="pCellHeading">
+16-Bit Scaled
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1967702"> </a><div class="pCellBody">
+1.0
+</div>
+</td>
+    <td><a name="wp1967704"> </a><div class="pCellBody">
+0x3F800000
+</div>
+</td>
+    <td><a name="wp1967706"> </a><div class="pCellBody">
+none defined
+</div>
+</td>
+    <td><a name="wp1967708"> </a><div class="pCellBody">
+none defined
+</div>
+</td>
+    <td><a name="wp1967710"> </a><div class="pCellBody">
+1
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967712"> </a><div class="pCellBody">
+123.45
+</div>
+</td>
+    <td><a name="wp1967714"> </a><div class="pCellBody">
+0x42F6E666
+</div>
+</td>
+    <td><a name="wp1967716"> </a><div class="pCellBody">
+none defined
+</div>
+</td>
+    <td><a name="wp1967718"> </a><div class="pCellBody">
+none defined
+</div>
+</td>
+    <td><a name="wp1967720"> </a><div class="pCellBody">
+123
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967722"> </a><div class="pCellBody">
+50.75
+</div>
+</td>
+    <td><a name="wp1967724"> </a><div class="pCellBody">
+0x424B0000
+</div>
+</td>
+    <td><a name="wp1967726"> </a><div class="pCellBody">
+0.0
+</div>
+</td>
+    <td><a name="wp1967728"> </a><div class="pCellBody">
+327.67
+</div>
+</td>
+    <td><a name="wp1967730"> </a><div class="pCellBody">
+5075
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967732"> </a><div class="pCellBody">
+65.25
+</div>
+</td>
+    <td><a name="wp1967734"> </a><div class="pCellBody">
+0x42828000
+</div>
+</td>
+    <td><a name="wp1967736"> </a><div class="pCellBody">
+0.0
+</div>
+</td>
+    <td><a name="wp1967738"> </a><div class="pCellBody">
+327.67
+</div>
+</td>
+    <td><a name="wp1967740"> </a><div class="pCellBody">
+6525
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967742"> </a><div class="pCellBody">
+600.6
+</div>
+</td>
+    <td><a name="wp1967744"> </a><div class="pCellBody">
+0x44162666
+</div>
+</td>
+    <td><a name="wp1967746"> </a><div class="pCellBody">
+0.0
+</div>
+</td>
+    <td><a name="wp1967748"> </a><div class="pCellBody">
+3276.7
+</div>
+</td>
+    <td><a name="wp1967750"> </a><div class="pCellBody">
+6006
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967752"> </a><div class="pCellBody">
+4000.0
+</div>
+</td>
+    <td><a name="wp1967754"> </a><div class="pCellBody">
+0x457A0000
+</div>
+</td>
+    <td><a name="wp1967756"> </a><div class="pCellBody">
+0.0
+</div>
+</td>
+    <td><a name="wp1967758"> </a><div class="pCellBody">
+6553.5
+</div>
+</td>
+    <td><a name="wp1967760"> </a><div class="pCellBody">
+40000
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967762"> </a><div class="pCellBody">
+-10.0
+</div>
+</td>
+    <td><a name="wp1967764"> </a><div class="pCellBody">
+0xC1200000
+</div>
+</td>
+    <td><a name="wp1967766"> </a><div class="pCellBody">
+-200.0
+</div>
+</td>
+    <td><a name="wp1967768"> </a><div class="pCellBody">
+200.0
+</div>
+</td>
+    <td><a name="wp1967770"> </a><div class="pCellBody">
+15564
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1967772"> </a><div class="pCellBody">
+50.75
+</div>
+</td>
+    <td><a name="wp1967774"> </a><div class="pCellBody">
+0x424B0000
+</div>
+</td>
+    <td><a name="wp1967776"> </a><div class="pCellBody">
+-200.0
+</div>
+</td>
+    <td><a name="wp1967778"> </a><div class="pCellBody">
+200.0
+</div>
+</td>
+    <td><a name="wp1967780"> </a><div class="pCellBody">
+20541
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBody">
+</p>
+<a name="wp1768184"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>Note	</b>
+    </td>
+    <td>
+      For analog points that do not have a defined minimum and maximum span in the Modbus alias tables, there is no integer scaling of the points value. Only the integer value of the unscaled point is transmitted, up to a value of 32767(signed int)/65535 (unsigned int). 
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

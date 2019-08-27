@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>Analog 32-Bit Floating Point Read-Only Aliases</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_Read-Only_Aliases.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_ReadWrite_Aliases.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp2118044"> </a><h3 class="pHeading2">
+Analog 32-Bit Floating Point Read-Only Aliases
+</h3>
+<hr />
+<a name="wp2118045"> </a><p class="pBody">
+This table describes analog 32-bit floating point read-only aliases.
+</p>
+<a name="wp2119136"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp2118051table2118046">
+  <caption><a name="wp2118051"> </a><div class="pTableTitle">
+Analog 32-Bit Floating Point Read-Only Aliases&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp2118057"> </a><div class="pCellHeading">
+Alias
+</div>
+</th>
+    <th><a name="wp2118059"> </a><div class="pCellHeading">
+Tag Name
+</div>
+</th>
+    <th><a name="wp2118061"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp2118063"> </a><div class="pCellBody">
+35001
+</div>
+</td>
+    <td><a name="wp2118065"> </a><div class="pCellBody">
+iAPI1P
+</div>
+</td>
+    <td><a name="wp2118067"> </a><div class="pCellBody">
+Percent Analog Position Input 01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118069"> </a><div class="pCellBody">
+35003
+</div>
+</td>
+    <td><a name="wp2118071"> </a><div class="pCellBody">
+iAPI2P
+</div>
+</td>
+    <td><a name="wp2118073"> </a><div class="pCellBody">
+Percent Analog Position Input 02
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118075"> </a><div class="pCellBody">
+35005
+</div>
+</td>
+    <td><a name="wp2118077"> </a><div class="pCellBody">
+iSPP
+</div>
+</td>
+    <td><a name="wp2118079"> </a><div class="pCellBody">
+Final SP Percent
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118081"> </a><div class="pCellBody">
+35007
+</div>
+</td>
+    <td><a name="wp2118083"> </a><div class="pCellBody">
+iSPAIP
+</div>
+</td>
+    <td><a name="wp2118085"> </a><div class="pCellBody">
+AI Percent SP
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118087"> </a><div class="pCellBody">
+35009
+</div>
+</td>
+    <td><a name="wp2118089"> </a><div class="pCellBody">
+iCP
+</div>
+</td>
+    <td><a name="wp2118091"> </a><div class="pCellBody">
+Communication Percent SP
+</div>
+</td>
+</tr>
+
+ <tr align="left">    <td><a name="wp2118251"> </a><div class="pCellBody">
+35011
+</div>
+</td>
+    <td><a name="wp2118253"> </a><div class="pCellBody">
+iAPI1V
+</div>
+</td>
+    <td><a name="wp2118255"> </a><div class="pCellBody">
+Voltage Analog Position Input 01
+</div>
+</td>
+</tr>
+
+ <tr align="left">    <td><a name="wp2118257"> </a><div class="pCellBody">
+35013
+</div>
+</td>
+    <td><a name="wp2118259"> </a><div class="pCellBody">
+iAPI2V
+</div>
+</td>
+    <td><a name="wp2118261"> </a><div class="pCellBody">
+Voltage Analog Position Input 02
+</div>
+</td>
+</tr>
+
+<tr align="left">    <td><a name="wp2118257"> </a><div class="pCellBody">
+35015
+</div>
+</td>
+    <td><a name="wp2118259"> </a><div class="pCellBody">
+iSPAIV
+</div>
+</td>
+    <td><a name="wp2118261"> </a><div class="pCellBody">
+AI mA SP
+</div>
+</td>
+</tr>
+
+
+
+  <tr align="left">    <td><a name="wp2118123"> </a><div class="pCellBody">
+35021
+</div>
+</td>
+    <td><a name="wp2118125"> </a><div class="pCellBody">
+iAO1RBP
+</div>
+</td>
+    <td><a name="wp2118127"> </a><div class="pCellBody">
+ReadBack Percent Actuator 01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118129"> </a><div class="pCellBody">
+35023
+</div>
+</td>
+    <td><a name="wp2118131"> </a><div class="pCellBody">
+iAO2RBP
+</div>
+</td>
+    <td><a name="wp2118133"> </a><div class="pCellBody">
+ReadBack Percent Actuator 02
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118135"> </a><div class="pCellBody">
+35025
+</div>
+</td>
+    <td><a name="wp2118137"> </a><div class="pCellBody">
+iAO3RBP
+</div>
+</td>
+    <td><a name="wp2118139"> </a><div class="pCellBody">
+ReadBack Percent Position Monitor 
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118141"> </a><div class="pCellBody">
+35027
+</div>
+</td>
+    <td><a name="wp2118143"> </a><div class="pCellBody">
+iAO1P
+</div>
+</td>
+    <td><a name="wp2118145"> </a><div class="pCellBody">
+Percent Actuator 01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118147"> </a><div class="pCellBody">
+35029
+</div>
+</td>
+    <td><a name="wp2118149"> </a><div class="pCellBody">
+iAO2P
+</div>
+</td>
+    <td><a name="wp2118151"> </a><div class="pCellBody">
+Percent Actuator 02
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118153"> </a><div class="pCellBody">
+35031
+</div>
+</td>
+    <td><a name="wp2118155"> </a><div class="pCellBody">
+iAO3P
+</div>
+</td>
+    <td><a name="wp2118157"> </a><div class="pCellBody">
+Percent Position Monitor
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118177"> </a><div class="pCellBody">
+35039
+</div>
+</td>
+    <td><a name="wp2118179"> </a><div class="pCellBody">
+iAO1V
+</div>
+</td>
+    <td><a name="wp2118181"> </a><div class="pCellBody">
+Current(mA) Actuator 01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp2118183"> </a><div class="pCellBody">
+35041
+</div>
+</td>
+    <td><a name="wp2118185"> </a><div class="pCellBody">
+iAO2V
+</div>
+</td>
+    <td><a name="wp2118187"> </a><div class="pCellBody">
+Current(mA) Actuator 02
+</div>
+</td>
+</tr>
+
+<tr align="left">    <td><a name="wp2118189"> </a><div class="pCellBody">
+35043
+</div>
+</td>
+    <td><a name="wp2118191"> </a><div class="pCellBody">
+iAO3V
+</div>
+</td>
+    <td><a name="wp2118193"> </a><div class="pCellBody">
+Current(mA) Position Monitor
+</div>
+</td>
+</tr>
+
+<tr align="left">    
+   <td><a name="wp2118189"> </a><div class="pCellBody"> 35045 </div></td>
+    <td><a name="wp2118191"> </a><div class="pCellBody"> iNULLCur </div></td>
+    <td><a name="wp2118193"> </a><div class="pCellBody"> Actual NULL Current </div></td>
+</tr>
+
+
+  <tr align="left">    <td><a name="wp2118195"> </a><div class="pCellBody">
+35081
+</div>
+</td>
+    <td><a name="wp2118197"> </a><div class="pCellBody">
+iPVP
+</div>
+</td>
+    <td><a name="wp2118199"> </a><div class="pCellBody">
+PV Percent
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

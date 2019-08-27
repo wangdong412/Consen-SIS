@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:09:38" />
+    <title>环境规格 </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="D_Specifications-Performance.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><img id="LongDescNotReq2" src="images/nextx.gif" border="0" alt="Next" />
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1195433"> </a><h3 class="pHeading2">
+环境规格
+</h3>
+<hr />
+<a name="wp1195434"> </a><p class="pBody">
+This table contains environmental specifications.
+</p>
+<a name="wp1195171"> </a><p class="pBodyRelative">
+</p>
+
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1193075table1193070">
+  <caption><a name="wp1193075"> </a><div class="pTableTitle">
+环境规格&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    
+    <th><a name="wp1193081"> </a><div class="pCellHeading"> 特性     </div></th>
+    <th><a name="wp1193083"> </a><div class="pCellHeading"> 描述   </div></th>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193395"> </a><div class="pCellBody">  工作环境温度	       </div></td>
+    <td><a name="wp1193397"> </a><div class="pCellBody">  -15&deg;C~60&deg;C    </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193399"> </a><div class="pCellBody">  工作环境相对湿度			 	       </div></td>
+    <td><a name="wp1193401"> </a><div class="pCellBody">  5%~95%，无凝结</div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193403"> </a><div class="pCellBody">  储存环境温度		 	       </div></td>
+    <td><a name="wp1193405"> </a><div class="pCellBody">  -25&deg;C~75&deg;C   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193407"> </a><div class="pCellBody">  储存环境相对湿度		 	       </div></td>
+    <td><a name="wp1193409"> </a><div class="pCellBody"> 5%~95%，无凝结 </div></td>
+  </tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

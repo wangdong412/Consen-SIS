@@ -1,0 +1,175 @@
+
+// ConfiguratorDoc.h : interface of the CConfiguratorDoc class
+//
+
+
+#pragma once
+
+/* Added by wangdong begin */
+// XML Data Class
+#include "CfgProperty.h"                       // Required and Dictionary attribute
+#include "OptionItem.h"                        // OptionLists
+#include "AliasItem.h"                         // Variables
+#include "SettingItem.h"                       // Settings
+#include "CfgMonitor.h"                        // MonitorValues, AlarmValues
+#include "ModbusRange.h"                       // Communications
+#include "CfgTrace.h"                          // Trace information
+
+// MSXML Parser
+#import <msxml4.dll>              
+using namespace MSXML2;
+
+#include "SendStatus.h"
+
+class CAliasFileValueMap;
+/* Added by wangdong end*/ 
+
+class CConfiguratorDoc : public CDocument
+{
+protected: // create from serialization only
+	CConfiguratorDoc();
+	DECLARE_DYNCREATE(CConfiguratorDoc)
+
+// Attributes
+public:
+	 CCfgProperties*    m_aProperties;
+	 COptionListMap*    m_aOptions;
+	 COwnedAliasMap*    m_aAliases;
+	 CSettingVector*    m_aSettings;
+	 CSettingVector*    m_aSettingsAlias;
+	 CCfgMonitorValues* m_aMonitorValues;
+	 CCfgMonitorValues* m_aAlarmValues;
+	 CCfgTraceArray*    m_aTraces;
+
+	 std::auto_ptr< modbus::CMessageActions > m_aActions;
+	 std::auto_ptr< CAliasFileValueMap > m_aAliasFileValue;
+
+	 enum Hints
+     {
+         HINT_REFRESH  = 0,
+         HINT_UPDATE   = 1,
+         HINT_MONITOR  = 2,
+         HINT_TRACE    = 3,
+         HINT_RULE     = 4,
+		 HINT_FONT     = 5
+     };
+
+private:
+	CSendStatus m_SendDlgStatus;
+
+// Operations
+public:
+	DWORD GetSettingContextId( CSettingItem* pSetting );       // Get HelpID of the SettingItem
+
+	// Set Product info: Product Number, Version, and AppType
+	void SetProductInfo();
+	bool UpdateProductInfo();
+
+	/// Trace
+	size_t GetTraceCount() const;
+	CString GetTraceName( size_t SeriesIndex ) const;
+	HRESULT AddTraceName( CString strName, size_t SeriesIndex );
+	HRESULT RemoveTraceName( CString strName);
+
+	/// OverWrite: return TRUE if ok to continue
+	virtual BOOL SaveModified(); 
+
+	void UpdateRemoteFlags( int nBeginAlias, int nEndAlias );
+	const CSendStatus* GetSendDlgStatus();
+
+// Overrides
+public:
+	virtual BOOL OnNewDocument();
+	virtual void Serialize(CArchive& ar);
+#ifdef SHARED_HANDLERS
+	virtual void InitializeSearchContent();
+	virtual void OnDrawThumbnail(CDC& dc, LPRECT lprcBounds);
+#endif // SHARED_HANDLERS
+
+// Implementation
+public:
+	virtual ~CConfiguratorDoc();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:
+
+// Generated message map functions
+protected:
+	DECLARE_MESSAGE_MAP()
+
+private:
+	virtual void DeleteContents();   // Override 
+
+	/// XML Parser
+	bool ParseXMLFile();
+
+	// Required
+	void RequiredElement( MSXML2::IXMLDOMNodePtr pParentNode );
+
+	//OptionLists
+	void OptionListsElement( MSXML2::IXMLDOMNodePtr pParentNode ); 
+	void ParseOptionList( MSXML2::IXMLDOMNodePtr pOptListNode, COptionList* pOptListMap ); 
+
+	// Variables
+	void AliasElement( MSXML2::IXMLDOMNodePtr pParentNode );          
+
+	// Settings
+	void SettingElement( MSXML2::IXMLDOMNodePtr pParentNode );
+	CSettingItem* ParseSingleSettingItem( MSXML2::IXMLDOMNodePtr pNode );
+	void AddChildSettings( MSXML2::IXMLDOMNodePtr pParentNode, CSettingItem* pParentSetting );
+
+	// MonitorValues and AlarmValues
+	void MonitorValueElement( MSXML2::IXMLDOMNodePtr pParentNode, bool bIsAlarm = false );
+
+	// Communications
+	void CommunicationElement( MSXML2::IXMLDOMNodePtr pParentNode );
+	void ParseAction( MSXML2::IXMLDOMNodePtr pActionNode, modbus::CMessageRanges* pMsgRanges );
+
+	// Bind
+	void BindDictionary( void );
+	void BindSettings( CSettingVector* pSettings );
+
+	void BindDocument(void);
+
+	CString m_strCmpFilePathName;           // Compare File Path Name
+
+public:
+	// New
+	BOOL DoFileNew();
+
+	// Save document
+	void DoSaveDocument();
+	BOOL SaveDocument( LPCTSTR lpszPathName );
+	BOOL SaveAsDocument();
+
+	// Open saved document file
+	BOOL OnOpenDocument(LPCTSTR lpszPathName);
+	bool OpenDocFile( LPCTSTR lpszPathName, bool bCompareFile = false );
+	void ReadTraceElement( MSXML2::IXMLDOMNodePtr pParentNode );
+	void ReadAliasElement( MSXML2::IXMLDOMNodePtr pParentNode );
+
+	// Compare file
+	void CompareFile( LPCTSTR lpszPathName );
+
+	// Compare File Path Name
+	void ResetCmpFilePathName()        { m_strCmpFilePathName.Empty(); }
+
+	// Set Settings Visible
+	void SetVisible();
+	void SetSettingsVisible( CSettingVector* pSettings, bool bSettingAlias = false );
+
+/// DSC100 Inspection System
+public:
+	void SetStringSettings( int nBegin, int nEnd, int nString, bool bLocal );
+	void SplitStringSettings( int nBegin, int nEnd, int nString, LPCTSTR strMAC );
+
+#ifdef SHARED_HANDLERS
+	// Helper function that sets search content for a Search Handler
+	void SetSearchContent(const CString& value);
+#endif // SHARED_HANDLERS
+	afx_msg void OnViewRefresh();
+	afx_msg void OnViewDisplayfont();
+};

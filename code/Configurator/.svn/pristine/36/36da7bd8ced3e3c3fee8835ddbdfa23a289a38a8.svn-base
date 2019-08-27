@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title> 使用组态软件校准 DSC100  </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Tuning_Actions.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-DSC100_Configurator_User_Interface.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1259555"> </a><h2 class="pHeading1">
+使用组态软件校准 DSC100
+</h2>
+<hr />
+<a name="wp1259558"> </a><p class="pBody">
+DCS100 组态软件内置校准功能，通过校准窗口，按照校准步骤完成校准过程。DSC100只有在停车状态下并与组态软件建立通讯连接后才能进行校准。
+</p>
+<p class="pBody"> 在组态软件任务栏上，选择“Action”，点击“Calibration”，校准窗口自动弹出，完成一个校准步骤后，点击“Next”按钮，进入下一个校准步骤，点击“Cancel”按钮可结束校准操作，校准数据保持校准前的值。
+</p>
+<br />
+
+
+<a name="wp1259560"> </a><p class="pBody">
+校准过程包含下面5个步骤： </p>
+<a name="wp1259560"> </a><p class="pBody"><b class="cBold">
+
+1. 说明
+</b></p>
+<a name="wp1259562"> </a><p class="pBody">
+校准开始画面，说明校准的基本操作及目的。
+</p>
+<a name="wp1259564"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Introduction.png" height="403" width="480" id="wp1259565" border="0" hspace="0" vspace="0"/>
+</p>
+<br />
+
+<a name="wp1259566"> </a><p class="pBody"><b class="cBold">
+2. 位置最小值（0%位置）
+</b></p>
+<a name="wp1259568"> </a><p class="pBody">
+通过改变叠加在Null电流上的偏置值（Null Current Offset）改变控制输出。当现场位置反馈在0%位置时，分别点击“AI01最小位置电压值”和“AI02最小位置电压值”旁边的“Pickup”按钮，最小位置电压值将自动变为当前位置下对应的调制电压值。用户也可以参考当前调制电压值手动设定最小位置电压值。</p>
+<p class="pBody"> 校准过程中AI01/AI02实时调制电压值，AO01/AO02实时控制输出值，显示在窗口中部区域。</p>
+
+<p class="pBody"><b class="cBold"> 说明: </b></p>
+<p class="pBody"> 1：Null电流根据配置和AO01/AO02回路状态选定，只有AO01输出时，Null电流为AO01 Null Current；只有AO02输出时，Null电流为AO02 Null Current；AO01和AO02同时输出时，Null电流为AO01/02 Null Current；</p>
+<p class="pBody"> 2：校准过程中，Shutdown电流无效，手动设置控制输出。</p>
+
+
+<a name="wp1259570"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Min.png" height="499" width="475" id="wp1259567" border="0" hspace="0" vspace="0"/>
+</p>
+<br />
+
+<a name="wp1259572"> </a><p class="pBody"><b class="cBold">
+3. 位置最大值（100%位置）
+</b></p>
+<a name="wp1259574"> </a><p class="pBody">
+通过改变叠加在Null电流上的偏置值（Null Current Offset）改变控制输出。当现场位置反馈在100%位置时，分别点击“AI01最大位置电压值”和“AI02最大位置电压值”旁边的“Pickup”按钮，最大位置电压值将自动变为当前位置下对应的调制电压值。用户也可以参考当前调制电压值手动设定最大位置电压值。 </p>
+<p class="pBody"> 校准过程中AI01/AI02实时调制电压值，AO01/AO02实时控制输出值，显示在窗口中部区域。 </p>
+
+
+<p class="pBody"><b class="cBold"> 说明: </b></p>
+<p class="pBody"> 1：Null电流根据配置和AO01/AO02回路状态选定，只有AO01输出时，Null电流为AO01 Null Current；只有AO02输出时，Null电流为AO02 Null Current；AO01和AO02同时输出时，Null电流为AO01/02 Null Current；</p>
+<p class="pBody"> 2：校准过程中，Shutdown电流无效，手动设置控制输出。</p>
+
+
+
+<a name="wp1259576"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Max.png" height="519" width="494" id="wp1259569" border="0" hspace="0" vspace="0"/>
+</p>
+<br />
+
+<a name="wp1259578"> </a><p class="pBody"><b class="cBold">
+4. 验证
+</b></p>
+<a name="wp1259580"> </a><p class="pBody">
+通过Demand(%)输入框手动设定位置命令，用以验证DSC1OO是否控制正常及响应特性，同时也验证了校准后的位置电压设置值是否合适，如果不合适则可以再次进行校准。验证过程中，AI01/AI02实时调制电压值，选择后的PV值，AO01/AO02实时控制输出值，显示在窗口中部区域。同时根据实际稳态输出电流值重新设定Null电流，以满足控制需要。
+</p>
+<a name="wp1259582"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Ver.png" height="525" width="500" id="wp1259571" border="0" hspace="0" vspace="0"/>
+</p>
+<br />
+
+<a name="wp1259584"> </a><p class="pBody"><b class="cBold">
+5. 保存设置
+</b></p>
+<a name="wp1259586"> </a><p class="pBody">
+最后一步是将校准后的设置值保存到DSC100中。</p>
+<a name="wp1259588"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Save.png" height="404" width="481" id="wp1259573" border="0" hspace="0" vspace="0"/>
+</p>
+<table cellspacing="6" class="plistNote">
+  <tr valign="top">
+    <td>
+      <b>备注:	</b>
+    </td>
+    <td>
+     DSC100 将一直工作在校准模式，点击任务栏上“Action”，在下列菜单中选择”RUN”选项，DSC100将进入运行模式。
+    </td>
+  </tr>
+</table>
+<a name="wp1259590"> </a><p class="pBodyRelative">
+<img src="images/DSC100_Calibrate_Run.png" height="333" width="1163" id="wp1259575" border="0" hspace="0" vspace="0"/>
+</p>
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

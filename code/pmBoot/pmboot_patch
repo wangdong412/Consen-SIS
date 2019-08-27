@@ -1,0 +1,630 @@
+diff --git a/Source/PM/pmBoot/Makefile b/Source/PM/pmBoot/Makefile
+index bbf676c..ed20a08 100644
+--- a/Source/PM/pmBoot/Makefile
++++ b/Source/PM/pmBoot/Makefile
+@@ -331,7 +331,7 @@ LD		= $(CROSS_COMPILE)ld.bfd
+ else
+ LD		= $(CROSS_COMPILE)ld
+ endif
+-CC		= $(CROSS_COMPILE)gcc --sysroot=/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/ppce500v2-fsl-linux-gnuspe
++CC		= $(CROSS_COMPILE)gcc
+ CPP		= $(CC) -E
+ AR		= $(CROSS_COMPILE)ar
+ NM		= $(CROSS_COMPILE)nm
+diff --git a/Source/PM/pmBoot/arch/powerpc/cpu/mpc85xx/pci.c b/Source/PM/pmBoot/arch/powerpc/cpu/mpc85xx/pci.c
+index c6d2fda..21c6e95 100644
+--- a/Source/PM/pmBoot/arch/powerpc/cpu/mpc85xx/pci.c
++++ b/Source/PM/pmBoot/arch/powerpc/cpu/mpc85xx/pci.c
+@@ -14,6 +14,7 @@
+ #include <pci.h>
+ 
+ #if !defined(CONFIG_FSL_PCI_INIT)
++#error "fsl-pci-not-used"
+ 
+ #ifndef CONFIG_SYS_PCI1_MEM_BUS
+ #define CONFIG_SYS_PCI1_MEM_BUS CONFIG_SYS_PCI1_MEM_BASE
+diff --git a/Source/PM/pmBoot/common/autoboot.c b/Source/PM/pmBoot/common/autoboot.c
+index 30102a4..c2ff406 100644
+--- a/Source/PM/pmBoot/common/autoboot.c
++++ b/Source/PM/pmBoot/common/autoboot.c
+@@ -150,7 +150,7 @@ static int abortboot_normal(int bootdelay)
+ 	printf(CONFIG_MENUPROMPT);
+ #else
+ 	if (bootdelay >= 0)
+-		printf("Hit any key to stop autoboot: %2d ", bootdelay);
++		printf("autoboot Hit any key to stop autoboot: %2d ", bootdelay);
+ #endif
+ 
+ #if defined CONFIG_ZERO_BOOTDELAY_CHECK
+diff --git a/Source/PM/pmBoot/common/cmd_bootm.c b/Source/PM/pmBoot/common/cmd_bootm.c
+index 602aa6f..7a72904 100755
+--- a/Source/PM/pmBoot/common/cmd_bootm.c
++++ b/Source/PM/pmBoot/common/cmd_bootm.c
+@@ -216,26 +216,60 @@ U_BOOT_CMD(
+ 
+ #endif
+ 
+-//ezio add 9.28
+-int do_bootcagos0(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
++#if 1
++//ezio add 16.1.4
++int do_bootlinux0(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+ {
+-    return run_command(getenv("oscmd"), flag);
++    return run_command(getenv("linux0net"), flag);
+ }
+ 
+ U_BOOT_CMD(
+-    bootos0, 1,  1,  do_bootcagos0,
+-    "boot cagos 0,",
++    bootlinux0, 1,  1,  do_bootlinux0,
++    "boot linux 0 from tftp",
+     ""
+ );
+ 
+-int do_bootcagos1(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
++int do_cfgnet(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+ {
+-    return run_command(getenv("oscmd1"),flag);
++    return run_command(getenv("ifconfig"), flag);
+ }
+ 
+ U_BOOT_CMD(
+-    bootos1, 1,  1,  do_bootcagos1,
+-    "boot cagos 1 from flash, ",
++    ifc, 1,  1,  do_cfgnet,
++    "cfg network",
++    ""
++);
++
++int do_bootlinux0nor(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
++{
++    return run_command(getenv("linux0nor"), flag);
++}
++
++U_BOOT_CMD(
++    bootlinux0nor, 1,  1,  do_bootlinux0nor,
++    "boot linux 0 from nor",
++    ""
++);
++
++int do_bootrfslocal(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
++{
++    return run_command(getenv("bootlocal"), flag);
++}
++
++U_BOOT_CMD(
++    bootlocalrfs, 1,  1,  do_bootrfslocal,
++    "boot linux 0 local rootfs",
++    ""
++);
++
++int do_burnlinux0nor(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
++{
++    return run_command(getenv("burnlin0"), flag);
++}
++
++U_BOOT_CMD(
++    burnlinux0nor, 1,  1,  do_burnlinux0nor,
++    "burn linux 0",
+     ""
+ );
+ 
+@@ -260,6 +294,7 @@ U_BOOT_CMD(
+     "download uboot to memory ",
+     ""
+ );
++#endif
+ 
+ /*******************************************************************/
+ /* iminfo - print header info for a requested image */
+diff --git a/Source/PM/pmBoot/drivers/pci/fsl_pci_init.c b/Source/PM/pmBoot/drivers/pci/fsl_pci_init.c
+index 3a41b0e..13619ee 100644
+--- a/Source/PM/pmBoot/drivers/pci/fsl_pci_init.c
++++ b/Source/PM/pmBoot/drivers/pci/fsl_pci_init.c
+@@ -708,6 +708,7 @@ int fsl_configure_pcie(struct fsl_pci_info *info,
+ }
+ 
+ #if defined(CONFIG_FSL_CORENET)
++#error "defined fsl corenet "
+ #ifdef CONFIG_SYS_FSL_QORIQ_CHASSIS2
+ 	#define _DEVDISR_PCIE1 FSL_CORENET_DEVDISR3_PCIE1
+ 	#define _DEVDISR_PCIE2 FSL_CORENET_DEVDISR3_PCIE2
+@@ -800,7 +801,7 @@ int fsl_pcie_init_board(int busno)
+ 	ccsr_gur_t *gur = (void *)CONFIG_SYS_MPC8xxx_GUTS_ADDR;
+ 	u32 devdisr;
+ 	u32 *addr;
+-
++    
+ #ifdef CONFIG_SYS_FSL_QORIQ_CHASSIS2
+ 	addr = &gur->devdisr3;
+ #else
+diff --git a/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h b/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
+index 893de29..8cf5740 100755
+--- a/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
++++ b/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
+@@ -148,6 +148,7 @@
+ #endif
+ 
+ #ifdef CONFIG_SDCARD
++#error "SDC"
+ #define CONFIG_SPL
+ #define CONFIG_SPL_MPC8XXX_INIT_DDR_SUPPORT
+ #define CONFIG_SPL_ENV_SUPPORT
+@@ -177,6 +178,7 @@
+ #endif
+ 
+ #ifdef CONFIG_SPIFLASH
++#error "SPI"
+ #define CONFIG_SPL
+ #define CONFIG_SPL_MPC8XXX_INIT_DDR_SUPPORT
+ #define CONFIG_SPL_ENV_SUPPORT
+@@ -207,6 +209,7 @@
+ #endif
+ 
+ #ifdef CONFIG_NAND
++#error "NAND"
+ #define CONFIG_SPL
+ #define CONFIG_TPL
+ #ifdef CONFIG_TPL_BUILD
+@@ -646,7 +649,7 @@
+ #define CONFIG_FIT_VERBOSE	/* enable fit_format_{error,warning}() */
+ 
+ /* I2C */
+-#define CONFIG_SYS_I2C
++#define CONFIG_SYS_I2C 
+ #define CONFIG_SYS_I2C_FSL
+ #define CONFIG_SYS_FSL_I2C_SPEED	400000
+ #define CONFIG_SYS_FSL_I2C_SLAVE	0x7F
+@@ -657,7 +660,6 @@
+ #define CONFIG_SYS_I2C_NOPROBES		{ {0, 0x29} }
+ #define CONFIG_SYS_I2C_EEPROM_ADDR	0x52
+ #define CONFIG_SYS_SPD_BUS_NUM		1 /* For rom_loc and flash bank */
+-
+ /*
+  * I2C2 EEPROM
+  */
+@@ -1061,46 +1063,94 @@ __stringify(__PCIE_RST_CMD)"\0"
+ "tftp $fdtaddr $fdtfile;"	\
+ "bootm $loadaddr $ramdiskaddr $fdtaddr"
+ 
++#if 1
++#define Z_TSEC eTSEC3
++#define Z_SER_IP 192.168.0.111
++#define Z_CLI_IP 192.168.0.168
++#define ROOTFS_NAME cag_p1020_rootfs.ext4.z
++#define P1020_BOOT    pmboot_dev.bin
++#define P1020_UIMAGE      uImage_dev
++#define P1020_DTB       p1020_dev.dtb
+ /*before use bootos0,bootos1,downub,burnub,you should configure ipaddr and serverip first or they will not work //ezio 10.29*/
++#define CFG_NETWORK \
++"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
++"setenv serverip " __stringify(Z_SER_IP) " ; " \
++"setenv ethaddr 00:04:9F:02:00:3c; " \
++"setenv eth1addr 00:04:9F:02:00:3d; " \
++"setenv eth2addr 00:04:9F:02:00:3e ;" \
++"setenv ethact " __stringify(Z_TSEC) " ;" \
++"setenv ethprime " __stringify(Z_TSEC) " ;"
++
+ #define NET_SET_CFG \
+-"setenv ipaddr 192.168.0.168 ;" \
+-"setenv serverip 192.168.0.111; " \
++"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
++"setenv serverip " __stringify(Z_SER_IP) " ; " \
+ "setenv ethaddr 00:04:9F:02:00:3c; " \
+ "setenv eth1addr 00:04:9F:02:00:3d; " \
+ "setenv eth2addr 00:04:9F:02:00:3e ;" \
+-"setenv ethact eTSEC3 ;" \
+-"setenv ethprime eTSEC3 ;"\
+-"tftp 0x1000000 u-boot.bin;"
++"setenv ethact " __stringify(Z_TSEC) " ;" \
++"setenv ethprime " __stringify(Z_TSEC) " ;"\
++"tftp 0x1000000 " __stringify(P1020_BOOT) " ;"
+ 
+ #define BURN_UBOOT  \
+ "protect off eff40000 +0xc0000 ;" \
+ "erase 0xeff40000 +0xc0000 ;" \
+ "cp.b 1000000 eff40000 $filesize ;"
+ 
+-#define CAG_OS_CFG \
+-"setenv ipaddr 192.168.0.168 ;" \
+-"setenv serverip 192.168.0.111; " \
++#define TFTP_LINUX0 \
++"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
++"setenv serverip " __stringify(Z_SER_IP) " ; " \
+ "setenv ethaddr 00:04:9F:02:00:3c; " \
+ "setenv eth1addr 00:04:9F:02:00:3d; " \
+ "setenv eth2addr 00:04:9F:02:00:3e ;" \
+-"setenv ethact eTSEC3 ;" \
+-"setenv ethprime eTSEC3 ;"\
+-"tftp 0x100000 cagOsCORE0.bin;"\
+-"go 0x100020"
+-
+-#define CAG_OS_CFG1 \
+-"setenv ipaddr 192.168.0.168 ;" \
+-"setenv serverip 192.168.0.111; " \
++"setenv ethact " __stringify(Z_TSEC) " ;" \
++"setenv ethprime " __stringify(Z_TSEC) " ;"\
++"tftp 0x1000000 " __stringify(P1020_UIMAGE) " ;" \
++"tftp 0x2000000 " __stringify(ROOTFS_NAME) " ;" \
++"tftp 0x3000000 " __stringify(P1020_DTB) " ;" \
++"bootm 0x1000000 0x2000000 0x3000000;"
++
++#define NOR_LIN0 \
++"echo load ramdisk;" \
++"cp.b ef600000 2000000 400000 ;" \
++"echo load uImage;" \
++"cp.b ef020000 1000000 500000 ;" \
++"echo load dtb;" \
++"cp.b ef000000 3000000 4000 ;" \
++"echo booting;" \
++"bootm 0x1000000 0x2000000 0x3000000 ;"
++
++#define BURN_LINUX0 \
++"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
++"setenv serverip " __stringify(Z_SER_IP) " ; " \
+ "setenv ethaddr 00:04:9F:02:00:3c; " \
+ "setenv eth1addr 00:04:9F:02:00:3d; " \
+ "setenv eth2addr 00:04:9F:02:00:3e ;" \
+-"setenv ethact eTSEC3 ;" \
+-"setenv ethprime eTSEC3 ;" \
+-"tftp 0x1E00000 cagOsCORE1.bin;" \
+-"cpu 1 release 0x1e00020 - - -;" \
+-"cpu 1 release 0x1e00020 - - -;" \
+-"echo core1 stated ;"
+-
+-#define CONFIG_BOOTCOMMAND	CONFIG_HDBOOT
++"setenv ethact " __stringify(Z_TSEC) " ;" \
++"setenv ethprime " __stringify(Z_TSEC) " ;"\
++"tftp 0x1000000 " __stringify(P1020_UIMAGE) " ;" \
++"tftp 0x2000000 " __stringify(ROOTFS_NAME) " ;" \
++"tftp 0x3000000 " __stringify(P1020_DTB) " ;" \
++"protect off ef000000 +0x100000 ;" \
++"echo burn dtb;" \
++"erase 0xef000000 +0x20000 ;" \
++"cp.b 3000000  ef000000 4000 ;" \
++"echo burn kernel;" \
++"erase 0xef020000 +0x500000 ;" \
++"cp.b 1000000 ef020000 500000 ;" \
++"echo burn rootfs;" \
++"erase 0xef600000 +0x400000 ;" \
++"cp.b 2000000 ef600000 400000;"
++
++#define NOR_ROOTFS_LIN0 \
++"echo boot disk flash;" \
++"echo load uImage;" \
++"cp.b ef020000 1000000 500000 ;" \
++"echo load dtb;" \
++"cp.b ef000000 3000000 4000 ;" \
++"echo booting;" \
++"bootm 0x1000000 - 0x3000000 ;"
++#endif
++
++#define CONFIG_BOOTCOMMAND	NOR_LIN0//CONFIG_HDBOOT
+ 
+ #endif /* __CONFIG_H */
+diff --git a/Source/PM/pmBoot/include/env_default.h b/Source/PM/pmBoot/include/env_default.h
+index 1ec7645..54fcfe8 100755
+--- a/Source/PM/pmBoot/include/env_default.h
++++ b/Source/PM/pmBoot/include/env_default.h
+@@ -32,11 +32,14 @@ const uchar default_environment[] = {
+ 	"bootargs="	CONFIG_BOOTARGS			"\0"
+ #endif
+ #ifdef	CONFIG_BOOTCOMMAND
+-	"bootcmd="  CONFIG_BOOTCOMMAND		"\0"
+-	"oscmd="    CAG_OS_CFG "\0"   /*ezio 9.28*/
+-        "oscmd1="   CAG_OS_CFG1 "\0" /*ezio 9.28*/
+-        "ubcmd="    NET_SET_CFG "\0"  /*ezio 9.28*/
+-        "burnub="   BURN_UBOOT "\0"   /*ezio 10.29*/
++    "bootcmd="	CONFIG_BOOTCOMMAND		"\0"
++    "ubcmd="    NET_SET_CFG "\0" /*ezio 9.28*/
++    "burnub="   BURN_UBOOT "\0"    /*ezio 10.29*/
++    "linux0net="   TFTP_LINUX0 "\0" /*ezio 16.1.4*/
++    "linux0nor="   NOR_LIN0 "\0" /*ezio 16.1.4*/
++    "burnlin0="   BURN_LINUX0 "\0" /*ezio 16.1.4*/
++    "ifconfig=" CFG_NETWORK "\0" /*ezio 16.1.6*/
++    "bootlocal=" NOR_ROOTFS_LIN0 "\0" /*ezio 16.1.6*/
+ #endif
+ #ifdef	CONFIG_RAMBOOTCOMMAND
+ 	"ramboot="	CONFIG_RAMBOOTCOMMAND		"\0"
+diff --git a/Source/PM/pmBoot/pmboot_patch b/Source/PM/pmBoot/pmboot_patch
+index a5174bd..61a879a 100644
+--- a/Source/PM/pmBoot/pmboot_patch
++++ b/Source/PM/pmBoot/pmboot_patch
+@@ -1,296 +0,0 @@
+-diff --git a/Source/PM/pmBoot/Makefile b/Source/PM/pmBoot/Makefile
+-index bbf676c..ed20a08 100644
+---- a/Source/PM/pmBoot/Makefile
+-+++ b/Source/PM/pmBoot/Makefile
+-@@ -331,7 +331,7 @@ LD		= $(CROSS_COMPILE)ld.bfd
+- else
+- LD		= $(CROSS_COMPILE)ld
+- endif
+--CC		= $(CROSS_COMPILE)gcc --sysroot=/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/ppce500v2-fsl-linux-gnuspe
+-+CC		= $(CROSS_COMPILE)gcc
+- CPP		= $(CC) -E
+- AR		= $(CROSS_COMPILE)ar
+- NM		= $(CROSS_COMPILE)nm
+-diff --git a/Source/PM/pmBoot/common/autoboot.c b/Source/PM/pmBoot/common/autoboot.c
+-index 30102a4..c2ff406 100644
+---- a/Source/PM/pmBoot/common/autoboot.c
+-+++ b/Source/PM/pmBoot/common/autoboot.c
+-@@ -150,7 +150,7 @@ static int abortboot_normal(int bootdelay)
+- 	printf(CONFIG_MENUPROMPT);
+- #else
+- 	if (bootdelay >= 0)
+--		printf("Hit any key to stop autoboot: %2d ", bootdelay);
+-+		printf("autoboot Hit any key to stop autoboot: %2d ", bootdelay);
+- #endif
+- 
+- #if defined CONFIG_ZERO_BOOTDELAY_CHECK
+-diff --git a/Source/PM/pmBoot/common/cmd_bootm.c b/Source/PM/pmBoot/common/cmd_bootm.c
+-index 602aa6f..7a72904 100755
+---- a/Source/PM/pmBoot/common/cmd_bootm.c
+-+++ b/Source/PM/pmBoot/common/cmd_bootm.c
+-@@ -216,26 +216,60 @@ U_BOOT_CMD(
+- 
+- #endif
+- 
+--//ezio add 9.28
+--int do_bootcagos0(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+-+#if 1
+-+//ezio add 16.1.4
+-+int do_bootlinux0(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+- {
+--    return run_command(getenv("oscmd"), flag);
+-+    return run_command(getenv("linux0net"), flag);
+- }
+- 
+- U_BOOT_CMD(
+--    bootos0, 1,  1,  do_bootcagos0,
+--    "boot cagos 0,",
+-+    bootlinux0, 1,  1,  do_bootlinux0,
+-+    "boot linux 0 from tftp",
+-     ""
+- );
+- 
+--int do_bootcagos1(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+-+int do_cfgnet(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+- {
+--    return run_command(getenv("oscmd1"),flag);
+-+    return run_command(getenv("ifconfig"), flag);
+- }
+- 
+- U_BOOT_CMD(
+--    bootos1, 1,  1,  do_bootcagos1,
+--    "boot cagos 1 from flash, ",
+-+    ifc, 1,  1,  do_cfgnet,
+-+    "cfg network",
+-+    ""
+-+);
+-+
+-+int do_bootlinux0nor(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+-+{
+-+    return run_command(getenv("linux0nor"), flag);
+-+}
+-+
+-+U_BOOT_CMD(
+-+    bootlinux0nor, 1,  1,  do_bootlinux0nor,
+-+    "boot linux 0 from nor",
+-+    ""
+-+);
+-+
+-+int do_bootrfslocal(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+-+{
+-+    return run_command(getenv("bootlocal"), flag);
+-+}
+-+
+-+U_BOOT_CMD(
+-+    bootlocalrfs, 1,  1,  do_bootrfslocal,
+-+    "boot linux 0 local rootfs",
+-+    ""
+-+);
+-+
+-+int do_burnlinux0nor(cmd_tbl_t *cmdtp, int flag, int argc, char * const argv[])
+-+{
+-+    return run_command(getenv("burnlin0"), flag);
+-+}
+-+
+-+U_BOOT_CMD(
+-+    burnlinux0nor, 1,  1,  do_burnlinux0nor,
+-+    "burn linux 0",
+-     ""
+- );
+- 
+-@@ -260,6 +294,7 @@ U_BOOT_CMD(
+-     "download uboot to memory ",
+-     ""
+- );
+-+#endif
+- 
+- /*******************************************************************/
+- /* iminfo - print header info for a requested image */
+-diff --git a/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h b/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
+-index 893de29..8cf5740 100755
+---- a/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
+-+++ b/Source/PM/pmBoot/include/configs/p1_p2_rdb_pc.h
+-@@ -148,6 +148,7 @@
+- #endif
+- 
+- #ifdef CONFIG_SDCARD
+-+#error "SDC"
+- #define CONFIG_SPL
+- #define CONFIG_SPL_MPC8XXX_INIT_DDR_SUPPORT
+- #define CONFIG_SPL_ENV_SUPPORT
+-@@ -177,6 +178,7 @@
+- #endif
+- 
+- #ifdef CONFIG_SPIFLASH
+-+#error "SPI"
+- #define CONFIG_SPL
+- #define CONFIG_SPL_MPC8XXX_INIT_DDR_SUPPORT
+- #define CONFIG_SPL_ENV_SUPPORT
+-@@ -207,6 +209,7 @@
+- #endif
+- 
+- #ifdef CONFIG_NAND
+-+#error "NAND"
+- #define CONFIG_SPL
+- #define CONFIG_TPL
+- #ifdef CONFIG_TPL_BUILD
+-@@ -646,7 +649,7 @@
+- #define CONFIG_FIT_VERBOSE	/* enable fit_format_{error,warning}() */
+- 
+- /* I2C */
+--#define CONFIG_SYS_I2C
+-+#define CONFIG_SYS_I2C 
+- #define CONFIG_SYS_I2C_FSL
+- #define CONFIG_SYS_FSL_I2C_SPEED	400000
+- #define CONFIG_SYS_FSL_I2C_SLAVE	0x7F
+-@@ -657,7 +660,6 @@
+- #define CONFIG_SYS_I2C_NOPROBES		{ {0, 0x29} }
+- #define CONFIG_SYS_I2C_EEPROM_ADDR	0x52
+- #define CONFIG_SYS_SPD_BUS_NUM		1 /* For rom_loc and flash bank */
+--
+- /*
+-  * I2C2 EEPROM
+-  */
+-@@ -1061,46 +1063,94 @@ __stringify(__PCIE_RST_CMD)"\0"
+- "tftp $fdtaddr $fdtfile;"	\
+- "bootm $loadaddr $ramdiskaddr $fdtaddr"
+- 
+-+#if 1
+-+#define Z_TSEC eTSEC3
+-+#define Z_SER_IP 192.168.0.111
+-+#define Z_CLI_IP 192.168.0.168
+-+#define ROOTFS_NAME cag_p1020_rootfs.ext4.z
+-+#define P1020_BOOT    pmboot_dev.bin
+-+#define P1020_UIMAGE      uImage_dev
+-+#define P1020_DTB       p1020_dev.dtb
+- /*before use bootos0,bootos1,downub,burnub,you should configure ipaddr and serverip first or they will not work //ezio 10.29*/
+-+#define CFG_NETWORK \
+-+"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
+-+"setenv serverip " __stringify(Z_SER_IP) " ; " \
+-+"setenv ethaddr 00:04:9F:02:00:3c; " \
+-+"setenv eth1addr 00:04:9F:02:00:3d; " \
+-+"setenv eth2addr 00:04:9F:02:00:3e ;" \
+-+"setenv ethact " __stringify(Z_TSEC) " ;" \
+-+"setenv ethprime " __stringify(Z_TSEC) " ;"
+-+
+- #define NET_SET_CFG \
+--"setenv ipaddr 192.168.0.168 ;" \
+--"setenv serverip 192.168.0.111; " \
+-+"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
+-+"setenv serverip " __stringify(Z_SER_IP) " ; " \
+- "setenv ethaddr 00:04:9F:02:00:3c; " \
+- "setenv eth1addr 00:04:9F:02:00:3d; " \
+- "setenv eth2addr 00:04:9F:02:00:3e ;" \
+--"setenv ethact eTSEC3 ;" \
+--"setenv ethprime eTSEC3 ;"\
+--"tftp 0x1000000 u-boot.bin;"
+-+"setenv ethact " __stringify(Z_TSEC) " ;" \
+-+"setenv ethprime " __stringify(Z_TSEC) " ;"\
+-+"tftp 0x1000000 " __stringify(P1020_BOOT) " ;"
+- 
+- #define BURN_UBOOT  \
+- "protect off eff40000 +0xc0000 ;" \
+- "erase 0xeff40000 +0xc0000 ;" \
+- "cp.b 1000000 eff40000 $filesize ;"
+- 
+--#define CAG_OS_CFG \
+--"setenv ipaddr 192.168.0.168 ;" \
+--"setenv serverip 192.168.0.111; " \
+-+#define TFTP_LINUX0 \
+-+"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
+-+"setenv serverip " __stringify(Z_SER_IP) " ; " \
+- "setenv ethaddr 00:04:9F:02:00:3c; " \
+- "setenv eth1addr 00:04:9F:02:00:3d; " \
+- "setenv eth2addr 00:04:9F:02:00:3e ;" \
+--"setenv ethact eTSEC3 ;" \
+--"setenv ethprime eTSEC3 ;"\
+--"tftp 0x100000 cagOsCORE0.bin;"\
+--"go 0x100020"
+--
+--#define CAG_OS_CFG1 \
+--"setenv ipaddr 192.168.0.168 ;" \
+--"setenv serverip 192.168.0.111; " \
+-+"setenv ethact " __stringify(Z_TSEC) " ;" \
+-+"setenv ethprime " __stringify(Z_TSEC) " ;"\
+-+"tftp 0x1000000 " __stringify(P1020_UIMAGE) " ;" \
+-+"tftp 0x2000000 " __stringify(ROOTFS_NAME) " ;" \
+-+"tftp 0x3000000 " __stringify(P1020_DTB) " ;" \
+-+"bootm 0x1000000 0x2000000 0x3000000;"
+-+
+-+#define NOR_LIN0 \
+-+"echo load ramdisk;" \
+-+"cp.b ef600000 2000000 400000 ;" \
+-+"echo load uImage;" \
+-+"cp.b ef020000 1000000 500000 ;" \
+-+"echo load dtb;" \
+-+"cp.b ef000000 3000000 4000 ;" \
+-+"echo booting;" \
+-+"bootm 0x1000000 0x2000000 0x3000000 ;"
+-+
+-+#define BURN_LINUX0 \
+-+"setenv ipaddr " __stringify(Z_CLI_IP) " ;" \
+-+"setenv serverip " __stringify(Z_SER_IP) " ; " \
+- "setenv ethaddr 00:04:9F:02:00:3c; " \
+- "setenv eth1addr 00:04:9F:02:00:3d; " \
+- "setenv eth2addr 00:04:9F:02:00:3e ;" \
+--"setenv ethact eTSEC3 ;" \
+--"setenv ethprime eTSEC3 ;" \
+--"tftp 0x1E00000 cagOsCORE1.bin;" \
+--"cpu 1 release 0x1e00020 - - -;" \
+--"cpu 1 release 0x1e00020 - - -;" \
+--"echo core1 stated ;"
+--
+--#define CONFIG_BOOTCOMMAND	CONFIG_HDBOOT
+-+"setenv ethact " __stringify(Z_TSEC) " ;" \
+-+"setenv ethprime " __stringify(Z_TSEC) " ;"\
+-+"tftp 0x1000000 " __stringify(P1020_UIMAGE) " ;" \
+-+"tftp 0x2000000 " __stringify(ROOTFS_NAME) " ;" \
+-+"tftp 0x3000000 " __stringify(P1020_DTB) " ;" \
+-+"protect off ef000000 +0x100000 ;" \
+-+"echo burn dtb;" \
+-+"erase 0xef000000 +0x20000 ;" \
+-+"cp.b 3000000  ef000000 4000 ;" \
+-+"echo burn kernel;" \
+-+"erase 0xef020000 +0x500000 ;" \
+-+"cp.b 1000000 ef020000 500000 ;" \
+-+"echo burn rootfs;" \
+-+"erase 0xef600000 +0x400000 ;" \
+-+"cp.b 2000000 ef600000 400000;"
+-+
+-+#define NOR_ROOTFS_LIN0 \
+-+"echo boot disk flash;" \
+-+"echo load uImage;" \
+-+"cp.b ef020000 1000000 500000 ;" \
+-+"echo load dtb;" \
+-+"cp.b ef000000 3000000 4000 ;" \
+-+"echo booting;" \
+-+"bootm 0x1000000 - 0x3000000 ;"
+-+#endif
+-+
+-+#define CONFIG_BOOTCOMMAND	NOR_LIN0//CONFIG_HDBOOT
+- 
+- #endif /* __CONFIG_H */
+-diff --git a/Source/PM/pmBoot/include/env_default.h b/Source/PM/pmBoot/include/env_default.h
+-index 1ec7645..54fcfe8 100755
+---- a/Source/PM/pmBoot/include/env_default.h
+-+++ b/Source/PM/pmBoot/include/env_default.h
+-@@ -32,11 +32,14 @@ const uchar default_environment[] = {
+- 	"bootargs="	CONFIG_BOOTARGS			"\0"
+- #endif
+- #ifdef	CONFIG_BOOTCOMMAND
+--	"bootcmd="  CONFIG_BOOTCOMMAND		"\0"
+--	"oscmd="    CAG_OS_CFG "\0"   /*ezio 9.28*/
+--        "oscmd1="   CAG_OS_CFG1 "\0" /*ezio 9.28*/
+--        "ubcmd="    NET_SET_CFG "\0"  /*ezio 9.28*/
+--        "burnub="   BURN_UBOOT "\0"   /*ezio 10.29*/
+-+    "bootcmd="	CONFIG_BOOTCOMMAND		"\0"
+-+    "ubcmd="    NET_SET_CFG "\0" /*ezio 9.28*/
+-+    "burnub="   BURN_UBOOT "\0"    /*ezio 10.29*/
+-+    "linux0net="   TFTP_LINUX0 "\0" /*ezio 16.1.4*/
+-+    "linux0nor="   NOR_LIN0 "\0" /*ezio 16.1.4*/
+-+    "burnlin0="   BURN_LINUX0 "\0" /*ezio 16.1.4*/
+-+    "ifconfig=" CFG_NETWORK "\0" /*ezio 16.1.6*/
+-+    "bootlocal=" NOR_ROOTFS_LIN0 "\0" /*ezio 16.1.6*/
+- #endif
+- #ifdef	CONFIG_RAMBOOTCOMMAND
+- 	"ramboot="	CONFIG_RAMBOOTCOMMAND		"\0"

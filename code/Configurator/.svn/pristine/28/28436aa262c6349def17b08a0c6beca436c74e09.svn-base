@@ -1,0 +1,171 @@
+
+// MainFrm.h : interface of the CMainFrame class
+//
+
+#pragma once
+#include "afxext.h"
+
+//Added by wangdong
+#include "MySplitterWnd.h"
+
+class CCommSettings;
+class CAliasMap;
+
+class CMainFrame : public CFrameWndEx
+{
+	
+protected: // create from serialization only
+	CMainFrame();
+	DECLARE_DYNCREATE(CMainFrame)
+
+// Attributes
+public:
+
+// Operations
+public:
+
+// Overrides
+public:
+	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
+	virtual BOOL LoadFrame(UINT nIDResource, DWORD dwDefaultStyle = WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, CWnd* pParentWnd = NULL, CCreateContext* pContext = NULL);
+
+// Implementation
+public:
+	virtual ~CMainFrame();
+#ifdef _DEBUG
+	virtual void AssertValid() const;
+	virtual void Dump(CDumpContext& dc) const;
+#endif
+
+protected:  // control bar embedded members
+	CMFCMenuBar       m_wndMenuBar;
+	CMFCToolBar       m_wndToolBar;
+	CMFCStatusBar     m_wndStatusBar;
+	CMFCToolBarImages m_UserImages;
+
+	CMFCToolBar       m_viewToolBar;
+
+// Generated message map functions
+protected:
+	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
+	afx_msg void OnViewCustomize();
+	afx_msg LRESULT OnToolbarCreateNew(WPARAM wp, LPARAM lp);
+	afx_msg void OnApplicationLook(UINT id);
+	afx_msg void OnUpdateApplicationLook(CCmdUI* pCmdUI);
+	DECLARE_MESSAGE_MAP()
+
+	virtual BOOL OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext);
+
+private:
+	DWORD m_dwRefreshTicks;       // Only used during monitoring
+	UINT_PTR m_uThreadTimer;      // 0: ThreadTimer has been killed; Others not killed
+	bool ｍ_bAutoConnect;
+    
+	// 分割窗口，两行一列
+	CMySplitterWnd m_hSplitter;
+	CMySplitterWnd m_vSplitter;
+
+	bool AddView(int nRow, int nCol, CRuntimeClass* pViewClass, CCreateContext* pContext);
+	bool ShowView( int nRow, int nCol, CWnd* pWnd );
+	bool HideView( int nRow, int nCol );
+
+	void ShowClientView( CView* pView, int nColumn );
+
+public:
+	void DoConnect( void );
+    void DoDisconnect( void );
+	bool DoCommSettingsDialog( void );
+	void DoMonitor( void );
+	void DoStopMonitor( void );
+	void CheckThreadDone( void );
+	void ShowProgressDlg( void );
+	void UpdateStatusBar( void );
+
+    enum LeftView{  LSETTING_GRID, LTREND, LTUNING, LALIASES, LALARMS };
+	enum RightView{ RSETTING_GRID, RTREND, RALIASES };
+
+	bool IsConnected();
+	HRESULT ReadAliasesFromDevice( CAliasMap* pAliases, bool bCalibrate = false );
+	HRESULT WriteAliasesToDevice( CAliasMap* pAliases, bool bCalibrate = false );
+	void TestCommSettings( CCommSettings* pTestSettings );
+
+	// DSC100 Calibrate
+	void ReadStatus();
+	void SetAliasFlag( bool bInfoFlag,  bool bMinFlag, bool bMaxFlag, bool bVerFlag,
+                       bool bSaveFlag,  bool bIsCal,   bool bCancel,  bool bRun, bool bChooseNo );
+	void SendCalibrationFlags( bool bSave );
+	bool IsOperationEnable( void );
+
+	/*
+	void ResetCalibrationDatas();
+	*/
+
+	// DSC100 Inspection System
+	void SendToDevice();
+	HRESULT MonitorTestData( CAliasMap* pAliases );
+
+public:
+	afx_msg void OnClose();
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
+	
+	/// Command
+	// Device Menu
+	afx_msg void OnDeviceEnterpassword();
+	afx_msg void OnDeviceLogout();
+	afx_msg void OnDeviceConnect();
+	afx_msg void OnDeviceDisconnect();
+	afx_msg void OnDeviceRetrieve();
+	afx_msg void OnDeviceSend();
+	afx_msg void OnDeviceCompare();
+	afx_msg void OnDeviceCommsettings();
+
+	// Monitor Menu
+	afx_msg void OnMonitorStart();
+	afx_msg void OnMonitorStop();
+
+	// View Menu
+	afx_msg void OnViewConfig();
+	afx_msg void OnViewTrend();
+	afx_msg void OnViewTuning();
+	afx_msg void OnViewAliases();
+	afx_msg void OnViewAlarms();
+
+	// Action
+	afx_msg void OnActionCalibrate();
+	afx_msg void OnActionRun();
+
+	// Help
+	afx_msg void OnHelpTopics();
+	afx_msg BOOL OnHelpInfo(HELPINFO* pHelpInfo);
+	
+	/// Update Command UI
+	afx_msg void OnUpdateFileSave(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateFileSaveAs(CCmdUI *pCmdUI);
+
+	afx_msg void OnUpdateDeviceLogout(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceConnect(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceDisconnect(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceRetrieve(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceSend(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceCommsettings(CCmdUI *pCmdUI);
+
+	afx_msg void OnUpdateMonitorStart(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateMonitorStop(CCmdUI *pCmdUI);
+
+	afx_msg void OnUpdateDeviceCompare(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewLanguageChs(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewLanguageEng(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceDsc100(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateDeviceTs320(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewConfig(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewTrend(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewTuning(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewAliases(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateViewAlarms(CCmdUI *pCmdUI);
+
+	afx_msg void OnUpdateActionCalibrate(CCmdUI *pCmdUI);
+	afx_msg void OnUpdateActionRun(CCmdUI *pCmdUI);
+	afx_msg void OnDeviceDsc100test();
+};
+
+

@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:09:43" />
+    <title>The Help Window</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="UsingHTMLHelp-Using_Help.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="UsingHTMLHelp-Using_the_Contents_Tree.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1150842"> </a><h2 class="pHeading1">
+The Help Window
+</h2>
+<hr />
+<a name="wp1152637"> </a><p class="pBody">
+Help is displayed in a window that consists of three parts: the toolbar buttons at the top, the navigation tabs on the left, and the topic viewer on the right.
+</p>
+<a name="wp1151444"> </a><h5 class="pHeading4">
+Toolbar Buttons
+</h5>
+<a name="wp1151520"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1151527table1151525">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1151527"> </a><div class="pCellHeading">
+Button
+</div>
+</th>
+    <th><a name="wp1151529"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1151531"> </a><div class="pCellBody">
+Hide or Show
+</div>
+</td>
+    <td><a name="wp1151533"> </a><div class="pCellBody">
+Hides or shows the Contents, Index, Search, and Favorites tabs.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1151535"> </a><div class="pCellBody">
+Back
+</div>
+</td>
+    <td><a name="wp1151537"> </a><div class="pCellBody">
+Returns to the last topic viewed.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1151539"> </a><div class="pCellBody">
+Print
+</div>
+</td>
+    <td><a name="wp1152001"> </a><div class="pCellBody">
+Prints the topic displayed in the topic viewer, or prints the topic selected in the Contents tree and optionally its subtopics.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1151543"> </a><div class="pCellBody">
+Options
+</div>
+</td>
+    <td><a name="wp1151545"> </a><div class="pCellBody">
+Contains a menu of additional options:
+</div>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1152719"> </a><div class="pSmartList1"><li>Forward - Returns to the topic displayed before using the Back command.</li></div>
+<a name="wp1152726"> </a><div class="pSmartList1"><li>Home - Displays the Help splash screen.</li></div>
+<a name="wp1152727"> </a><div class="pSmartList1"><li>Stop - Stops downloading a Web page.</li></div>
+<a name="wp1152728"> </a><div class="pSmartList1"><li>Refresh - Updates the Web page currently displayed in the topic viewer.</li></div>
+<a name="wp1152744"> </a><div class="pSmartList1"><li>Internet Options - Opens a dialog box for changing various Internet options. Options changed here also apply to Internet Explorer.</li></div>
+<a name="wp1152750"> </a><div class="pSmartList1"><li>Search Highlight On or Search Highlight Off - Enables or disables highlighting of the words or phrases searched for on the Search tab.</li></div>
+</ul></div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1151547"> </a><div class="pCellBody">
+Help
+</div>
+</td>
+    <td><a name="wp1151549"> </a><div class="pCellBody">
+Displays the topics for help on using the Help system.
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1151843"> </a><h5 class="pHeading5">
+Navigation Tabs
+</h5>
+<a name="wp1149518"> </a><p class="pBody">
+The navigation tabs include the Contents, Index, Search, and Favorites tabs. Use these tabs to navigate through topics you want to see. You can use the:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1150430"> </a><div class="pSmartList1"><li>Contents tab to browse through an outline of all topics in the Help system</li></div>
+<a name="wp1150444"> </a><div class="pSmartList1"><li>Index tab to find topics quickly by looking for keywords</li></div>
+<a name="wp1150474"> </a><div class="pSmartList1"><li>Search tab to search for any word or phrase in the Help system</li></div>
+<a name="wp1150452"> </a><div class="pSmartList1"><li>Favorites tab to create an easily accessible list of your favorite Help topics</li></div>
+</ul></div>
+<a name="wp1150181"> </a><p class="pBody">
+To hide the navigation tabs, click the Hide button on the toolbar. To show the tabs again, click the Show button.
+</p>
+<a name="wp1151047"> </a><h5 class="pHeading5">
+Topic Viewer
+</h5>
+<a name="wp1151170"> </a><p class="pBody">
+The topic viewer displays the current Help topic. Some topics contain links to other topics or Web pages. To display the linked topic or Web page, click the blue, underlined text. Some topics may also provide a list of additional related topics. To display these topics, click the Related Topics button (shown at the bottom of the topic), and then click the title of the topic you want. If only one related topic exists, it is displayed automatically.
+</p>
+<a name="wp1151049"> </a><p class="pBody">
+To return to the last topic viewed, click the Back button or right-click in the topic viewer and select Back from the menu. To return to the topic displayed before using the Back command, right-click in the topic viewer and select Forward.
+</p>
+
+
+<p class="HTMLHelpRelatedTopic"><object
+  id=candomble
+  type="application/x-oleobject"
+  classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+  width=100
+  height=100
+ >
+  <param name="Command" value="Related Topics, MENU">
+  <param name="Button" value="Text:Related Topics">
+  <param name="Item1" value="Using the Contents Tree ;UsingHTMLHelp-Using_the_Contents_Tree.html#wp1149469;UsingHTMLHelp-Using_the_Contents_Tree.html#wp1149469">
+  <param name="Item2" value="Finding Help Topics ;UsingHTMLHelp-Finding_Help_Topics.html#wp1144026;UsingHTMLHelp-Finding_Help_Topics.html#wp1144026">
+  <param name="Item3" value="Creating a List of Favorite Topics ;UsingHTMLHelp-Creating_a_List_of_Favorite_Topics.html#wp1151146;UsingHTMLHelp-Creating_a_List_of_Favorite_Topics.html#wp1151146">
+ </object></p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

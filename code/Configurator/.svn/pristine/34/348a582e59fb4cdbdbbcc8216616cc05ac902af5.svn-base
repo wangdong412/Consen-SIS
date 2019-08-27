@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>Analog Output Properties</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Analog_Input_Properties.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Digital_Input_Properties.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1403706"> </a><h3 class="pHeading2">
+Analog Output Properties
+</h3>
+<hr />
+<a name="wp1403708"> </a><p class="pBody">
+This table describes the properties you can configure for the analog outputs.
+</p>
+
+
+<a name="wp1403772"> </a>
+<p class="pBodyRelative"></p>
+
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1403714table1403709">
+  <caption><a name="wp1403714"> </a><div class="pTableTitle">
+Analog Output Properties&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1403718"> </a><div class="pCellHeading">
+Property
+</div>
+</th>
+    <th><a name="wp1403720"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    
+    <td><a name="wp1403722"> </a><div class="pCellBody"><b class="cBold">  Actuator  </b></div></td>
+    <td><a name="wp1403724"> </a><div class="pCellBody">  &#160                       </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403800"> </a><div class="pCellBody">  Current Range Select           </div></td>
+    <td><a name="wp1403802"> </a><div class="pCellBody">  0: &plusmn;10 mA  </div>
+    	<a name="wp1403804"> </a><div class="pCellBody">  1: &plusmn;25 mA  </div>
+    	<a name="wp1403806"> </a><div class="pCellBody">  2: &plusmn;50 mA  </div>
+    	<a name="wp1403808"> </a><div class="pCellBody">  3: &plusmn;100 mA  </div>
+    	<a name="wp1403810"> </a><div class="pCellBody">  4: &plusmn;250 mA  </div>
+    	<a name="wp1403812"> </a><div class="pCellBody">  These ranges must be in accordance with configuration of hardware notes.      </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403726"> </a><div class="pCellBody">  Minimum Current           </div></td>
+    <td><a name="wp1403728"> </a><div class="pCellBody">  Range: user defined       </div>
+    	<a name="wp1403730"> </a><div class="pCellBody">  Determines the most negative actuator current that can be output, and sets the scaling for the 0% controller output point.      </div>
+    	<a name="wp1403732"> </a><div class="pCellBody">  Allowed Range: -250 mA to +250 mA(&plusmn;10 mA or &plusmn;25 mA or &plusmn;50 mA or &plusmn;100 mA). Tthese ranges must be configured by hardware notes.      </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403734"> </a><div class="pCellBody">  Maximum Current           </div></td>
+    <td><a name="wp1404736"> </a><div class="pCellBody">  Range: user defined       </div>
+    	<a name="wp1403738"> </a><div class="pCellBody">  Determines the most positive actuator current that can be output, and sets thescaling for the 100% controller output point.      </div>
+    	<a name="wp1403740"> </a><div class="pCellBody">  Allowed Range: -250 mA to +250 mA(&plusmn;10 mA or &plusmn;25 mA or &plusmn;50 mA or &plusmn;100 mA).these ranges must be configured by hardware notes.      </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403734"> </a><div class="pCellBody">  AO01 Null Current           </div></td>
+    <td><a name="wp1404736"> </a><div class="pCellBody">  Should be set equal to the actual null current of the actuator when only AO01 works.        </div>
+    	<a name="wp1403738"> </a><div class="pCellBody">  Allowed Range: Actuator Minimum Current to Actuator Maximum Current     </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403734"> </a><div class="pCellBody">  AO02 Null Current           </div></td>
+    <td><a name="wp1404736"> </a><div class="pCellBody">  Should be set equal to the actual null current of the actuator when only AO02 works.         </div>
+    	<a name="wp1403738"> </a><div class="pCellBody">  Allowed Range: Actuator Minimum Current to Actuator Maximum Current     </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403742"> </a><div class="pCellBody">  AO 01/02 Null Current(AO01+AO02)  </div></td>
+    <td><a name="wp1404744"> </a><div class="pCellBody">  Should be set equal to the actual null current of the actuator when boh AO01 and AO02 work (AO01 output current plus AO02 output current).        </div>
+        <a name="wp1404746"> </a><div class="pCellBody">  Allowed Range: Actuator Minimum Current to Actuator Maximum Current      </div></td>   	 
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403748"> </a><div class="pCellBody">  Shutdown Current        </div></td>
+    <td><a name="wp1403750"> </a><div class="pCellBody">  Should be set equal to the actual current which user expects when DSC100 is Shutdown. Allowed Range: Actuator Minimum Current to Actuator Maximum Current	 </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403752"> </a><div class="pCellBody">  Readback Alarm Threshold          </div></td>
+    <td><a name="wp1403754"> </a><div class="pCellBody">  Threshold for Actuator 01 or Actuator 02 read back Error Fault.         </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403756"> </a><div class="pCellBody">  Actuator O1 Enable          </div></td>
+    <td><a name="wp1403758"> </a><div class="pCellBody">  Check this box if AO1 need be enable.        </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403760"> </a><div class="pCellBody">  Actuator O2 Enable          </div></td>
+    <td><a name="wp1403762"> </a><div class="pCellBody">  Check this box if AO2 need be enable.         </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403742"> </a><div class="pCellBody">  Acutator 01/02 Average Current Control  </div></td>
+    <td><a name="wp1404744"> </a><div class="pCellBody">  Check this box if average current control need be enabled. </div>
+        <a name="wp1404746"> </a><div class="pCellBody">  When this function is enabled, both control ouputs will be equal to the half of AO01/02 null current in stability state; once one AO loop is failure, the other output will be AO01 null current (AO02 failure) or AO02 null current (AO01 failure). This function can guarantee the minimum actuator disturbance.  </div></td>   	 
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403764"> </a><div class="pCellBody">  Dither Current Amplitude          </div></td>
+    <td><a name="wp1403766"> </a><div class="pCellBody">  Range: 0%-10%       </div>
+    	<a name="wp1403768"> </a><div class="pCellBody">  The amount of dither present on the actuator signal. The percent is based on full-scale current, -250mA for the low current and 250 mA for the high current actuator.       </div>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403770"> </a><div class="pCellBody">  Dither Frequency         </div></td>
+    <td><a name="wp1403772"> </a><div class="pCellBody">  Range: 0 to 100.0 Hz       </div>
+    	<a name="wp1403774"> </a><div class="pCellBody">  The frequency of the actuator dither.       </div>
+  </tr>
+  
+  
+  <tr align="left">    
+  	<td><a name="wp1403742"> </a><div class="pCellBody"><b class="cBold">  Position Monitor      </b></div></td>
+  	<td><a name="wp1403744"> </a><div class="pCellBody">  &#160                       </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403746"></a><div class="pCellBody">  Position Monitor Signal          </div></td>
+    <td><a name="wp1403748"></a><div class="pCellBody">  PV01[0]: Output PV01 value       </div>
+    	<a name="wp1403750"></a><div class="pCellBody">  PV02[1]: Output PV02 value       </div>
+    	<a name="wp1403752"></a><div class="pCellBody">  PV [2]: Output Slected PV value  </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403746"></a><div class="pCellBody">  Minimum Current          </div></td>
+    <td><a name="wp1403748"></a><div class="pCellBody">  Range: user defined       </div>
+    	<a name="wp1403750"></a><div class="pCellBody">  Determines the most negative actuator current that can be output, and sets the scaling for the 0% controller output point.  </div>
+    	<a name="wp1403752"></a><div class="pCellBody">  Allowed Range: 0 mA to +25 mA </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403754"></a><div class="pCellBody">  Maximum Current                  </div></td>
+    <td><a name="wp1403756"></a><div class="pCellBody">  Range: user defined       </div>
+    	<a name="wp1403758"></a><div class="pCellBody">  Determines the most positive actuator current that can be output, and sets the scaling for the 100% controller output point.  </div>
+    	<a name="wp1403760"></a><div class="pCellBody">  Allowed Range: 0 mA to +25 mA </div></td>
+  </tr>
+  <tr align="left">
+    <td><a name="wp1403752"></a><div class="pCellBody">  Readback Threshold   </div></td>
+    <td><a name="wp1403756"></a><div class="pCellBody">  Range: 1% to 30%       </div>
+        <a name="wp1403756"></a><div class="pCellBody">  Threshold for Position Monitor Readback Error Fault.	 </div></td>
+  </tr>
+</table>
+</div>
+
+
+<p class="pBodyRelative">
+</p>
+
+
+
+
+<!--
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1403714table1403709">
+  <caption><a name="wp1403714"> </a><div class="pTableTitle">
+Analog Output Properties&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1403718"> </a><div class="pCellHeading">
+Property
+</div>
+</th>
+    <th><a name="wp1403720"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1403722"> </a><div class="pCellBody">
+Signal Assignment
+</div>
+</td>
+    <td><a name="wp1403724"> </a><div class="pCellBody">
+Not Used [0] = the output is not used and is set to 0 mA.
+</div>
+<a name="wp1403725"> </a><div class="pCellBody">
+Speed Used for Control [1] = outputs the high selected speed measurement of the available valid pickups. Unit = RPM
+</div>
+<a name="wp1403726"> </a><div class="pCellBody">
+Speed Setpoint (Reference) [2] = outputs the selected setpoint of the speed controller. Unit = RPM
+</div>
+<a name="wp1403727"> </a><div class="pCellBody">
+Inlet Pressure Setpoint [3] = used to send the inlet pressure setpoint to a remote device for setpoint tracking.
+</div>
+<a name="wp1403728"> </a><div class="pCellBody">
+Back Pressure Setpoint [4] = used to send the back pressure setpoint to a remote setpoint device for setpoint tracking.
+</div>
+<a name="wp1403729"> </a><div class="pCellBody">
+Extraction/Induction Pressure Setpoint [5] = used to send the extraction/induction pressure setpoint to a remote device for setpoint tracking.
+</div>
+<a name="wp1403730"> </a><div class="pCellBody">
+Analog Input #1 [6] = sends the analog input to the analog output. This description applies to all sixteen analog inputs.
+</div>
+<a name="wp1403731"> </a><div class="pCellBody">
+Analog Input #2 [7]
+</div>
+<a name="wp1403732"> </a><div class="pCellBody">
+Analog Input #3 [8]
+</div>
+<a name="wp1403733"> </a><div class="pCellBody">
+Analog Input #4 [9]
+</div>
+<a name="wp1403734"> </a><div class="pCellBody">
+Analog Input #5 [10]
+</div>
+<a name="wp1403735"> </a><div class="pCellBody">
+Analog Input #6 [11]
+</div>
+<a name="wp1403736"> </a><div class="pCellBody">
+Analog Input #7 [12]
+</div>
+<a name="wp1403737"> </a><div class="pCellBody">
+Analog Input #8 [13]
+</div>
+<a name="wp1403738"> </a><div class="pCellBody">
+Analog Input #9 [14]
+</div>
+<a name="wp1403739"> </a><div class="pCellBody">
+Analog Input #10 [15]
+</div>
+<a name="wp1403740"> </a><div class="pCellBody">
+Analog Input #11 [16]
+</div>
+<a name="wp1403741"> </a><div class="pCellBody">
+Analog Input #12 [17]
+</div>
+<a name="wp1403742"> </a><div class="pCellBody">
+Analog Input #13 [18]
+</div>
+<a name="wp1403743"> </a><div class="pCellBody">
+Analog Input #14 [19]
+</div>
+<a name="wp1403744"> </a><div class="pCellBody">
+Analog Input #15 [20]
+</div>
+<a name="wp1403745"> </a><div class="pCellBody">
+Analog Input #16 [21]
+</div>
+<a name="wp1403746"> </a><div class="pCellBody">
+Speed Input #1 [22] = the speed measurement of pickup&#160;#1.
+</div>
+<a name="wp1403747"> </a><div class="pCellBody">
+Speed Input #2 [23] = the speed measurement of pickup&#160;#2.
+</div>
+<a name="wp1403748"> </a><div class="pCellBody">
+Speed Input #3 [24] = the speed measurement of pickup&#160;#3.
+</div>
+<a name="wp1403749"> </a><div class="pCellBody">
+Speed Input #4 [25] = the speed measurement of pickup&#160;#4.
+</div>
+<a name="wp1403750"> </a><div class="pCellBody">
+Simulation Output [26] = simulates the turbine load as determined by positions of V1 and V2. Can be used for testing the controller with a simulator.
+</div>
+<a name="wp1403751"> </a><div class="pCellBody">
+Valve V1 [27] = signal to control valve V1.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>&#160;</td>
+    <td><a name="wp1403755"> </a><div class="pCellBody">
+Valve V2 [28] = signal to control valve V2.
+</div>
+<a name="wp1403756"> </a><div class="pCellBody">
+Stand Alone PID Output [29] = output of user PID.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td>&#160;</td>
+    <td><a name="wp1403760"> </a><div class="pCellBody">
+Megawatt PID Setpoint [30] = Setpoint of MW PID.
+</div>
+<a name="wp1403761"> </a><div class="pCellBody">
+Custom Analog Output [99] = If the <span style="font-family: Verdana, Arial, Helvetica, sans-seri">controller </span>has a custom program, the output comes from the custom program. Note: Custom programming may be offered in a future release of the TS320 <span style="font-family: Verdana, Arial, Helvetica, sans-seri">controller</span>.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1403763"> </a><div class="pCellBody">
+Minimum Raw Counts<br />Maximum Raw Counts<br />
+</div>
+</td>
+    <td><a name="wp1403765"> </a><div class="pCellBody">
+Range: 0 to 4095 counts
+</div>
+<a name="wp1403766"> </a><div class="pCellBody">
+The minimum and maximum raw counts are the limits that are sent on the D/A converter for minimum and maximum engineering units, respectively. This is typically 4 to 20 mA.
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1403768"> </a><div class="pCellBody">
+Minimum Engineering Units<br />Maximum Engineering Units
+</div>
+</td>
+    <td><a name="wp1403770"> </a><div class="pCellBody">
+Range: user defined
+</div>
+<a name="wp1403771"> </a><div class="pCellBody">
+The minimum and maximum engineering units are the smallest and largest units that are sent on the analog output. The engineering units may also be reverse scaled by entering a smaller number in the maximum and a larger number in the minimum.
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+-->
+
+<p class="HTMLHelpRelatedTopic"><object
+  id=candomble
+  type="application/x-oleobject"
+  classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+  width=100
+  height=100
+ >
+  <param name="Command" value="Related Topics, MENU">
+  <param name="Button" value="Text:Related Topics">
+  <param name="Item1" value="Specifying Configuration Properties ;4_Configuration-Specifying_Configuration_Properties.html#wp1212206;4_Configuration-Specifying_Configuration_Properties.html#wp1212206">
+ </object></p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

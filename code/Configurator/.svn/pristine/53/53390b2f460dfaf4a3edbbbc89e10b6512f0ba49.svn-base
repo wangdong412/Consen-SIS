@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>Configuration Files</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Controller_Configuration.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Creating_Configuration_Files.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161107"> </a><h2 class="pHeading1">
+Configuration Files
+</h2>
+<hr />
+<a name="wp1161109"> </a><p class="pBody">
+This section explains how to work with configuration files in the DSC100 Configurator.
+</p>
+<a name="wp1161110"> </a><p class="pBody">
+The DSC100 Configurator stores configuration properties in configuration files. When you start the DSC100 Configurator, the most recently used configuration file opens in the Configuration view.
+</p>
+<a name="wp1161111"> </a><p class="pBody">
+You can create and save as many configuration files as necessary. You also can print configuration files and compare configuration files.
+</p>
+<a name="wp1161112"> </a><p class="pBody">
+After you specify configuration properties using the DSC100 Configurator, you must send the configuration to the controller before the controller can use the new property settings.
+</p>
+<a name="wp1161113"> </a><p class="pBody">
+You can also retrieve configuration property settings from the controller.
+</p>
+<a name="wp1161114"> </a><p class="pBody">
+Topics include:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161118"> </a><div class="pSmartList1"><li><a href="4_Configuration-Creating_Configuration_Files.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Creating Configuration Files</span></a></li></div>
+<a name="wp1161122"> </a><div class="pSmartList1"><li><a href="4_Configuration-Saving_Configuration_Files.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Saving Configuration Files</span></a></li></div>
+<a name="wp1161126"> </a><div class="pSmartList1"><li><a href="4_Configuration-Printing_Configuration_Files.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Printing Configuration Files</span></a></li></div>
+<a name="wp1161130"> </a><div class="pSmartList1"><li><a href="4_Configuration-Comparing_Configuration_Files.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Comparing Configuration Files</span></a></li></div>
+<a name="wp1161134"> </a><div class="pSmartList1"><li><a href="4_Configuration-Sending_Configurations_to_the_Controller.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Sending Configurations to the Controller</span></a></li></div>
+<a name="wp1161138"> </a><div class="pSmartList1"><li><a href="4_Configuration-Retrieving_Configurations_from_the_Controller.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Retrieving Configurations from the Controller</span></a></li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

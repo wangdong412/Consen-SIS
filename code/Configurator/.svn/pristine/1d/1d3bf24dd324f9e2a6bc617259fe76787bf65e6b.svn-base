@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:17" />
+    <title>Removing the DSC100 Configurator</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="3_Installation-Installing_the_DSC100_Configurator.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="3_Installation-Establishing_Communication_Between_a_PC_and_a_DSC100_Controller.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161174"> </a><h3 class="pHeading2">
+Removing the DSC100 Configurator
+</h3>
+<hr />
+<a name="wp1161176"> </a><p class="pBody">
+This procedure explains how to remove the DSC100 Configurator software.
+</p>
+<a name="wp1161177"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1161178"> </a><div class="pSmartList1"><li>Click the Start button, and then point to Settings.</li></div>
+<a name="wp1161179"> </a><div class="pSmartList1"><li>Click Control Panel.</li></div>
+<a name="wp1161180"> </a><div class="pSmartList1"><li>Double-click Add/Remove Programs.</li></div>
+<a name="wp1161181"> </a><div class="pSmartList1"><li>Click the Install/Uninstall tab or the Change or Remove Programs icon, depending on your version of Windows.</li></div>
+<a name="wp1161182"> </a><div class="pSmartList1"><li>Scroll down the list of installed programs and click DSC100 Configurator.</li></div>
+<a name="wp1161183"> </a><div class="pSmartList1"><li>Click Add/Remove or Remove, depending on your version of Windows.</li></div>
+<a name="wp1161184"> </a><div class="pSmartList1"><li>Click Yes, to remove the DSC100 Configurator.</li></div>
+<a name="wp1161185"> </a><div class="pSmartList1"><li>When the &quot;Uninstall successfully completed&quot; message appears, click OK.</li></div>
+<a name="wp1161186"> </a><div class="pSmartList1"><li>On the Add/Remove Programs screen, click OK. The screen closes and the uninstall process is finished.</li></div>
+</ol></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

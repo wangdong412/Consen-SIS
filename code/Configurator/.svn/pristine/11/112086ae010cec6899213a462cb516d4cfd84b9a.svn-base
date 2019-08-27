@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>SP (Position Demand) Properties</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Control_PV_Properties.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Control_Error_Properties.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1405101"> </a><h3 class="pHeading2">
+SP (Position Demand) Properties
+</h3>
+<hr />
+<a name="wp1405102"> </a><p class="pBody">
+This table describes the Position Demand properties.
+</p>
+
+
+<a name="wp1405280"> </a>
+<p class="pBodyRelative"></p>
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1404108table1405420">
+  <caption><a name="wp1405425"> </a><div class="pTableTitle">
+SP (Position Demand) Properties&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1405429"> </a><div class="pCellHeading">
+Property
+</div>
+</th>
+    <th><a name="wp1405431"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    
+  	<td><a name="wp1405433"> </a><div class="pCellBody">  Select Algorithm  </div></td>
+  	<td><a name="wp1405435"> </a><div class="pCellBody">  The DSC100 can be configured as follows for the Position Demand Source.       </div>
+  		  <a name="wp1405437"> </a><div class="pCellBody"><b class="cBold">  Communication Only.                      </b></div>
+  		  <a name="wp1405439"> </a><div class="pCellBody">  Communication Primary[0]: The SPC Position Demand is received via the Modbus Network.                     </div>
+  		  <a name="wp1405441"> </a><div class="pCellBody"><b class="cBold">  Communication Primary                      </b></div>
+  		  <a name="wp1405443"> </a><div class="pCellBody">  Analog Primary[1]: The SPC position demand is received via the Modbus Serial Port or Network. The Analog Demand is used as backup.    </div>
+  		  <a name="wp1405445"> </a><div class="pCellBody"><b class="cBold"> Analog Only                      </b></div>
+  		  <a name="wp1405447"> </a><div class="pCellBody">  Communication Only[2]: The SPC position demand is received on the Analog Demand Input.   </div>
+  		  <a name="wp1405447"> </a><div class="pCellBody"><b class="cBold">   	Analog Primary                 </b></div>
+  		  <a name="wp1405449"> </a><div class="pCellBody">  Analog Only[3]: The SPC position demand is received on the Analog Demand Input and uses the Modbus Serial Port or Network as the backup.  </div></td>
+  </tr>
+  <tr align="left">    
+  	<td><a name="wp1403929"> </a><div class="pCellBody"> Latch when Position Demand Fault                   </div></td>
+  	<td><a name="wp1403931"> </a><div class="pCellBody"> Check this box if position demand faults should be latched.   </div></td>
+  </tr>
+  <tr align="left">    
+  	<td><a name="wp1403929"> </a><div class="pCellBody"> Position Demand Fault Response                    </div></td>
+  	<td><a name="wp1403931"> </a><div class="pCellBody"> Select Position Demand Fault to respond as an alarm or shutdown. (A value must exceed the threshold continuously for a duration equal to the delay time before the alarm or shutdown becomes active.)	   </div></td>
+  </tr>
+  <tr align="left">    
+  	<td><a name="wp1403929"> </a><div class="pCellBody"> Redundant Tracking Error Threshold                  </div></td>
+  	<td><a name="wp1403931"> </a><div class="pCellBody"> Threshold for the Position Demand Tracking Error.   </div></td>
+  </tr>
+  <tr align="left">    
+  	<td><a name="wp1403929"> </a><div class="pCellBody"> Redundant Tracking Error Delay Time                 </div></td>
+  	<td><a name="wp1403931"> </a><div class="pCellBody"> Delay time for the Position Demand Tracking Error.  </div></td>
+  </tr>
+  
+</table>
+</div>
+
+
+<p class="pBodyRelative">
+</p>
+
+<p class="HTMLHelpRelatedTopic"><object
+  id=candomble
+  type="application/x-oleobject"
+  classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+  width=100
+  height=100
+ >
+  <param name="Command" value="Related Topics, MENU">
+  <param name="Button" value="Text:Related Topics">
+  <param name="Item1" value="Specifying Configuration Properties ;4_Configuration-Specifying_Configuration_Properties.html#wp1212206;4_Configuration-Specifying_Configuration_Properties.html#wp1212206">
+ </object></p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+
+#ifndef _COMMON_DEF_H
+#define _COMMON_DEF_H
+
+#include "processor_s.h"
+ 
+#define DEFAULT_STACK_SIZE_VALUE                         (700)
+#define NUM_MAX_SAVE_PAR_VALUE                           (8)
+#define DEFAULT_STACK_SIZE                               (DEFAULT_STACK_SIZE_VALUE)
+#define DIM_GPR                                          (128)
+#define DIM_FPR                                          (256)
+#define DIM_TEST                                         (80)
+#define DIM_GPR_MENO_4                                   (DIM_GPR - 4)
+#define OFFSET_STORE_TEMP_GPR0                           (DEFAULT_STACK_SIZE - 8)
+#define OFFSET_STORE_TEMP_GPR31                          (DEFAULT_STACK_SIZE - 4)
+#define OFFSET_STORE_TEMP_GPR30                          (DEFAULT_STACK_SIZE - 12)
+#define OFFSET_STACK_PARAMETERS                          (16)
+#define OFFSET_PUNT_STACK_CORR                           (8)
+#define OFFSET_SAVE_LR                                   (DEFAULT_STACK_SIZE + 4)
+#define OFFSET_STORE_PAR                                 (12)
+#define DIM_REG_ERROR_16_31                              (64)
+#define ADDRESS_SAVE_ERROR_GPR16_GPR31                   (DEFAULT_STACK_SIZE - DIM_REG_ERROR_16_31)
+#define ADDRESS_SAVE_ERROR_GPR3                          (ADDRESS_SAVE_ERROR_GPR16_GPR31 - 4)
+#define NUM_MAX_SAVE_PAR                                 (NUM_MAX_SAVE_PAR_VALUE)
+#define DIM_SAVE_PAR                                     (NUM_MAX_SAVE_PAR * 4)
+#define OFFSET_STORE_REG                                 (DIM_SAVE_PAR + OFFSET_STACK_PARAMETERS)
+#define OFFSET_STORE_REG_GPR0                            (OFFSET_STORE_REG)
+#define OFFSET_STORE_REG_GPR2_31                         (OFFSET_STORE_REG + 8)
+#define OFFSET_STORE_FPR                                 (OFFSET_STORE_REG + DIM_GPR)
+#define OFFSET_STORE_FPSCR                               (OFFSET_STORE_FPR + DIM_FPR)
+#define OFFSET_TEST_VAR                                  (OFFSET_STORE_FPSCR + 32)
+
+#define DB0_HI               (0x0000)
+#define DB0_LO               (0x0000)
+#define DB1_HI               (0xFFFF)
+#define DB1_LO               (0xFFFF)
+#define DB2_HI               (0xAAAA)
+#define DB2_LO               (0xAAAA)
+#define DB3_HI               (0x5555)
+#define DB3_LO               (0x5555)
+#define DB4_HI               (0xCCCC)
+#define DB4_LO               (0xCCCC)
+#define DB5_HI               (0x3333)
+#define DB5_LO               (0x3333)
+#define DB6_HI               (0xF0F0)
+#define DB6_LO               (0xF0F0)
+#define DB7_HI               (0x0F0F)
+#define DB7_LO               (0x0F0F)
+#define DB8_HI               (0xFF00)
+#define DB8_LO               (0xFF00)
+#define DB9_HI               (0x00FF)
+#define DB9_LO               (0x00FF)
+#define DB10_HI              (0xFFFF)
+#define DB10_LO              (0x0000)
+#define DB11_HI              (0x0000)
+#define DB11_LO              (0xFFFF)
+
+#define START_ADDRESS_BA_TEST                            (0x00004000)
+#define END_ADDRESS_BA_TEST                              (0x00004010)
+#define START_ADDRESS_BLA_TEST                           (0x00004010)
+#define END_ADDRESS_BLA_TEST                             (0x00004018)
+#define START_ADDRESS_BCA_TEST                           (0x00004018)
+#define END_ADDRESS_BCA_TEST                             (0x00004024)
+#define START_ADDRESS_BCLA_TEST                          (0x00004024)
+#define END_ADDRESS_BCLA_TEST                            (0x00004034)
+
+//#####指令集、寄存器自检失败诊断信息保存地址
+#define CPU_ERR_REGS_STORE_ADDR                          (0x0190)
+
+#define RTS0_RTS_STACKF_BOTTOMx              (0x100000+0x001A0000-256*1024*5)
+#define RTS0_RTS_STACKI_BOTTOMx              (0x100000+0x00190000-256*1024*5)
+#define RTS0_UP1_STACKF_BOTTOMx              (0x100000+0x001A0000-256*1024*6)
+#define RTS0_UP1_STACKI_BOTTOMx              (0x100000+0x00190000-256*1024*6)
+#define RTS0_UP2_STACKF_BOTTOMx              (0x100000+0x001A0000-256*1024*7)
+#define RTS0_UP2_STACKI_BOTTOMx              (0x100000+0x00190000-256*1024*7)
+
+#define RTS1_RTS_STACKF_BOTTOMx              (0x5100000+0x001A0000-256*1024*5)
+#define RTS1_RTS_STACKI_BOTTOMx              (0x5100000+0x00190000-256*1024*5)
+
+#define RTS2_RTS_STACKF_BOTTOMx              (0xA100000+0x001A0000-256*1024*5)
+#define RTS2_RTS_STACKI_BOTTOMx              (0xA100000+0x00190000-256*1024*5)
+
+#endif/* #ifndef _COMMON_DEF_H */

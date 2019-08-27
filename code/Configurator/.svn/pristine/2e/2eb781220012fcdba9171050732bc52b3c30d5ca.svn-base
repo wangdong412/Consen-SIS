@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Contacting Tri-Sen">
+		<param name="Local" value="ContactInfo-Help-Contacting_Tri-Sen.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Summary of Sections">
+		<param name="Local" value="0_Preface-Summary_of_Sections.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Warnings">
+		<param name="Local" value="0_Preface-Warnings.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Overview">
+		<param name="Local" value="1_DSC100Overview-Overview.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hardware Overview">
+			<param name="Local" value="1_DSC100Overview-Hardware_Overview.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Hardware Function">
+				<param name="Local" value="1_DSC100Overview-Hardware_Function.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Working Principle">
+				<param name="Local" value="1_DSC100Overview-Working_Principle.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Hardware Information">
+				<param name="Local" value="1_DSC100Overview-Hardware_Information.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Software Overview">
+			<param name="Local" value="1_DSC100Overview-Software_Overview.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Control Application">
+				<param name="Local" value="1_DSC100Overview-Control_Application.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 Configurator">
+				<param name="Local" value="1_DSC100Overview-DSC100_Configurator.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Servo Card Application Control Description">
+		<param name="Local" value="2_Controller_Application.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Shutdown, Alarm and Fault Logic">
+			<param name="Local" value="2_Control_Application_Shurdown_Alarm.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ShutDown Logic">
+				<param name="Local" value="2_Control_Application_Shurdown_Logic.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Alarm Logic">
+				<param name="Local" value="2_Control_Application_Alarm_Logic.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Fault Logic">
+				<param name="Local" value="2_Control_Application_Fault_Logic.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Control Logic">
+			<param name="Local" value="2_Control_Application_Control_Logic.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Installation">
+		<param name="Local" value="3_Installation-Installation.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Hardware Installation ">
+			<param name="Local" value="3_Installation-Hardware_Installation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 Servo Controller's Installation and Remove ">
+				<param name="Local" value="3_Installation-Controller_Installation_and_Remove.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Terminal Module's Installation and Remove ">
+				<param name="Local" value="3_Installation-Terminal_Module.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 Servo Controller jumper settings ">
+				<param name="Local" value="3_Installation-Jumper_Settings.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 Servo Controller Station and IP Address, Baud Rate Setting ">
+				<param name="Local" value="3_Installation-Station_IP_Baud.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="The Connection Definition of Module Terminal Input Signal ">
+				<param name="Local" value="3_Installation-Connection_Definition.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="3- wire, 4- wire, 5- wire and 6- wire LVDT Connection Method ">
+				<param name="Local" value="3_Installation-LVDT_Connection_Method.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MODBUS (TCP/IP) The definition of Ethernet connection ">
+				<param name="Local" value="3_Installation-Ethernet_connection.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="24VDC Redundant Power Input ">
+				<param name="Local" value="3_Installation-Redundancy_Power_Input_Definition.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modbus Connection Definition">
+				<param name="Local" value="3_Installation-Modbus_Connection_Definition.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Software Installation">
+			<param name="Local" value="3_Installation-Software_Installation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="System Requirements">
+				<param name="Local" value="3_Installation-System_Requirements.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Installing the DSC100 Configurator ">
+				<param name="Local" value="3_Installation-Installing_the_DSC100_Configurator.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Removing the DSC100 Configurator ">
+				<param name="Local" value="3_Installation-Removing_the_DSC100_Configurator.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Establishing Communication Between a PC and a DSC100 Controller ">
+				<param name="Local" value="3_Installation-Establishing_Communication_Between_a_PC_and_a_DSC100_Controller.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Controller Configuration">
+		<param name="Local" value="4_Configuration-Controller_Configuration.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Configuration Files">
+			<param name="Local" value="4_Configuration-Configuration_Files.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Creating Configuration Files">
+				<param name="Local" value="4_Configuration-Creating_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Saving Configuration Files">
+				<param name="Local" value="4_Configuration-Saving_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Printing Configuration Files">
+				<param name="Local" value="4_Configuration-Printing_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Comparing Configuration Files">
+				<param name="Local" value="4_Configuration-Comparing_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Sending Configurations to the Controller">
+				<param name="Local" value="4_Configuration-Sending_Configurations_to_the_Controller.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Retrieving Configurations from the Controller">
+				<param name="Local" value="4_Configuration-Retrieving_Configurations_from_the_Controller.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Configuration Properties">
+			<param name="Local" value="4_Configuration-Configuration_Properties.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Specifying Configuration Properties">
+				<param name="Local" value="4_Configuration-Specifying_Configuration_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog Input Properties">
+				<param name="Local" value="4_Configuration-Analog_Input_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog Output Properties">
+				<param name="Local" value="4_Configuration-Analog_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Digital Input Properties">
+				<param name="Local" value="4_Configuration-Digital_Input_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Digital Output Properties">
+				<param name="Local" value="4_Configuration-Digital_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Control Period Properties ">
+				<param name="Local" value="4_Configuration-Control_Control_Period.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PV (Analog Position Input) Properties ">
+				<param name="Local" value="4_Configuration-Control_PV_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SP (Position Demand) Properties ">
+				<param name="Local" value="4_Configuration-Control_SP_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Error = ABS(SP-PV) Properties ">
+				<param name="Local" value="4_Configuration-Control_Error_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tuning Properties">
+				<param name="Local" value="4_Configuration-Control_Tuning_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PID Controller Output Properties">
+				<param name="Local" value="4_Configuration-Control_PID_Controller_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Dead Band Bypass Setting Properties">
+				<param name="Local" value="4_Configuration-Control_Dead_Band_Bypass_Properties.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tuning Concepts">
+			<param name="Local" value="4_Configuration-Tuning_Concepts.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tuning Terms">
+				<param name="Local" value="4_Configuration-Tuning_Terms.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tuning Actions">
+				<param name="Local" value="4_Configuration-Tuning_Actions.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Calibrating from the DSC100 Configurator ">
+			<param name="Local" value="4_Configuration-Calibrating.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DSC100 Configurator User Interface">
+		<param name="Local" value="5_DSC100ConfiguratorUserInterface-DSC100_Configurator_User_Interface.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Views">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Views.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Configuration View">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Configuration_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Trend View">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Trend_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Tuning View">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Tuning_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Aliases View">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Aliases_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Alarm&amp;Shutdown&amp;Fault View ">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Alarm_Shutdown_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Message Area">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Message_Area.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Menus and Commands">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Menus_and_Commands.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="File Menu">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-File_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Device Menu">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Device_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Monitor Menu">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Monitor_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="View Menu">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-View_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Action Menu ">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Action_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Help Menu">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Help_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Standard Toolbar">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Standard_Toolbar.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Views Toolbar">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Views_Toolbar.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Configuration Property Icons">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Real-Time Actuator Data ">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Real-Time_Actuator_Data.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Trending (Graphing) Real-Time Data">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Trending_(Graphing)_Real-Time_Data.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Recording Real-Time Data">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Recording_Real-Time_Data.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Modbus Aliases">
+		<param name="Local" value="A_ModbusAliases-Modbus_Aliases_Overview.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modbus Implementation">
+			<param name="Local" value="A_ModbusAliases-Modbus_Implementation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Supported Function Codes">
+				<param name="Local" value="A_ModbusAliases-Supported_Function_Codes.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modbus Message Format">
+				<param name="Local" value="A_ModbusAliases-Modbus_Message_Format.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Read and Write Function Codes">
+				<param name="Local" value="A_ModbusAliases-Read_and_Write_Function_Codes.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modbus Bins">
+				<param name="Local" value="A_ModbusAliases-Modbus_Bins.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Floating Point Reference Bins">
+				<param name="Local" value="A_ModbusAliases-Floating_Point_Reference_Bins.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Scaling of 16-Bit Integers">
+				<param name="Local" value="A_ModbusAliases-Scaling_of_16_Bit_Integers.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Scaled Integer and Floating Point Example">
+				<param name="Local" value="A_ModbusAliases-Scaled_Integer_and_Floating_Point_Example.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modbus Aliases">
+			<param name="Local" value="A_ModbusAliases-Modbus_Aliases.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Digital Output Read/Write Aliases">
+				<param name="Local" value="A_ModbusAliases-Digital_Output_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Boolean Memory Read/Write Aliases">
+				<param name="Local" value="A_ModbusAliases-Boolean_Memory_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Digital Input Read-Only Aliases">
+				<param name="Local" value="A_ModbusAliases-Digital_Input_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Boolean Memory Read-Only Aliases">
+				<param name="Local" value="A_ModbusAliases-Boolean_Memory_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog 16-Bit Scaled Integer Read-Only Aliases">
+				<param name="Local" value="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog 32-Bit Floating Point Read-Only Aliases">
+				<param name="Local" value="A_ModbusAliases-Analog_32-Bit_Floating_Point_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog 16-Bit Scaled Integer Read/Write Aliases">
+				<param name="Local" value="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Analog 32-Bit Floating Point Read/Write Aliases">
+				<param name="Local" value="A_ModbusAliases-Analog_32-Bit_Floating_Point_ReadWrite_Aliases.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Specifications">
+		<param name="Local" value="D_Specifications-Specifications.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Electrical Specifications ">
+			<param name="Local" value="D_Specifications-Electrical.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Performance Specifications ">
+			<param name="Local" value="D_Specifications-Performance.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Environmental Specifications ">
+			<param name="Local" value="D_Specifications-Environmental.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Using Help">
+		<param name="Local" value="UsingHTMLHelp-Using_Help.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="The Help Window">
+			<param name="Local" value="UsingHTMLHelp-The_Help_Window.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Using the Contents Tree">
+			<param name="Local" value="UsingHTMLHelp-Using_the_Contents_Tree.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Finding Help Topics">
+			<param name="Local" value="UsingHTMLHelp-Finding_Help_Topics.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Making Search Queries">
+				<param name="Local" value="UsingHTMLHelp-Making_Search_Queries.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Turning Highlighting On and Off">
+				<param name="Local" value="UsingHTMLHelp-Turning_Highlighting_On_and_Off.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Using Advanced Search Options">
+				<param name="Local" value="UsingHTMLHelp-Using_Advanced_Search_Options.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Creating a List of Favorite Topics">
+			<param name="Local" value="UsingHTMLHelp-Creating_a_List_of_Favorite_Topics.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Copying Help Topics">
+			<param name="Local" value="UsingHTMLHelp-Copying_Help_Topics.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Printing Help Topics">
+			<param name="Local" value="UsingHTMLHelp-Printing_Help_Topics.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

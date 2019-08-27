@@ -1,0 +1,149 @@
+drivers/pci/pci.c:721:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void init_fpga()
+      ^
+drivers/pci/pci.c: In function 'init_fpga':
+drivers/pci/pci.c:723:5: warning: implicit declaration of function 'sf_init_fpga' [-Wimplicit-function-declaration]
+     sf_init_fpga();
+     ^
+drivers/pci/pci.c:724:5: warning: implicit declaration of function 'gpio_set_fpga' [-Wimplicit-function-declaration]
+     gpio_set_fpga();
+     ^
+drivers/pci/pci.c:725:5: warning: implicit declaration of function 'spi_write_fpga' [-Wimplicit-function-declaration]
+     spi_write_fpga();
+     ^
+drivers/pci/pci.c:726:5: warning: implicit declaration of function 'gpio_check_fpga' [-Wimplicit-function-declaration]
+     gpio_check_fpga();
+     ^
+common/cmd_sf.c:89:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void sf_init_fpga()
+      ^
+common/cmd_sf.c: In function 'sf_init_fpga':
+common/cmd_sf.c:100:3: warning: 'return' with a value, in function returning void [enabled by default]
+   return 1;
+   ^
+common/cmd_sf.c:102:5: warning: 'return' with a value, in function returning void [enabled by default]
+     return 0;
+     ^
+common/sgpio.c:27:0: warning: "NULL" redefined [enabled by default]
+ #define NULL 0
+ ^
+In file included from include/linux/posix_types.h:4:0,
+                 from include/linux/types.h:4,
+                 from common/sgpio.c:25:
+include/linux/stddef.h:8:0: note: this is the location of the previous definition
+ #define NULL ((void *)0)
+ ^
+common/sgpio.c:417:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void gpio_set_fpga()
+      ^
+common/sgpio.c: In function 'gpio_set_fpga':
+common/sgpio.c:421:9: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+         printf("a\b");
+         ^
+common/sgpio.c: At top level:
+common/sgpio.c:456:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void gpio_check_fpga()
+      ^
+common/sgpio.c: In function 'gpio_check_fpga':
+common/sgpio.c:458:5: warning: implicit declaration of function 'udelay' [-Wimplicit-function-declaration]
+     udelay(1000000);
+     ^
+common/sgpio.c: In function 'sysSpiWriteData':
+common/sgpio.c:484:14: warning: unused variable 'cmdCount' [-Wunused-variable]
+     uint32_t cmdCount = (cmdlen / 4 + ((cmdlen % 4 != 0) ? 1 : 0));
+              ^
+common/sgpio.c:482:14: warning: unused variable 't' [-Wunused-variable]
+     uint32_t t = 0;
+              ^
+common/sgpio.c:480:15: warning: unused variable 'gpioStatus' [-Wunused-variable]
+     uint32_t  gpioStatus;
+               ^
+common/sgpio.c: In function 'get_fpga_len':
+common/sgpio.c:554:9: warning: implicit declaration of function 'HexToChar' [-Wimplicit-function-declaration]
+         str1[i-1] = HexToChar(*(alen+i));
+         ^
+common/sgpio.c:555:9: warning: implicit declaration of function 'opow' [-Wimplicit-function-declaration]
+         lens+=str1[i-1]*opow(10,4-i-1);
+         ^
+common/sgpio.c: At top level:
+common/sgpio.c:560:6: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void spi_write_fpga()
+      ^
+common/sgpio.c: In function 'spi_write_fpga':
+common/sgpio.c:569:17: error: 'uint32' undeclared (first use in this function)
+         len = *(uint32 *)FPGA_A_LEN_ADDR;
+                 ^
+common/sgpio.c:569:17: note: each undeclared identifier is reported only once for each function it appears in
+common/sgpio.c:569:25: error: expected expression before ')' token
+         len = *(uint32 *)FPGA_A_LEN_ADDR;
+                         ^
+common/sgpio.c:573:25: error: expected expression before ')' token
+         len = *(uint32 *)FPGA_B_LEN_ADDR;
+                         ^
+common/sgpio.c:578:5: warning: implicit declaration of function 'memcpy' [-Wimplicit-function-declaration]
+     memcpy(0x1e00000,FPGA_A_DATA_ADDR,len);
+     ^
+common/sgpio.c:579:2: warning: passing argument 4 of 'cycloneFpgaTx' makes pointer from integer without a cast [enabled by default]
+  if (cycloneFpgaTx(0,0,len,0x1e00000)!=OK){
+  ^
+common/sgpio.c:525:9: note: expected 'uint8_t *' but argument is of type 'int'
+ int32_t cycloneFpgaTx(uint8_t  chipSelect,uint32_t startAddr,uint32_t  len,uint8_t * buf)
+         ^
+common/sgpio.c:565:14: warning: variable 'faddr' set but not used [-Wunused-but-set-variable]
+     uint32_t faddr =  0;
+              ^
+make[1]: *** [common/sgpio.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+common/cmd_test.c: In function 'do_boot_rts_c':
+common/cmd_test.c:348:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+         rts0_addr = RTS0_A_ADDR;
+                   ^
+common/cmd_test.c:349:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+         rts1_addr = RTS1_A_ADDR;
+                   ^
+common/cmd_test.c:352:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+         rts0_addr = RTS0_B_ADDR;
+                   ^
+common/cmd_test.c:353:19: warning: assignment makes pointer from integer without a cast [enabled by default]
+         rts1_addr = RTS1_B_ADDR;
+                   ^
+common/cmd_test.c:399:23: warning: assignment makes pointer from integer without a cast [enabled by default]
+             rts0_addr = RTS0_B_ADDR;
+                       ^
+common/cmd_test.c:400:23: warning: assignment makes pointer from integer without a cast [enabled by default]
+             rts1_addr = RTS1_B_ADDR;
+                       ^
+common/cmd_test.c:403:23: warning: assignment makes pointer from integer without a cast [enabled by default]
+             rts0_addr = RTS0_A_ADDR;
+                       ^
+common/cmd_test.c:404:23: warning: assignment makes pointer from integer without a cast [enabled by default]
+             rts1_addr = RTS1_A_ADDR;
+                       ^
+common/cmd_test.c:437:5: warning: format '%x' expects argument of type 'unsigned int', but argument 2 has type 'unsigned char *' [-Wformat=]
+     printf("ok crc 0 %x %x 1 %x %x len 0 0x%x  1 0x%x \n",crc0,crc0c,crc1,crc1c,bin0lenc,bin1lenc);
+     ^
+common/cmd_test.c:437:5: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'unsigned char *' [-Wformat=]
+common/cmd_test.c:440:5: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+     memcpy(RTS0RAM,rts0_addr+RTS_HDR_SIZE,bin0lenc);
+     ^
+In file included from include/linux/string.h:21:0,
+                 from include/common.h:22,
+                 from common/cmd_test.c:17:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/pmBoot/arch/powerpc/include/asm/string.h:24:15: note: expected 'void *' but argument is of type 'int'
+ extern void * memcpy(void *,const void *,__kernel_size_t);
+               ^
+common/cmd_test.c:441:5: warning: passing argument 1 of 'memcpy' makes pointer from integer without a cast [enabled by default]
+     memcpy(RTS1RAM,rts1_addr+RTS_HDR_SIZE,bin1lenc);
+     ^
+In file included from include/linux/string.h:21:0,
+                 from include/common.h:22,
+                 from common/cmd_test.c:17:
+/os_dev/workspace/test/ezio/temp/os2/Release_DVD/Source/PM/pmBoot/arch/powerpc/include/asm/string.h:24:15: note: expected 'void *' but argument is of type 'int'
+ extern void * memcpy(void *,const void *,__kernel_size_t);
+               ^
+common/cmd_test.c: In function 'do_cksum':
+common/cmd_test.c:478:5: warning: implicit declaration of function 'cksum_crc32' [-Wimplicit-function-declaration]
+     uint32_t crc = cksum_crc32(start,len);
+     ^
+make: *** [common] Error 2
+make: *** Waiting for unfinished jobs....

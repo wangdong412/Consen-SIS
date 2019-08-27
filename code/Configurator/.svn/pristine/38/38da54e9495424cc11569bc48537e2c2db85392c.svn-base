@@ -1,0 +1,456 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="联系 Tri-Sen">
+		<param name="Local" value="ContactInfo-Help-Contacting_Tri-Sen.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="章节概要">
+		<param name="Local" value="0_Preface-Summary_of_Sections.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="警告">
+		<param name="Local" value="0_Preface-Warnings.html">
+		<param name="ImageNumber" value="17">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="概述">
+		<param name="Local" value="1_DSC100Overview-Overview.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="硬件概述">
+			<param name="Local" value="1_DSC100Overview-Hardware_Overview.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="硬件功能">
+				<param name="Local" value="1_DSC100Overview-Hardware_Function.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="工作原理">
+				<param name="Local" value="1_DSC100Overview-Working_Principle.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="硬件信息">
+				<param name="Local" value="1_DSC100Overview-Hardware_Information.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="软件概述">
+			<param name="Local" value="1_DSC100Overview-Software_Overview.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="控制应用">
+				<param name="Local" value="1_DSC100Overview-Control_Application.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 组态软件">
+				<param name="Local" value="1_DSC100Overview-DSC100_Configurator.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="伺服卡应用控制说明">
+		<param name="Local" value="2_Controller_Application.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="停车、报警、故障逻辑">
+			<param name="Local" value="2_Control_Application_Shurdown_Alarm.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="停车逻辑">
+				<param name="Local" value="2_Control_Application_Shurdown_Logic.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="报警逻辑">
+				<param name="Local" value="2_Control_Application_Alarm_Logic.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="故障逻辑">
+				<param name="Local" value="2_Control_Application_Fault_Logic.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="控制逻辑">
+			<param name="Local" value="2_Control_Application_Control_Logic.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="安装">
+		<param name="Local" value="3_Installation-Installation.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="硬件安装">
+			<param name="Local" value="3_Installation-Hardware_Installation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100伺服控制器的安装与拆卸">
+				<param name="Local" value="3_Installation-Controller_Installation_and_Remove.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="底座模块安装与拆卸">
+				<param name="Local" value="3_Installation-Terminal_Module.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100伺服控制器跳线设置">
+				<param name="Local" value="3_Installation-Jumper_Settings.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100伺服控制器IP地址和波特率设置">
+				<param name="Local" value="3_Installation-Station_IP_Baud.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="接线端子信号定义">
+				<param name="Local" value="3_Installation-Connection_Definition.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="三线、四线、五线及六线的LVDT接线方法">
+				<param name="Local" value="3_Installation-LVDT_Connection_Method.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MODBUS (TCP/IP)以太网连接定义">
+				<param name="Local" value="3_Installation-Ethernet_connection.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="24VDC冗余电源输入">
+				<param name="Local" value="3_Installation-Redundancy_Power_Input_Definition.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MODBUS/RTU RS485接线定义">
+				<param name="Local" value="3_Installation-Modbus_Connection_Definition.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="软件安装">
+			<param name="Local" value="3_Installation-Software_Installation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="系统要求">
+				<param name="Local" value="3_Installation-System_Requirements.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="安装DSC100 Configurator">
+				<param name="Local" value="3_Installation-Installing_the_DSC100_Configurator.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="卸载DSC100 Configurator">
+				<param name="Local" value="3_Installation-Removing_the_DSC100_Configurator.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DSC100 和 Configurator之间通信的建立">
+				<param name="Local" value="3_Installation-Establishing_Communication_Between_a_PC_and_a_DSC100_Controller.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="控制器配置">
+		<param name="Local" value="4_Configuration-Controller_Configuration.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="配置文件">
+			<param name="Local" value="4_Configuration-Configuration_Files.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="创建配置文件">
+				<param name="Local" value="4_Configuration-Creating_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="保存配置文件">
+				<param name="Local" value="4_Configuration-Saving_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="打印配置文件">
+				<param name="Local" value="4_Configuration-Printing_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="比较配置文件">
+				<param name="Local" value="4_Configuration-Comparing_Configuration_Files.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="下发配置参数值">
+				<param name="Local" value="4_Configuration-Sending_Configurations_to_the_Controller.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="从控制器中读取配置参数">
+				<param name="Local" value="4_Configuration-Retrieving_Configurations_from_the_Controller.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="组态软件配置特性">
+			<param name="Local" value="4_Configuration-Configuration_Properties.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="具体配置特性">
+				<param name="Local" value="4_Configuration-Specifying_Configuration_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟输入属性">
+				<param name="Local" value="4_Configuration-Analog_Input_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟输出属性">
+				<param name="Local" value="4_Configuration-Analog_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="数字输入属性">
+				<param name="Local" value="4_Configuration-Digital_Input_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="数字输出属性">
+				<param name="Local" value="4_Configuration-Digital_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="控制周期属性">
+				<param name="Local" value="4_Configuration-Control_Control_Period.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PV (模拟位置输入)">
+				<param name="Local" value="4_Configuration-Control_PV_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SP (位置命令)">
+				<param name="Local" value="4_Configuration-Control_SP_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Error = ABS(SP-PV) Properties ">
+				<param name="Local" value="4_Configuration-Control_Error_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="调节属性">
+				<param name="Local" value="4_Configuration-Control_Tuning_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PID控制器输出范围属性">
+				<param name="Local" value="4_Configuration-Control_PID_Controller_Output_Properties.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="死区旁路设置属性">
+				<param name="Local" value="4_Configuration-Control_Dead_Band_Bypass_Properties.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="调节概念">
+			<param name="Local" value="4_Configuration-Tuning_Concepts.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="调节参数项">
+				<param name="Local" value="4_Configuration-Tuning_Terms.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="调节操作">
+				<param name="Local" value="4_Configuration-Tuning_Actions.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="使用组态软件校准 DSC100">
+			<param name="Local" value="4_Configuration-Calibrating.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="DSC100 组态软件用户界面">
+		<param name="Local" value="5_DSC100ConfiguratorUserInterface-DSC100_Configurator_User_Interface.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="视图">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Views.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="配置视图(Configuration)">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Configuration_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="跟踪视图(Trend)">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Trend_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="调节视图(Tuning)">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Tuning_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="别名视图(Aliases)">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Aliases_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Alarm&amp;Shutdown&amp;Fault 视图">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Alarm_Shutdown_View.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="消息区域">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Message_Area.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="菜单命令">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Menus_and_Commands.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="文件菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-File_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="设备菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Device_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="监控菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Monitor_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="查看菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-View_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="行为菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Action_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="帮助菜单">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Help_Menu.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="标准工具栏">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Standard_Toolbar.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="视图工具栏">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Views_Toolbar.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="配置属性图标">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="实时数据">
+			<param name="Local" value="5_DSC100ConfiguratorUserInterface-Real-Time_Actuator_Data.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="跟踪实时数据">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Trending_(Graphing)_Real-Time_Data.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="记录实时数据">
+				<param name="Local" value="5_DSC100ConfiguratorUserInterface-Recording_Real-Time_Data.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Modbus 别名">
+		<param name="Local" value="A_ModbusAliases-Modbus_Aliases_Overview.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modbus 实现">
+			<param name="Local" value="A_ModbusAliases-Modbus_Implementation.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="支持的功能码">
+				<param name="Local" value="A_ModbusAliases-Supported_Function_Codes.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modbus 消息格式">
+				<param name="Local" value="A_ModbusAliases-Modbus_Message_Format.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="读和写功能码">
+				<param name="Local" value="A_ModbusAliases-Read_and_Write_Function_Codes.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Modbus 数据类型">
+				<param name="Local" value="A_ModbusAliases-Modbus_Bins.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="浮点数数据格式">
+				<param name="Local" value="A_ModbusAliases-Floating_Point_Reference_Bins.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="16-位整型比例变换 ">
+				<param name="Local" value="A_ModbusAliases-Scaling_of_16_Bit_Integers.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="浮点数据格式举例">
+				<param name="Local" value="A_ModbusAliases-Scaled_Integer_and_Floating_Point_Example.html">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Modbus 别名">
+			<param name="Local" value="A_ModbusAliases-Modbus_Aliases.html">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="布尔量输出读/写别名">
+				<param name="Local" value="A_ModbusAliases-Digital_Output_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="布尔量读/写别名">
+				<param name="Local" value="A_ModbusAliases-Boolean_Memory_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="布尔量输入只读别名">
+				<param name="Local" value="A_ModbusAliases-Digital_Input_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="布尔量只读别名">
+				<param name="Local" value="A_ModbusAliases-Boolean_Memory_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟16-位整型只读地址">
+				<param name="Local" value="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟32-位浮点只读地址">
+				<param name="Local" value="A_ModbusAliases-Analog_32-Bit_Floating_Point_Read-Only_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟16-位整型读/写地址">
+				<param name="Local" value="A_ModbusAliases-Analog_16-Bit_Scaled_Integer_ReadWrite_Aliases.html">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模拟32-位浮点读/写地址">
+				<param name="Local" value="A_ModbusAliases-Analog_32-Bit_Floating_Point_ReadWrite_Aliases.html">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="技术规格">
+		<param name="Local" value="D_Specifications-Specifications.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="电子规格">
+			<param name="Local" value="D_Specifications-Electrical.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="性能规格">
+			<param name="Local" value="D_Specifications-Performance.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="环境规格">
+			<param name="Local" value="D_Specifications-Environmental.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

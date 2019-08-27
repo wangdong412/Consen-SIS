@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="chs" lang="chs">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title> 记录实时数据 </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Trending_(Graphing)_Real-Time_Data.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Modbus_Aliases_Overview.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1167222"> </a><h3 class="pHeading2">
+记录实时数据
+</h3>
+<hr />
+<a name="wp1167225"> </a><p class="pBody">
+本节将介绍如何将DSC100控制器的实时数据记录到CSV(comma-separated value)文件中。
+</p>
+<a name="wp1167226"> </a><h5 class="pHeading4">
+开始之前
+</h5>
+<a name="wp1167227"> </a><p class="pBody">
+如果DSC100 Configurator没有与控制器连接，则点击设备(Device)菜单下的连接(Connect)命令。
+</p>
+<a name="wp1167228"> </a><h5 class="plistHeading">
+步骤
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1167229"> </a><div class="pSmartList1"><li>在查看(View)菜单中，点击别名(Aliases)命令，显示别名视图；</li></div>
+<a name="wp1167230"> </a><div class="pSmartList1"><li>在别名视图的右面板中，选择您想跟踪的参数，勾选参数对应的Capture复选框；</li></div>
+<a name="wp1167231"> </a><div class="pSmartList1"><li>重复步骤2，选择其它需要被记录的参数；</li></div>
+<a name="wp1167232"> </a><div class="pSmartList1"><li>点击监视(Monitor)菜单下的开始监视(Start Monitoring)命令；</li></div>
+<a name="wp1167233"> </a><div class="pSmartList1"><li>点击监视(Monitor)菜单下的记录(Record Monitoring)命令；</li></div>
+<a name="wp1167235"> </a><p class="pListIndent">
+DSC100 Configurator将在其安装文件夹中创建一个comma-separated value (CSV)文件。安装文件夹的默认路径为：C:\Program Files\Tri-Sen\DSC100. CSV文件将以创建的日期和时间命名，其命名格式为：yyyy-mm-dd hh;mm;ss.csv。
+</p>
+</ol></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

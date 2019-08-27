@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Standard Toolbar</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Help_Menu.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Views_Toolbar.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161498"> </a><h3 class="pHeading2">
+Standard Toolbar
+</h3>
+<hr />
+<a name="wp1161500"> </a><p class="pBody">
+You can access menu commands using the Standard toolbar, which appears below the menu bar.
+</p>
+<a name="wp1161505"> </a><p class="pBody">
+This table lists Standard toolbar buttons with corresponding menu commands.
+</p>
+<a name="wp1161616"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161511table1161506">
+  <caption><a name="wp1161511"> </a><div class="pTableTitle">
+Standard Toolbar Buttons&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161515"> </a><div class="pCellHeading">
+Button
+</div>
+</th>
+    <th><a name="wp1161517"> </a><div class="pCellHeading">
+Corresponding Menu Command
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161522"> </a><p class="pBodyRelative">
+<img src="images/Button001_New.png" id="wp1161520" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161524"> </a><div class="pCellBody">
+File/New
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161529"> </a><p class="pBodyRelative">
+<img src="images/Button002_Open.png" id="wp1161527" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161531"> </a><div class="pCellBody">
+File/Open
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161536"> </a><p class="pBodyRelative">
+<img src="images/Button003_Save.png" id="wp1161534" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161538"> </a><div class="pCellBody">
+File/Save
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161543"> </a><p class="pBodyRelative">
+<img src="images/Button004_Preview.png" id="wp1161541" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161545"> </a><div class="pCellBody">
+File/Print Preview
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161550"> </a><p class="pBodyRelative">
+<img src="images/Button005_Print.png" id="wp1161548" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161552"> </a><div class="pCellBody">
+File/Print
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161564"> </a><p class="pBodyRelative">
+<img src="images/Button007_Connect.png" id="wp1161562" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161566"> </a><div class="pCellBody">
+Device/Connect
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161571"> </a><p class="pBodyRelative">
+<img src="images/Button008_Retrieve.png" id="wp1161569" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161573"> </a><div class="pCellBody">
+Device/Retrieve Date
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161578"> </a><p class="pBodyRelative">
+<img src="images/Button009_Send.png" id="wp1161576" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161580"> </a><div class="pCellBody">
+Device/Send Date
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161585"> </a><p class="pBodyRelative">
+<img src="images/Button010_Compare.png" id="wp1161583" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161587"> </a><div class="pCellBody">
+Device/Compare Date
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161592"> </a><p class="pBodyRelative">
+<img src="images/Button011_Monitor.png" id="wp1161590" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161594"> </a><div class="pCellBody">
+Monitor/Start Monitoring
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161599"> </a><p class="pBodyRelative">
+<img src="images/Button012_Stop.png" id="wp1161597" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161601"> </a><div class="pCellBody">
+Monitor/Stop Monitoring
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161606"> </a><p class="pBodyRelative">
+<img src="images/Button013_Record.png" id="wp1161604" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161608"> </a><div class="pCellBody">
+Monitor/Record Monitoring
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161613"> </a><p class="pBodyRelative">
+<img src="images/Button014_Help.png" id="wp1161611" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161615"> </a><div class="pCellBody">
+Help/Help Topics
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

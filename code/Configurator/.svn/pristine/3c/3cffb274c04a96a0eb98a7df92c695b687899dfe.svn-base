@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>配置视图(Configuration) </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Views.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Trend_View.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1164006"> </a><h3 class="pHeading2">
+配置视图(Configuration)
+</h3>
+<hr />
+<a name="wp1161165"> </a><p class="pBody">
+配置视图的左面板包含一个树形结构，此树形结构列出了可配置参数的种类和名称。您可以通过左面板，找到某一特定种类在右面板中的位置。</p>
+<a name="wp1161166"> </a><p class="pBody">
+右面板包含一个参数表，参数表包括：</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161167"> </a><div class="pSmartList1"><li>Nam - 简要的功能描述</li></div>
+<a name="wp1161168"> </a><div class="pSmartList1"><li>Range - 最小-最大有效</li></div>
+<a name="wp1161169"> </a><div class="pSmartList1"><li>Units - 参数的测量单位</li></div>
+<a name="wp1161170"> </a><div class="pSmartList1"><li>Value - 可配置的参数值</li></div>
+</ul></div>
+<a name="wp1161171"> </a><p class="pBody">
+您可以在右面板上点击右键，在弹出的快捷菜单中选择相应的菜单命令，选择显示如下的列： </p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161172"> </a><div class="pSmartList1"><li>Variable - 参数对应的变量名。</li></div>
+<a name="wp1161173"> </a><div class="pSmartList1"><li>Number - Modbus别名。</li></div>
+<a name="wp1161174"> </a><div class="pSmartList1"><li>Compare -显示比较参数值：被比较文件或者DSC100控制器中的参数值。当您进行比较操作时，Compare列将自动显示。</li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title> ShutDown Logic </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="2_Control_Application_Shurdown_Alarm.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="2_Control_Application_Alarm_Logic.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159823"> </a><h3 class="pHeading2">
+ShutDown Logic
+</h3>
+<hr />
+<a name="wp1159825"> </a><p class="pBody">
+The Shutdown logic monitors the system for shutdown conditions. Any of these conditions can cause a shutdown output. A shutdown output will force the actuator current to Shutdown Current (Configuration Setting).
+</p>
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1183499table1174020">
+  <caption><a name="wp1183499"> </a><div class="pTableTitle">
+ShutDown conditions&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    
+  	<th><a name="wp1183583"> </a><div class="pCellHeading">  Shutdown Message      </div></th>
+    <th><a name="wp1183585"> </a><div class="pCellHeading">  Description  </div></th>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183587"> </a><div class="pCellBody">  Analog Position Input 01 Open/Over Range                     </div></td>
+  <td><a name="wp1183589"> </a><div class="pCellBody">  Configuration Select LVDT1 Fault to respond as a shutdown    </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183591"> </a><div class="pCellBody">  Analog Position Input 02 Open/Over Range       </div></td>
+  <td><a name="wp1183593"> </a><div class="pCellBody">  Configuration Select LVDT2 Fault to respond as a shutdown   </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183595"> </a><div class="pCellBody">  PV Select Algorithm Changed       </div></td>
+  <td><a name="wp1183597"> </a><div class="pCellBody">  Change PV Algorithm Select to respond as shutdown     </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183599"> </a><div class="pCellBody">  Position Demand Fault  </div></td>
+  <td><a name="wp1183601"> </a><div class="pCellBody">  If Position Demand of Communication and Analog Input are all Error, select Fault to respond as a shutdown  </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183603"> </a><div class="pCellBody">  PID SP/PV Tracking Error      </div></td>
+  <td><a name="wp1183605"> </a><div class="pCellBody">  Configuration Select Deviation of SP-PV Fault to respond as a shutdown	   </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183607"> </a><div class="pCellBody">  External ShutDown Input       </div></td>
+  <td><a name="wp1183609"> </a><div class="pCellBody">  The external shutdown contact input is active after Digital Input was configured "close to shutdown" or "open to shutdown "as an SD input  </div></td>
+</tr>
+</table>
+</div>
+</br>
+<p class="pBody">
+    This figure shows the message format for any Shutdown status corresponding to Configuration function selection.
+</p>
+
+<a name="wp1158567"> </a><p class="pBodyRelative">
+<img src="images/DSC100-Shutdown.png" height="131" width="377" id="wp1159565" border="0" hspace="0" vspace="0"/>
+</p>
+
+
+<a name="wp1184654"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>Note	</b>
+    </td>
+    <td>
+      	After a Shutdown, you must clear the condition that caused the shutdown and activate the Reset input on the controller, before you can re-start the digital servo controller.
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

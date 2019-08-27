@@ -1,0 +1,239 @@
+/*
+ *------------------------------------------------------------
+ * Project:cagOS
+ * Goal: 
+ * Copyright (c) 2013, 2014 CAG Systems, Inc.
+ *------------------------------------------------------------
+ *
+ *    @@@@     @@@      @@@@@       ####      ######
+ *  @@       @@  @@    @@         ##    ##   ##
+ * @@       @@    @@  @@   @@@@  ##      ## ######
+ * @@      @@@@@@@@@@ @@    @@    ##    ##      ##
+ *  @@@@@ @@@      @@@  @@@@@@      ####  #######
+ *
+ * The right to copy, distribute, modify or otherwise make use
+ * of this software may be licensed only pursuant to the terms
+ * of an applicable CAG license agreement.
+ *
+ * 1 tab == 4 spaces!
+ *------------------------------------------------------------
+ * modification history
+ * --------------------
+ * 03jun15,Jeff created
+ *
+ * DESCRIPTION
+ * This file contains
+ */
+
+ENTRY(_start)
+
+MEMORY
+{
+    DiagCode(xrw)               : ORIGIN =  0x0000000000004000, LENGTH = 2048
+    
+    SHARED_MEM2(xrw)            : ORIGIN =  0x0000000000180000, LENGTH = 2M 
+    UPDATE_MEM(xrw)             : ORIGIN =  0x0000000008000000, LENGTH = 11M 
+    
+    /*
+     CORE1 MEMORY SECTION START: 0x0000000000EAF080 
+    */
+    
+    /* os stack                   ORIGIN =  0x0000000001600000, LENGTH = 2M */
+    
+    SHARED_MEM(xrw)             : ORIGIN =  0x0000000001800000, LENGTH = 6M
+    USR_DATA_MEM(xrw)           : ORIGIN =  0x0000000001E00000, LENGTH = 2M
+    
+    DIAG_SWITCH (rx)            : ORIGIN =  0x0000000004E8F080, LENGTH = 1920
+    DIAG_SWITCHUP1 (rx)         : ORIGIN =  0x0000000004E8F800, LENGTH = 1024
+    DIAG_SWITCHUP2 (rx)         : ORIGIN =  0x0000000004E8FC00, LENGTH = 1024
+    
+    RTS_CODE (rx)               : ORIGIN =  0x0000000004E90000, LENGTH = 1200K
+    EXTLIB_CODE (rx)            : ORIGIN =  0x0000000004FDF800, LENGTH = 128K
+    RTS_TCOMMON (rx)            : ORIGIN =  0x0000000004FFF800, LENGTH = 2K
+    RTS_DATA (xrw)              : ORIGIN =  0x0000000005000000, LENGTH = 6M
+    
+    /* os stack ORIGIN =  0x0000000005600000, LENGTH = 2M */
+}
+
+
+SECTIONS
+{
+    .diag      :
+  {
+    ./App/Main/src/RTSTaskExeEntryBin0.o(.text.TskRTSTaskExeEntry) 
+    . = ALIGN(2048);
+  }>DIAG_SWITCH
+  
+      .diagUP1      :
+  {
+    ./App/Main/src/UP1TaskExeEntryBin0.o(.text.TskUP1TaskExeEntry) 
+    . = ALIGN(1024);
+  }>DIAG_SWITCHUP1
+  
+      .diagUP2      :
+  {
+    ./App/Main/src/UP2TaskExeEntryBin0.o(.text.TskUP2TaskExeEntry) 
+    . = ALIGN(1024);
+  }>DIAG_SWITCHUP2
+  
+    .extlib    :
+  {
+    ../PM_FW_COMMON/Srv/ExtLib/src/ExtLib.o(.text) 
+    ../PM_FW_COMMON/Srv/ExtLib/src/ExtLib.o(.text.*) 
+    . = ALIGN(512);
+  }>EXTLIB_CODE
+  
+  .text      :
+  {
+    cag_kernel_text_start = .; _cag_kernel_text_start = .;
+    _CAG_START_TEXT = .;
+    ../PM_FW_COMMON/Srv/Scheduler/lib/CORE0/cagOsCORE0-0.a(.text.entry)  
+    /* ../PM_FW_COMMON/Srv/Scheduler/lib/CORE0_5ms/cagOsCORE0-0.a(.text.entry) */ 
+    *(.text)
+    . = ALIGN(4096);
+  }>RTS_CODE
+
+     .shared_memory : 
+  {
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedRtData.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedRtData.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedRtData.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedComm.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedComm.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedComm.o(COMMON)
+
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedConfig.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedConfig.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedConfig.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedMem.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedMem.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedMem.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/LED.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/LED.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/LED.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedWatchdog.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedWatchdog.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedWatchdog.o(COMMON)
+                
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedHandshake.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedHandshake.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedHandshake.o(COMMON)
+
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSafetyComm.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSafetyComm.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSafetyComm.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/Log/src/LogCore0.o(.bss.*)
+        ../PM_FW_COMMON/Srv/Log/src/LogCore0.o(.sbss)
+        ../PM_FW_COMMON/Srv/Log/src/LogCore0.o(COMMON)
+        
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/Log/src/LogCore1.o(.bss.*)
+        ../PM_FW_COMMON/Srv/Log/src/LogCore1.o(.sbss)
+        ../PM_FW_COMMON/Srv/Log/src/LogCore1.o(COMMON)
+        
+        . = ALIGN(8);
+  }>SHARED_MEM
+  
+   .shared_memory2 : 
+  {
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSOE.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSOE.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedSOE.o(COMMON)
+        . = ALIGN(8);
+  
+  }>SHARED_MEM2
+  
+   .Shared_dc : 
+  {
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedDiagCode.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedDiagCode.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedMem/src/SharedDiagCode.o(COMMON)
+        . = ALIGN(8);
+  
+  }>DiagCode
+   
+       .usr_data_memory : 
+  {
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysMonitor.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysMonitor.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysMonitor.o(COMMON)
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/ExtLib/src/ExtLib.o(.bss.*)
+        ../PM_FW_COMMON/Srv/ExtLib/src/ExtLib.o(.sbss)
+        ../PM_FW_COMMON/Srv/ExtLib/src/ExtLib.o(COMMON)
+        . = ALIGN(8);
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysCore0RtData.o(.bss.*)
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysCore0RtData.o(.sbss)
+        ../PM_FW_COMMON/Srv/SharedSys/src/SysCore0RtData.o(COMMON)     
+        . = ALIGN(8);
+  }>USR_DATA_MEM
+  
+  .sdata2      : {
+    _SDA2_BASE_ = . + 0x7ff0 ;
+    *(.sdata2) *(.sbss2)                             /* for PPC */
+  }>RTS_DATA
+  
+  . = ALIGN(4096);
+  cag_kernel_text_end = .; _cag_kernel_text_end = .;
+  etext = .; _etext = .;
+  . = ALIGN(4096);
+  .data    :
+  {
+    cag_kernel_data_start = .; _cag_kernel_data_start = .;
+    _CAG_START_DATA = .;
+    *(.data)
+    . = ALIGN(4096);
+  }>RTS_DATA
+  
+  .sdata     :
+  {
+    _SDA_BASE_ = . + 0x7ff0 ;
+    *(.sdata) *(.sdata.*)
+    . = ALIGN(4096);
+  }>RTS_DATA
+  
+  edata = .; _edata = .;
+  cag_kernel_data_end = .; _cag_kernel_data_end = .;
+  
+  . = ALIGN(4096);
+  .sbss      :
+  {
+    cag_kernel_bss_start = .; _cag_kernel_bss_start = .;
+    *(.sbss) *(.sbss.*) *(.scommon) 
+    . = ALIGN(4096);
+  }>RTS_DATA
+
+   .bss       :
+  {
+    *(.dynbss) *(.bss) *(.bss.*) *(COMMON) *(.gnu.linkonce.b*)
+    . = ALIGN(4096);
+  }>RTS_DATA
+
+  end = .; _end = .;
+  cag_kernel_bss_end = .; _cag_kernel_bss_end = .;
+
+  .tdata       : 
+  {
+    *(.tdata .tdata.* .gnu.linkonce.td.*) 
+   }>RTS_TCOMMON
+  
+  .tbss        : 
+  { 
+    *(.tbss .tbss.* .gnu.linkonce.tb.*) *(.tcommon) 
+  }>RTS_TCOMMON
+}

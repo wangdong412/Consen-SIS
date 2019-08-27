@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Aliases View</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Tuning_View.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Alarm_Shutdown_View.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161239"> </a><h3 class="pHeading2">
+Aliases View
+</h3>
+<hr />
+<a name="wp1161243"> </a><p class="pBody">
+The Aliases view contains information on the Modbus aliases. The view also allows you to select aliases for which you want to capture values when using the Start Recording command.
+</p>
+<a name="wp1161244"> </a><p class="pBody">
+The left pane of the Aliases view contains a tree structure you can use to navigate to a specific group of Modbus Aliases in the right pane.
+</p>
+<a name="wp1161245"> </a><p class="pBody">
+The right pane of the Aliases view contains these columns:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161246"> </a><div class="pSmartList1"><li>Description-shows the name or description of the item used by the Modbus alias. The items assigned to Modbus aliases include: configuration properties, front-panel controls, dynamic data, and reference items.</li></div>
+<a name="wp1161247"> </a><div class="pSmartList1"><li>Variable-shows the tag associated with the Modbus alias.</li></div>
+<a name="wp1161248"> </a><div class="pSmartList1"><li>Number-shows the Modbus alias number.</li></div>
+<a name="wp1161249"> </a><div class="pSmartList1"><li>Remote-shows the value of the Modbus alias in the controller.</li></div>
+<a name="wp1161250"> </a><div class="pSmartList1"><li>Local-shows the value of the Modbus alias in the open configuration file. You can change this value and then send the new value to the controller by right-clicking the cell and selecting Write variable to Device. Also, you can right-click the cell and select Read variable from Device to change the local value to match the Remote value.</li></div>
+<a name="wp1161251"> </a><div class="pSmartList1"><li>Capture-shows whether the value of the Modbus alias is recorded when you select the Record Monitoring command. You select and clear these check boxes to specify what is recorded.</li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title> 24VDC Redundant Power Input </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="3_Installation-Ethernet_connection.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="3_Installation-Modbus_Connection_Definition.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159823"> </a><h3 class="pHeading2">
+24VDC Redundant Power Input
+</h3>
+<hr />
+<a name="wp1159825"> </a><p class="pBody">
+Use phoenix terminals with four pins whose spacing is 5.08 as the input terminal of 24V redundancy Power. This table describes the definition of pins signal. 
+</p>
+
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1183499table1174020">
+  <caption><a name="wp1183499"> </a><div class="pTableTitle">
+Four-pin phoenix terminal definition&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    
+  	<th><a name="wp1183503"> </a><div class="pCellHeading">  Pin  No.     </div></th>
+    <th><a name="wp1183505"> </a><div class="pCellHeading">  Description  </div></th>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183507"> </a><div class="pCellBody">  1       </div></td>
+  <td><a name="wp1183509"> </a><div class="pCellBody">  24V1+   </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183507"> </a><div class="pCellBody">  2       </div></td>
+  <td><a name="wp1183509"> </a><div class="pCellBody">  24V1-   </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183507"> </a><div class="pCellBody">  3        </div></td>
+  <td><a name="wp1183509"> </a><div class="pCellBody">  24V2+    </div></td>
+</tr>
+<tr align="left">    
+  <td><a name="wp1183507"> </a><div class="pCellBody">  4        </div></td>
+  <td><a name="wp1183509"> </a><div class="pCellBody">  24V2-    </div></td>
+</tr>
+</table>
+</div>
+
+<!--
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1159626"> </a><div class="pSmartList1"><li>120/240 volt AC input</li></div>
+<a name="wp1159627"> </a><div class="pSmartList1"><li>24 volt DC input</li></div>
+</ul></div>-->
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

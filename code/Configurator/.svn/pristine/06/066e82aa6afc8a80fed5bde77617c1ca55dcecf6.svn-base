@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>Saving Configuration Files</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Creating_Configuration_Files.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Printing_Configuration_Files.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161172"> </a><h3 class="pHeading2">
+Saving Configuration Files
+</h3>
+<hr />
+<a name="wp1161174"> </a><p class="pBody">
+This procedure explains how to save a configuration file.
+</p>
+<a name="wp1161175"> </a><p class="pBody">
+After you edit configuration properties, you can save the configuration to a file known as a configuration file. You can save a configuration file using its current name and location, or save a copy of the configuration file using a different name and location.
+</p>
+<a name="wp1161176"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1161177"> </a><div class="pSmartList1"><li>Do one of the following:</li></div>
+<ul class="plistBullet"><a name="wp1161178"> </a><div class="plistBullet"><li>To overwrite the current version on the disk, click Save on the File menu.</li></div>
+<a name="wp1161179"> </a><div class="plistBullet"><li>To save the configuration file in a different folder or with a different name, click Save As on the File menu.</li></div>
+</ul><a name="wp1161180"> </a><div class="pSmartList1"><li>If you choose the Save As command, or if the file has never been saved, specify the new file name and location.</li></div>
+<a name="wp1161181"> </a><div class="pSmartList1"><li>Click Save.</li></div>
+</ol></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

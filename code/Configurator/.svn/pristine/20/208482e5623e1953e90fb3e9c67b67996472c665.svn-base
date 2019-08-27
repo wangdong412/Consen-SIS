@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:17" />
+    <title> Establishing Communication Between a PC and a DSC100 Controller </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="3_Installation-Removing_the_DSC100_Configurator.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Controller_Configuration.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161197"> </a><h3 class="pHeading2">
+Establishing Communication Between a PC and a DSC100 Controller
+</h3>
+<hr />
+
+<a name="wp1161200"> </a><p class="pBody">
+This procedure explains how to establish communication between a PC and a DSC100 controller. You can establish communication with serial port or Ethernet port.
+</p>
+<a name="wp1161201"></a><p class="pBody">
+The PC and the Controller must be connected and communicating for you to send and retrieve configuration settings, or trend real-time data of the Controller. 
+</p>
+<br>
+
+<a name="wp1161202"></a><p class="pBody"><b class="cBold">
+Serial Port Communication
+</b></p>
+
+<a name="wp1161205"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1161206"> </a><div class="pSmartList1"><li> Connect one end of the configuration cable (RS-485 serial communication cable) to COM1/2 on the DSC100 termination panel. </li></div>
+<a name="wp1161207"> </a><div class="pSmartList1"><li> Connect the other end of the cable to a serial port on the back of the PC. </li></div>
+<a name="wp1161208"> </a><div class="pSmartList1"><li> Click the Start button, point to Programs, and then click DSC100 Configurator. The DSC100 Configurator starts. </li></div>
+<a name="wp1161209"> </a><div class="pSmartList1"><li> On the Device menu, click Select Modbus Type command to select communication protocol: Modbus Serial. </li></div>
+<a name="wp1161210"> </a><p class="pListIndent"><img src="images/3_Installation-Select_Serial.png" height="239" width="246" border="0" hspace="0" vspace="0"/></p>
+<a name="wp1161211"> </a><div class="pSmartList1"><li> On the Device menu, click Comm Settings. </li></div>
+<a name="wp1161213"> </a><div class="pSmartList1"><li> On the PC Configurator Comm Settings screen, select a COM port that is available on the PC. Configure the parameters in the PC Configuration Comm Settings screen to match the Comm settings of the Controller.  </li></div>
+<a name="wp1161215"> </a><p class="pListIndent"><img src="images/3_Installation-Comm_Settings.png" height="362" width="278" border="0" hspace="0" vspace="0"/></p>
+<a name="wp1161216"> </a><div class="pSmartList1"><li> On the Modbus Comm Settings screen, click Test. If communication is established, the message "Success!" appears.  </li></div>
+<a name="wp1161217"> </a><div class="pSmartList1"><li> If the message &quot;Success!&quot; does not appear:</li></div>
+<ul class="plistBullet"><a name="wp1161221"> </a><div class="plistBullet"><li>Ensure you selected a COM port that is available on the PC.</li></div>
+<a name="wp1161218"> </a><div class="plistBullet"><li> Check the configuration cable connections.</li></div>
+<a name="wp1183619"> </a><div class="plistBullet"><li> Ensure the parameters in the PC Configurator Comm. Settings match the Comm settings of the DSC100 Controller.</li></div>
+</ul><a name="wp1161220"> </a><div class="pSmartList1"><li>After you successfully establish communication, click Connect to DSC100 on the Device menu. </li></div>
+</ol></div>
+
+
+<a name="wp1161230"></a><p class="pBody"><b class="cBold">
+Ethernet Port Communication
+</b></p>
+
+<a name="wp1161234"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1161235"> </a><div class="pSmartList1"><li> Connect one end of the Network Cable to the network interface on the DSC100 termination panel. </li></div>
+<a name="wp1161245"> </a><div class="pSmartList1"><li> Connect the other end of the cable to a network interface on the back of the PC. </li></div>
+<a name="wp1161236"> </a><div class="pSmartList1"><li> Click the Start button, point to Programs, and then click DSC100 Configurator. The DSC100 Configurator starts. </li></div>
+<a name="wp1161237"> </a><div class="pSmartList1"><li> On the Device menu, click Select Modbus Type command to select communication protocol: Modbus Tcp.  </li></div>
+<a name="wp1161238"> </a><div class="pSmartList1"><li> On the Device menu click Modbus Tcp Settings.  </li></div>
+<a name="wp1161239"> </a><p class="pListIndent"><img src="images/3_Installation-Tcp_Settings.png" height="322" width="735" border="0" hspace="0" vspace="0"/></p>
+<a name="wp1161240"> </a><div class="pSmartList1"><li> Configure the Tcp Settings according to the TCP/IP settings of the DSC100 Controller, and you may need to change your PC's TCP/IP Settings to make sure that your PC and DSC100 Controller's IP are in the same Network segment. </li></div>
+<a name="wp1161241"> </a><div class="pSmartList1"><li> Click Connect to DSC100 on the Device menu. If fail, the message "ModbusTcp: Unable to connect to DSC100 Controller" will appears: </li></div>
+<ul class="plistBullet">
+<a name="wp1161242"> </a><div class="plistBullet"><li> Check the configuration cable connections. </li></div>
+<a name="wp1161243"> </a><div class="plistBullet"><li> Ensure the parameters in the Modbus Tcp Settings match the TCP/IP settings of the DSC100 Controller. </li></div>
+<a name="wp1161244"> </a><div class="plistBullet"><li> Ensure your PC and DSC100 Controller's IP are in the same Network segment. </li></div>
+</ul>
+</ol></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

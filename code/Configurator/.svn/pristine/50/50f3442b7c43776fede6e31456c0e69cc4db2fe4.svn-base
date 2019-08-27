@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>调节视图（Tuning）</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Trend_View.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Aliases_View.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161226"> </a><h3 class="pHeading2">
+调节视图（Tuning）
+</h3>
+<hr />
+<a name="wp1161230"> </a><p class="pBody">
+您可以在调节视图中实时调整DSC100控制器参数。</p>
+<a name="wp1161231"> </a><p class="pBody">
+调节视图的左面板包括可实时调整的控制器参数。当DSC100 Configurator 与控制器连接成功后，您可以实时调整这些参数。</p>
+<a name="wp1161232"> </a><p class="pBody">
+调节视图的右面板与趋势视图的右面板相同。当您调整左面板上的参数时，您可以通过右面板观测到控制器的实时反应。</p>
+<a name="wp1171639"> </a><p class="pBody">
+您可以通过以下方式调整Tuning参数值:</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1171644"> </a><div class="pSmartList1"><li>在Tuning属性框中输入数值，点击Enter键下发。如果新输入的数值与原有数值差异超过10%时，DSC100 Configurator将显示确认对话框。 </li></div>
+<a name="wp1171647"> </a><div class="pSmartList1"><li>点击带有绿色箭头的按钮，增加/减少Tuning参数值并下发。下表描述了按钮调整增量：</li></div>
+<a name="wp1172095"> </a><p class="pListIndent">
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1172388table1172386">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1172388"> </a><div class="pCellHeading">
+Tuning 属性
+</div>
+</th>
+    <th><a name="wp1172390"> </a><div class="pCellHeading">
+单箭头增量
+</div>
+</th>
+    <th><a name="wp1172392"> </a><div class="pCellHeading">
+双箭头增量
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1172394"> </a><div class="pCellBody">
+PB (Proportional Band)
+</div>
+</td>
+    <td><a name="wp1172396"> </a><div class="pCellBody">
+0.1
+</div>
+</td>
+    <td><a name="wp1172398"> </a><div class="pCellBody">
+1.0
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1172400"> </a><div class="pCellBody">
+Reset
+</div>
+</td>
+    <td><a name="wp1172402"> </a><div class="pCellBody">
+0.1
+</div>
+</td>
+    <td><a name="wp1172404"> </a><div class="pCellBody">
+1.0
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1172406"> </a><div class="pCellBody">
+Rate (Derivative)
+</div>
+</td>
+    <td><a name="wp1172408"> </a><div class="pCellBody">
+0.001
+</div>
+</td>
+    <td><a name="wp1172410"> </a><div class="pCellBody">
+0.01
+</div>
+</td>
+</tr>
+</table>
+</div>
+
+</p>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

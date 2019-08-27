@@ -1,0 +1,568 @@
+<?xml version="1.0" ?>
+
+<!--
+==========================================================================
+|                                                                        |
+|                     DSC100 DataDictionary                           |
+|                                                                        |
+==========================================================================
+-->
+<DataDictionary Name="DSC100" Desc="Tri-Sen DSC100" AppType="1" Version="1.0"> 
+
+    <Required>
+        <Variable Name="iProductNumber" Value="100" />
+        <Variable Name="iApplicationType" Value="1" />
+    </Required>
+
+==================================
+|        Options Listing         |
+==================================
+-->
+  <OptionLists>
+  
+    <OptionList Name="Ain Assignment">
+      <OptionItem Value="0" Name="ShutDown" />
+      <OptionItem Value="1" Name="Alarm" />
+    </OptionList>
+    
+    <OptionList Name="Aout Assignment">
+      <OptionItem Value="0" Name="ShutDown" />
+      <OptionItem Value="1" Name="Alarm" />
+    </OptionList>
+    
+    <OptionList Name="Actuator Current Range">
+      <OptionItem Value="0" Name="-10.0mA - +10.0mA"/>
+      <OptionItem Value="1" Name="-25.0mA - +25.0mA"/>
+      <OptionItem Value="2" Name="-50.0mA - +50.0mA"/>
+      <OptionItem Value="3" Name="-100.0mA - +100.0mA"/>
+      <OptionItem Value="4" Name="-250.0mA - +250.0mA"/>
+    </OptionList>
+    
+    <OptionList Name="Input Type">
+      <OptionItem Value="0" Name="LVDT" />
+      <OptionItem Value="1" Name="DC" />
+    </OptionList>
+    
+    <OptionList Name="Latch Assignment">
+      <OptionItem Value="0" Name="No Latch" />
+      <OptionItem Value="1" Name="Latch" />
+    </OptionList>
+    
+    <OptionList Name="Reset Assignment">
+      <OptionItem Value="0" Name="Open to Reset "/>
+      <OptionItem Value="1" Name="Close to Reset"/>
+    </OptionList>
+    
+    <OptionList Name="Shutdown Assignment">
+      <OptionItem Value="0" Name="Open to  ShutDown" />
+      <OptionItem Value="1" Name="Close to ShutDown" />
+    </OptionList>
+   
+    <OptionList Name="PV Type">
+      <OptionItem Value="0" Name="HiSelect" />
+      <OptionItem Value="1" Name="AI01 Only" />
+      <OptionItem Value="2" Name="AI02 Only" />
+      <OptionItem Value="3" Name="(AI01+AI02)/2" />
+    </OptionList>
+    
+    <OptionList Name="PV Fault Action">
+      <OptionItem Value="0" Name="No Action"/>
+      <OptionItem Value="1" Name="PV 01 Shutdown"/>
+      <OptionItem Value="2" Name="PV 02 Shutdown"/>
+      <OptionItem Value="3" Name="Both Shutdown"/>
+    </OptionList>
+    
+    <OptionList Name="SP Type">
+      <OptionItem Value="0" Name="Communication primary" />
+      <OptionItem Value="1" Name="Analog primary" />
+      <OptionItem Value="2" Name="Communication only" />
+      <OptionItem Value="3" Name="Analog only" />
+    </OptionList>
+    
+    <OptionList Name="SPPV Response">
+      <OptionItem Value="0" Name="ShutDown" />
+      <OptionItem Value="1" Name="Alarm" />
+    </OptionList>
+    
+    
+    <OptionList Name="Baud Rate">
+      <OptionItem Value="0" Name="1200" />
+      <OptionItem Value="1" Name="2400" />
+      <OptionItem Value="2" Name="4800" />
+      <OptionItem Value="4" Name="9600" />
+      <OptionItem Value="8" Name="14400" />
+      <OptionItem Value="16" Name="19200" />
+      <OptionItem Value="32" Name="38400" />
+    </OptionList>
+  
+    <OptionList Name="HelpContext">
+        <OptionItem Value="0x40BB9" Name="HIDX_INOUT" />
+        <OptionItem Value="0x40BBA" Name="HIDX_INOUT_AI" />
+        <OptionItem Value="0x40BBB" Name="HIDX_INOUT_AO" />
+        <OptionItem Value="0x40BBC" Name="HIDX_INOUT_DI" />
+        <OptionItem Value="0x40BBD" Name="HIDX_INOUT_DO" />
+        <OptionItem Value="0x40BC2" Name="HIDX_CONTROL" />
+        <OptionItem Value="0x40BE0" Name="HIDX_TUNING" />
+        <OptionItem Value="0x40C05" Name="HIDX_CONTROL_PERIOD" />           <!--Added by Wangdong Begin-->
+        <OptionItem Value="0x40C06" Name="HIDX_CONTROL_PV" />
+        <OptionItem Value="0x40C07" Name="HIDX_CONTROL_SP" />
+        <OptionItem Value="0x40C08" Name="HIDX_CONTROL_ERROR" />
+        <OptionItem Value="0x40C09" Name="HIDX_PID_CONTROLLER_OUTPUT" />
+        <OptionItem Value="0x40C10" Name="HIDX_DRIVE" />                    <!--Added by Wangdong End-->
+        <!-- TS320
+        <OptionItem Value="0x40BBE" Name="HIDX_INOUT_SPD" />
+        <OptionItem Value="0x40BBF" Name="HIDX_COMMUNICATION"/>
+        <OptionItem Value="0x40BC2" Name="HIDX_CONTROL" />
+        <OptionItem Value="0x40BC3" Name="HIDX_CONTROL_TURBINE" />
+        <OptionItem Value="0x40BC4" Name="HIDX_CONTROL_TURBINE_GENERAL" />
+        <OptionItem Value="0x40BC5" Name="HIDX_CONTROL_TURBINE_STARTUP" />
+        <OptionItem Value="0x40BC6" Name="HIDX_CONTROL_TURBINE_BREAK" />
+        <OptionItem Value="0x40BC7" Name="HIDX_CONTROL_TURBINE_CRITICAL" />
+        <OptionItem Value="0x40BC8" Name="HIDX_CONTROL_TURBINE_GOVERNOR" />
+        <OptionItem Value="0x40BC9" Name="HIDX_CONTROL_TURBINE_NOZZLES" />
+        <OptionItem Value="0x40BCA" Name="HIDX_CONTROL_SPEED" />
+        <OptionItem Value="0x40BCB" Name="HIDX_CONTROL_SPEED_GENERAL" />
+        <OptionItem Value="0x40BCC" Name="HIDX_CONTROL_SPEED_SWITCHES" />
+        <OptionItem Value="0x40BCD" Name="HIDX_CONTROL_EXTRACTION" />
+        <OptionItem Value="0x40BCE" Name="HIDX_CONTROL_STANDALONE" />
+        <OptionItem Value="0x40BD6" Name="HIDX_DROOP" />
+        <OptionItem Value="0x40BD7" Name="HIDX_DROOP_SPEED" />
+        <OptionItem Value="0x40BD8" Name="HIDX_DROOP_EXTRACTION" />
+        <OptionItem Value="0x40BD9" Name="HIDX_DROOP_INLET_PRESSURE" />
+        <OptionItem Value="0x40BDA" Name="HIDX_DROOP_PROCESS" />
+        <OptionItem Value="0x40BDB" Name="HIDX_DROOP_BACK_PRESSURE" />
+        <OptionItem Value="0x40BE0" Name="HIDX_TUNING" />
+        <OptionItem Value="0x40BE1" Name="HIDX_TUNING_START" />
+        <OptionItem Value="0x40BE2" Name="HIDX_TUNING_RUN" />
+        <OptionItem Value="0x40BE3" Name="HIDX_TUNING_DROOP" />
+        <OptionItem Value="0x40BE4" Name="HIDX_TUNING_EXTRACTION" />
+        <OptionItem Value="0x40BE5" Name="HIDX_TUNING_INLET_PRESSURE" />
+        <OptionItem Value="0x40BE6" Name="HIDX_TUNING_STANDALONE" />
+        <OptionItem Value="0x40BE7" Name="HIDX_TUNING_PROCESS" />
+        <OptionItem Value="0x40BE8" Name="HIDX_TUNING_V1_LIMIT" />
+        <OptionItem Value="0x40BEA" Name="HIDX_TUNING_ISOCHRONOUS" />
+        <OptionItem Value="0x40BEB" Name="HIDX_TUNING_MEGAWATT" />
+        <OptionItem Value="0x40BEC" Name="HIDX_TUNING_LOAD_LIMIT" />
+        <OptionItem Value="0x40BED" Name="HIDX_TUNING_BACK_PRESSURE" />
+        <OptionItem Value="0x40BF4" Name="HIDX_MECHANICAL_DRIVE" />
+        <OptionItem Value="0x40BF5" Name="HIDX_MECH_PROCESS" />
+        <OptionItem Value="0x40BF6" Name="HIDX_MECH_V1_LIMIT" />
+        <OptionItem Value="0x40BF7" Name="HIDX_MECH_INLET_PRESSURE" />
+        <OptionItem Value="0x40BFE" Name="HIDX_GENERATOR" />
+        <OptionItem Value="0x40BFF" Name="HIDX_GEN_MEGAWATT" />
+        <OptionItem Value="0x40C00" Name="HIDX_GEN_MEGAWATT_GENERAL" />
+        <OptionItem Value="0x40C01" Name="HIDX_GEN_MEGAWATT_LOAD_LIMIT" />
+        <OptionItem Value="0x40C02" Name="HIDX_GEN_SYNCHRONIZATION" />
+        <OptionItem Value="0x40C03" Name="HIDX_GEN_INLET_PRESSURE" />
+        <OptionItem Value="0x40C04" Name="HIDX_GEN_BACK_PRESSURE" /> 
+        -->
+    </OptionList>
+  </OptionLists>
+
+<!--
+==================================
+|         Alias Listing          |
+==================================
+-->
+
+    <!-- RVanSlooten 2003-04-04 10:34:47 -06:00 -->
+    <Variables>
+       <!-- Digital Read/Write -->
+       <Variable Name="cD01S"          Alias="1"    Desc="DO 1 State"                    DataType="Bool" Protect="Configure"  Default="0"/>
+       
+       <Variable Name="gSPPVFR"        Alias="2001" Desc="Error Response"                DataType="Bool" Protect="Configure" Default="1"/> 
+       <Variable Name="bAO1Enable"     Alias="2002" Desc="Actuator 01 Enable"            DataType="Bool" Protect="Configure" Default="1"/> 
+       <Variable Name="bAO2Enable"     Alias="2003" Desc="Actuator 02 Enable"            DataType="Bool" Protect="Configure" Default="1"/>
+       <!--
+       <Variable Name="bDoubleFlag"    Alias="2004" Desc="Actuator Current Doule Flag"   DataType="Bool" Protect="Configure" />-->
+       <Variable Name="fNewCfg"        Alias="2026" Desc="Config just downloaded?"       DataType="Bool" Protect="Setpoint" /> 
+       
+       <Variable Name="gAI_SPER"       Alias="2043" Desc="Position Demand Fault Response SP"               DataType="Bool" Protect="Configure" Default="1"/>
+       <Variable Name="gAI_SPL"        Alias="2044" Desc="Latch When Position Demand Fault"                DataType="Bool" Protect="Configure" Default="0"/>
+       <Variable Name="gAPI1IT"        Alias="2045" Desc="Input Signal Type Analog Position Input 01"      DataType="Bool" Protect="Configure" Default="1"/>
+       <Variable Name="gAPI2IT"        Alias="2046" Desc="Input Signal Type Analog Position Input 02"      DataType="Bool" Protect="Configure" Default="1"/>
+       <!--
+       <Variable Name="gAPDFR"         Alias="2047" Desc="AI Over Range Response (Analog Position Demand)" DataType="Bool" Protect="Configure" />
+       -->
+       
+       <Variable Name="kDI1S"          Alias="2081" Desc="Open/Closed to Reset"                     DataType="Bool" Protect="Configure" Default="1" />
+       <Variable Name="kDI2S"          Alias="2082" Desc="Open/Closed to ShutDown"                  DataType="Bool" Protect="Configure" Default="1" /> 
+       <!--
+       <Variable Name="kA03_RBER"      Alias="2123" Desc="Readback Error Response Position Monitor" DataType="Bool" Protect="Configure" />
+       -->
+       
+       <Variable Name="kFlag_Inf"      Alias="2201"  Desc="Information Flag"           DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Min"      Alias="2202"  Desc="Minimun Calibrate Flag"     DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Max"      Alias="2203"  Desc="Maximun Calibrate Flag"     DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Ver"      Alias="2204"  Desc="Verfication Calibrate Flag" DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Save"     Alias="2205"  Desc="Save Calibrate Flag"        DataType="Bool"  Protect="Calibrate" />
+       
+       <Variable Name="kFlag_Cal"      Alias="2207"  Desc="Is Calibrating"             DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Cancel"   Alias="2208"  Desc="Cancel Flag"                DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_NotCal"   Alias="2209"  Desc="Choose Not Calibrate"       DataType="Bool"  Protect="Calibrate" />
+       <Variable Name="kFlag_Run"      Alias="2210"  Desc="Run Calibrate Flag"         DataType="Bool"  Protect="Calibrate" />
+       
+       <!-- Digital Read Only -->
+       <Variable Name="dDI1_ResCom"   Alias="10001" Desc="Reset Command"           DataType="Bool" />
+       <Variable Name="dDI2_ExcSD"    Alias="10002" Desc="External ShutDown"       DataType="Bool" />
+       <Variable Name="dDI3V"         Alias="10003" Desc="DI3 Value"               DataType="Bool" />
+       <Variable Name="dDI4V"         Alias="10004" Desc="DI4 Value"               DataType="Bool" />
+       <Variable Name="dExtSDI"       Alias="10005" Desc="External Shutdown Input" DataType="Bool" />
+       
+       <Variable Name="dAPI1ARMOPEN"  Alias="12001" Desc="Analog Position Input 01 Open"                    DataType="Bool" />
+       <Variable Name="dAPI1ARMOR"    Alias="12002" Desc="Analog Position Input 01 Over Range"              DataType="Bool" />
+       <Variable Name="dAPI2ARMOPEN"  Alias="12003" Desc="Analog Position Input 02 Open"                    DataType="Bool" />
+       <Variable Name="dAPI2ARMOR"    Alias="12004" Desc="Analog Position Input 02 Over Range"              DataType="Bool" />
+       <Variable Name="dSPARMOR"      Alias="12005" Desc="Analog Position Demand Over Range"                DataType="Bool" />
+       <Variable Name="dCFARM"        Alias="12006" Desc="SP(Position Demand) Communication Failure"        DataType="Bool" />
+       <Variable Name="dDARM"         Alias="12007" Desc="SP(Position Demand) Redundant Tracking Error"     DataType="Bool" />
+       <Variable Name="dSPPVDARM"     Alias="12008" Desc="PID SP/PV Tracking Error"                         DataType="Bool" />
+       <Variable Name="dDevARM"       Alias="12009" Desc="PV01/PV02 Deviation Alarm"                        DataType="Bool" />
+       
+       <Variable Name="dAPI1SD"       Alias="12021" Desc="Analog Position Input 01 Open/Over Range"   DataType="Bool" />
+       <Variable Name="dAPI2SD"       Alias="12022" Desc="Analog Position Input 01 Open/Over Range"   DataType="Bool" />
+       <Variable Name="dSPCOMSD"      Alias="12023" Desc="SP Communication Shutdown"                  DataType="Bool" />
+       <!--
+       <Variable Name="dSPAISD"       Alias="12024" Desc="Analog Position Demand AI Over Range"       DataType="Bool" />
+       -->
+       <Variable Name="dSPPVSD"       Alias="12025" Desc="PID SP/PV Tracking Error"                   DataType="Bool" />
+       <Variable Name="dSPAICOMSD"    Alias="12026" Desc="Position Demand Fault"                      DataType="Bool" />
+    <!--
+       <Variable Name="dAO1RB"        Alias="12027" Desc="Actuator 01 ReadBack Shutdown"              DataType="Bool" />
+       <Variable Name="dAO2RB"        Alias="12028" Desc="Actuator 02 ReadBack Shutdown"              DataType="Bool" />
+       <Variable Name="dAO3RB"        Alias="12029" Desc="Position Monitor Output ReadBack Error"     DataType="Bool" />
+    -->
+       <Variable Name="dPVSelChg"     Alias="12030" Desc="PV Select Algorithm Changed"                DataType="Bool" />
+       
+       <Variable Name="dAO1ARMOR"     Alias="12041" Desc="Actuator 01 ReadBack Error"                 DataType="Bool" />
+       <Variable Name="dAO2ARMOR"     Alias="12042" Desc="Actuator 02 ReadBack Error"                 DataType="Bool" />
+       <Variable Name="dAO3ARMOR"     Alias="12043" Desc="Position Monitor Output ReadBack Error"     DataType="Bool" />
+       <Variable Name="dAO1Open"      Alias="12044" Desc="Actuator 01 Open"                           DataType="Bool" />
+       <Variable Name="dAO2Open"      Alias="12045" Desc="Actuator 02 Open"                           DataType="Bool" />
+       <Variable Name="dAO3Open"      Alias="12046" Desc="Position Monitor Output Open"               DataType="Bool" />
+       
+       <Variable Name="dEEPROMErr"    Alias="12051" Desc="EEPROM Error"                               DataType="Bool"/>  
+       <Variable Name="dAO1Err"       Alias="12052" Desc="Actuator 01 Hardware Error"                 DataType="Bool"/> 
+       <Variable Name="dAO2Err"       Alias="12053" Desc="Actuator 02 Hardware Error"                 DataType="Bool"/> 
+       <Variable Name="dAO3Err"       Alias="12054" Desc="Position Monitor Output Hardware Error"     DataType="Bool"/> 
+       <Variable Name="dSysNoPar"     Alias="12055" Desc="System No Parameters"                       DataType="Bool"/>
+       
+       <Variable Name="dDO1V"         Alias="12061" Desc="Alarm Output"                            DataType="Bool" />
+       <Variable Name="dDO2V"         Alias="12062" Desc="ShutDown Output"                         DataType="Bool" />
+       <Variable Name="dDO1ARMEO"     Alias="12063" Desc="Alarm Relay ReadBack Error"              DataType="Bool" />
+       <Variable Name="dDO2ARMEO"     Alias="12064" Desc="ShutDown Relay ReadBack Error"           DataType="Bool" />
+       <Variable Name="dCanRun"       Alias="12065" Desc="Can not Run?"                            DataType="Bool" />
+       
+       <!-- Analog Read Only --> 
+       <Variable Name="iCPV"     Alias="30001" Desc="Control Period Value"            DataType="Int" /> 
+       
+       <Variable Name="iProdNum" Alias="31001" Desc="Product Number"                  DataType="Int" />
+       <Variable Name="iAppType" Alias="31002" Desc="Application Type"                DataType="Int" />
+       <Variable Name="iProjVer" Alias="31003" Desc="Project Version"                 DataType="Int" />
+       <Variable Name="iLibVer"  Alias="31004" Desc="Extended Funcs Library Version"  DataType="Int" />
+       
+       <Variable Name="iAPI1P"  Alias="35001" Desc="Percent Analog Position Input 01" DataType="RealSwap" /> 
+       <Variable Name="iAPI2P"  Alias="35003" Desc="Percent Analog Position Input 02" DataType="RealSwap" />
+       <Variable Name="iSPP"    Alias="35005" Desc="Final SP Percent"                 DataType="RealSwap" />  
+       <Variable Name="iSPAIP"  Alias="35007" Desc="AI Percent SP"                    DataType="RealSwap" /> 
+       <Variable Name="iCP"     Alias="35009" Desc="Communication Percent SP"         DataType="RealSwap" /> 
+       <Variable Name="iAPI1V"  Alias="35011" Desc="Voltage Analog Position Input 01" DataType="RealSwap" />
+       <Variable Name="iAPI2V"  Alias="35013" Desc="Voltage Analog Position Input 02" DataType="RealSwap" />
+       <Variable Name="iSPAIV"  Alias="35015" Desc="AI mA SP"                         DataType="RealSwap" />
+       
+       <Variable Name="iAO1RBP" Alias="35021" Desc="ReadBack Percent Actuator 01"       DataType="RealSwap" />
+       <Variable Name="iAO2RBP" Alias="35023" Desc="ReadBack Percent Actuator 02"       DataType="RealSwap" />
+       <Variable Name="iAO3RBP" Alias="35025" Desc="ReadBack Percent Position Monitor"  DataType="RealSwap" />
+       <Variable Name="iAO1P"   Alias="35027" Desc="Percent Actuator 01"                DataType="RealSwap" />
+       <Variable Name="iAO2P"   Alias="35029" Desc="Percent Actuator 02"                DataType="RealSwap" />
+       <Variable Name="iAO3P"   Alias="35031" Desc="Percent Position Monitor"           DataType="RealSwap" /> 
+     
+       <Variable Name="iAO1V"   Alias="35039" Desc="Current(mA) Actuator 01"        DataType="RealSwap" />
+       <Variable Name="iAO2V"   Alias="35041" Desc="Current(mA) Actuator 02"        DataType="RealSwap" />
+       <Variable Name="iAO3V"   Alias="35043" Desc="Current(mA) Position Monitor"   DataType="RealSwap" />
+        
+       <Variable Name="iPVP"    Alias="35081" Desc="PV Percent" DataType="RealSwap" />
+        
+       <!-- Analog Read/Write -->
+       <Variable Name="nCtlP"       Alias="40001"  Desc="Control Time Cycle"                            DataType="Uint" Protect="Configure" Default="10"/>
+       <Variable Name="kFlag_AISel" Alias="40002"  Desc="Select AI 01/02"                               DataType="Int"  Protect="Calibrate" Default="0"/>
+       <Variable Name="nActCurSel"  Alias="40003"  Desc="Select Actuator Current Range (Jumper Select)" DataType="Int"  Protect="Configure" Default="4"/>
+       
+       <Variable Name="uMAC01"      Alias="40132"  Desc="MAC[0]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       <Variable Name="uMAC02"      Alias="40133"  Desc="MAC[1]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       <Variable Name="uMAC03"      Alias="40134"  Desc="MAC[2]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       <Variable Name="uMAC04"      Alias="40135"  Desc="MAC[3]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       <Variable Name="uMAC05"      Alias="40136"  Desc="MAC[4]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       <Variable Name="uMAC06"      Alias="40137"  Desc="MAC[5]"                        DataType="Uint"  Protect="Configure" Default="00"/>
+       
+       <Variable Name="strMAC"      Alias="40201"  Desc="MAC Address"         DataType="String"  Length="17"  Protect="Configure" />
+      
+       <Variable Name="nPVSel"      Alias="40251"  Desc="Select Algorithm PV" DataType="Int" Protect="Configure" Default="0"/>
+       <Variable Name="nSPSel"      Alias="40252"  Desc="Select Algorithm SP" DataType="Int" Protect="Configure" Default="3"/>
+       <Variable Name="kDEVDelayT"  Alias="40253"  Desc="Error Delay Time"    DataType="Int" Protect="Configure" Default="0"/>
+       
+       <Variable Name="kAPI1F"      Alias="40359"  Desc="Filter API-01"                      DataType="Int" Protect="Configure"         Default="20" />
+       <Variable Name="nPVORFault"  Alias="40360"  Desc="PV Open/Over Range Shutdown Select" DataType="Int" Protect="Configure"         Default="3"/>
+       
+       <Variable Name="kAPI2F"      Alias="40363"  Desc="Signal Filtering API 02"                   DataType="Int" Protect="Configure"  Default="20"/>
+       <Variable Name="kAPI2RT"     Alias="40364"  Desc="A/D Convert Range Type API 02"             DataType="Int" Protect="Configure"  />
+       <Variable Name="kAI_SPED"    Alias="40367"  Desc="Redundant Tracking Error Delay Time SP"    DataType="Int" Protect="Configure"  Default="5"/>
+       <Variable Name="kAPDFIL"     Alias="40368"  Desc="Signal Filtering (Analog Position Demand)" DataType="Int" Protect="Configure"  Default="20"/>
+        
+       <Variable Name="kPID1RES"    Alias="42001"  Desc="PID1 Reset"              DataType="RealSwap" Protect="Tune" Default="5.0"/>
+       <Variable Name="kPID1RATE"   Alias="42003"  Desc="PID1 Rate"               DataType="RealSwap" Protect="Tune" Default="0.0"/>
+       <Variable Name="kPID1PB"     Alias="42005"  Desc="PID1 Proportional Band"  DataType="RealSwap" Protect="Tune" Default="80.0"/>
+       <Variable Name="kPID2RES"    Alias="42007"  Desc="PID2 Reset"              DataType="RealSwap" Protect="Tune" Default="5.0"/>
+       <Variable Name="kPID2RATE"   Alias="42009"  Desc="PID2 Rate"               DataType="RealSwap" Protect="Tune" Default="0.0"/>
+       <Variable Name="kPID2PB"     Alias="42011"  Desc="PID2 Proportional Band"  DataType="RealSwap" Protect="Tune" Default="80.0"/>
+       <Variable Name="kPIDMINP"    Alias="42013"  Desc="PID Minimum Output"      DataType="RealSwap" Protect="Tune" Default="0.0"/>
+       <Variable Name="kPIDMAXP"    Alias="42015"  Desc="PID Maximum Output"      DataType="RealSwap" Protect="Tune" Default="100.0"/>
+       <Variable Name="kPIDErrT"    Alias="42017"  Desc="Error Threshold"         DataType="RealSwap" Protect="Tune" Default="15"/>
+       <!--
+       <Variable Name="kPIDMaxRate" Alias="42019"  Desc="PID Max Rate"            DataType="RealSwap" Protect="Tune" /> -->
+       
+       <Variable Name="kPD"         Alias="42031"  Desc="Dither Current Amplitude"                    DataType="RealSwap" Protect="Configure"   Default="0.00"/>
+       <Variable Name="nDEV_TS"     Alias="42041"  Desc="Error Threshold"                             DataType="RealSwap" Protect="Configure"   Default="30.00"/>
+       <Variable Name="kAI_APDMIN"  Alias="42043"  Desc="Minimum Current (Analog Position Demand)"    DataType="RealSwap" Protect="Configure"   Default="0.00"/>
+       <Variable Name="kAI_APDMAX"  Alias="42045"  Desc="Maximum Current (Analog Position Demand)"    DataType="RealSwap" Protect="Configure"   Default="25.00"/>
+       <Variable Name="kPF"         Alias="42047"  Desc="Dither Frequency"                            DataType="RealSwap" Protect="Configure"   Default="0.00"/> 
+    
+       <Variable Name="kAlmRD"      Alias="42101"  Desc="Readback Alarm Threshold"                           DataType="RealSwap" Protect="Configure" Default="10.00"/>
+    <!--
+       <Variable Name="kOACRD"      Alias="42103"  Desc="Open Actuator Circuit Readback Threshold"           DataType="RealSwap" Protect="Configure"/>
+    -->
+       <Variable Name="kAPI1R"      Alias="42105"  Desc="Over Range Threshold AI01"                      DataType="RealSwap" Protect="Configure"     Default="5.00" />
+       <Variable Name="kSDCurrent"  Alias="42107"  Desc="ShutDown Current"                                   DataType="RealSwap" Protect="Configure" Default="0.00"/>  
+       <Variable Name="kAPI2R"      Alias="42111"  Desc="Over Range Threshold AI02"                      DataType="RealSwap" Protect="Configure"     Default="5.00" />
+       <Variable Name="kAI_SPET"    Alias="42117"  Desc="SP Redundant Tracking Error Threshold"              DataType="RealSwap" Protect="Configure" Default="20.0" />
+       
+       <Variable Name="kAPDAIORT"   Alias="42121"  Desc="Over Range Threshold (Analog Position Demand)"   DataType="RealSwap" Protect="Configure"    Default="5.00"/>
+       <Variable Name="kDemand"     Alias="42123"  Desc="Demand (%)"                                         DataType="RealSwap" Protect="Setpoint"/>  
+       <Variable Name="kDEVARMSP"   Alias="42125"  Desc="Deviation Alarm Setpoint"                           DataType="RealSwap" Protect="Configure" Default="5.0" />
+       <Variable Name="kAO3RB"      Alias="42145"  Desc="Readback ThreShold Position Monitor"                DataType="RealSwap" Protect="Configure" Default="10.0" />
+       <Variable Name="kAO1MIN"     Alias="42147"  Desc="Actuator Min Current"                            DataType="RealSwap" Protect="Configure"    Default="-250.00"/>
+       <Variable Name="kAO1MAX"     Alias="42149"  Desc="Actuator Max Current"                            DataType="RealSwap" Protect="Configure"    Default="250.00"/>
+       <Variable Name="kAO3MIN"     Alias="42155"  Desc="Min Current Position Monitor"                       DataType="RealSwap" Protect="Configure" Default="0.00"/>
+       <Variable Name="kAO3MAX"     Alias="42157"  Desc="Max Current Position Monitor"                       DataType="RealSwap" Protect="Configure" Default="25.00"/>
+       <Variable Name="kAONULL1"    Alias="42159"  Desc="Actuator Null Current"                              DataType="RealSwap" Protect="Configure" Default="0.00"/>
+       <Variable Name="kNull1"      Alias="42161"  Desc="Null Current Offset Actuator 01/02"                 DataType="RealSwap" Protect="Setpoint"  />
+    </Variables>
+
+<!--
+==================================
+|        Setting Listing         |
+==================================
+-->
+    <Settings>
+    <Setting Name="Input/Output" HelpName="HIDX_INOUT">
+        <Setting Name="Analog Inputs" HelpName="HIDX_INOUT_AI">
+            <Setting Name="Position Feedback Input 01 ( PV 01 )">
+                <Setting Name="Over Range Threshold"   RangeMin="0" RangeMax="100.0" Units="Percent" Variable="kAPI1R" /> 
+                <Setting Name="Signal Filtering"          RangeMin="0" RangeMax="99"    Units="Percent" Variable="kAPI1F" />
+                <Setting Name="Input Signal Type"                                       Units="Boolean" Variable="gAPI1IT"  OptionList="Input Type" />
+            </Setting>
+            <Setting Name="Position Feedback Input 02 ( PV 02 )"> 
+                <Setting Name="Over Range Threshold"   RangeMin="0" RangeMax="100.0" Units="Percent" Variable="kAPI2R" />
+                <Setting Name="Signal Filtering"          RangeMin="0" RangeMax="99"    Units="Percent" Variable="kAPI2F" />
+                <Setting Name="Input Signal Type"                                       Units="Boolean" Variable="gAPI2IT"  OptionList="Input Type" />
+            </Setting>
+            <Setting Name="Analog Position Demand"> 
+                <Setting Name="Minimum Current"           RangeMin="0" RangeMax="25.0"  Units="mA" Variable="kAI_APDMIN" />
+                <Setting Name="Maximum Current"           RangeMin="0" RangeMax="25.0"  Units="mA" Variable="kAI_APDMAX" />
+                <Setting Name="Over Range Threshold"   RangeMin="0" RangeMax="100.0" Units="Percent" Variable="kAPDAIORT" /> 
+                <Setting Name="Signal Filtering"          RangeMin="0" RangeMax="99"    Units="Percent" Variable="kAPDFIL" /> 
+                <!--
+                <Setting Name="Over Range Response"                                  Units="Boolean" Variable="gAPDFR"      OptionList="Ain Assignment" /> 
+                -->
+            </Setting>
+        </Setting> 
+         <Setting Name="Analog Outputs" HelpName="HIDX_INOUT_AO">
+           <Setting Name="Actuator">
+               <Setting Name="Current Range (Jumper Select)"             Units="Option"   Variable="nActCurSel"             OptionList="Actuator Current Range"/>
+               <Setting Name="Minimum Current"                           RangeMin="-10.0" RangeMax="10.0"  Units="mA"       Variable="kAO1MIN"/>
+               <Setting Name="Maximum Current"                           RangeMin="-10.0" RangeMax="10.0"  Units="mA"       Variable="kAO1MAX"/>
+               <Setting Name="Null Current"                              RangeMin="-10.0" RangeMax="10.0"  Units="mA"       Variable="kAONULL1"/>
+               <Setting Name="Shutdown Current"                          RangeMin="-10.0" RangeMax="10.0"  Units="mA"       Variable="kSDCurrent"/>
+               <Setting Name="Readback Alarm Threshold"                  RangeMin="1"     RangeMax="30"    Units="Percent"  Variable="kAlmRD"/>
+               <Setting Name="Actuator 01 Enable"                                    Units="Boolean"  Variable="bAO1Enable" />
+               <Setting Name="Actuator 02 Enable"                                    Units="Boolean"  Variable="bAO2Enable" />
+               <Setting Name="Dither Current Amplitude"    RangeMin="0"   RangeMax="10.0"   Units="Percent" Variable="kPD" /> 
+               <Setting Name="Dither Frequency "           RangeMin="0"   RangeMax="100.0"  Units="Hz"      Variable="kPF" /> 
+               <!--
+               <Setting Name="Double Actuator Current When AO1 or AO2 Open"  Units="Boolean"  Variable="bDoubleFlag"/>
+               -->
+           </Setting>
+           <Setting Name="Position Monitor"> 
+               <Setting Name="Minimum Current"    RangeMin="0"   RangeMax="25.0"  Units="mA"      Variable="kAO3MIN" />
+               <Setting Name="Maximum Current"    RangeMin="0"   RangeMax="25.0"  Units="mA"      Variable="kAO3MAX" />
+               <Setting Name="Readback Threshold" RangeMin="1.0" RangeMax="100.0" Units="Percent" Variable="kAO3RB" />
+               <!--
+               <Setting Name="Readback Error Response"                            Units="Boolean" Variable="kA03_RBER" OptionList="Aout Assignment" />
+               -->
+           </Setting>
+       </Setting>
+        <Setting Name="Digital Inputs" HelpName="HIDX_INOUT_DI">
+            <Setting Name="Reset Command">
+               <Setting Name="Action" Units="Boolean"  Variable="kDI1S" OptionList="Reset Assignment" />
+            </Setting>
+            <Setting Name="External ShutDown">
+               <Setting Name="Action" Units="Boolean"  Variable="kDI2S" OptionList="Shutdown Assignment" />
+            </Setting>
+        </Setting>
+        <Setting Name="Digital Outputs" HelpName="HIDX_INOUT_DO">
+            <Setting Name="Alarm Relay Output">
+               <Setting Name="Alarm Output Latch" Units="Boolean"  Variable="cD01S" OptionList="Latch Assignment" /> 
+            </Setting>
+        </Setting>
+    </Setting>
+    <Setting Name="Control" HelpName="HIDX_CONTROL">
+        <Setting Name="Control Period" HelpName="HIDX_CONTROL_PERIOD">
+            <Setting Name="Control Period"   RangeMin="10"   RangeMax="65535"    Units="ms" Variable="nCtlP"  />
+        </Setting> 
+        <Setting Name="PV( Analog Position Input )" HelpName="HIDX_CONTROL_PV">
+            <Setting Name="Select Algorithm"                                                  Units="Option" Variable="nPVSel"      OptionList="PV Type" />
+            <Setting Name="Deviation Alarm Setpoint"            RangeMin="0" RangeMax="100.0" Units="Percent" Variable="kDEVARMSP"  />
+            <Setting Name="PV Open/Over Range Shutdown Select"                                Units="Option" Variable="nPVORFault"  OptionList="PV Fault Action"/>
+        </Setting>  
+        <Setting Name="SP( Position Demand )" HelpName="HIDX_CONTROL_SP">
+            <Setting Name="Select Algorithm"                                                     Units="Option"  Variable="nSPSel"  OptionList="SP Type" />
+            <Setting Name="Latch When Position Demand Fault"                                     Units="Boolean" Variable="gAI_SPL"  />
+            <Setting Name="Position Demand Fault Response"                                       Units="Boolean" Variable="gAI_SPER" OptionList="Ain Assignment"/>
+            <Setting Name="Redundant Tracking Error Threshold"   RangeMin="1.0" RangeMax="100.0" Units="Percent" Variable="kAI_SPET"  />
+            <Setting Name="Redundant Tracking Error Delay Time"                                  Units="Seconds" Variable="kAI_SPED" />  
+        </Setting> 
+            <Setting Name="Error = ABS(SP-PV)" HelpName="HIDX_CONTROL_ERROR">
+            <Setting Name="Error Threshold" RangeMin="0"   RangeMax="100.0"   Units="Percent" Variable="nDEV_TS" /> 
+            <Setting Name="Error Delay Time"               Units="Seconds" Variable="kDEVDelayT" />  
+            <Setting Name="Error Response"    Units="Boolean" Variable="gSPPVFR" OptionList="SPPV Response" />
+        </Setting> 
+        <Setting Name="Tuning" HelpName="HIDX_TUNING">
+            <Setting Name="Error Threshold"        RangeMin="0" RangeMax="100.0" Units="Percent" Variable="kPIDErrT" />
+            <Setting Name="Tuning1( When ABS(SP-PV) greater than Error Threshold )">
+                <Setting Name="Proportional Band"  RangeMin="0" RangeMax="1000.0" Units="Percent"    Variable="kPID1PB" />
+                <Setting Name="Reset"              RangeMin="0" RangeMax="400.0"  Units="Sec/Repeat" Variable="kPID1RES" />
+                <Setting Name="Rate"               RangeMin="0" RangeMax="10.0"   Units="Seconds"    Variable="kPID1RATE" />
+            </Setting>
+            <Setting Name="Tuning2( When ABS(SP-PV) less than Error Threshold )">   
+                <Setting Name="Proportional Band"  RangeMin="0" RangeMax="1000.0" Units="Percent"    Variable="kPID2PB" />
+                <Setting Name="Reset"              RangeMin="0" RangeMax="400.0"  Units="Sec/Repeat" Variable="kPID2RES" />
+                <Setting Name="Rate"               RangeMin="0" RangeMax="10.0"   Units="Seconds"    Variable="kPID2RATE" />
+            </Setting>
+            <!--
+            <Setting Name="PID Max Rate"           RangeMin="0" RangeMax="100.0"  Units="Value" Variable="kPIDMaxRate" />-->
+            <Setting Name="PID Controller Output Range" HelpName="HIDX_PID_CONTROLLER_OUTPUT">  
+                <Setting Name="Minimum Output"          RangeMin="0"    RangeMax="10.0"  Units="Percent" Variable="kPIDMINP" />
+                <Setting Name="Maximum Output"          RangeMin="90.0" RangeMax="100.0" Units="Percent" Variable="kPIDMAXP" />
+            </Setting>
+        </Setting>
+        <!--
+        <Setting Name="Driver" HelpName="HIDX_DRIVE">
+            <Setting Name="Dither Current Amplitude"    RangeMin="0"   RangeMax="10.0"   Units="Percent" Variable="kPD" /> 
+            <Setting Name="Dither Frequency "           RangeMin="0"   RangeMax="100.0"  Units="Hz"      Variable="kPF" />  
+        </Setting>
+        -->
+    </Setting> 
+    <Setting Name="MAC Address"                                                 Units="String"  Variable="strMAC" />
+    </Settings>   
+<!--
+==================================
+|   Monitored Values Listing     |
+==================================
+-->
+    <MonitorValues>
+    <MonitorValue Title="Control Period" />
+        <MonitorValue Title="Value (ms)"          Variable="iCPV" />
+    <MonitorValue Title="Analog Position Input 01" />
+        <MonitorValue Title="Voltage (V)"         Variable="iAPI1V" />
+        <MonitorValue Title="Percent"             Variable="iAPI1P" />
+    <MonitorValue Title="Analog Position Input 02" />
+        <MonitorValue Title="Voltage (V)"         Variable="iAPI2V" /> 
+        <MonitorValue Title="Percent"             Variable="iAPI2P" />
+    <MonitorValue Title="PV( Analog Position Input )" />
+        <MonitorValue Title="Percent"                 Variable="iPVP" />
+    <MonitorValue Title="SP( Position Demand )" />
+        <MonitorValue Title="Final SP Percent"        Variable="iSPP" />  
+        <MonitorValue Title="AI (mA)"                 Variable="iSPAIV" />
+        <MonitorValue Title="AI Percent"              Variable="iSPAIP" />
+        <MonitorValue Title="Communication Percent"   Variable="iCP" />
+    <MonitorValue Title="Actuator 01" />
+        <MonitorValue Title="Current (mA)"        Variable="iAO1V" />
+        <MonitorValue Title="Percent"             Variable="iAO1P" />
+        <MonitorValue Title="ReadBack Percent"    Variable="iAO1RBP" /> 
+    <MonitorValue Title="Actuator 02" />
+        <MonitorValue Title="Current (mA)"        Variable="iAO2V" />
+        <MonitorValue Title="Percent"             Variable="iAO2P" />
+        <MonitorValue Title="ReadBack Percent"    Variable="iAO2RBP" />
+    <MonitorValue Title="Position Monitor" />
+        <MonitorValue Title="Current (mA)"        Variable="iAO3V" />
+        <MonitorValue Title="Percent"             Variable="iAO3P" />
+        <MonitorValue Title="ReadBack Percent"    Variable="iAO3RBP" /> 
+    <MonitorValue Title="Digital Inputs" />
+        <MonitorValue Title="Reset Command"       Variable="dDI1_ResCom" />
+        <MonitorValue Title="External ShutDown"   Variable="dDI2_ExcSD" />
+    <MonitorValue Title="Digital Outputs" />
+        <MonitorValue Title="Alarm Output"        Variable="dDO1V" FontColor="Red"/>
+        <MonitorValue Title="ShutDown Output"     Variable="dDO2V" FontColor="Red"/>
+    </MonitorValues>
+    
+<!--
+==================================
+|   AlarmShutDown Values Listing     |
+==================================
+-->
+   <AlarmValues>
+   <AlarmValue Title="Alarm" />
+       <AlarmValue Title="Analog Position Input 01 Open"             Variable="dAPI1ARMOPEN"     FontColor="Fuchsia"/>
+       <AlarmValue Title="Analog Position Input 01 Over Range"       Variable="dAPI1ARMOR"       FontColor="Fuchsia"/>
+       <AlarmValue Title="Analog Position Input 02 Open"             Variable="dAPI2ARMOPEN"     FontColor="Fuchsia"/>
+       <AlarmValue Title="Analog Position Input 02 Over Range"       Variable="dAPI2ARMOR"       FontColor="Fuchsia"/>
+       <AlarmValue Title="Analog Position Demand Over Range"         Variable="dSPARMOR"         FontColor="Fuchsia"/>
+       <AlarmValue Title="Actuator 01 ReadBack Error"                Variable="dAO1ARMOR"        FontColor="Fuchsia"/>
+       <AlarmValue Title="Actuator 01 Open"                          Variable="dAO1Open"         FontColor="Fuchsia"/>
+       <AlarmValue Title="Actuator 02 ReadBack Error"                Variable="dAO2ARMOR"        FontColor="Fuchsia"/> 
+       <AlarmValue Title="Actuator 02 Open"                          Variable="dAO2Open"         FontColor="Fuchsia"/>
+       <AlarmValue Title="Position Monitor Output ReadBack Error"    Variable="dAO3ARMOR"        FontColor="Fuchsia"/> 
+       <AlarmValue Title="Position Monitor Output Open"              Variable="dAO3Open"         FontColor="Fuchsia"/>
+       <AlarmValue Title="Alarm Relay ReadBack Error"                Variable="dDO1ARMEO"        FontColor="Fuchsia"/>
+       <AlarmValue Title="ShutDown Relay ReadBack Error"             Variable="dDO2ARMEO"        FontColor="Fuchsia"/>
+       <AlarmValue Title="SP(Position Demand) Communication Failure"       Variable="dCFARM"     FontColor="Fuchsia"/>
+       <AlarmValue Title="SP(Position Demand) Redundant Tracking Error"    Variable="dDARM"      FontColor="Fuchsia"/>
+       <AlarmValue Title="PID SP/PV Tracking Error"                        Variable="dSPPVDARM"  FontColor="Fuchsia"/>
+       <AlarmValue Title="PV01/PV02 Deviation Alarm"                       Variable="dDevARM"    FontColor="Fuchsia"/>  
+    <AlarmValue Title="Shutdown" />
+       <AlarmValue Title="Analog Position Input 01 Open/Over Range"  Variable="dAPI1SD"          FontColor="Red"/>
+       <AlarmValue Title="Analog Position Input 02 Open/Over Range"  Variable="dAPI2SD"          FontColor="Red"/>
+       <AlarmValue Title="PV Select Algorithm Changed"               Variable="dPVSelChg"        FontColor="Red"/>
+    <!--
+       <AlarmValue Title="Analog Position Demand AI Over Range"      Variable="dSPAISD"          FontColor="Red"/>
+       <AlarmValue Title="Actuator 01 ReadBack Error"                Variable="dAO1RB"/>
+       <AlarmValue Title="Actuator 02 ReadBack Error"                Variable="dAO2RB"/>
+       <AlarmValue Title="Position Monitor Output ReadBack Error"    Variable="dAO3RB"           FontColor="Red"/>
+    -->
+       <AlarmValue Title="Position Demand Fault"                     Variable="dSPAICOMSD"       FontColor="Red"/>
+       <AlarmValue Title="PID SP/PV Tracking Error"                  Variable="dSPPVSD"          FontColor="Red"/>
+       <AlarmValue Title="External Shutdown Input"                   Variable="dExtSDI"          FontColor="Red"/>
+    <AlarmValue Title="Fault" />
+       <AlarmValue Title="EEPROM Error"                              Variable="dEEPROMErr"       FontColor="Red"/>
+       <AlarmValue Title="System No Parameters"                      Variable="dSysNoPar"        FontColor="Red"/>
+       <AlarmValue Title="Actuator 01 Hardware Error"                Variable="dAO1Err"          FontColor="Red"/>
+       <AlarmValue Title="Actuator 02 Hardware Error"                Variable="dAO2Err"          FontColor="Red"/>
+       <AlarmValue Title="Position Monitor Output Hardware Error"    Variable="dAO3Err"          FontColor="Red"/>
+   </AlarmValues>   
+<!--
+==================================
+|   Modbus Communications        |
+==================================
+-->
+    <Communications>
+        <Action Name="Monitor">
+            <Message Begin="1" End="2016" />
+            <Message Begin="10001" End="20000" />
+            <Message Begin="30001" End="30100" />
+            <Message Begin="35001" End="40000" />
+            <Message Begin="40001" End="40100" />
+            <Message Begin="42001" End="42084" />
+        </Action>
+    </Communications>
+
+</DataDictionary>

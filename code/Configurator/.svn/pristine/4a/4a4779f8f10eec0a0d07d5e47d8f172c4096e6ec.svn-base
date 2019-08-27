@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Device Menu</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-File_Menu.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Monitor_Menu.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161357"> </a><h3 class="pHeading2">
+Device Menu
+</h3>
+<hr />
+<a name="wp1161359"> </a><p class="pBody">
+The Device menu contains these commands:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161360"> </a><div class="pSmartList1"><li>Enter Password</li></div>
+<a name="wp1163720"> </a><div class="pSmartList1"><li>Logout</li></div>
+<a name="wp1163720"> </a><div class="pSmartList1"><li>Select Modbus Type</li></div>
+<a name="wp1163719"> </a><div class="pSmartList1"><li>Connect</li></div>
+<a name="wp1161361"> </a><div class="pSmartList1"><li>Disconnect</li></div>
+<a name="wp1161362"> </a><div class="pSmartList1"><li>Retrieve Data</li></div>
+<a name="wp1161363"> </a><div class="pSmartList1"><li>Send Data</li></div>
+<a name="wp1161364"> </a><div class="pSmartList1"><li>Compare Data</li></div>
+<a name="wp1161366"> </a><div class="pSmartList1"><li>Comm Settings</li></div>
+<a name="wp1161366"> </a><div class="pSmartList1"><li>Modbus Tcp Settings</li></div>
+</ul></div>
+<a name="wp1161368"> </a><h5 class="pHeading5">
+Enter Password Command
+</h5>
+<a name="wp1165947"> </a><p class="pBody">
+The Enter Password command prompts you for a password. The password you enter determines your access level.
+</p>
+<a name="wp1166692"> </a><p class="pBody">
+This table describes the passwords and access levels, which are fixed and cannot be changed.
+</p>
+<a name="wp1165983"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1166045table1165991">
+  <caption></caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1166045"> </a><div class="pCellHeading">
+Password
+</div>
+</th>
+    <th><a name="wp1166029"> </a><div class="pCellHeading">
+Access Level
+</div>
+</th>
+    <th><a name="wp1166031"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1166047"> </a><div class="pCellBody">
+Guest<br />(or no password)
+</div>
+</td>
+    <td><a name="wp1166033"> </a><div class="pCellBody">
+Guest
+</div>
+</td>
+    <td><a name="wp1166035"> </a><div class="pCellBody">
+Read only access-does not allow saving of configurations
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1166049"> </a><div class="pCellBody">
+Tune
+</div>
+</td>
+    <td><a name="wp1166037"> </a><div class="pCellBody">
+Tuning
+</div>
+</td>
+    <td><a name="wp1166039"> </a><div class="pCellBody">
+Allows changing and downloading of tuning parameters only
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1166051"> </a><div class="pCellBody">
+Configure
+</div>
+</td>
+    <td><a name="wp1166041"> </a><div class="pCellBody">
+Configuration
+</div>
+</td>
+    <td><a name="wp1166043"> </a><div class="pCellBody">
+Allows changing and downloading of all parameters
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1163725"> </a><h5 class="pHeading5">
+Logout Command
+</h5>
+<a name="wp1163726"> </a><p class="pBody">
+The Logout command changes the access level to Guest-the lowest access level.
+</p>
+<a name="wp1163727"> </a><h5 class="pHeading5">
+Select Modbus Type
+</h5>
+<a name="wp1163728"> </a><p class="pBody">
+The Select Modbus Type command allows you to select Modbus communication type.
+</p>
+<a name="wp1163729"> </a><h5 class="pHeading5">
+Connect Command
+</h5>
+<a name="wp1163730"> </a><p class="pBody">
+The Connect command establishes a connection with the controller. The DSC100 Configurator queries specific information to ensure that it is communicating with a DSC100 controller.
+</p>
+<a name="wp1163731"> </a><h5 class="pHeading5">
+Disconnect Command
+</h5>
+<a name="wp1163732"> </a><p class="pBody">
+The Disconnect command closes the communication port to the DSC100 controller.
+</p>
+<a name="wp1163733"> </a><h5 class="pHeading5">
+Retrieve Data Command
+</h5>
+<a name="wp1163734"> </a><p class="pBody">
+If connected, the Retrieve Data command uploads the existing configuration from the DSC100 controller to the open configuration file. Because this overwrites the configuration properties in the open document, you are prompted with a warning message.
+</p>
+<a name="wp1163735"> </a><h5 class="pHeading5">
+Send Data Command
+</h5>
+<a name="wp1163736"> </a><p class="pBody">
+If connected, the Send Data command sends the configuration properties in the open configuration file to the DSC100 controller. In the Send Configuration screen you can choose to send Configuration and Tuning properties or Tuning Properties only. You also can choose to send changed values or all values.
+</p>
+<a name="wp1163737"> </a><p class="pBody">
+The DSC100 Configurator compares the property values you are about to send with the property values running on the controller and shows the status in the Send Configuration screen.
+</p>
+<a name="wp1163738"> </a><p class="pBody">
+If the actuator controlled by the DSC100 controller is running and you choose to send the configuration, a Send Configuration Warning appears. You must type YES and then click OK for the DSC100 Configurator to send the configuration to the controller.
+</p>
+<a name="wp1163739"> </a><table cellspacing="6" class="pNote">
+  <tr valign="top">
+    <td>
+      <b>WARNING	</b>
+    </td>
+    <td>
+      Tri-Sen does not recommend sending non-tuning values to the controller while the actuator is running as this has the potential to damage the actuator.
+    </td>
+  </tr>
+</table>
+<a name="wp1163740"> </a><h5 class="pHeading5">
+Compare Data Command
+</h5>
+<a name="wp1163741"> </a><p class="pBody">
+The Compare Data command compares the configuration properties in the open configuration file with the configuration properties in the controller, or with a saved configuration file.
+</p>
+<a name="wp1163742"> </a><h5 class="pHeading5">
+Comm Settings Command
+</h5>
+<a name="wp1163743"> </a><p class="pBody">
+The Comm Settings command allows you to change the settings for communication with the DSC100 controller. Usually, Only the Baud and Slave ID needed to be changed to match the communication settings on the DSC100 controller, as the other configuration options are not configurable on the controller. 
+For more information about the communication settings on the DSC100 controller, see <a href="3_Installation-Station_IP_Baud.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">DSC100 Station and IP Address, Baud Rate Setting </span></a>
+</p>
+<a name="wp1163744"> </a><h5 class="pHeading5">
+Modbus Tcp Settings
+</h5>
+<a name="wp1163745"> </a><p class="pBody">
+The Modbus Tcp Settings allows you to change the TCP/IP settings for communication with the DSC100 controller.
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

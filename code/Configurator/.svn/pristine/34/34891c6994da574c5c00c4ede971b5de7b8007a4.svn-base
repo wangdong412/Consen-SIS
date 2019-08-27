@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:30" />
+    <title>Creating Configuration Files</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="4_Configuration-Configuration_Files.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="4_Configuration-Saving_Configuration_Files.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161141"> </a><h3 class="pHeading2">
+Creating Configuration Files
+</h3>
+<hr />
+<a name="wp1161143"> </a><p class="pBody">
+This procedure explains how to create a configuration file, which stores the configuration settings to be used on the controller.
+</p>
+<a name="wp1161144"> </a><p class="pBody">
+The first time you start the DSC100 Configurator a new configuration file opens. All the property settings in the new configuration file are blank or set to a default value.
+</p>
+<a name="wp1161145"> </a><p class="pBody">
+You can create additional configuration files; however, only one configuration file can be open at a time.
+</p>
+<a name="wp1161146"> </a><h5 class="plistHeading">
+Procedure
+</h5>
+<div class="pSmartList1"><ol type="1" class="pSmartList1">
+<a name="wp1161147"> </a><div class="pSmartList1"><li>On the File menu, click New. One of the following happens:</li></div>
+<ul class="plistBullet"><a name="wp1161148"> </a><div class="plistBullet"><li>If the open configuration file contains no unsaved changes, a new configuration file opens.</li></div>
+<a name="wp1161149"> </a><div class="plistBullet"><li>If the open configuration file contains unsaved changes, a message appears asking if you want to save the changes.</li></div>
+</ul><a name="wp1161150"> </a><div class="pSmartList1"><li>Do one of the following:</li></div>
+<ul class="plistBullet"><a name="wp1161151"> </a><div class="plistBullet"><li>To discard the unsaved changes, click No. A new configuration file opens.</li></div>
+<a name="wp1161152"> </a><div class="plistBullet"><li>To keep the unsaved changes, click Yes. Changes are saved under the current file name and a new configuration file opens; or, if the file has never been saved, you are prompted to enter a file name and then a new configuration file opens.</li></div>
+</ul></ol></div>
+<a name="wp1161153"> </a><p class="pBody">
+For descriptions of configuration properties and instructions for changing configuration properties, see <a href="4_Configuration-Configuration_Properties.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Configuration Properties</span></a>.
+</p>
+
+
+<p class="HTMLHelpRelatedTopic"><object
+  id=candomble
+  type="application/x-oleobject"
+  classid="clsid:adb880a6-d8ff-11cf-9377-00aa003b7a11"
+  width=100
+  height=100
+ >
+  <param name="Command" value="Related Topics, MENU">
+  <param name="Button" value="Text:Related Topics">
+  <param name="Item1" value="Saving Configuration Files ;4_Configuration-Saving_Configuration_Files.html#wp1161172;4_Configuration-Saving_Configuration_Files.html#wp1161172">
+  <param name="Item2" value="Specifying Configuration Properties ;4_Configuration-Specifying_Configuration_Properties.html#wp1212206;4_Configuration-Specifying_Configuration_Properties.html#wp1212206">
+  <param name="Item3" value="Configuration View ;5_DSC100ConfiguratorUserInterface-Configuration_View.html#wp1164006;5_DSC100ConfiguratorUserInterface-Configuration_View.html#wp1164006">
+ </object></p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

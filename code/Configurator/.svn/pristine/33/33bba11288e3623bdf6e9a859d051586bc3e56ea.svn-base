@@ -1,0 +1,548 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:51" />
+    <title>浮点数据格式举例</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="A_ModbusAliases-Scaling_of_16_Bit_Integers.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="A_ModbusAliases-Modbus_Aliases.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1967788"> </a><h3 class="pHeading2">
+浮点数据格式举例
+</h3>
+<hr />
+<a name="wp1161533"> </a><p class="pBody">
+本例子显示一个Modbus主读地址40001，42001–42002，和44001– 44002的过程。转速表响应 8000.0，如上表的比例变换。</p>
+<a name="wp1161635"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161536table1161534">
+  <caption><a name="wp1161536"> </a><div class="pTableTitle">
+请求: 读模出 &#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161546"> </a><div class="pCellHeading">
+字节序号
+</div>
+</th>
+    <th><a name="wp1161548"> </a><div class="pCellHeading">
+域含义
+</div>
+</th>
+    <th><a name="wp1161550"> </a><div class="pCellHeading">
+16 - 位整型 (40001)
+</div>
+</th>
+    <th><a name="wp1161552"> </a><div class="pCellHeading">
+32 - 位浮点型 (42001- 42002)
+</div>
+</th>
+    <th><a name="wp1161554"> </a><div class="pCellHeading">
+32 - 位交换型 
+(44001- 44002)
+
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161556"> </a><div class="pCellBody">
+1
+</div>
+</td>
+    <td><a name="wp1161558"> </a><div class="pCellBody">
+Unit ID
+</div>
+</td>
+    <td><a name="wp1161560"> </a><div class="pCellBody">
+01
+</div>
+</td>
+    <td><a name="wp1161562"> </a><div class="pCellBody">
+01
+</div>
+</td>
+    <td><a name="wp1161564"> </a><div class="pCellBody">
+01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161566"> </a><div class="pCellBody">
+2
+</div>
+</td>
+    <td><a name="wp1161568"> </a><div class="pCellBody">
+Function Code
+</div>
+</td>
+    <td><a name="wp1161570"> </a><div class="pCellBody">
+03
+</div>
+</td>
+    <td><a name="wp1161572"> </a><div class="pCellBody">
+03
+</div>
+</td>
+    <td><a name="wp1161574"> </a><div class="pCellBody">
+03
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161576"> </a><div class="pCellBody">
+3
+</div>
+</td>
+    <td><a name="wp1161578"> </a><div class="pCellBody">
+Address (HI)
+</div>
+</td>
+    <td><a name="wp1161580"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161582"> </a><div class="pCellBody">
+07
+</div>
+</td>
+    <td><a name="wp1161584"> </a><div class="pCellBody">
+04
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161586"> </a><div class="pCellBody">
+4
+</div>
+</td>
+    <td><a name="wp1161588"> </a><div class="pCellBody">
+Address (LO)
+</div>
+</td>
+    <td><a name="wp1161590"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161592"> </a><div class="pCellBody">
+D0
+</div>
+</td>
+    <td><a name="wp1161594"> </a><div class="pCellBody">
+A0
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161596"> </a><div class="pCellBody">
+5
+</div>
+</td>
+    <td><a name="wp1161598"> </a><div class="pCellBody">
+Count (HI)
+</div>
+</td>
+    <td><a name="wp1161600"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161602"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161604"> </a><div class="pCellBody">
+00
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161606"> </a><div class="pCellBody">
+6
+</div>
+</td>
+    <td><a name="wp1161608"> </a><div class="pCellBody">
+Count (LO)
+</div>
+</td>
+    <td><a name="wp1161610"> </a><div class="pCellBody">
+01
+</div>
+</td>
+    <td><a name="wp1161612"> </a><div class="pCellBody">
+02
+</div>
+</td>
+    <td><a name="wp1161614"> </a><div class="pCellBody">
+02
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161616"> </a><div class="pCellBody">
+7
+</div>
+</td>
+    <td><a name="wp1161618"> </a><div class="pCellBody">
+CRC (HI)
+</div>
+</td>
+    <td><a name="wp1161620"> </a><div class="pCellBody">
+84
+</div>
+</td>
+    <td><a name="wp1161622"> </a><div class="pCellBody">
+C4
+</div>
+</td>
+    <td><a name="wp1161624"> </a><div class="pCellBody">
+C7
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161626"> </a><div class="pCellBody">
+8
+</div>
+</td>
+    <td><a name="wp1161628"> </a><div class="pCellBody">
+CRC (LO)
+</div>
+</td>
+    <td><a name="wp1161630"> </a><div class="pCellBody">
+0A
+</div>
+</td>
+    <td><a name="wp1161632"> </a><div class="pCellBody">
+86
+</div>
+</td>
+    <td><a name="wp1161634"> </a><div class="pCellBody">
+3D
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1161691"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161638table1161636">
+  <caption><a name="wp1161638"> </a><div class="pTableTitle">
+响应: 16-位整型格式</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161644"> </a><div class="pCellHeading">
+字节序号
+</div>
+</th>
+    <th><a name="wp1161646"> </a><div class="pCellHeading">
+域含义
+</div>
+</th>
+    <th><a name="wp1161648"> </a><div class="pCellHeading">
+值
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161650"> </a><div class="pCellBody">
+1
+</div>
+</td>
+    <td><a name="wp1161652"> </a><div class="pCellBody">
+Unit ID
+</div>
+</td>
+    <td><a name="wp1161654"> </a><div class="pCellBody">
+01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161656"> </a><div class="pCellBody">
+2
+</div>
+</td>
+    <td><a name="wp1161658"> </a><div class="pCellBody">
+Function Code
+</div>
+</td>
+    <td><a name="wp1161660"> </a><div class="pCellBody">
+03
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161662"> </a><div class="pCellBody">
+3
+</div>
+</td>
+    <td><a name="wp1161664"> </a><div class="pCellBody">
+Byte Count
+</div>
+</td>
+    <td><a name="wp1161666"> </a><div class="pCellBody">
+02
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161668"> </a><div class="pCellBody">
+4
+</div>
+</td>
+    <td><a name="wp1161670"> </a><div class="pCellBody">
+40001 (HI)
+</div>
+</td>
+    <td><a name="wp1161672"> </a><div class="pCellBody">
+1F
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161674"> </a><div class="pCellBody">
+5
+</div>
+</td>
+    <td><a name="wp1161676"> </a><div class="pCellBody">
+40001 (LO)
+</div>
+</td>
+    <td><a name="wp1161678"> </a><div class="pCellBody">
+40
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161680"> </a><div class="pCellBody">
+6
+</div>
+</td>
+    <td><a name="wp1161682"> </a><div class="pCellBody">
+CRC (HI)
+</div>
+</td>
+    <td><a name="wp1161684"> </a><div class="pCellBody">
+B1
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161686"> </a><div class="pCellBody">
+7
+</div>
+</td>
+    <td><a name="wp1161688"> </a><div class="pCellBody">
+CRC (LO)
+</div>
+</td>
+    <td><a name="wp1161690"> </a><div class="pCellBody">
+84
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+<a name="wp1161781"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161694table1161692">
+  <caption><a name="wp1161694"> </a><div class="pTableTitle">
+响应: 32-位浮点格式&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161702"> </a><div class="pCellHeading">
+字节序号
+</div>
+</th>
+    <th><a name="wp1161704"> </a><div class="pCellHeading">
+域含义
+</div>
+</th>
+    <th><a name="wp1161706"> </a><div class="pCellHeading">
+标准浮点 (42001)
+</div>
+</th>
+    <th><a name="wp1161708"> </a><div class="pCellHeading">
+交换浮点 (44001)
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161710"> </a><div class="pCellBody">
+1
+</div>
+</td>
+    <td><a name="wp1161712"> </a><div class="pCellBody">
+Unit ID
+</div>
+</td>
+    <td><a name="wp1161714"> </a><div class="pCellBody">
+01
+</div>
+</td>
+    <td><a name="wp1161716"> </a><div class="pCellBody">
+01
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161718"> </a><div class="pCellBody">
+2
+</div>
+</td>
+    <td><a name="wp1161720"> </a><div class="pCellBody">
+Function Code
+</div>
+</td>
+    <td><a name="wp1161722"> </a><div class="pCellBody">
+03
+</div>
+</td>
+    <td><a name="wp1161724"> </a><div class="pCellBody">
+03
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161726"> </a><div class="pCellBody">
+3
+</div>
+</td>
+    <td><a name="wp1161728"> </a><div class="pCellBody">
+Byte Count
+</div>
+</td>
+    <td><a name="wp1161730"> </a><div class="pCellBody">
+04
+</div>
+</td>
+    <td><a name="wp1161732"> </a><div class="pCellBody">
+04
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161734"> </a><div class="pCellBody">
+4
+</div>
+</td>
+    <td><a name="wp1161736"> </a><div class="pCellBody">
+4x001 (HI)
+</div>
+</td>
+    <td><a name="wp1161738"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161740"> </a><div class="pCellBody">
+45
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161742"> </a><div class="pCellBody">
+5
+</div>
+</td>
+    <td><a name="wp1161744"> </a><div class="pCellBody">
+4x001 (LO)
+</div>
+</td>
+    <td><a name="wp1161746"> </a><div class="pCellBody">
+00
+</div>
+</td>
+    <td><a name="wp1161748"> </a><div class="pCellBody">
+FA
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161750"> </a><div class="pCellBody">
+6
+</div>
+</td>
+    <td><a name="wp1161752"> </a><div class="pCellBody">
+4x002 (HI)
+</div>
+</td>
+    <td><a name="wp1161754"> </a><div class="pCellBody">
+45
+</div>
+</td>
+    <td><a name="wp1161756"> </a><div class="pCellBody">
+00
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161758"> </a><div class="pCellBody">
+7
+</div>
+</td>
+    <td><a name="wp1161760"> </a><div class="pCellBody">
+4x002 (LO)
+</div>
+</td>
+    <td><a name="wp1161762"> </a><div class="pCellBody">
+FA
+</div>
+</td>
+    <td><a name="wp1161764"> </a><div class="pCellBody">
+00
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161766"> </a><div class="pCellBody">
+8
+</div>
+</td>
+    <td><a name="wp1161768"> </a><div class="pCellBody">
+CRC (HI)
+</div>
+</td>
+    <td><a name="wp1161770"> </a><div class="pCellBody">
+48
+</div>
+</td>
+    <td><a name="wp1161772"> </a><div class="pCellBody">
+CF
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161774"> </a><div class="pCellBody">
+9
+</div>
+</td>
+    <td><a name="wp1161776"> </a><div class="pCellBody">
+CRC (LO)
+</div>
+</td>
+    <td><a name="wp1161778"> </a><div class="pCellBody">
+E0
+</div>
+</td>
+    <td><a name="wp1161780"> </a><div class="pCellBody">
+0E
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+
+*.o
+*.out
+*.sw*
+tags
+tool
+abcd
+y2
+test.c
+testfile_*
+

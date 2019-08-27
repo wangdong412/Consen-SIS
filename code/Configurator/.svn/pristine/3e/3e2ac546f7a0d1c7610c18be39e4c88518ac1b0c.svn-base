@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Configuration Property Icons</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-Views_Toolbar.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Real-Time_Actuator_Data.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1161628"> </a><h3 class="pHeading2">
+Configuration Property Icons
+</h3>
+<hr />
+<a name="wp1161631"> </a><p class="pBody">
+The icons beside each configuration property indicate:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161632"> </a><div class="pSmartList1"><li>The type of property.</li></div>
+<a name="wp1161633"> </a><div class="pSmartList1"><li>If the property value has changed since the last save.</li></div>
+<a name="wp1161634"> </a><div class="pSmartList1"><li>If the property is locked or read-only.</li></div>
+</ul></div>
+<a name="wp1161635"> </a><p class="pBody">
+This table describes the configuration property icons.
+</p>
+<a name="wp1161694"> </a><p class="pBodyRelative">
+</p><div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1161638table1161636">
+  <caption><a name="wp1161638"> </a><div class="pTableTitle">
+Configuration Property Icons
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    <th><a name="wp1161642"> </a><div class="pCellHeading">
+Icon
+</div>
+</th>
+    <th><a name="wp1161644"> </a><div class="pCellHeading">
+Description
+</div>
+</th>
+</tr>
+  <tr align="left">    <td><a name="wp1161649"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11.png" height="22" width="18" id="wp1161647" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161651"> </a><div class="pCellBody">
+Locked or read-only configuration property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161656"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11a.png" height="14" width="14" id="wp1161654" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161658"> </a><div class="pCellBody">
+Configuration property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161663"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11b.png" height="22" width="18" id="wp1161661" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161665"> </a><div class="pCellBody">
+Changed configuration property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161670"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11c.png" height="22" width="18" id="wp1161668" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161672"> </a><div class="pCellBody">
+Locked or read-only tuning property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161677"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11d.png" height="22" width="18" id="wp1161675" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161679"> </a><div class="pCellBody">
+Tuning property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161684"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-11e.png" height="22" width="18" id="wp1161682" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161686"> </a><div class="pCellBody">
+Changed tuning property
+</div>
+</td>
+</tr>
+  <tr align="left">    <td><a name="wp1161691"> </a><p class="pBodyRelative">
+<img src="images/5_DSC100ConfiguratorUserInterface-Configuration_Property_Icons-22.png" height="22" width="18" id="wp1161689" border="0" hspace="0" vspace="0"/>
+</p>
+</td>
+    <td><a name="wp1161693"> </a><div class="pCellBody">
+Read-only property
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p class="pBodyRelative">
+</p>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

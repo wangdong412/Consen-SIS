@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:09:38" />
+    <title> 电子规格 </title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="D_Specifications-Specifications.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="D_Specifications-Performance.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1188575"> </a><h2 class="pTitle">
+电子规格
+</h2>
+<hr />
+<a name="wp1191793"> </a><p class="pBody">
+这部分主要描述电子规格</p>
+
+
+<div align="left">
+<table border="1" cellpadding="4" cellspacing="0" bordercolor="Silver" id="wp1193075table1193070">
+  <caption><a name="wp1193075"> </a><div class="pTableTitle">
+电子规格&#160;
+</div>
+</caption>
+  <tr bgcolor="#DBDBDB" align="center">    
+  	<th><a name="wp1193081"> </a><div class="pCellHeading">  特性       </div></th>
+    <th><a name="wp1193083"> </a><div class="pCellHeading">  描述   </div></th>
+</tr>
+<tr align="left">    
+  	<td><a name="wp1193085"> </a><div class="pCellHeading">  供电电源</div></td>
+    <td><a name="wp1193087"> </a><div class="pCellBody">     &#160;       </div></td>
+</tr>
+  <tr align="left">    
+  	<td><a name="wp1193089"> </a><div class="pCellBody">   输入路数 </div></td>
+    <td><a name="wp1193091"> </a><div class="pCellBody">     2路冗余 </div></td>
+</tr>
+  <tr align="left">    
+  	<td><a name="wp1193093"> </a><div class="pCellBody">   输入电压    </div></td>
+    <td><a name="wp1193095"> </a><div class="pCellBody">     18~32VDC, 1A      </div></td>
+</tr>
+  <tr align="left">    
+    <td><a name="wp1193097"> </a><div class="pCellHeading">  模拟位置输入 </div></td>
+    <td><a name="wp1193099"> </a><div class="pCellBody">      &#160;  </div></td>
+</tr>
+  <tr align="left">    
+    <td><a name="wp1193101"> </a><div class="pCellBody">   LVDT输入通道数    </div></td>
+    <td><a name="wp1193103"> </a><div class="pCellBody">   2路                              </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp1193105"> </a><div class="pCellBody">     LVDT激励源  </div></td>
+    <td><a name="wp1193107"> </a><div class="pSmartList1"><li>   电压范围5 Vrms                        </li></div>
+    	<a name="wp1193109"> </a><div class="pSmartList1"><li>   频率范围 1.7kHz                    </li></div>
+    	<a name="wp1193111"> </a><div class="pSmartList1"><li>   最大负载 120 mA                         </li></div>
+    	<a name="wp1199113"> </a><div class="pSmartList1"><li>   精度 0.2% of full scale @ 25°C     </li></div>
+    	<a name="wp1193115"> </a><div class="pSmartList1"><li>   温度灵敏度 150 ppm/°C     </li></div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp1193117"> </a><div class="pCellBody">     LVDT (输入交流)  </div></td>
+    <td><a name="wp1193121"> </a><div class="pSmartList1"><li>   三线制，四线制，六线制或RVDT                    </li></div>
+    	<a name="wp1199125"> </a><div class="pSmartList1"><li>   共模抑制 –60 dB @ 60 Hz      </li></div>  
+    	<a name="wp1199129"> </a><div class="pSmartList1"><li>   输入滤波 10 ms lag                  </li></div>
+    	<a name="wp1199131"> </a><div class="pSmartList1"><li>   分辨率14 bits                        </li></div>
+    	<a name="wp1199133"> </a><div class="pSmartList1"><li>   线性度 0.1% of full scale              </li></div>
+    	<a name="wp1199135"> </a><div class="pSmartList1"><li>   温度灵敏度 150 ppm/°C     </li></div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp1193137"> </a><div class="pCellBody">   输入直流   </div></td>
+    <td><a name="wp1193139"> </a><div class="pSmartList1"><li>   电流范围 ±40mA                         </li></div>
+    	<a name="wp1193141"> </a><div class="pSmartList1"><li>   最大输入电压 ±10 Vdc              </li> </div>
+    	<a name="wp1193147"> </a><div class="pSmartList1"><li>   共模抑制 –60 dB @ 60 Hz        </li></div>
+    	<a name="wp1199149"> </a><div class="pSmartList1"><li>   电流输入阻抗 250 Ω</span>      </li></div>
+    	<a name="wp1199151"> </a><div class="pSmartList1"><li>   输入滤波 5 ms lag                      </li></div>
+    	<a name="wp1199153"> </a><div class="pSmartList1"><li>   分辨率14 bits                          </li></div>
+    	<a name="wp1199155"> </a><div class="pSmartList1"><li>   线性度 0.1% of full scale                 </li></div>
+    	<a name="wp1199157"> </a><div class="pSmartList1"><li>   温度灵敏度 150 ppm/°C           </li></div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193159"> </a><div class="pCellHeading">   模拟位置命令输入   </div></td>
+    <td><a name="wp1193161"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193163"> </a><div class="pCellBody">   输入通道   </div></td>
+    <td><a name="wp1193165"> </a><div class="pCellBody">   1路                          </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193167"> </a><div class="pCellBody">   输入范围  </div></td>
+    <td><a name="wp1193169"> </a><div class="pCellBody">    额定范围 0–25 mA                   </div></td>
+  </tr>
+   <tr align="left">    
+    <td><a name="wp1193159"> </a><div class="pCellHeading">   控制输出   </div></td>
+    <td><a name="wp1193161"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193175"> </a><div class="pCellBody">   输出通道    </div></td>
+    <td><a name="wp1193177"> </a><div class="pCellBody">    2路电流              </div></td>
+  </tr>
+  <tr align="left">   
+    <td><a name="wp1193179"> </a><div class="pCellBody">    输出范围（硬件跳线设置）     </div></td>
+    <td><a name="wp1193181"> </a><div class="pSmartList1"><li>    &plusmn;10 mA         </li></div>
+    	  <a name="wp1193183"> </a><div class="pSmartList1"><li>    &plusmn;25 mA         </li></div>
+    	  <a name="wp1193185"> </a><div class="pSmartList1"><li>    &plusmn;50 mA         </li></div>
+    	  <a name="wp1199187"> </a><div class="pSmartList1"><li>    &plusmn;100 mA        </li></div>  
+    	  <a name="wp1193189"> </a><div class="pSmartList1"><li>    &plusmn;250 mA        </li></div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193191"> </a><div class="pCellBody">   上电输出          </div></td>
+    <td><a name="wp1193193"> </a><div class="pCellBody">   工作正常后输出 </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193195"> </a><div class="pCellBody">  最大负载阻抗           </div></td>
+    <td><a name="wp1193197"> </a><div class="pCellBody">  7.5 V/最大要求电流   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193199"> </a><div class="pCellBody">   分辨率	                   </div></td>
+    <td><a name="wp1193201"> </a><div class="pCellBody">   14 bits                         </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193203"> </a><div class="pCellBody">   精度		                   </div></td>
+    <td><a name="wp1193205"> </a><div class="pCellBody">   1%                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193207"> </a><div class="pCellBody">   线性度                   </div></td>
+    <td><a name="wp1193209"> </a><div class="pCellBody">   0.2% of full scale              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193211"> </a><div class="pCellBody">   温度灵敏度       </div></td>
+    <td><a name="wp1193213"> </a><div class="pCellBody">   150 ppm/&deg;C	                     </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193215"> </a><div class="pCellBody">  抖动                     </div></td>
+    <td><a name="wp1193217"> </a><div class="pCellBody">   0-10%, 25% duty cycle @ 25 Hz   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193219"> </a><div class="pCellBody">  输出滤波            </div></td>
+    <td><a name="wp1193221"> </a><div class="pCellBody">   Filter 6 ms lag  </div></td>
+  </tr>
+
+
+  </tr> 
+  <tr align="left">    
+    <td><a name="wp1193227"> </a><div class="pCellHeading">   位置监控输出   </div></td>
+    <td><a name="wp1193229"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193231"> </a><div class="pCellBody">   输出通道	       </div></td>
+    <td><a name="wp1193233"> </a><div class="pCellBody">   1路电流  </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193235"> </a><div class="pCellBody">   输出范围	     </div></td>
+    <td><a name="wp1193237"> </a><div class="pCellBody">   0-25 mA             </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193239"> </a><div class="pCellBody">   上电输出		               </div></td>
+    <td><a name="wp1193241"> </a><div class="pCellBody">  工作正常后输出   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193243"> </a><div class="pCellBody">   最大负载阻抗	                   </div></td>
+    <td><a name="wp1193245"> </a><div class="pCellBody">   500<span style="font-family: Symbol">W</span>                         </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193247"> </a><div class="pCellBody">  分辨率		                   </div></td>
+    <td><a name="wp1193249"> </a><div class="pCellBody">   16bits                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193251"> </a><div class="pCellBody">  精度 	                   </div></td>
+    <td><a name="wp1193253"> </a><div class="pCellBody">   0.5%              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193255"> </a><div class="pCellBody">  线性度      </div></td>
+    <td><a name="wp1193257"> </a><div class="pCellBody">   0.2% of full scale	                     </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193259"> </a><div class="pCellBody">   温度灵敏度                     </div></td>
+    <td><a name="wp1193261"> </a><div class="pCellBody">   100 ppm/&deg;C   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193267"> </a><div class="pCellBody">   输出滤波          </div></td>
+    <td><a name="wp1193269"> </a><div class="pCellBody">   Filter 3 ms lag              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193271"> </a><div class="pCellBody">   隔离电压          </div></td>
+    <td><a name="wp1193273"> </a><div class="pCellBody">   500 Vrms                     </div></td>
+  </tr>
+
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193279"> </a><div class="pCellHeading">  DO 输出    </div></td>
+    <td><a name="wp1193281"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193283"> </a><div class="pCellBody">  输出通道	       </div></td>
+    <td><a name="wp1193285"> </a><div class="pCellBody">   2路（报警，停车）   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193287"> </a><div class="pCellBody">   输出类型	     </div></td>
+    <td><a name="wp1193289"> </a><div class="pCellBody">   继电器输出          </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193291"> </a><div class="pCellBody">   输出模式		               </div></td>
+    <td><a name="wp1193293"> </a><div class="pCellBody">   正常闭合  </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193295"> </a><div class="pCellBody">  最大电流              </div></td>
+    <td><a name="wp1193297"> </a><div class="pCellBody">   500mA                         </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193299"> </a><div class="pCellBody">   隔离电压		                   </div></td>
+    <td><a name="wp1193301"> </a><div class="pCellBody">   500 Vrms                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193303"> </a><div class="pCellHeading">   DI 输入    </div></td>
+    <td><a name="wp1193305"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193307"> </a><div class="pCellBody">   输入通道	       </div></td>
+    <td><a name="wp1193309"> </a><div class="pCellBody">   6路 (复位，停车，自动，增，减，OPC)  </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193311"> </a><div class="pCellBody">  输入类型	     </div></td>
+    <td><a name="wp1193313"> </a><div class="pCellBody">   干接点输入        </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193415"> </a><div class="pCellBody">   工作电流	               </div></td>
+    <td><a name="wp1193417"> </a><div class="pCellBody">   10 mA   </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193315"> </a><div class="pCellBody">   隔离电压	               </div></td>
+    <td><a name="wp1193317"> </a><div class="pCellBody">   500 Vrms    </div></td>
+  </tr>
+   <tr align="left">    
+    <td><a name="wp1193319"> </a><div class="pCellHeading">  RS485 通信  </div></td>
+    <td><a name="wp1193321"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193323"> </a><div class="pCellBody">   硬件接口	       </div></td>
+    <td><a name="wp1193325"> </a><div class="pCellBody">   RS485	    </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193419"> </a><div class="pCellBody">   隔离电压		               </div></td>
+    <td><a name="wp1193421"> </a><div class="pCellBody">   500Vrms     </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193327"> </a><div class="pCellBody">  站地址	 		     </div></td>
+    <td><a name="wp1193329"> </a><div class="pCellBody">  通过8位拨码开关设定          </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193331"> </a><div class="pCellBody">   通讯协议		  		               </div></td>
+    <td><a name="wp1193333"> </a><div class="pCellBody">   MODBUS     </div></td>
+  </tr>
+   <tr align="left">    
+    <td><a name="wp1193335"> </a><div class="pCellBody">  波特率	  		               </div></td>
+    <td><a name="wp1193337"> </a><div class="pCellBody">   通过拨码开关选择:4.8Mbps, 9.6Mbps, 38.4Mbps, 115.2Mbps    </div></td>
+  </tr>
+   <tr align="left">    
+    <td><a name="wp1193339"> </a><div class="pCellHeading">  Ethernet 通信  </div></td>
+    <td><a name="wp1193341"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193343"> </a><div class="pCellBody">  硬件接口		 	       </div></td>
+    <td><a name="wp1193345"> </a><div class="pCellBody">   RJ45	    </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193347"> </a><div class="pCellBody">  通讯协议		 		     </div></td>
+    <td><a name="wp1193349"> </a><div class="pCellBody">  Modbus TCP           </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193351"> </a><div class="pCellBody">   速度				  		               </div></td>
+    <td><a name="wp1193353"> </a><div class="pCellBody">   100M     </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193371"> </a><div class="pCellHeading">  隔离  </div></td>
+    <td><a name="wp1193373"> </a><div class="pCellHeading">    &#160;                              </div></td>
+  </tr>
+  <tr align="left">    
+    <td><a name="wp1193375"> </a><div class="pCellBody">  输入电源与系统隔离电压     </div></td>
+    <td><a name="wp1193377"> </a><div class="pCellBody">  ≥1000VAC@1min，漏电流≤5mA </div></td>
+  </tr>
+</table>
+</div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

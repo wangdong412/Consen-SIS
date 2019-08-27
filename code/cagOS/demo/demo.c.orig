@@ -1,0 +1,235 @@
+/*
+ *------------------------------------------------------------
+ * Project:	cagOS
+ * Goal:  shell cmd code for PPC85XX.
+ * Copyright (c) 2013, 2014 CAG Systems, Inc.
+ *------------------------------------------------------------
+ *
+ *    @@@@     @@@      @@@@@       ####      ######
+ *  @@       @@  @@    @@         ##    ##   ##
+ * @@       @@    @@  @@   @@@@  ##      ## ######
+ * @@      @@@@@@@@@@ @@    @@    ##    ##      ##
+ *  @@@@@ @@@      @@@  @@@@@@      ####  #######
+ *
+ * The right to copy, distribute, modify or otherwise make use
+ * of this software may be licensed only pursuant to the terms
+ * of an applicable CAG license agreement.
+ *
+ * 1 tab == 4 spaces!
+ *------------------------------------------------------------
+ * modification history
+ * --------------------
+ * 2015.10.12, Ezio created
+ *
+ * DESCRIPTION
+ * test source file.
+ */
+
+
+#include "./demo.h"
+#include <config.h>
+#include <libc/stdio.h>
+#include <p1020rdb.h>
+#include <kernel/sysPic.h>
+#include <ppc/toolPpc.h>
+
+#include <kernel/sysOs.h>
+
+unsigned int *flag1=0x4000000;
+unsigned int *flag2=0x8000000;
+unsigned int *flag3=0xc000000;
+
+unsigned char *switch_stk1=0x100000;
+unsigned char *switch_stk2=0x200000;
+
+
+extern OS_TCB      rts_tcbs[10];
+
+
+void copy_stack()
+{
+        //printf("%s\n",__FUNCTION__);
+        int *stack0     = 0x3ff0000+0x0a00000;
+            int *stack1     = 0xbff0000+0x0a00000;
+
+                int stack_size    = 0x1000000;
+                    memcpy(stack1,stack0,stack_size);
+}
+
+void copy_data()
+{
+        //printf("%s\n",__FUNCTION__);
+        int *share0     = 0x0000000007000000;//1m
+            int *dseg0      = 0x0000000004000000;//2m
+
+                int *share1     = 0x000000000f000000;//1m
+                    int *dseg1      = 0x000000000c000000;//2m
+
+                        int share_size = 1024*1024;
+                            int dseg_size = 2*1024*1024;
+
+                                memcpy(share1,share0,share_size);
+                                    memcpy(dseg1,dseg0,dseg_size);
+}
+
+
+
+int stat = 0;
+void  jumpos()
+{
+    //    powerpcIntDisable();
+        //printf("jumpos\n");
+        copy_stack();
+            //printf("jumpos1\n");
+            copy_data();
+                //printf("jumpos2\n");
+
+            //    memset(0x00100000,0x0,0x100000);
+                os_change_mmu((stat+1)%2);
+
+                    /*while(1);*/
+
+                    stat++;
+                        //printf("jumpos3\n");
+}
+
+void os_switch(void)
+{ 
+    powerpcIntDisable();
+    printf("aaa\n");
+    int err;
+    void (*funcp)(void);
+    funcp = 0x10000020;
+    (*funcp)();
+    printf("ot2\n");
+    powerpcIntEnable();
+
+    os_delay_task(0xffff,&err);
+}
+
+void others()
+{
+    printf("Aothers\n");
+    int err;
+    OSTaskCreate(&rts_tcbs[8],"switchos",os_switch,NULL,1,
+        0x100000,0x100,0x800,0,0,0x200000,
+        OS_OPT_TASK_STK_CHK|OS_OPT_TASK_STK_CLR|OS_OPT_TASK_SAVE_FP,
+        &err);
+
+    if(err != OS_ERR_NONE){
+        printf("error\n");
+        while(1);
+    }
+
+    return ;
+
+    //copy_stack();
+    //copy_data();
+    //printf("stag1\n");
+    powerpcIntDisable();
+    void (*funcp)(void);
+    funcp = 0x10000020;
+    (*funcp)();
+    printf("ot2\n");
+    powerpcIntEnable();
+    //jumpos();
+}
+
+void task_void(char a[])
+{
+    int i=1;
+    int err;
+    while(1) {
+        printf("ta %d\n",i++);
+        powerpcIntDisable();
+        printf("TA %x %x %x\n",*flag1,*flag2,*flag3);
+        powerpcIntEnable();
+
+        for(int j=0; j<10000000; j++) {
+            j==j;
+            j==j;
+            j==j;
+            j==j;
+            i==i;
+            i=i;
+        }
+
+        if(i%5 == 0) {
+            others();
+        }
+        else{
+            os_delay_task(1,&err);
+        }
+
+
+    }
+}
+
+
+void task_void1(char a[])
+{
+    int i=0;
+    int err;
+    while(1) {
+        printf("tb\n");
+        powerpcIntDisable();
+        printf("TB  %d %x %x %x\n",i,*flag1,*flag2,*flag3);
+        powerpcIntEnable();
+        for(int j=0; j<10000000; j++) {
+            j==j;
+            j==j;
+            j==j;
+            j==j;
+            i==i;
+            i=i;
+        }
+        os_delay_task(1,&err);
+    }
+}
+
+int id1,id2;
+unsigned int *xxxyyy = 0x1000000;
+
+void main(void)
+{
+
+    LOCAL UINT32 pEpicRegBase = _CAG_CONFIG_CCSBAR;
+
+
+    BOOL    onBootCpu = (EPIC_REG_READ(EPIC_WHO_AM_I_REG)) == 0
+                            ? TRUE : FALSE;
+
+    /*if(onBootCpu){
+    }
+    else*/{
+
+        unsigned int err;
+        char aa = 0;
+        char bb=1;
+        *xxxyyy = 0xac;
+
+        *flag1=0x11111111;
+        *flag2=0x22222222;
+        *flag3=0x33333333;
+
+
+        printf("create tasks\n");
+        id1 = os_create_task("task1",task_void,&aa,4,1,&err);
+        if(err != 0)
+            printf("create task1 fail %d\n",err);
+        printf("abc\n");
+
+        id2 = os_create_task("task2",task_void1,&bb,4,1,&err);
+        if(err != 0)
+            printf("create task1 fail %d\n",err);
+
+        int pos1,pos2;
+        pos1=os_get_pos(id1);
+        pos2=os_get_pos(id2);
+    }
+}
+
+
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="DSC100Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:48" />
+    <title>Views</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="5_DSC100ConfiguratorUserInterface-DSC100_Configurator_User_Interface.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="5_DSC100ConfiguratorUserInterface-Configuration_View.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1167429"> </a><h2 class="pHeading1">
+Views
+</h2>
+<hr />
+<a name="wp1161094"> </a><p class="pBody">
+This section describes the function and layout of the views in the DSC100 Configurator.
+</p>
+<a name="wp1161095"> </a><p class="pBody">
+Each view contains the same menus, Standard toolbar, and Views toolbar. The area beneath the View toolbar is divided into two sections, or panes. Beneath the panes is a message area that appears when the controller encounters an error, or if you select Messages from the View menu.
+</p>
+<a name="wp1161096"> </a><p class="pBody">
+This figure identifies the elements that are common to all views: menus, Standard toolbar, Views toolbar, left pane (workspace), right pane, and message area.
+</p>
+<a name="wp1161126"> </a><p class="pBodyRelative">
+<img src="images/DSC100ConfiguratorWindowAreas.png" height="541" width="764" id="wp1161098" border="0" hspace="0" vspace="0"/>
+</p>
+<a name="wp1161128"> </a><p class="pBody">
+Topics include:
+</p>
+<div class="pSmartList1"><ul class="pSmartList1" STYLE="margin-top: 0em; margin-bottom: 0em;";>
+<a name="wp1161132"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Configuration_View.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Configuration View</span></a></li></div>
+<a name="wp1161144"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Trend_View.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Trend View</span></a></li></div>
+<a name="wp1161148"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Tuning_View.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Tuning View</span></a></li></div>
+<a name="wp1161152"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Aliases_View.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Aliases View</span></a></li></div>
+<a name="wp1161156"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Alarm_Shutdown_View.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Alarm&Shutdown&Fault View </span></a></li></div>
+<a name="wp1164002"> </a><div class="pSmartList1"><li><a href="5_DSC100ConfiguratorUserInterface-Message_Area.html"><span style="font-family: Verdana, Arial, Helvetica, sans-seri">Message Area</span></a></li></div>
+</ul></div>
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>

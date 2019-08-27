@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="GENERATOR" content="Quadralay WebWorks Publisher 2003 for FrameMaker 8.0.0.1108" />
+    <meta name="TEMPLATEBASE" content="320Help" />
+    <meta name="LASTUPDATED" content="07/01/03 21:08:15" />
+    <title>Overview</title>
+    <link rel="StyleSheet" href="document.css" type="text/css" />
+    <link rel="StyleSheet" href="catalog.css" type="text/css" />
+
+<script type="text/javascript" language="JavaScript1.2" src="scripts/expand.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/seealso.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2" src="data/popups.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/popup.js"></script>
+    <script type="text/javascript" language="JavaScript1.2" src="scripts/page.js"></script>
+
+    <script type="text/javascript" language="JavaScript1.2">
+     <!--
+      var  VarHTMLHelp = new HTMLHelp_Object();
+      var  WebWorksSeeAlso = new WebWorksSeeAlso_Object();
+     // -->
+    </script>
+  </head>
+  <body onClick="javascript:VarHTMLHelp.fNotifyClicked();">
+
+    <table id="SummaryNotReq1" width="110" border="0" align="right" cellpadding="0" cellspacing="0">
+      <tr> 
+        <td>
+<a accesskey="4" href="0_Preface-Warnings.html"><img id="LongDescNotReq1" src="images/prev.gif" border="0" alt="Previous" /></a><a accesskey="5" href="1_DSC100Overview-Hardware_Overview.html"><img id="LongDescNotReq2" src="images/next.gif" border="0" alt="Next" /></a>
+        </td>
+      </tr>
+    </table>
+
+<a name="wp1159530"> </a><h2 class="pTitle">
+Overview
+</h2>
+<hr />
+<a name="wp1159546"> </a><p class="pBody">
+The DSC100 Servo Controller positions a hydraulic or pneumatic actuator based on a position demand signal received from field device. The DSC100 can positions a single-coil or dual-coil actuator using single or dual position feedback devices. The position demand signal of DSC100 can come from Network, Serial Port, 0-25 mA, or all of them. A software program running on a Personal Computer (PC) allows the user to easily configure, monitor  and calibrate the DSC100.
+</p>
+<a name="wp1170687"> </a><p class="pBodyRelative">
+<img src="images/1_Overview-DSC100_Connection.png" height="421" width="825" id="wp1170685" border="0" hspace="0" vspace="0"/>
+</p>
+<a name="wp1170683"> </a><p class="pBody">
+The DSC100 Configurator is used to configure, calibrate, adjust, monitor, and troubleshoot a DSC100. The Configurator runs on a PC and communicates with the DSC100 through a serial connection or Ethernet connection. The serial port connector is a 9-pin sub-D socket and uses a straight-through cable to connect to the PC. Tri-Sen offers a 485 converter to 9-pin Serial Adapter kit if needed for new computers that do not have a 9-pin installation serial connector. This kit contains a 485 converter, software, and a 1.8 m serial cable. Ethernet connector is the standard RJ45 sockets and crossover cable. 
+</p>
+<a name="wp1170687"> </a><p class="pBody">
+The DSC100 is configured by using the DSC100 Configurator to create a file that is then loaded into the DSC100 Controller. The DSC100 Configurator can also read an existing configuration from a DSC100 Controller into the configuration file editor.
+</p>
+
+
+<script type="text/javascript" language="JavaScript1.2">
+     <!--
+      document.write(VarHTMLHelp.fPopupDivTag());
+     // -->
+    </script>
+  </body>
+</html>
