@@ -1,0 +1,14 @@
+sysDec.o: sysDec.c \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/kernel/sysOsTimer.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/ppc/toolPpc.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/ppc/excPpcLib.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/ppc/ppc85xx.h
+sysTbl.o: sysTbl.c \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h

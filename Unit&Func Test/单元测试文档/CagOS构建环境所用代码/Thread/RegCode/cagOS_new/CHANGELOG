@@ -1,0 +1,18 @@
+
+
+# 2016.2.16
+
+1. demo 源码: `demo/mq_demo.c` 、 `demo/mt_demo.c` 、`demo/sem_demo.c` 、 `demo/task_demo.c` 、 `demo/task_sem_demo.c`
+
+# 2016.2.15
+
+1. 修改 `export_header.h` 为 `cagos.h` 
+2. 添加 `export.sh` ，自动从系统头文件提取要向 RTS 提供的头文件（需要在系统头文件里使用标志标识出要 export 的内容,目前涉及的文件包括:
+    `./include/kernel/sysOs.h,./include/libc/cagboot.h,./include/kernel/os_api.h,./driver/device/dfs/dfs.h,./driver/fs/sffs/sffs.h`）
+3. 封装 api ：`kernel/thread/os_api.c` 和 `include/kernel/os_api.c`
+
+# 2015.2.1
+
+1. 修改 Makefile 和 config.mk  、 drv_config.h,优化模块化编译
+
+

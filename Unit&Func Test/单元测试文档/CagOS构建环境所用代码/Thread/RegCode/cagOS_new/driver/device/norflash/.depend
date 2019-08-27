@@ -1,0 +1,6 @@
+lld.o: lld.c lld.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ lld_target_specific.h S29GLxxxP.h

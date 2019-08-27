@@ -1,0 +1,72 @@
+--  QuickParse File Version: EDG_4_9  --
+HOME_DIRECTORY C:\driver\fs\sffs
+BEGIN_RECORD bits.c
+CHECKSUM 2417957045
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   clear_bit_val
+   get_all_one
+   get_bit_val
+   set_bit_val
+CALLED_OBJECTS
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD bits.c
+BEGIN_RECORD sffs.c
+CHECKSUM  1595274050
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   NOLOG
+   dfs_erase
+   dfs_read
+   dfs_write
+   sffs_ck_fd
+   sffs_close
+   sffs_find_filehdr
+   sffs_format
+   sffs_get_errno
+   sffs_get_fsfd
+   sffs_get_slot
+   sffs_is_mounted
+   sffs_lock
+   sffs_lseek
+   sffs_mount
+   sffs_open
+   sffs_protect
+   sffs_read
+   sffs_read_at
+   sffs_register
+   sffs_remove_byfd
+   sffs_remove_byname
+   sffs_rename
+   sffs_set_errno
+   sffs_slot_clear
+   sffs_umount
+   sffs_unlock
+   sffs_unprotect
+   sffs_write
+CALLED_OBJECTS
+   clear_bit_val
+   get_bit_val
+   set_bit_val
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   fsStat
+   hdrsStat
+   sffs_erase_time
+   sffs_slot
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sffs.c

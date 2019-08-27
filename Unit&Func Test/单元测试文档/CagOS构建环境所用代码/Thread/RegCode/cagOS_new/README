@@ -1,0 +1,311 @@
+/*
+ *------------------------------------------------------------
+ * Project:	cagOS
+ * Goal: 
+ * Copyright (c) 2013, 2014 CAG Systems, Inc.
+ *------------------------------------------------------------
+ *
+ *    @@@@     @@@      @@@@@       ####      ######
+ *  @@       @@  @@    @@         ##    ##   ##
+ * @@       @@    @@  @@   @@@@  ##      ## ######
+ * @@      @@@@@@@@@@ @@    @@    ##    ##      ##
+ *  @@@@@ @@@      @@@  @@@@@@      ####  #######
+ *
+ * The right to copy, distribute, modify or otherwise make use
+ * of this software may be licensed only pursuant to the terms
+ * of an applicable CAG license agreement.
+ *
+ * 1 tab == 4 spaces!
+ *------------------------------------------------------------
+ * modification history
+ * --------------------
+ * 03jun15,Jeff created
+ *
+ * DESCRIPTION
+ * This file contains
+ */
+
+NAME
+`Freescale P1020RDB'
+
+FEATURES
+
+This section describes all features of the board, supported or not.
+It documents all configurations of the board and the interaction between
+features and configuration items.
+
+\sh List of hardware Features (Freescale P1020RDB-PC Rev B board)
+
+\ts
+Hardware Interface | Controller | Driver/Component    | Status
+--------------------------------------------------------------
+UART:0             | on-chip    | ns16550Sio.c        | SUPPORTED
+UART:1             | on-chip    | ns16550Sio.c        | SUPPORTED
+GBE L2 Switch      | VSC7385    |                     | UNSUPPORTED
+1GB-ETHERNET:0     | on-chip    |                     | UNSUPPORTED
+1GB-ETHERNET:1     | on-chip    |                     | UNSUPPORTED
+1GB-ETHERNET:2     | on-chip    |                     | UNSUPPORTED
+NOR-FLASH          | S29GL128P  | lld.c               | SUPPORTED
+NAND-FLASH         | K9F5608U0D | 		      | UNSUPPORTED
+TIMER              | on-chip    |		      | UNSUPPORTED
+TIMER              | on-chip    | 		      | UNSUPPORTED
+PCI-E-HOST:0       | on-chip    |                     | UNSUPPORTED
+PCI-E-HOST:1       | on-chip    | m85xxPci.c          | SUPPORTED
+DMA:0              | on-chip    | fslDma.c            | SUPPORTED
+DMA:1              | on-chip    | fslDma.c            | UNVALIDATED
+I2C:0              | on-chip    | iic.c               | SUPPORTED
+I2C:1              | on-chip    | iic.c               | SUPPORTED
+RTC                | PT7C4338   | iic.c               | SUPPORTED
+EEPROM             | M24256     |	              | UNSUPPORTED
+SPI(legacy)        | on-chip    | spi.c               | SUPPORTED
+SPI-FLASH(legacy)  | S25FL128P  | spi.c               | PARTIAL-SUPPORTED
+USB-HOST:1         | on-chip    |       	      | UNSUPPORTED
+USB-HOST:2         | on-chip    |                     | UNVALIDATED
+USB-TARGET         | on-chip    |                     | UNSUPPORTED 
+SD-CARD            | on-chip    |      		      | UNSUPPORTED
+GPIO               | on-chip    |      		      | UNSUPPORTED
+SATA               | SiI3132    |                     | UNSUPPORTED
+\te
+
+\sh Feature Interactions
+Refer to the board vendor's documentation.
+
+HARDWARE DETAILS
+
+This section documents the details of the device drivers and board
+hardware elements.
+
+\sh Verified Hardware
+This BSP has been verified on Rev B of Freescale P1020RDB-PC board 
+The default clock speed for P1020RDB is 800MHz for 
+core0 and core1, 400MHz for CCB.
+
+\sh Memory Maps
+The default memory map of this BSP is as bellows:
+
+\ts
+Start       | Size  | End         | Access to
+---------------------------------------------
+0x0000_0000 | 1GB   | 0x3FFF_FFFF | DDR3 SDRAM
+0x9000_0000 | 64MB  | 0x93FF_FFFF | PCIe-2 Memory
+0x9400_0000 | 64MB  | 0x97FF_FFFF | PCIe 2 Non-Prefetchable Memory
+0x9800_0000 | 64MB  | 0x9BFF_FFFF | PCIe 2 I/O Memory
+0xEC00_0000 | 16MB  | 0xECFF_FFFF | NOR Flash
+0xF000_0000 | 512KB | 0xF007_FFFF | NAND Flash Buffer
+0xF100_0000 | 128KB | 0xF101_FFFF | VSC7385 buffer
+0xF200_0000 | 512KB | 0xF207_FFFF | L2_SRAM
+0xFFE0_0000 | 1MB   | 0xF30F_FFFF | CCSBAR
+\te
+
+\sh DDR Memory Maps
+Example memory layout for a 1-megabyte board:
+the below shows the CORE0 system map, for Core1
+we added the offset 30M, and the core1 is locate in
+the offset 0x02000000.
+
+\cs
+    /**************/
+ --- |--------------| 0x01E00000  = AMP_SWAP_HIGH
+  >  |              |
+  |  |  AMP SWAP    |
+  |  |     4M       |
+  |  |--------------| 0x01A00000 = TASK_SPESTACK_HIGH
+  |  |SPE SAVE STACK|
+  |  |   TASK       |
+  |  |   1M         |
+  |  |--------------| 0x01900000  = TASK_STACK_HIGH
+  |  |     8M       |
+  |  | TASK STACK   |
+  |  |  32 * 256K   | 
+  |  |--------------| 0x01100000  = IRQ_STACK_HIGH
+  |  | IRQ STACK    |
+  |  |    1M        | 
+  |  |--------------| 0x01000000  = EXCEPTION_STACK_HIGH
+  |  | Exc STACK    |
+ 32M |    1M        |
+  |  |              | 
+  |  |--------------| 0x00F00000  = DEC_STACK_HIGH
+  |  | DEC STACK    |
+  |  |    1M        |
+  |  |--------------| 0x00E00000  = KERNEL_STACK_HIGH
+  |  |              |
+  |  | Kernel Stack | 
+  |  |    4M        |
+  |  |--------------| 0x00A00000  = KERNEL_STACK_LOW
+  |  |              |	
+  |  | Text+data+BSS|
+  |  |    10M       |
+  |  |              |
+  <  |              | Exc Vectors
+ --- |--------------| 0x00100000  = LOCAL_MEM_LOCAL_ADRS
+\ce
+
+\sh Serial Connections
+Most VxWorks BSPs do not use hardware handshaking in the serial interface,
+and thus a simple 3 wire connection is commonly used.
+
+The P1020RDB board has two RS-232 standard UART ports.
+\sh Serial Configuration
+No special configuration needed.
+Default configuration is:
+    Baud Rate: 115200
+    Data: 8 bit
+    Parity: None
+    Stop: 1 bit
+    Flow Control: None
+
+\sh DMA
+Freescale DMA Controller 0 is supported in this release. (Controller 1 is unvalidated.)
+To enable DMA controller support, please define the following macro in config.h:
+\cs
+    #define DRV_DMA_FSL
+\ce
+The maximum transfer size of a single transaction is (64M - 1) bytes.
+
+\sh Nor Flash 
+Develop board has a 64-MB nor flash S29GL512P. Define macro CONFIG_NOR to enable nor flash.
+\cs Maps
+Nor Flash address specification, divide nor flash into two part:file system and binary files,
+and its partition table looks like below.
+
+    /**************/
+ --- |--------------| 0xEC00_0000  
+  >  |              |
+  |  |  bootloader  |
+  |  |    backup    |
+  |  | (reserved)   |
+  |  |     1M       |
+  |  |--------------| 0xEC10_0000 
+  |  |FS super block|
+  |  |     128K     |   
+  |  |--------------| 0xEC12_0000 
+  |  |              |
+  |  |              |  
+  |  |   FS data    |
+  |  |   10.875M    |
+ 16M |              |
+  |  |              | 
+  |  |              |	  
+  |  |--------------| 0xECC0_0000  
+  |  |   RTS.bin    |
+  |  |    2M        |
+  |  |              |  
+  |  |--------------| 0xECE0_0000  
+  |  |   CAGOS.bin  | 
+  |  |    1M        |
+  |  |--------------| 0xECF0_0000  
+  |  | bootloader   |
+  <  |    1M        |
+ --- |--------------| 0xED00_0000  
+\ce
+
+\sh SFFS
+SFFS(Simple Flash File System) is simple, CAG custom flash file system that support spi flash and normal nor flash.
+Its flash layout shows as above: two parts, one for storing file information and one for storing file data.
+Before you using it, you should known somethin about it.
+
+Restriction:
+  1. write：a. 不支持文件修改，必须读出-修改-重新写
+          b. 必须按顺序写
+  2. open 分三种类型：a. 打开文件，如果不存在则返回失败。
+          b. 强制创建新文件，如果存在则先删除已有文件。
+          c. 打开文件，如果不存在则创建文件
+  3. read：
+  4. close：a. 文件没有被close 过，则将文件头写入flash
+          b. 文件之前被close 过，则本次操作不写flash
+          c. 没有经过close 的文件在重启后会丢失
+  5. remove：删除没有关闭的文件会记录一条异常，不影响正常使用，但是如果对删除过的文件没有重新打开就操作会进入错误状态。
+  6. lseek：最大可以将文件指针偏移到文件末尾，不能产生文件空洞
+  7. 单个文件大小限制为：2MB
+  8. 总文件个数限制为：20
+  9. 单任务，同时只能对一个文件进行操作
+
+Custom(for both sffs and flash):
+  1. file length and file name length.
+  2. flash layout, especially sector size and number,sub-sector size and number. This should configure for flash too.
+  3. file information storage position.
+  4. these configurations are configred in drv_config.h, see this file for more information.
+    
+\sh eSPI and SPI Flash
+The Freescale eSPI Controller and SPI Flash S25F128 are supported in this
+release.
+  * Full-duplex master operation
+  * Working in polling mode
+
+\cs
+SPI cs0 connects a 16-MB spi-flash S25F128.Define macro CONFIG_SPI to enable SPI and spi flash.
+Its layout shows as below:
+
+sector size(KB)  |sector count  |sector range  |address range(byte)
+-------------------------------------------------------------------
+                 |              |SA00          |0000_0000h - 0003_FFFFh
+256              |64            |...           |...
+                 |              |SA63          |0FC0_0000h - 0FFF_FFFFh
+
+\ce
+
+\sh I2C
+The PT7C4338 RTC, Atmel EEPROM are supported via I2C bus in this release.
+\cs
+I2C0 connect a RTC - PT7C4338. Can get and set current time with I2C0.
+Define macro CONFIG_IIC to enable IIC.
+\ce
+
+\sh SD memory card controller (eSDHC)
+
+\sh AMP with MIPC
+
+BOARD LAYOUT
+P1020RDB-PC REV B board is like this:
+\bs
++------------+---+---+---+---+--------+--------+-----+--------+--+--------+----+
+|            |USB|   |com0|  |e1-SW-P4|e1-SW-P2|     |e3-SGMII|  |e2-SGMII|    |
+|            +---+   +----+  +--------+--------+     +--------+  +--------+    |
+|                    |com1|  |e1-SW-P3|e1-SW-P1|                               |
+|                    +----+  +--------+--------+                               |
+|                                                                              |
+|                                                                              |
+|                                               +-------+                      |
+|                                               |       |                      |
+|                                               |VSC7385|                      |
+|                                               |       |                 PCIE |
+|     NorFlash                                  +-------+                 +--+ |
+|     +------+                                                            |  | |
+|     |      |                                                            |  | |
+|     +------+                                                            |  | |
+|     |      |                                                            +--+ |
+|     +------+                                                                 |
+|   lash                                                                       |
+|                                 +-----------+                          +---+ |
+|              SW3                |           |                          |   | |
+| SW2+------+   +------+          |   QorIQ   |                          |   | |
+|    |      |   |      |          |   P1020E  |                          | A | |
+|    +------+   +------+          |           |                          | T | |
+|                                 +-----------+                          | X | |
+| +---------+     +--------------------+                                 |   | |
+| |  JTAG   |     |    DDR-II RAM      |                                 |   | |
+| +----+----+     +--------------------+                                 +---+ |
++------------------------------------------------------------------------------+
+\be
+
+BIBLIOGRAPHY
+
+\tb QorIQ P1020E Integrated Processor Reference Manual
+
+\tb P2020 and P2010 Chip Errata
+
+\tb P1020E/P2020E-RDB Specification
+
+\tb P1020RDB-Quick Start
+
+\tb P1020E RDB System Errata
+
+\tb RDB for P1 and P2 Devices
+
+\tb PowerPC E500 Core Reference Manual
+
+\tb Motorola PowerPC Microprocessor Family: The Programming Environments
+
+\tb P1020RDB-PC Quick Start Guide
+
+\tb P1020RDB-PC Specification QorIQ Integrated Communications Processor

@@ -1,0 +1,2930 @@
+Archive member included because of file (symbol)
+
+start/libstart.a(sysCpuALib.o)
+                              (_start)
+start/libstart.a(sysCpuLib.o)
+                              start/libstart.a(sysCpuALib.o) (sysEntry)
+start/libstart.a(sysBanner.o)
+                              start/libstart.a(sysCpuLib.o) (sysBanner)
+start/libstart.a(sysL2Cache.o)
+                              start/libstart.a(sysCpuLib.o) (l2CacheLineNum)
+start/libstart.a(sysBoard.o)  start/libstart.a(sysCpuLib.o) (sysMiscInit)
+arch/libarch.a(sysCacheE500Lib.o)
+                              start/libstart.a(sysL2Cache.o) (_pSysL2CacheInvFunc)
+arch/libarch.a(sysExcArchLib.o)
+                              start/libstart.a(sysCpuLib.o) (excVecInit)
+arch/libarch.a(sysSpeExcLib.o)
+                              start/libstart.a(sysCpuLib.o) (speExcInit)
+arch/libarch.a(sysCpuE500ALib.o)
+                              arch/libarch.a(sysCacheE500Lib.o) (intCpuLock)
+arch/libarch.a(sysCacheE500ALib.o)
+                              arch/libarch.a(sysCacheE500Lib.o) (cacheE500EnableI_Impl)
+arch/libarch.a(sysExcArchALib.o)
+                              start/libstart.a(sysCpuLib.o) (sysSdaInit)
+arch/libarch.a(sysExcLib.o)   arch/libarch.a(sysExcArchLib.o) (executeException)
+kernel/ports/libkernelport.a(sysEntry.o)
+                              start/libstart.a(sysCpuALib.o) (OSTCBCurPtr)
+kernel/thread/libkernelthread.a(sysCore.o)
+                              kernel/ports/libkernelport.a(sysEntry.o) (OSInit)
+kernel/thread/libkernelthread.a(sysMutex.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_MutexInit)
+kernel/thread/libkernelthread.a(sysPrio.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_PrioInit)
+kernel/thread/libkernelthread.a(sysMsg.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_MsgPoolInit)
+kernel/thread/libkernelthread.a(sysQueue.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_QInit)
+kernel/thread/libkernelthread.a(sysSem.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_SemInit)
+kernel/thread/libkernelthread.a(sysTask.o)
+                              kernel/ports/libkernelport.a(sysEntry.o) (OSTaskCreate)
+kernel/thread/libkernelthread.a(sysTick.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OS_TickListInsert)
+kernel/thread/libkernelthread.a(sysTime.o)
+                              kernel/ports/libkernelport.a(sysEntry.o) (OSTimeDly)
+kernel/thread/libkernelthread.a(sysApi.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (rts_var_init)
+kernel/thread/libkernelthread.a(sysCfg.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OSCfg_IdleTaskStkLimit)
+kernel/timers/libkerneltimer.a(sysDec.o)
+                              kernel/ports/libkernelport.a(sysEntry.o) (clockTaskStart)
+kernel/timers/libkerneltimer.a(sysTbl.o)
+                              kernel/thread/libkernelthread.a(sysMutex.o) (getTblms)
+kernel/epic/libkernelepic.a(sysInt.o)
+                              start/libstart.a(sysCpuALib.o) (OSIntHandler)
+kernel/epic/libkernelepic.a(sysPic.o)
+                              kernel/epic/libkernelepic.a(sysInt.o) (sysEpicIntAckReg)
+utility/libutility.a(shell.o)
+                              start/libstart.a(sysCpuLib.o) (usrShell)
+driver/libc/stdio/libstdio.a(ns16550.o)
+                              utility/libutility.a(shell.o) (ns16550OutputChar)
+driver/libc/stdio/libstdio.a(printk.o)
+                              start/libstart.a(sysCpuLib.o) (printf)
+driver/libc/string/libstring.a(strcpy.o)
+                              driver/libc/stdio/libstdio.a(printk.o) (strcpy)
+driver/libc/string/libstring.a(strncpy.o)
+                              arch/libarch.a(sysExcLib.o) (strncpy)
+driver/libc/string/libstring.a(memset.o)
+                              start/libstart.a(sysCpuLib.o) (memset)
+driver/libc/string/libstring.a(strcmp.o)
+                              utility/libutility.a(shell.o) (strcmp)
+driver/libc/string/libstring.a(strlen.o)
+                              utility/libutility.a(shell.o) (strlen)
+driver/libc/string/libstring.a(strtok_r.o)
+                              utility/libutility.a(shell.o) (strtok_r)
+driver/libc/string/libstring.a(bLib.o)
+                              driver/libc/string/libstring.a(memset.o) (bfill)
+driver/libc/string/libstring.a(strpbrk.o)
+                              driver/libc/string/libstring.a(strtok_r.o) (strpbrk)
+driver/libc/string/libstring.a(strspn.o)
+                              driver/libc/string/libstring.a(strtok_r.o) (strspn)
+driver/libc/stdlib/libstdlib.a(strtoul.o)
+                              utility/libutility.a(shell.o) (strtoul)
+driver/device/dfs/libdfs.a(dfs.o)
+                              start/libstart.a(sysCpuLib.o) (dfs_init)
+driver/libhwinit.a(hw_init.o)
+                              start/libstart.a(sysCpuLib.o) (nor_init)
+driver/device/norflash/libnor.a(lld.o)
+                              driver/libhwinit.a(hw_init.o) (nor_flash_errno)
+start/libc.a(memcpy.o)        driver/libhwinit.a(hw_init.o) (memcpy)
+start/libgcc.a(_udivdi3.o)    kernel/timers/libkerneltimer.a(sysTbl.o) (__udivdi3)
+start/libgcc.a(_umoddi3.o)    kernel/timers/libkerneltimer.a(sysTbl.o) (__umoddi3)
+start/libstart.a(sysAccess.o)
+                              driver/libc/stdio/libstdio.a(ns16550.o) (readb)
+arch/libarch.a(sysSpeALib.o)  kernel/thread/libkernelthread.a(sysCore.o) (speSave)
+kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (powerpcIntDisable)
+kernel/ports/libkernelport.a(sysCount.o)
+                              kernel/thread/libkernelthread.a(sysPrio.o) (CPU_CntLeadZeros)
+kernel/ports/libkernelport.a(sysOsIrq.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OSIntCtxSw)
+kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+                              kernel/thread/libkernelthread.a(sysCore.o) (OSStartHighRdy)
+
+Allocating common symbols
+Common symbol       size              file
+
+OSSchedLockNestingCtr
+                    0x1               kernel/ports/libkernelport.a(sysEntry.o)
+OS_AppTaskReturnHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+e500_spe_exc_mask   0x4               arch/libarch.a(sysSpeExcLib.o)
+s29gl512pOps2       0x34              driver/libhwinit.a(hw_init.o)
+OSRunning           0x1               kernel/ports/libkernelport.a(sysEntry.o)
+OSRdyList           0x180             kernel/ports/libkernelport.a(sysEntry.o)
+cachePpcReadOrigin  0x4               start/libstart.a(sysCpuLib.o)
+OSPrioHighRdy       0x1               kernel/ports/libkernelport.a(sysEntry.o)
+g_suspend_sector    0x4               driver/device/norflash/libnor.a(lld.o)
+OS_AppTaskCreateHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+AppTaskStartTCB     0x84              kernel/ports/libkernelport.a(sysEntry.o)
+sffs_idx            0x4               driver/libhwinit.a(hw_init.o)
+OSPrioCur           0x1               kernel/ports/libkernelport.a(sysEntry.o)
+MainTaskStartTCB    0x84              kernel/ports/libkernelport.a(sysEntry.o)
+nor_dfd             0x4               driver/device/dfs/libdfs.a(dfs.o)
+OSTCBCurPtr         0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OSCfg_MsgPool       0x640             kernel/thread/libkernelthread.a(sysCfg.o)
+OSQQty              0x2               kernel/ports/libkernelport.a(sysEntry.o)
+sysEpicIntAckReg    0x4               kernel/epic/libkernelepic.a(sysPic.o)
+OSPrioSaved         0x1               kernel/ports/libkernelport.a(sysEntry.o)
+OSTCBHighRdyPtr     0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OS_AppTaskDelHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OS_AppTimeTickHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+s29gl512pOps        0x34              driver/libhwinit.a(hw_init.o)
+OSTaskCtxSwCtr      0x4               kernel/ports/libkernelport.a(sysEntry.o)
+sffs_idx2           0x4               driver/libhwinit.a(hw_init.o)
+OSIntNestingCtr     0x1               kernel/ports/libkernelport.a(sysEntry.o)
+OSTaskQty           0x2               kernel/ports/libkernelport.a(sysEntry.o)
+OSMsgPool           0x8               kernel/ports/libkernelport.a(sysEntry.o)
+OSIdleTaskTCB       0x84              kernel/ports/libkernelport.a(sysEntry.o)
+clockTaskStartTCB   0x84              kernel/ports/libkernelport.a(sysEntry.o)
+exceptionDescTable  0x150             arch/libarch.a(sysExcLib.o)
+OSSemQty            0x2               kernel/ports/libkernelport.a(sysEntry.o)
+s29gl512pSt         0x14              driver/libhwinit.a(hw_init.o)
+ppcE500DCACHE_FLUSH_NUM
+                    0x4               start/libstart.a(sysCpuLib.o)
+OSSchedRoundRobinDfltTimeQuanta
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+i2c_dfd             0x4               driver/device/dfs/libdfs.a(dfs.o)
+OS_AppIdleTaskHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OSTickCtr           0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OS_AppTaskSwHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+systemFreq          0x4               start/libstart.a(sysBoard.o)
+OSIdleTaskCtr       0x4               kernel/ports/libkernelport.a(sysEntry.o)
+g_writebuffer_sector
+                    0x4               driver/device/norflash/libnor.a(lld.o)
+OS_AppStatTaskHookPtr
+                    0x4               kernel/ports/libkernelport.a(sysEntry.o)
+spi_dfd             0x4               driver/device/dfs/libdfs.a(dfs.o)
+OSMutexQty          0x2               kernel/ports/libkernelport.a(sysEntry.o)
+e500_spe_exc_enable
+                    0x4               arch/libarch.a(sysSpeExcLib.o)
+OSPrioTbl           0x4               kernel/thread/libkernelthread.a(sysPrio.o)
+OSTickTaskTimeMax   0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OSSchedRoundRobinEn
+                    0x1               kernel/ports/libkernelport.a(sysEntry.o)
+OSTickListDly       0x4               kernel/ports/libkernelport.a(sysEntry.o)
+OSTickListTimeout   0x4               kernel/ports/libkernelport.a(sysEntry.o)
+s29gl512pSt2        0x14              driver/libhwinit.a(hw_init.o)
+OSCfg_IdleTaskStk   0x100000          kernel/thread/libkernelthread.a(sysCfg.o)
+irqDeseTable        0xf70             kernel/epic/libkernelepic.a(sysInt.o)
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .text          0x0000000000000000        0x0 start/libstart.a(sysCpuLib.o)
+ .data          0x0000000000000000        0x0 start/libstart.a(sysCpuLib.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysCpuLib.o)
+ .data.sysStaticTlbDesc
+                0x0000000000000000       0x70 start/libstart.a(sysCpuLib.o)
+ .sdata.sysStaticTlbDescNumEnt
+                0x0000000000000000        0x4 start/libstart.a(sysCpuLib.o)
+ .sdata.e500EarlyMapTlbId
+                0x0000000000000000        0x4 start/libstart.a(sysCpuLib.o)
+ .sdata.e500ImaTlbCnt
+                0x0000000000000000        0x4 start/libstart.a(sysCpuLib.o)
+ .text          0x0000000000000000        0x0 start/libstart.a(sysBanner.o)
+ .data          0x0000000000000000        0x0 start/libstart.a(sysBanner.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysBanner.o)
+ .text          0x0000000000000000        0x0 start/libstart.a(sysL2Cache.o)
+ .data          0x0000000000000000        0x0 start/libstart.a(sysL2Cache.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysL2Cache.o)
+ .text          0x0000000000000000        0x0 start/libstart.a(sysBoard.o)
+ .data          0x0000000000000000        0x0 start/libstart.a(sysBoard.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysBoard.o)
+ .bss.coreFreq  0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .bss.core1Freq
+                0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .bss.ddrFreq   0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .data.physTop  0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .data.memTop   0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .text.coreLbcShow
+                0x0000000000000000      0x27c start/libstart.a(sysBoard.o)
+ .text.coreLawShow
+                0x0000000000000000      0x3f4 start/libstart.a(sysBoard.o)
+ .text.coreShow
+                0x0000000000000000      0x430 start/libstart.a(sysBoard.o)
+ .text.sysModel
+                0x0000000000000000      0x188 start/libstart.a(sysBoard.o)
+ .text.sysPcbRev
+                0x0000000000000000       0xdc start/libstart.a(sysBoard.o)
+ .text.sysPhysMemTop
+                0x0000000000000000       0x44 start/libstart.a(sysBoard.o)
+ .text.sysMemTop
+                0x0000000000000000       0x58 start/libstart.a(sysBoard.o)
+ .text.__assert_fail
+                0x0000000000000000       0x5c start/libstart.a(sysBoard.o)
+ .sbss          0x0000000000000000        0x4 start/libstart.a(sysBoard.o)
+ .text          0x0000000000000000        0x0 arch/libarch.a(sysCacheE500Lib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysCacheE500Lib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheArchEnable
+                0x0000000000000000       0x68 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500EnableI
+                0x0000000000000000       0x48 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500EnableD
+                0x0000000000000000       0x88 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500DisableI
+                0x0000000000000000       0x38 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500DisableIFromMmu
+                0x0000000000000000       0x40 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500DisableD
+                0x0000000000000000       0x38 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500DisableDFromMmu
+                0x0000000000000000       0x80 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheE500InvalidateAllD
+                0x0000000000000000       0xa8 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheIsOnI
+                0x0000000000000000       0x54 arch/libarch.a(sysCacheE500Lib.o)
+ .text.cacheIsOnD
+                0x0000000000000000       0x54 arch/libarch.a(sysCacheE500Lib.o)
+ .text          0x0000000000000000        0x0 arch/libarch.a(sysExcArchLib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysExcArchLib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysExcArchLib.o)
+ .text.excVecBaseGet
+                0x0000000000000000       0x28 arch/libarch.a(sysExcArchLib.o)
+ .text          0x0000000000000000        0x0 arch/libarch.a(sysSpeExcLib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysSpeExcLib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysSpeExcLib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysCpuE500ALib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysCpuE500ALib.o)
+ .text          0x0000000000000000      0x284 arch/libarch.a(sysCacheE500ALib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysCacheE500ALib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysCacheE500ALib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysExcArchALib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysExcArchALib.o)
+ .text          0x0000000000000000        0x0 arch/libarch.a(sysExcLib.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysExcLib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysExcLib.o)
+ .text.unregisterException
+                0x0000000000000000      0x168 arch/libarch.a(sysExcLib.o)
+ .text.registerException
+                0x0000000000000000      0x180 arch/libarch.a(sysExcLib.o)
+ .rodata.__FUNCTION__.1424
+                0x0000000000000000       0x14 arch/libarch.a(sysExcLib.o)
+ .rodata.__FUNCTION__.1432
+                0x0000000000000000       0x12 arch/libarch.a(sysExcLib.o)
+ .text          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysEntry.o)
+ .data          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysEntry.o)
+ .bss           0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysEntry.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCore.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCore.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OSSchedLock
+                0x0000000000000000       0xcc kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OSSchedUnlock
+                0x0000000000000000       0xf8 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OSSchedRoundRobinCfg
+                0x0000000000000000       0xb8 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OSSchedRoundRobinYield
+                0x0000000000000000      0x150 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_Pend  0x0000000000000000       0xe0 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendAbort
+                0x0000000000000000      0x1c8 kernel/thread/libkernelthread.a(sysCore.o)
+ .rodata.OS_PendAbort
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendAbort1
+                0x0000000000000000       0xa0 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendDataInit
+                0x0000000000000000       0xd8 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendListInit
+                0x0000000000000000       0x44 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendListInsertHead
+                0x0000000000000000       0xac kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendObjDel
+                0x0000000000000000      0x1b0 kernel/thread/libkernelthread.a(sysCore.o)
+ .rodata.OS_PendObjDel
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_PendObjDel1
+                0x0000000000000000       0xa0 kernel/thread/libkernelthread.a(sysCore.o)
+ .text.OS_TaskBlock
+                0x0000000000000000       0x78 kernel/thread/libkernelthread.a(sysCore.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMutex.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMutex.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OSMutexCreate
+                0x0000000000000000       0xf8 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OSMutexDel
+                0x0000000000000000      0x2bc kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OSMutexPend
+                0x0000000000000000      0x374 kernel/thread/libkernelthread.a(sysMutex.o)
+ .rodata.OSMutexPend
+                0x0000000000000000       0x10 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OSMutexPendAbort
+                0x0000000000000000      0x278 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OSMutexPost
+                0x0000000000000000      0x2e0 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text.OS_MutexClr
+                0x0000000000000000       0x80 kernel/thread/libkernelthread.a(sysMutex.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysPrio.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysPrio.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysPrio.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMsg.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMsg.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMsg.o)
+ .text.OS_MsgQFreeAll
+                0x0000000000000000      0x104 kernel/thread/libkernelthread.a(sysMsg.o)
+ .text.OS_MsgQInit
+                0x0000000000000000       0x58 kernel/thread/libkernelthread.a(sysMsg.o)
+ .text.OS_MsgQGet
+                0x0000000000000000      0x198 kernel/thread/libkernelthread.a(sysMsg.o)
+ .text.OS_MsgQPut
+                0x0000000000000000      0x1f8 kernel/thread/libkernelthread.a(sysMsg.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysQueue.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysQueue.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQCreate
+                0x0000000000000000      0x10c kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQDel   0x0000000000000000      0x1fc kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQFlush
+                0x0000000000000000       0xb4 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQPend  0x0000000000000000      0x344 kernel/thread/libkernelthread.a(sysQueue.o)
+ .rodata.OSQPend
+                0x0000000000000000       0x10 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQPendAbort
+                0x0000000000000000      0x1b8 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OSQPost  0x0000000000000000      0x134 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OS_QClr  0x0000000000000000       0x74 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text.OS_QPost
+                0x0000000000000000      0x194 kernel/thread/libkernelthread.a(sysQueue.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysSem.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysSem.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemCreate
+                0x0000000000000000       0xe4 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemDel
+                0x0000000000000000      0x1fc kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemPend
+                0x0000000000000000      0x2f0 kernel/thread/libkernelthread.a(sysSem.o)
+ .rodata.OSSemPend
+                0x0000000000000000       0x10 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemPendAbort
+                0x0000000000000000      0x1b8 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemPost
+                0x0000000000000000       0xe8 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OSSemSet
+                0x0000000000000000       0xe8 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OS_SemClr
+                0x0000000000000000       0x68 kernel/thread/libkernelthread.a(sysSem.o)
+ .text.OS_SemPost
+                0x0000000000000000      0x1a4 kernel/thread/libkernelthread.a(sysSem.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTask.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTask.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskResume
+                0x0000000000000000       0xa0 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskSemPend
+                0x0000000000000000      0x33c kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskSemPendAbort
+                0x0000000000000000      0x150 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskSemPost
+                0x0000000000000000       0xa4 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskSemSet
+                0x0000000000000000       0xac kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskStkChk
+                0x0000000000000000      0x1a8 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskSuspend
+                0x0000000000000000       0x88 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OSTaskTimeQuantaSet
+                0x0000000000000000       0xdc kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OS_TaskResume
+                0x0000000000000000      0x1c4 kernel/thread/libkernelthread.a(sysTask.o)
+ .rodata.OS_TaskResume
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OS_TaskSemPost
+                0x0000000000000000      0x1dc kernel/thread/libkernelthread.a(sysTask.o)
+ .rodata.OS_TaskSemPost
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysTask.o)
+ .text.OS_TaskSuspend
+                0x0000000000000000      0x198 kernel/thread/libkernelthread.a(sysTask.o)
+ .rodata.OS_TaskSuspend
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysTask.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTick.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTick.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTick.o)
+ .text.OS_TickListResetPeak
+                0x0000000000000000       0x1c kernel/thread/libkernelthread.a(sysTick.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTime.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTime.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTime.o)
+ .text.OSTimeDlyResume
+                0x0000000000000000      0x1c4 kernel/thread/libkernelthread.a(sysTime.o)
+ .rodata.OSTimeDlyResume
+                0x0000000000000000       0x20 kernel/thread/libkernelthread.a(sysTime.o)
+ .text.OSTimeGet
+                0x0000000000000000       0x58 kernel/thread/libkernelthread.a(sysTime.o)
+ .text.OSTimeSet
+                0x0000000000000000       0x54 kernel/thread/libkernelthread.a(sysTime.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysApi.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysApi.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysApi.o)
+ .data.rts_tcbs
+                0x0000000000000000      0x528 kernel/thread/libkernelthread.a(sysApi.o)
+ .data.stack_pos
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_get_prio
+                0x0000000000000000       0x2c kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_get_pos
+                0x0000000000000000       0x2c kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_create_task
+                0x0000000000000000      0x184 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_del_task
+                0x0000000000000000       0xd4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_resume_task
+                0x0000000000000000       0xa8 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_suspend_task
+                0x0000000000000000       0xa8 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_task_sem_post
+                0x0000000000000000       0xa4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_task_sem_pend
+                0x0000000000000000       0x64 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_task_sem_set
+                0x0000000000000000       0x98 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_delay_task
+                0x0000000000000000       0x48 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.udelay   0x0000000000000000       0x38 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_queue_create
+                0x0000000000000000       0xec kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_queue_del
+                0x0000000000000000       0xcc kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_queue_post
+                0x0000000000000000       0xf4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_queue_get
+                0x0000000000000000       0xfc kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_sem_create
+                0x0000000000000000       0xe4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_sem_del
+                0x0000000000000000       0xe0 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_sem_pend
+                0x0000000000000000       0xec kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_sem_post
+                0x0000000000000000       0xe0 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_mutex_create
+                0x0000000000000000       0xd4 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_mutex_del
+                0x0000000000000000       0xd0 kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_mutex_pend
+                0x0000000000000000       0xdc kernel/thread/libkernelthread.a(sysApi.o)
+ .text.os_mutex_post
+                0x0000000000000000       0xd0 kernel/thread/libkernelthread.a(sysApi.o)
+ .text          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCfg.o)
+ .data          0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCfg.o)
+ .bss           0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IdleTaskStkBasePtr
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IdleTaskStkSizeRAM
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQSize
+                0x0000000000000000        0x2 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQSizeRAM
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQTaskStkBasePtr
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQTaskStkLimit
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQTaskStkSize
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_IntQTaskStkSizeRAM
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_MsgPoolSizeRAM
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .sdata.OSCfg_DataSizeRAM
+                0x0000000000000000        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .text          0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysDec.o)
+ .data          0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysDec.o)
+ .bss           0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysDec.o)
+ .text          0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .data          0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .bss           0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .text.tbldiv   0x0000000000000000       0xc4 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .text.getTblus
+                0x0000000000000000       0xb4 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .text          0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysInt.o)
+ .data          0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysInt.o)
+ .bss           0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysInt.o)
+ .rodata        0x0000000000000000       0x4c kernel/epic/libkernelepic.a(sysInt.o)
+ .text.irqUnregister
+                0x0000000000000000      0x140 kernel/epic/libkernelepic.a(sysInt.o)
+ .text.irqRregister
+                0x0000000000000000      0x18c kernel/epic/libkernelepic.a(sysInt.o)
+ .rodata.__FUNCTION__.2188
+                0x0000000000000000        0xe kernel/epic/libkernelepic.a(sysInt.o)
+ .rodata.__FUNCTION__.2196
+                0x0000000000000000        0xd kernel/epic/libkernelepic.a(sysInt.o)
+ .text          0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysPic.o)
+ .data          0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysPic.o)
+ .bss           0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysPic.o)
+ .data.pEpicRegBase
+                0x0000000000000000        0x4 kernel/epic/libkernelepic.a(sysPic.o)
+ .sdata.numInInts
+                0x0000000000000000        0x4 kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysSysEpicInit
+                0x0000000000000000      0x30c kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysEpicCurTaskPrioSet
+                0x0000000000000000       0x9c kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysEpicIntEnable
+                0x0000000000000000       0xe8 kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysEpicIntDisable
+                0x0000000000000000       0xe8 kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysEpicIntSourceSet
+                0x0000000000000000      0x178 kernel/epic/libkernelepic.a(sysPic.o)
+ .text.sysEpicCpuAvailGet
+                0x0000000000000000       0x50 kernel/epic/libkernelepic.a(sysPic.o)
+ .text          0x0000000000000000        0x0 utility/libutility.a(shell.o)
+ .data          0x0000000000000000        0x0 utility/libutility.a(shell.o)
+ .bss           0x0000000000000000        0x0 utility/libutility.a(shell.o)
+ .text          0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(ns16550.o)
+ .data          0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(ns16550.o)
+ .bss           0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(ns16550.o)
+ .text.ns16550SioInit
+                0x0000000000000000       0x30 driver/libc/stdio/libstdio.a(ns16550.o)
+ .text          0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(printk.o)
+ .data          0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(printk.o)
+ .bss           0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(printk.o)
+ .text.sprintf  0x0000000000000000       0x94 driver/libc/stdio/libstdio.a(printk.o)
+ .text.strnicmp
+                0x0000000000000000      0x1e8 driver/libc/stdio/libstdio.a(printk.o)
+ .rodata.__FUNCTION__.1349
+                0x0000000000000000        0x9 driver/libc/stdio/libstdio.a(printk.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strcpy.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strcpy.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strcpy.o)
+ .text.strcpy   0x0000000000000000       0x6c driver/libc/string/libstring.a(strcpy.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strncpy.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strncpy.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strncpy.o)
+ .text.strncpy  0x0000000000000000       0xc8 driver/libc/string/libstring.a(strncpy.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(memset.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(memset.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(memset.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strcmp.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strcmp.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strcmp.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strlen.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strlen.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strlen.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strtok_r.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strtok_r.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strtok_r.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(bLib.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(bLib.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(bLib.o)
+ .text.bcmp     0x0000000000000000       0xdc driver/libc/string/libstring.a(bLib.o)
+ .text.binvert  0x0000000000000000       0x98 driver/libc/string/libstring.a(bLib.o)
+ .text.bswap    0x0000000000000000       0x90 driver/libc/string/libstring.a(bLib.o)
+ .text.swab     0x0000000000000000       0xa0 driver/libc/string/libstring.a(bLib.o)
+ .text.uswab    0x0000000000000000       0xac driver/libc/string/libstring.a(bLib.o)
+ .text.bzero    0x0000000000000000       0x44 driver/libc/string/libstring.a(bLib.o)
+ .text.bcopy    0x0000000000000000      0x294 driver/libc/string/libstring.a(bLib.o)
+ .text.bcopyBytes
+                0x0000000000000000      0x11c driver/libc/string/libstring.a(bLib.o)
+ .text.bcopyWords
+                0x0000000000000000      0x134 driver/libc/string/libstring.a(bLib.o)
+ .text.bcopyLongs
+                0x0000000000000000      0x12c driver/libc/string/libstring.a(bLib.o)
+ .text.bcopyQuads
+                0x0000000000000000      0x13c driver/libc/string/libstring.a(bLib.o)
+ .text.bfillBytes
+                0x0000000000000000       0x6c driver/libc/string/libstring.a(bLib.o)
+ .text.index    0x0000000000000000       0x98 driver/libc/string/libstring.a(bLib.o)
+ .text.rindex   0x0000000000000000       0x9c driver/libc/string/libstring.a(bLib.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strpbrk.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strpbrk.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strpbrk.o)
+ .text          0x0000000000000000        0x0 driver/libc/string/libstring.a(strspn.o)
+ .data          0x0000000000000000        0x0 driver/libc/string/libstring.a(strspn.o)
+ .bss           0x0000000000000000        0x0 driver/libc/string/libstring.a(strspn.o)
+ .text          0x0000000000000000        0x0 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .data          0x0000000000000000        0x0 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .bss           0x0000000000000000        0x0 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .text          0x0000000000000000        0x0 driver/device/dfs/libdfs.a(dfs.o)
+ .data          0x0000000000000000        0x0 driver/device/dfs/libdfs.a(dfs.o)
+ .bss           0x0000000000000000        0x0 driver/device/dfs/libdfs.a(dfs.o)
+ .text.dfs_unregister
+                0x0000000000000000       0x80 driver/device/dfs/libdfs.a(dfs.o)
+ .text.get_dfs  0x0000000000000000       0x50 driver/device/dfs/libdfs.a(dfs.o)
+ .rodata        0x0000000000000000       0x59 driver/device/dfs/libdfs.a(dfs.o)
+ .text.dfs_write
+                0x0000000000000000      0x1a4 driver/device/dfs/libdfs.a(dfs.o)
+ .text.dfs_read
+                0x0000000000000000      0x1f8 driver/device/dfs/libdfs.a(dfs.o)
+ .text.dfs_erase
+                0x0000000000000000      0x224 driver/device/dfs/libdfs.a(dfs.o)
+ .text.dfs_cap  0x0000000000000000      0x1e8 driver/device/dfs/libdfs.a(dfs.o)
+ .rodata.dfs_cap
+                0x0000000000000000       0x18 driver/device/dfs/libdfs.a(dfs.o)
+ .sbss          0x0000000000000000        0xc driver/device/dfs/libdfs.a(dfs.o)
+ .text          0x0000000000000000        0x0 driver/libhwinit.a(hw_init.o)
+ .data          0x0000000000000000        0x0 driver/libhwinit.a(hw_init.o)
+ .bss           0x0000000000000000        0x0 driver/libhwinit.a(hw_init.o)
+ .sbss          0x0000000000000000        0x8 driver/libhwinit.a(hw_init.o)
+ .text          0x0000000000000000        0x0 driver/device/norflash/libnor.a(lld.o)
+ .data          0x0000000000000000        0x0 driver/device/norflash/libnor.a(lld.o)
+ .bss           0x0000000000000000        0x0 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_ResetCmd
+                0x0000000000000000       0x44 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_ProgramSuspendCmd
+                0x0000000000000000       0x3c driver/device/norflash/libnor.a(lld.o)
+ .text.lld_EraseSuspendCmd
+                0x0000000000000000       0xf4 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_EraseResumeCmd
+                0x0000000000000000       0x48 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_ProgramResumeCmd
+                0x0000000000000000       0x3c driver/device/norflash/libnor.a(lld.o)
+ .text.lld_EraseSuspendOp
+                0x0000000000000000      0x13c driver/device/norflash/libnor.a(lld.o)
+ .text.lld_ProgramSuspendOp
+                0x0000000000000000      0x13c driver/device/norflash/libnor.a(lld.o)
+ .text.lld_GetDeviceId
+                0x0000000000000000       0xc4 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_SetConfigRegCmd
+                0x0000000000000000       0x7c driver/device/norflash/libnor.a(lld.o)
+ .text.lld_StatusClear
+                0x0000000000000000       0x98 driver/device/norflash/libnor.a(lld.o)
+ .text.lld_StatusGetReg
+                0x0000000000000000      0x170 driver/device/norflash/libnor.a(lld.o)
+ .data          0x0000000000000000        0x0 start/libc.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 start/libc.a(memcpy.o)
+ .eh_frame      0x0000000000000000       0x28 start/libc.a(memcpy.o)
+ .data          0x0000000000000000        0x0 start/libgcc.a(_udivdi3.o)
+ .bss           0x0000000000000000        0x0 start/libgcc.a(_udivdi3.o)
+ .got2          0x0000000000000000        0x0 start/libgcc.a(_udivdi3.o)
+ .eh_frame      0x0000000000000000       0x5c start/libgcc.a(_udivdi3.o)
+ .text          0x0000000000000000      0x3b4 start/libgcc.a(_umoddi3.o)
+ .data          0x0000000000000000        0x0 start/libgcc.a(_umoddi3.o)
+ .bss           0x0000000000000000        0x0 start/libgcc.a(_umoddi3.o)
+ .got2          0x0000000000000000        0x0 start/libgcc.a(_umoddi3.o)
+ .eh_frame      0x0000000000000000       0x50 start/libgcc.a(_umoddi3.o)
+ .data          0x0000000000000000        0x0 start/libstart.a(sysAccess.o)
+ .bss           0x0000000000000000        0x0 start/libstart.a(sysAccess.o)
+ .data          0x0000000000000000        0x0 arch/libarch.a(sysSpeALib.o)
+ .bss           0x0000000000000000        0x0 arch/libarch.a(sysSpeALib.o)
+ .text          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .data          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .bss           0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .text.OSStatTaskHook
+                0x0000000000000000       0x4c kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .text          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysCount.o)
+ .data          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysCount.o)
+ .bss           0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysCount.o)
+ .data          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsIrq.o)
+ .bss           0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsIrq.o)
+ .data          0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+ .bss           0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+CODE_DATA        0x0000000000100000 0x0000000000400000 xr
+SHARE            0x0000000010000000 0x0000000000100000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/ppce500v2-fsl-linux-gnuspe/usr/lib/powerpc-fsl-linux/4.8.1/libgcc.a
+                0x0000000000000001                _CAG_DATA_ALIGN = 0x1
+
+.text           0x0000000000100000     0x3000
+                0x0000000000100000                cag_kernel_text_start = .
+                0x0000000000100000                _cag_kernel_text_start = .
+                0x0000000000100000                _CAG_START_TEXT = .
+ *(.text.entry)
+ *(.text)
+ .text          0x0000000000100000     0x17a0 start/libstart.a(sysCpuALib.o)
+                0x0000000000100020                _start
+                0x0000000000100020                start
+                0x00000000001014a8                sysCacheEnable
+                0x0000000000101540                sysL2CTLSet
+                0x0000000000101560                sysL2CTLGet
+                0x000000000010157c                sysCacheFlush
+                0x00000000001015e4                sysPCGet
+                0x00000000001015ec                sysTimeBaseLGet
+                0x00000000001015f4                sysL1Csr1Set
+                0x000000000010160c                sysCpu1Start
+                0x0000000000101630                sysCpu1Stop
+                0x00000000001016d4                BOOTDEBUG
+                0x000000000010176c                sysTlbUnmapAll
+ .text          0x00000000001017a0       0x2c arch/libarch.a(sysCpuE500ALib.o)
+                0x00000000001017a0                intLock
+                0x00000000001017a0                intCpuLock
+                0x00000000001017a0                intCpuMicroLock
+                0x00000000001017b4                intUnlock
+                0x00000000001017b4                intCpuUnlock
+                0x00000000001017c4                intCpuMicroUnlock
+ .text          0x00000000001017cc      0x47c arch/libarch.a(sysExcArchALib.o)
+                0x00000000001017cc                sysTas
+                0x00000000001017fc                sysSdaInit
+                0x0000000000101810                sysMsrGet
+                0x0000000000101818                sysMsrSet
+                0x0000000000101824                sysDearGet
+                0x000000000010182c                sysDearSet
+                0x0000000000101834                sysCsrr0Get
+                0x000000000010183c                sysCsrr0Set
+                0x0000000000101844                sysCsrr1Get
+                0x000000000010184c                sysCsrr1Set
+                0x0000000000101854                sysMcsrr0Get
+                0x000000000010185c                sysMcsrr0Set
+                0x0000000000101864                sysMcsrr1Get
+                0x000000000010186c                sysMcsrr1Set
+                0x0000000000101874                sysSpefscrGet
+                0x000000000010187c                sysSpefscrSet
+                0x0000000000101888                sysDecarSet
+                0x0000000000101890                sysL1CSR0Get
+                0x000000000010189c                sysL1CSR0Set
+                0x00000000001018b0                sysL1CSR1Get
+                0x00000000001018bc                sysL1CSR1Set
+                0x00000000001018d0                sysL1CFG0Get
+                0x00000000001018d8                sysL1CFG1Get
+                0x00000000001018e0                sysIvor1Set
+                0x00000000001018e8                sysSrr0Get
+                0x00000000001018f0                sysSrr0Set
+                0x00000000001018f8                sysSrr1Get
+                0x0000000000101900                sysSrr1Set
+                0x0000000000101908                sysFirstBit
+                0x0000000000101910                sysFirstRBit
+                0x000000000010193c                sysPvrGet
+                0x0000000000101944                sysEieio
+                0x000000000010194c                sysHid0Set
+                0x000000000010195c                sysHid0Get
+                0x0000000000101964                sysHid1Set
+                0x0000000000101974                sysHid1Get
+                0x000000000010197c                sysTimeBaseInit
+                0x0000000000101988                sysTimeBaseSet
+                0x000000000010199c                sysTimeBaseGet
+                0x00000000001019bc                sysDecSet
+                0x00000000001019c8                sysDecGet
+                0x00000000001019d0                sysDecIntEnable
+                0x00000000001019ec                sysDecIntAck
+                0x00000000001019f8                sysEnableBP
+                0x0000000000101a30                sysDisableBP
+                0x0000000000101a60                sysBucsrGet
+                0x0000000000101a90                sysDbcr2Get
+                0x0000000000101a98                sysDbcr2Set
+                0x0000000000101aa4                sysFitIntAck
+                0x0000000000101ab0                sysFitIntDisable
+                0x0000000000101ac4                sysFitIntEnable
+                0x0000000000101ad4                sysTcrGet
+                0x0000000000101adc                sysTcrSet
+                0x0000000000101ae4                sysTsrGet
+                0x0000000000101aec                sysTsrSet
+                0x0000000000101af4                sysIvprGet
+                0x0000000000101afc                sysIvprSet
+                0x0000000000101b04                sysDbsrGet
+                0x0000000000101b0c                sysDbsrClear
+                0x0000000000101b18                sysDac1Get
+                0x0000000000101b20                sysDac1Set
+                0x0000000000101b28                sysDac2Get
+                0x0000000000101b30                sysDac2Set
+                0x0000000000101b38                sysIac1Get
+                0x0000000000101b40                sysIac1Set
+                0x0000000000101b4c                sysIac2Get
+                0x0000000000101b54                sysIac2Set
+                0x0000000000101b60                sysSvrGet
+                0x0000000000101b68                sysPirGet
+                0x0000000000101b70                sysPirSet
+                0x0000000000101b78                sysCpuLibInit
+                0x0000000000101b84                sysCpuIndexGet
+                0x0000000000101b8c                excIvorInit
+                0x0000000000101c30                get_ticks
+ *fill*         0x0000000000101c48       0x18 
+ .text          0x0000000000101c60      0x2ac start/libc.a(memcpy.o)
+                0x0000000000101c64                memcpy
+                0x0000000000101c64                largememcpy
+ .text          0x0000000000101f0c      0x428 start/libgcc.a(_udivdi3.o)
+                0x0000000000101f0c                __udivdi3
+ .text          0x0000000000102334       0x78 start/libstart.a(sysAccess.o)
+                0x0000000000102334                readb
+                0x0000000000102340                readw
+                0x000000000010234c                readl
+                0x0000000000102358                writeb
+                0x0000000000102364                writew
+                0x0000000000102370                writel
+                0x000000000010237c                readb_noOrder
+                0x0000000000102384                readw_noOrder
+                0x000000000010238c                readl_noOrder
+                0x0000000000102394                writeb_noOrder
+                0x000000000010239c                writew_noOrder
+                0x00000000001023a4                writel_noOrder
+ .text          0x00000000001023ac      0x17c arch/libarch.a(sysSpeALib.o)
+                0x00000000001023ac                speRestore
+                0x000000000010247c                speSave
+ .text          0x0000000000102528       0xd0 kernel/ports/libkernelport.a(sysOsIrq.o)
+                0x0000000000102528                OSIntCtxSw
+ .text          0x00000000001025f8      0x264 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+                0x00000000001025f8                OSStartHighRdy
+                0x00000000001026c0                OSCtxSw
+                0x0000000000103000                . = ALIGN (0x1000)
+ *fill*         0x000000000010285c      0x7a4 
+
+.glink          0x0000000000103000        0x0
+ .glink         0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+
+.text.sysCpuStart
+                0x0000000000103000       0xf0
+ .text.sysCpuStart
+                0x0000000000103000       0xf0 start/libstart.a(sysCpuLib.o)
+                0x0000000000103000                sysCpuStart
+
+.text.sysRoot   0x00000000001030f0       0x34
+ .text.sysRoot  0x00000000001030f0       0x34 start/libstart.a(sysCpuLib.o)
+                0x00000000001030f0                sysRoot
+
+.text.clearBss  0x0000000000103124       0x54
+ .text.clearBss
+                0x0000000000103124       0x54 start/libstart.a(sysCpuLib.o)
+                0x0000000000103124                clearBss
+
+.text.sysDeviceInit
+                0x0000000000103178       0x54
+ .text.sysDeviceInit
+                0x0000000000103178       0x54 start/libstart.a(sysCpuLib.o)
+                0x0000000000103178                sysDeviceInit
+
+.text.sysEntry  0x00000000001031cc       0x58
+ .text.sysEntry
+                0x00000000001031cc       0x58 start/libstart.a(sysCpuLib.o)
+                0x00000000001031cc                sysEntry
+
+.text.sysL1CacheQuery
+                0x0000000000103224      0x10c
+ .text.sysL1CacheQuery
+                0x0000000000103224      0x10c start/libstart.a(sysCpuLib.o)
+
+.text.printLogo
+                0x0000000000103330       0x80
+ .text.printLogo
+                0x0000000000103330       0x80 start/libstart.a(sysBanner.o)
+                0x0000000000103330                printLogo
+
+.text.sysBanner
+                0x00000000001033b0       0x30
+ .text.sysBanner
+                0x00000000001033b0       0x30 start/libstart.a(sysBanner.o)
+                0x00000000001033b0                sysBanner
+
+.text.sysL2CacheInit
+                0x00000000001033e0       0xe4
+ .text.sysL2CacheInit
+                0x00000000001033e0       0xe4 start/libstart.a(sysL2Cache.o)
+                0x00000000001033e0                sysL2CacheInit
+
+.text.sysL2CacheInvFunc
+                0x00000000001034c4       0x74
+ .text.sysL2CacheInvFunc
+                0x00000000001034c4       0x74 start/libstart.a(sysL2Cache.o)
+
+.text.sysL2CacheEnable
+                0x0000000000103538       0x58
+ .text.sysL2CacheEnable
+                0x0000000000103538       0x58 start/libstart.a(sysL2Cache.o)
+
+.text.sysL2CacheDisable
+                0x0000000000103590       0x58
+ .text.sysL2CacheDisable
+                0x0000000000103590       0x58 start/libstart.a(sysL2Cache.o)
+
+.text.sysL2CacheFlush
+                0x00000000001035e8       0x68
+ .text.sysL2CacheFlush
+                0x00000000001035e8       0x68 start/libstart.a(sysL2Cache.o)
+
+.text.sysClkFreqGet
+                0x0000000000103650       0x28
+ .text.sysClkFreqGet
+                0x0000000000103650       0x28 start/libstart.a(sysBoard.o)
+                0x0000000000103650                sysClkFreqGet
+
+.text.sysUsDelay
+                0x0000000000103678      0x104
+ .text.sysUsDelay
+                0x0000000000103678      0x104 start/libstart.a(sysBoard.o)
+                0x0000000000103678                sysUsDelay
+
+.text.sysUartClkRateGet
+                0x000000000010377c       0x28
+ .text.sysUartClkRateGet
+                0x000000000010377c       0x28 start/libstart.a(sysBoard.o)
+                0x000000000010377c                sysUartClkRateGet
+
+.text.sysMiscInit
+                0x00000000001037a4       0x58
+ .text.sysMiscInit
+                0x00000000001037a4       0x58 start/libstart.a(sysBoard.o)
+                0x00000000001037a4                sysMiscInit
+
+.text.boardReset
+                0x00000000001037fc       0x44
+ .text.boardReset
+                0x00000000001037fc       0x44 start/libstart.a(sysBoard.o)
+                0x00000000001037fc                boardReset
+
+.text.hang      0x0000000000103840       0x28
+ .text.hang     0x0000000000103840       0x28 start/libstart.a(sysBoard.o)
+                0x0000000000103840                hang
+
+.text.panic     0x0000000000103868       0x4c
+ .text.panic    0x0000000000103868       0x4c start/libstart.a(sysBoard.o)
+                0x0000000000103868                panic
+
+.text.excVecInit
+                0x00000000001038b4       0x5c
+ .text.excVecInit
+                0x00000000001038b4       0x5c arch/libarch.a(sysExcArchLib.o)
+                0x00000000001038b4                excVecInit
+
+.text.excVecBaseSet
+                0x0000000000103910       0x54
+ .text.excVecBaseSet
+                0x0000000000103910       0x54 arch/libarch.a(sysExcArchLib.o)
+                0x0000000000103910                excVecBaseSet
+
+.text.installE500ParityErrorRecovery
+                0x0000000000103964       0x64
+ .text.installE500ParityErrorRecovery
+                0x0000000000103964       0x64 arch/libarch.a(sysExcArchLib.o)
+                0x0000000000103964                installE500ParityErrorRecovery
+
+.text.machineException
+                0x00000000001039c8      0x1c0
+ .text.machineException
+                0x00000000001039c8      0x1c0 arch/libarch.a(sysExcArchLib.o)
+                0x00000000001039c8                machineException
+
+.text.SpeException
+                0x0000000000103b88       0xb4
+ .text.SpeException
+                0x0000000000103b88       0xb4 arch/libarch.a(sysExcArchLib.o)
+                0x0000000000103b88                SpeException
+
+.text.generalException
+                0x0000000000103c3c      0x398
+ .text.generalException
+                0x0000000000103c3c      0x398 arch/libarch.a(sysExcArchLib.o)
+                0x0000000000103c3c                generalException
+
+.text.speExcInit
+                0x0000000000103fd4       0x80
+ .text.speExcInit
+                0x0000000000103fd4       0x80 arch/libarch.a(sysSpeExcLib.o)
+                0x0000000000103fd4                speExcInit
+
+.text.executeException
+                0x0000000000104054       0xd8
+ .text.executeException
+                0x0000000000104054       0xd8 arch/libarch.a(sysExcLib.o)
+                0x0000000000104054                executeException
+
+.text.sysOs     0x000000000010412c      0x12c
+ .text.sysOs    0x000000000010412c      0x12c kernel/ports/libkernelport.a(sysEntry.o)
+                0x000000000010412c                sysOs
+
+.text.AppTaskStart
+                0x0000000000104258       0x30
+ .text.AppTaskStart
+                0x0000000000104258       0x30 kernel/ports/libkernelport.a(sysEntry.o)
+
+.text.OSInit    0x0000000000104288      0x1cc
+ .text.OSInit   0x0000000000104288      0x1cc kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104288                OSInit
+
+.text.OSIntEnter
+                0x0000000000104454       0xac
+ .text.OSIntEnter
+                0x0000000000104454       0xac kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104454                OSIntEnter
+
+.text.OSIntExit
+                0x0000000000104500      0x138
+ .text.OSIntExit
+                0x0000000000104500      0x138 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104500                OSIntExit
+
+.text.OSSched   0x0000000000104638       0xf8
+ .text.OSSched  0x0000000000104638       0xf8 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104638                OSSched
+
+.text.OSStart   0x0000000000104730       0xd8
+ .text.OSStart  0x0000000000104730       0xd8 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104730                OSStart
+
+.text.OS_IdleTask
+                0x0000000000104808       0x3c
+ .text.OS_IdleTask
+                0x0000000000104808       0x3c kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104808                OS_IdleTask
+
+.text.OS_IdleTaskInit
+                0x0000000000104844       0x9c
+ .text.OS_IdleTaskInit
+                0x0000000000104844       0x9c kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104844                OS_IdleTaskInit
+
+.text.OS_PendListChangePrio
+                0x00000000001048e0       0xbc
+ .text.OS_PendListChangePrio
+                0x00000000001048e0       0xbc kernel/thread/libkernelthread.a(sysCore.o)
+                0x00000000001048e0                OS_PendListChangePrio
+
+.text.OS_PendListInsertPrio
+                0x000000000010499c      0x1cc
+ .text.OS_PendListInsertPrio
+                0x000000000010499c      0x1cc kernel/thread/libkernelthread.a(sysCore.o)
+                0x000000000010499c                OS_PendListInsertPrio
+
+.text.OS_PendListRemove
+                0x0000000000104b68       0xb4
+ .text.OS_PendListRemove
+                0x0000000000104b68       0xb4 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104b68                OS_PendListRemove
+
+.text.OS_PendListRemove1
+                0x0000000000104c1c      0x128
+ .text.OS_PendListRemove1
+                0x0000000000104c1c      0x128 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104c1c                OS_PendListRemove1
+
+.text.OS_Post   0x0000000000104d44      0x1fc
+ .text.OS_Post  0x0000000000104d44      0x1fc kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104d44                OS_Post
+
+.text.OS_Post1  0x0000000000104f40       0xc4
+ .text.OS_Post1
+                0x0000000000104f40       0xc4 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000104f40                OS_Post1
+
+.text.OS_RdyListInit
+                0x0000000000105004       0x90
+ .text.OS_RdyListInit
+                0x0000000000105004       0x90 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000105004                OS_RdyListInit
+
+.text.OS_RdyListInsert
+                0x0000000000105094       0x78
+ .text.OS_RdyListInsert
+                0x0000000000105094       0x78 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000105094                OS_RdyListInsert
+
+.text.OS_RdyListInsertHead
+                0x000000000010510c       0xf8
+ .text.OS_RdyListInsertHead
+                0x000000000010510c       0xf8 kernel/thread/libkernelthread.a(sysCore.o)
+                0x000000000010510c                OS_RdyListInsertHead
+
+.text.OS_RdyListInsertTail
+                0x0000000000105204       0xf4
+ .text.OS_RdyListInsertTail
+                0x0000000000105204       0xf4 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000105204                OS_RdyListInsertTail
+
+.text.OS_RdyListMoveHeadToTail
+                0x00000000001052f8      0x120
+ .text.OS_RdyListMoveHeadToTail
+                0x00000000001052f8      0x120 kernel/thread/libkernelthread.a(sysCore.o)
+                0x00000000001052f8                OS_RdyListMoveHeadToTail
+
+.text.OS_RdyListRemove
+                0x0000000000105418      0x164
+ .text.OS_RdyListRemove
+                0x0000000000105418      0x164 kernel/thread/libkernelthread.a(sysCore.o)
+                0x0000000000105418                OS_RdyListRemove
+
+.text.OS_SchedRoundRobin
+                0x000000000010557c      0x12c
+ .text.OS_SchedRoundRobin
+                0x000000000010557c      0x12c kernel/thread/libkernelthread.a(sysCore.o)
+                0x000000000010557c                OS_SchedRoundRobin
+
+.text.OS_MutexInit
+                0x00000000001056a8       0x38
+ .text.OS_MutexInit
+                0x00000000001056a8       0x38 kernel/thread/libkernelthread.a(sysMutex.o)
+                0x00000000001056a8                OS_MutexInit
+
+.text.OS_MutexGrpAdd
+                0x00000000001056e0       0x40
+ .text.OS_MutexGrpAdd
+                0x00000000001056e0       0x40 kernel/thread/libkernelthread.a(sysMutex.o)
+                0x00000000001056e0                OS_MutexGrpAdd
+
+.text.OS_MutexGrpRemove
+                0x0000000000105720       0x6c
+ .text.OS_MutexGrpRemove
+                0x0000000000105720       0x6c kernel/thread/libkernelthread.a(sysMutex.o)
+                0x0000000000105720                OS_MutexGrpRemove
+
+.text.OS_MutexGrpPrioFindHighest
+                0x000000000010578c       0xb0
+ .text.OS_MutexGrpPrioFindHighest
+                0x000000000010578c       0xb0 kernel/thread/libkernelthread.a(sysMutex.o)
+                0x000000000010578c                OS_MutexGrpPrioFindHighest
+
+.text.OS_MutexGrpPostAll
+                0x000000000010583c      0x108
+ .text.OS_MutexGrpPostAll
+                0x000000000010583c      0x108 kernel/thread/libkernelthread.a(sysMutex.o)
+                0x000000000010583c                OS_MutexGrpPostAll
+
+.text.OS_PrioInit
+                0x0000000000105944       0x5c
+ .text.OS_PrioInit
+                0x0000000000105944       0x5c kernel/thread/libkernelthread.a(sysPrio.o)
+                0x0000000000105944                OS_PrioInit
+
+.text.OS_PrioGetHighest
+                0x00000000001059a0       0x9c
+ .text.OS_PrioGetHighest
+                0x00000000001059a0       0x9c kernel/thread/libkernelthread.a(sysPrio.o)
+                0x00000000001059a0                OS_PrioGetHighest
+
+.text.OS_PrioInsert
+                0x0000000000105a3c       0xa0
+ .text.OS_PrioInsert
+                0x0000000000105a3c       0xa0 kernel/thread/libkernelthread.a(sysPrio.o)
+                0x0000000000105a3c                OS_PrioInsert
+
+.text.OS_PrioRemove
+                0x0000000000105adc       0xa4
+ .text.OS_PrioRemove
+                0x0000000000105adc       0xa4 kernel/thread/libkernelthread.a(sysPrio.o)
+                0x0000000000105adc                OS_PrioRemove
+
+.text.OS_MsgPoolInit
+                0x0000000000105b80      0x190
+ .text.OS_MsgPoolInit
+                0x0000000000105b80      0x190 kernel/thread/libkernelthread.a(sysMsg.o)
+                0x0000000000105b80                OS_MsgPoolInit
+
+.text.OS_QInit  0x0000000000105d10       0x38
+ .text.OS_QInit
+                0x0000000000105d10       0x38 kernel/thread/libkernelthread.a(sysQueue.o)
+                0x0000000000105d10                OS_QInit
+
+.text.OS_SemInit
+                0x0000000000105d48       0x38
+ .text.OS_SemInit
+                0x0000000000105d48       0x38 kernel/thread/libkernelthread.a(sysSem.o)
+                0x0000000000105d48                OS_SemInit
+
+.text.OSTaskCreate
+                0x0000000000105d80      0x320
+ .text.OSTaskCreate
+                0x0000000000105d80      0x320 kernel/thread/libkernelthread.a(sysTask.o)
+                0x0000000000105d80                OSTaskCreate
+
+.text.OSTaskDel
+                0x00000000001060a0      0x2e0
+ .text.OSTaskDel
+                0x00000000001060a0      0x2e0 kernel/thread/libkernelthread.a(sysTask.o)
+                0x00000000001060a0                OSTaskDel
+
+.text.OS_TaskInit
+                0x0000000000106380       0x44
+ .text.OS_TaskInit
+                0x0000000000106380       0x44 kernel/thread/libkernelthread.a(sysTask.o)
+                0x0000000000106380                OS_TaskInit
+
+.text.OS_TaskInitTCB
+                0x00000000001063c4      0x1e8
+ .text.OS_TaskInitTCB
+                0x00000000001063c4      0x1e8 kernel/thread/libkernelthread.a(sysTask.o)
+                0x00000000001063c4                OS_TaskInitTCB
+
+.text.OS_TaskReturn
+                0x00000000001065ac       0x4c
+ .text.OS_TaskReturn
+                0x00000000001065ac       0x4c kernel/thread/libkernelthread.a(sysTask.o)
+                0x00000000001065ac                OS_TaskReturn
+
+.text.OS_TaskChangePrio
+                0x00000000001065f8      0x23c
+ .text.OS_TaskChangePrio
+                0x00000000001065f8      0x23c kernel/thread/libkernelthread.a(sysTask.o)
+                0x00000000001065f8                OS_TaskChangePrio
+
+.text.OS_TickUpdate
+                0x0000000000106834       0x80
+ .text.OS_TickUpdate
+                0x0000000000106834       0x80 kernel/thread/libkernelthread.a(sysTick.o)
+                0x0000000000106834                OS_TickUpdate
+
+.text.OS_TickListInsert
+                0x00000000001068b4      0x204
+ .text.OS_TickListInsert
+                0x00000000001068b4      0x204 kernel/thread/libkernelthread.a(sysTick.o)
+                0x00000000001068b4                OS_TickListInsert
+
+.text.OS_TickListInsertDly
+                0x0000000000106ab8      0x200
+ .text.OS_TickListInsertDly
+                0x0000000000106ab8      0x200 kernel/thread/libkernelthread.a(sysTick.o)
+                0x0000000000106ab8                OS_TickListInsertDly
+
+.text.OS_TickListRemove
+                0x0000000000106cb8      0x150
+ .text.OS_TickListRemove
+                0x0000000000106cb8      0x150 kernel/thread/libkernelthread.a(sysTick.o)
+                0x0000000000106cb8                OS_TickListRemove
+
+.text.OS_TickListUpdateDly
+                0x0000000000106e08      0x120
+ .text.OS_TickListUpdateDly
+                0x0000000000106e08      0x120 kernel/thread/libkernelthread.a(sysTick.o)
+
+.text.OS_TickListUpdateTimeout
+                0x0000000000106f28      0x24c
+ .text.OS_TickListUpdateTimeout
+                0x0000000000106f28      0x24c kernel/thread/libkernelthread.a(sysTick.o)
+
+.text.OSTimeDly
+                0x0000000000107174      0x154
+ .text.OSTimeDly
+                0x0000000000107174      0x154 kernel/thread/libkernelthread.a(sysTime.o)
+                0x0000000000107174                OSTimeDly
+
+.text.OSTimeTick
+                0x00000000001072c8       0x60
+ .text.OSTimeTick
+                0x00000000001072c8       0x60 kernel/thread/libkernelthread.a(sysTime.o)
+                0x00000000001072c8                OSTimeTick
+
+.text.rts_var_init
+                0x0000000000107328      0x100
+ .text.rts_var_init
+                0x0000000000107328      0x100 kernel/thread/libkernelthread.a(sysApi.o)
+                0x0000000000107328                rts_var_init
+
+.text.OSCfg_Init
+                0x0000000000107428       0x1c
+ .text.OSCfg_Init
+                0x0000000000107428       0x1c kernel/thread/libkernelthread.a(sysCfg.o)
+                0x0000000000107428                OSCfg_Init
+
+.text.clockTaskStart
+                0x0000000000107444      0x108
+ .text.clockTaskStart
+                0x0000000000107444      0x108 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x0000000000107444                clockTaskStart
+
+.text.OSDecHandler
+                0x000000000010754c       0x34
+ .text.OSDecHandler
+                0x000000000010754c       0x34 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x000000000010754c                OSDecHandler
+
+.text.get_tbclk
+                0x0000000000107580       0x58
+ .text.get_tbclk
+                0x0000000000107580       0x58 kernel/timers/libkerneltimer.a(sysTbl.o)
+                0x0000000000107580                get_tbclk
+
+.text.getTblms  0x00000000001075d8      0x11c
+ .text.getTblms
+                0x00000000001075d8      0x11c kernel/timers/libkerneltimer.a(sysTbl.o)
+                0x00000000001075d8                getTblms
+
+.text.OSIntHandler
+                0x00000000001076f4      0x12c
+ .text.OSIntHandler
+                0x00000000001076f4      0x12c kernel/epic/libkernelepic.a(sysInt.o)
+                0x00000000001076f4                OSIntHandler
+
+.text.shellGetChar
+                0x0000000000107820      0x388
+ .text.shellGetChar
+                0x0000000000107820      0x388 utility/libutility.a(shell.o)
+
+.text.shellGetLine
+                0x0000000000107ba8       0x40
+ .text.shellGetLine
+                0x0000000000107ba8       0x40 utility/libutility.a(shell.o)
+
+.text.shellExec
+                0x0000000000107be8      0x130
+ .text.shellExec
+                0x0000000000107be8      0x130 utility/libutility.a(shell.o)
+
+.text.shellParseAndExecute
+                0x0000000000107d18      0x56c
+ .text.shellParseAndExecute
+                0x0000000000107d18      0x56c utility/libutility.a(shell.o)
+
+.text.shellPrompt
+                0x0000000000108284       0x3c
+ .text.shellPrompt
+                0x0000000000108284       0x3c utility/libutility.a(shell.o)
+
+.text.shellInit
+                0x00000000001082c0       0x4c
+ .text.shellInit
+                0x00000000001082c0       0x4c utility/libutility.a(shell.o)
+
+.text.shellMainLoop
+                0x000000000010830c       0x28
+ .text.shellMainLoop
+                0x000000000010830c       0x28 utility/libutility.a(shell.o)
+
+.text.shellCmdRegister
+                0x0000000000108334      0x13c
+ .text.shellCmdRegister
+                0x0000000000108334      0x13c utility/libutility.a(shell.o)
+                0x0000000000108334                shellCmdRegister
+
+.text.do_reset  0x0000000000108470       0x80
+ .text.do_reset
+                0x0000000000108470       0x80 utility/libutility.a(shell.o)
+
+.text.hexdump   0x00000000001084f0      0x79c
+ .text.hexdump  0x00000000001084f0      0x79c utility/libutility.a(shell.o)
+
+.text.help      0x0000000000108c8c      0x284
+ .text.help     0x0000000000108c8c      0x284 utility/libutility.a(shell.o)
+
+.text.usrShell  0x0000000000108f10       0x54
+ .text.usrShell
+                0x0000000000108f10       0x54 utility/libutility.a(shell.o)
+                0x0000000000108f10                usrShell
+
+.text.ns16550OutputChar
+                0x0000000000108f64       0x7c
+ .text.ns16550OutputChar
+                0x0000000000108f64       0x7c driver/libc/stdio/libstdio.a(ns16550.o)
+                0x0000000000108f64                ns16550OutputChar
+
+.text.ns16550InputChar
+                0x0000000000108fe0       0x78
+ .text.ns16550InputChar
+                0x0000000000108fe0       0x78 driver/libc/stdio/libstdio.a(ns16550.o)
+                0x0000000000108fe0                ns16550InputChar
+
+.text.ns16550DevInit
+                0x0000000000109058      0x168
+ .text.ns16550DevInit
+                0x0000000000109058      0x168 driver/libc/stdio/libstdio.a(ns16550.o)
+                0x0000000000109058                ns16550DevInit
+
+.text.strnlen   0x00000000001091c0       0x74
+ .text.strnlen  0x00000000001091c0       0x74 driver/libc/stdio/libstdio.a(printk.o)
+                0x00000000001091c0                strnlen
+
+.text.skip_atoi
+                0x0000000000109234       0xb0
+ .text.skip_atoi
+                0x0000000000109234       0xb0 driver/libc/stdio/libstdio.a(printk.o)
+
+.text.number    0x00000000001092e4      0x43c
+ .text.number   0x00000000001092e4      0x43c driver/libc/stdio/libstdio.a(printk.o)
+
+.text.vsprintf  0x0000000000109720      0xa60
+ .text.vsprintf
+                0x0000000000109720      0xa60 driver/libc/stdio/libstdio.a(printk.o)
+                0x0000000000109720                vsprintf
+
+.text.putc      0x000000000010a180       0x60
+ .text.putc     0x000000000010a180       0x60 driver/libc/stdio/libstdio.a(printk.o)
+                0x000000000010a180                putc
+
+.text.puts      0x000000000010a1e0       0x68
+ .text.puts     0x000000000010a1e0       0x68 driver/libc/stdio/libstdio.a(printk.o)
+                0x000000000010a1e0                puts
+
+.text.printf    0x000000000010a248       0x90
+ .text.printf   0x000000000010a248       0x90 driver/libc/stdio/libstdio.a(printk.o)
+                0x000000000010a248                printf
+
+.text.memset    0x000000000010a2d8       0x50
+ .text.memset   0x000000000010a2d8       0x50 driver/libc/string/libstring.a(memset.o)
+                0x000000000010a2d8                memset
+
+.text.strcmp    0x000000000010a328       0xa4
+ .text.strcmp   0x000000000010a328       0xa4 driver/libc/string/libstring.a(strcmp.o)
+                0x000000000010a328                strcmp
+
+.text.strlen    0x000000000010a3cc       0x5c
+ .text.strlen   0x000000000010a3cc       0x5c driver/libc/string/libstring.a(strlen.o)
+                0x000000000010a3cc                strlen
+
+.text.strtok_r  0x000000000010a428       0xf8
+ .text.strtok_r
+                0x000000000010a428       0xf8 driver/libc/string/libstring.a(strtok_r.o)
+                0x000000000010a428                strtok_r
+
+.text.bfill     0x000000000010a520      0x120
+ .text.bfill    0x000000000010a520      0x120 driver/libc/string/libstring.a(bLib.o)
+                0x000000000010a520                bfill
+
+.text.strpbrk   0x000000000010a640       0xa0
+ .text.strpbrk  0x000000000010a640       0xa0 driver/libc/string/libstring.a(strpbrk.o)
+                0x000000000010a640                strpbrk
+
+.text.strspn    0x000000000010a6e0       0xc0
+ .text.strspn   0x000000000010a6e0       0xc0 driver/libc/string/libstring.a(strspn.o)
+                0x000000000010a6e0                strspn
+
+.text.strtoul   0x000000000010a7a0      0x338
+ .text.strtoul  0x000000000010a7a0      0x338 driver/libc/stdlib/libstdlib.a(strtoul.o)
+                0x000000000010a7a0                strtoul
+
+.text.dfs_init  0x000000000010aad8       0x5c
+ .text.dfs_init
+                0x000000000010aad8       0x5c driver/device/dfs/libdfs.a(dfs.o)
+                0x000000000010aad8                dfs_init
+
+.text.dfs_register
+                0x000000000010ab34       0x9c
+ .text.dfs_register
+                0x000000000010ab34       0x9c driver/device/dfs/libdfs.a(dfs.o)
+                0x000000000010ab34                dfs_register
+
+.text.nor_init  0x000000000010abd0      0x260
+ .text.nor_init
+                0x000000000010abd0      0x260 driver/libhwinit.a(hw_init.o)
+                0x000000000010abd0                nor_init
+
+.text.lld_lock  0x000000000010ae30       0x60
+ .text.lld_lock
+                0x000000000010ae30       0x60 driver/device/norflash/libnor.a(lld.o)
+
+.text.lld_unlock
+                0x000000000010ae90       0x68
+ .text.lld_unlock
+                0x000000000010ae90       0x68 driver/device/norflash/libnor.a(lld.o)
+
+.text.lld_GetVersion
+                0x000000000010aef8       0x80
+ .text.lld_GetVersion
+                0x000000000010aef8       0x80 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010aef8                lld_GetVersion
+
+.text.lld_InitCmd
+                0x000000000010af78       0x2c
+ .text.lld_InitCmd
+                0x000000000010af78       0x2c driver/device/norflash/libnor.a(lld.o)
+                0x000000000010af78                lld_InitCmd
+
+.text.lld_SectorEraseCmd
+                0x000000000010afa4       0x98
+ .text.lld_SectorEraseCmd
+                0x000000000010afa4       0x98 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010afa4                lld_SectorEraseCmd
+
+.text.lld_ChipEraseCmd
+                0x000000000010b03c       0x80
+ .text.lld_ChipEraseCmd
+                0x000000000010b03c       0x80 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b03c                lld_ChipEraseCmd
+
+.text.lld_ProgramCmd
+                0x000000000010b0bc       0x78
+ .text.lld_ProgramCmd
+                0x000000000010b0bc       0x78 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b0bc                lld_ProgramCmd
+
+.text.lld_WriteToBufferCmd
+                0x000000000010b134       0x78
+ .text.lld_WriteToBufferCmd
+                0x000000000010b134       0x78 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b134                lld_WriteToBufferCmd
+
+.text.lld_ProgramBufferToFlashCmd
+                0x000000000010b1ac       0x3c
+ .text.lld_ProgramBufferToFlashCmd
+                0x000000000010b1ac       0x3c driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b1ac                lld_ProgramBufferToFlashCmd
+
+.text.lld_WriteBufferAbortResetCmd
+                0x000000000010b1e8       0x50
+ .text.lld_WriteBufferAbortResetCmd
+                0x000000000010b1e8       0x50 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b1e8                lld_WriteBufferAbortResetCmd
+
+.text.lld_ReadConfigRegCmd
+                0x000000000010b238       0x78
+ .text.lld_ReadConfigRegCmd
+                0x000000000010b238       0x78 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b238                lld_ReadConfigRegCmd
+
+.text.lld_Poll  0x000000000010b2b0      0x1a8
+ .text.lld_Poll
+                0x000000000010b2b0      0x1a8 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b2b0                lld_Poll
+
+.text.lld_StatusGet
+                0x000000000010b458      0x238
+ .text.lld_StatusGet
+                0x000000000010b458      0x238 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b458                lld_StatusGet
+
+.text.lld_ReadOp
+                0x000000000010b690       0xc0
+ .text.lld_ReadOp
+                0x000000000010b690       0xc0 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b690                lld_ReadOp
+
+.text.lld_WriteBufferProgramOp
+                0x000000000010b750      0x1ac
+ .text.lld_WriteBufferProgramOp
+                0x000000000010b750      0x1ac driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b750                lld_WriteBufferProgramOp
+
+.text.lld_ProgramOp
+                0x000000000010b8fc       0xe4
+ .text.lld_ProgramOp
+                0x000000000010b8fc       0xe4 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b8fc                lld_ProgramOp
+
+.text.lld_SectorEraseOp
+                0x000000000010b9e0       0xdc
+ .text.lld_SectorEraseOp
+                0x000000000010b9e0       0xdc driver/device/norflash/libnor.a(lld.o)
+                0x000000000010b9e0                lld_SectorEraseOp
+
+.text.lld_ChipEraseOp
+                0x000000000010babc       0xec
+ .text.lld_ChipEraseOp
+                0x000000000010babc       0xec driver/device/norflash/libnor.a(lld.o)
+                0x000000000010babc                lld_ChipEraseOp
+
+.text.lld_memcpy
+                0x000000000010bba8      0x1ac
+ .text.lld_memcpy
+                0x000000000010bba8      0x1ac driver/device/norflash/libnor.a(lld.o)
+                0x000000000010bba8                lld_memcpy
+
+.text.flash_read8
+                0x000000000010bd54       0xa8
+ .text.flash_read8
+                0x000000000010bd54       0xa8 driver/device/norflash/libnor.a(lld.o)
+
+.text.flash_add_byte
+                0x000000000010bdfc       0x5c
+ .text.flash_add_byte
+                0x000000000010bdfc       0x5c driver/device/norflash/libnor.a(lld.o)
+
+.text.lld_write
+                0x000000000010be58      0x3f8
+ .text.lld_write
+                0x000000000010be58      0x3f8 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010be58                lld_write
+
+.text.lld_read  0x000000000010c250      0x274
+ .text.lld_read
+                0x000000000010c250      0x274 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010c250                lld_read
+
+.text.lld_erase
+                0x000000000010c4c4      0x100
+ .text.lld_erase
+                0x000000000010c4c4      0x100 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010c4c4                lld_erase
+
+.text.powerpcIntDisable
+                0x000000000010c5c4       0x44
+ .text.powerpcIntDisable
+                0x000000000010c5c4       0x44 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c5c4                powerpcIntDisable
+
+.text.powerpcIntEnable
+                0x000000000010c608       0x50
+ .text.powerpcIntEnable
+                0x000000000010c608       0x50 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c608                powerpcIntEnable
+
+.text.OSIdleTaskHook
+                0x000000000010c658       0x4c
+ .text.OSIdleTaskHook
+                0x000000000010c658       0x4c kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c658                OSIdleTaskHook
+
+.text.OSInitHook
+                0x000000000010c6a4       0x1c
+ .text.OSInitHook
+                0x000000000010c6a4       0x1c kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c6a4                OSInitHook
+
+.text.OSTaskCreateHook
+                0x000000000010c6c0       0x54
+ .text.OSTaskCreateHook
+                0x000000000010c6c0       0x54 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c6c0                OSTaskCreateHook
+
+.text.OSTaskDelHook
+                0x000000000010c714       0x54
+ .text.OSTaskDelHook
+                0x000000000010c714       0x54 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c714                OSTaskDelHook
+
+.text.OSTaskReturnHook
+                0x000000000010c768       0x54
+ .text.OSTaskReturnHook
+                0x000000000010c768       0x54 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c768                OSTaskReturnHook
+
+.text.OSTaskStkInit
+                0x000000000010c7bc      0x430
+ .text.OSTaskStkInit
+                0x000000000010c7bc      0x430 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010c7bc                OSTaskStkInit
+
+.text.OSTaskSwHook
+                0x000000000010cbec      0x12c
+ .text.OSTaskSwHook
+                0x000000000010cbec      0x12c kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010cbec                OSTaskSwHook
+
+.text.OSTimeTickHook
+                0x000000000010cd18       0x4c
+ .text.OSTimeTickHook
+                0x000000000010cd18       0x4c kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                0x000000000010cd18                OSTimeTickHook
+
+.text.CPU_CntLeadZeros
+                0x000000000010cd64       0x44
+ .text.CPU_CntLeadZeros
+                0x000000000010cd64       0x44 kernel/ports/libkernelport.a(sysCount.o)
+                0x000000000010cd64                CPU_CntLeadZeros
+
+.text.CPU_CntLeadZeros32
+                0x000000000010cda8      0x110
+ .text.CPU_CntLeadZeros32
+                0x000000000010cda8      0x110 kernel/ports/libkernelport.a(sysCount.o)
+                0x000000000010cda8                CPU_CntLeadZeros32
+
+.eh_frame       0x000000000010ceb8        0x0
+ .eh_frame      0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+
+.rodata         0x000000000010ceb8     0x128f
+ .rodata        0x000000000010ceb8       0x1e start/libstart.a(sysCpuLib.o)
+ *fill*         0x000000000010ced6        0x2 
+ .rodata        0x000000000010ced8      0x191 start/libstart.a(sysBanner.o)
+ *fill*         0x000000000010d069        0x3 
+ .rodata        0x000000000010d06c      0x50a start/libstart.a(sysBoard.o)
+ *fill*         0x000000000010d576        0x2 
+ .rodata        0x000000000010d578      0x6c4 arch/libarch.a(sysExcArchLib.o)
+ .rodata        0x000000000010dc3c       0xa5 arch/libarch.a(sysExcLib.o)
+ *fill*         0x000000000010dce1        0x3 
+ .rodata        0x000000000010dce4       0x2b kernel/ports/libkernelport.a(sysEntry.o)
+ *fill*         0x000000000010dd0f        0x1 
+ .rodata        0x000000000010dd10       0x14 kernel/thread/libkernelthread.a(sysCore.o)
+ .rodata        0x000000000010dd24        0xc kernel/timers/libkerneltimer.a(sysDec.o)
+ .rodata        0x000000000010dd30      0x32d utility/libutility.a(shell.o)
+ *fill*         0x000000000010e05d        0x3 
+ .rodata        0x000000000010e060       0x6e driver/libc/stdio/libstdio.a(printk.o)
+ *fill*         0x000000000010e0ce        0x2 
+ .rodata        0x000000000010e0d0       0x70 driver/libhwinit.a(hw_init.o)
+ .rodata        0x000000000010e140        0x7 driver/device/norflash/libnor.a(lld.o)
+
+.rodata.OS_Post
+                0x000000000010e148       0x20
+ .rodata.OS_Post
+                0x000000000010e148       0x20 kernel/thread/libkernelthread.a(sysCore.o)
+
+.rodata.OSTaskDel
+                0x000000000010e168       0x40
+ .rodata.OSTaskDel
+                0x000000000010e168       0x40 kernel/thread/libkernelthread.a(sysTask.o)
+
+.rodata.OS_TaskChangePrio
+                0x000000000010e1a8       0x3c
+ .rodata.OS_TaskChangePrio
+                0x000000000010e1a8       0x3c kernel/thread/libkernelthread.a(sysTask.o)
+
+.rodata.OSTimeDly
+                0x000000000010e1e4       0x24
+ .rodata.OSTimeDly
+                0x000000000010e1e4       0x24 kernel/thread/libkernelthread.a(sysTime.o)
+
+.rodata.vsprintf
+                0x000000000010e208      0x194
+ .rodata.vsprintf
+                0x000000000010e208      0x194 driver/libc/stdio/libstdio.a(printk.o)
+
+.rodata.CPU_CntLeadZerosTbl
+                0x000000000010e39c      0x100
+ .rodata.CPU_CntLeadZerosTbl
+                0x000000000010e39c      0x100 kernel/ports/libkernelport.a(sysCount.o)
+
+.rela.dyn       0x000000000010e49c        0x0
+ .rela.iplt     0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text     0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.sysCpuStart
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.clearBss
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.sysL2CacheInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.sysL2CacheFlush
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.coreShow
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.speExcInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.unregisterException
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.registerException
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.executeException
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.sysOs
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSIntEnter
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSIntExit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSched
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSchedLock
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSchedUnlock
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSchedRoundRobinCfg
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSchedRoundRobinYield
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSStart
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_IdleTask
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_IdleTaskInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_Pend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_RdyListInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_RdyListInsert
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_RdyListInsertHead
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_RdyListInsertTail
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_RdyListRemove
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_SchedRoundRobin
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskBlock
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSMutexCreate
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSMutexDel
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSMutexPend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSMutexPendAbort
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSMutexPost
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_MutexInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_PrioInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_PrioGetHighest
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_PrioInsert
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_PrioRemove
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_MsgPoolInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_MsgQFreeAll
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_MsgQGet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_MsgQPut
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSQCreate
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSQDel
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSQFlush
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSQPend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSQPendAbort
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_QInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSemCreate
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSemDel
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSemPend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSemPendAbort
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSSemSet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_SemInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskCreate
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskDel
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskResume
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskSemPend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskSemPendAbort
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskSemSet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskStkChk
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskSuspend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskTimeQuantaSet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskReturn
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskSemPost
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskSuspend
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TaskChangePrio
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TickUpdate
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TickListInsertDly
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TickListUpdateDly
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OS_TickListUpdateTimeout
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeDly
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeDlyResume
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeGet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeSet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeTick
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.os_del_task
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.sdata.OSCfg_MsgPoolBasePtr
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.irqUnregister
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.irqRregister
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSIntHandler
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.sysSysEpicInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.data.flash_ops
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.nor_init
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.lld_WriteToBufferCmd
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.lld_EraseSuspendCmd
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.lld_StatusGet
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSIdleTaskHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSStatTaskHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskCreateHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskDelHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskReturnHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskStkInit
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTaskSwHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .rela.text.OSTimeTickHook
+                0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+
+.shared_memory  0x0000000010000000        0x0
+                0x0000000010000000                . = ALIGN (0x10)
+
+.sdata2         0x000000000010e49c        0x0
+                0x000000000011648c                _SDA2_BASE_ = (. + 0x7ff0)
+ *(.sdata2)
+ *(.sbss2)
+                0x000000000010f000                . = ALIGN (0x1000)
+                0x000000000010f000                cag_kernel_text_end = .
+                0x000000000010f000                _cag_kernel_text_end = .
+                0x000000000010f000                etext = .
+                0x000000000010f000                _etext = .
+                0x000000000010f000                . = ALIGN (0x1000)
+
+.data           0x000000000010e49c      0xb64
+                0x000000000010e49c                cag_kernel_data_start = .
+                0x000000000010e49c                _cag_kernel_data_start = .
+                0x000000000010e49c                _CAG_START_DATA = .
+ *(.data)
+                0x000000000010f000                . = ALIGN (0x1000)
+ *fill*         0x000000000010e49c      0xb64 
+
+.data.logo.1243
+                0x000000000010f000       0x20
+ .data.logo.1243
+                0x000000000010f000       0x20 start/libstart.a(sysBanner.o)
+
+.data.excVecBase
+                0x000000000010f020        0x4
+ .data.excVecBase
+                0x000000000010f020        0x4 arch/libarch.a(sysExcArchLib.o)
+
+.data.preg      0x000000000010f024      0x140
+ .data.preg     0x000000000010f024      0x140 arch/libarch.a(sysExcArchLib.o)
+                0x000000000010f024                preg
+
+.data.rts_msgq  0x000000000010f164      0x230
+ .data.rts_msgq
+                0x000000000010f164      0x230 kernel/thread/libkernelthread.a(sysApi.o)
+                0x000000000010f164                rts_msgq
+
+.data.rts_sem   0x000000000010f394      0x1e0
+ .data.rts_sem  0x000000000010f394      0x1e0 kernel/thread/libkernelthread.a(sysApi.o)
+                0x000000000010f394                rts_sem
+
+.data.rts_mutex
+                0x000000000010f574      0x280
+ .data.rts_mutex
+                0x000000000010f574      0x280 kernel/thread/libkernelthread.a(sysApi.o)
+                0x000000000010f574                rts_mutex
+
+.data.shellCmdNameMaxLen
+                0x000000000010f7f4        0x4
+ .data.shellCmdNameMaxLen
+                0x000000000010f7f4        0x4 utility/libutility.a(shell.o)
+
+.data.cmd_help  0x000000000010f7f8       0x10
+ .data.cmd_help
+                0x000000000010f7f8       0x10 utility/libutility.a(shell.o)
+
+.data.cmd_hexdump
+                0x000000000010f808       0x10
+ .data.cmd_hexdump
+                0x000000000010f808       0x10 utility/libutility.a(shell.o)
+
+.data.cmd_reset
+                0x000000000010f818       0x10
+ .data.cmd_reset
+                0x000000000010f818       0x10 utility/libutility.a(shell.o)
+
+.data.arrow     0x000000000010f828        0x3
+ .data.arrow    0x000000000010f828        0x3 utility/libutility.a(shell.o)
+
+.data.arrow_pos
+                0x000000000010f82c        0x4
+ .data.arrow_pos
+                0x000000000010f82c        0x4 utility/libutility.a(shell.o)
+
+.data.addr.1538
+                0x000000000010f830        0x4
+ .data.addr.1538
+                0x000000000010f830        0x4 utility/libutility.a(shell.o)
+
+.data.num.1539  0x000000000010f834        0x4
+ .data.num.1539
+                0x000000000010f834        0x4 utility/libutility.a(shell.o)
+
+.data.width.1540
+                0x000000000010f838        0x4
+ .data.width.1540
+                0x000000000010f838        0x4 utility/libutility.a(shell.o)
+
+.data.flash_struct
+                0x000000000010f83c       0x3c
+ .data.flash_struct
+                0x000000000010f83c       0x3c driver/libhwinit.a(hw_init.o)
+                0x000000000010f83c                flash_struct
+
+.data.flash_ops
+                0x000000000010f878       0x9c
+ .data.flash_ops
+                0x000000000010f878       0x9c driver/libhwinit.a(hw_init.o)
+                0x000000000010f878                flash_ops
+
+.data.testlld   0x000000000010f914        0x4
+ .data.testlld  0x000000000010f914        0x4 driver/device/norflash/libnor.a(lld.o)
+
+.sdata          0x000000000010f918      0x6e8
+                0x0000000000117908                _SDA_BASE_ = (. + 0x7ff0)
+ *(.sdata)
+ *(.sdata.*)
+ .sdata.ppcE500ICACHE_LINE_NUM
+                0x000000000010f918        0x4 start/libstart.a(sysCpuLib.o)
+                0x000000000010f918                ppcE500ICACHE_LINE_NUM
+ .sdata.ppcE500DCACHE_LINE_NUM
+                0x000000000010f91c        0x4 start/libstart.a(sysCpuLib.o)
+                0x000000000010f91c                ppcE500DCACHE_LINE_NUM
+ .sdata.ppcE500CACHE_ALIGN_SIZE
+                0x000000000010f920        0x4 start/libstart.a(sysCpuLib.o)
+                0x000000000010f920                ppcE500CACHE_ALIGN_SIZE
+ .sdata.l2CacheLineNum
+                0x000000000010f924        0x4 start/libstart.a(sysL2Cache.o)
+                0x000000000010f924                l2CacheLineNum
+ .sdata._pSysL2CacheInvFunc
+                0x000000000010f928        0x4 arch/libarch.a(sysCacheE500Lib.o)
+                0x000000000010f928                _pSysL2CacheInvFunc
+ .sdata._pSysL2CacheEnable
+                0x000000000010f92c        0x4 arch/libarch.a(sysCacheE500Lib.o)
+                0x000000000010f92c                _pSysL2CacheEnable
+ .sdata._pSysL2CacheFlush
+                0x000000000010f930        0x4 arch/libarch.a(sysCacheE500Lib.o)
+                0x000000000010f930                _pSysL2CacheFlush
+ .sdata._pSysL2CacheDisable
+                0x000000000010f934        0x4 arch/libarch.a(sysCacheE500Lib.o)
+                0x000000000010f934                _pSysL2CacheDisable
+ .sdata.OSCfg_IdleTaskStkLimit
+                0x000000000010f938        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f938                OSCfg_IdleTaskStkLimit
+ .sdata.OSCfg_IdleTaskStkSize
+                0x000000000010f93c        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f93c                OSCfg_IdleTaskStkSize
+ .sdata.OSCfg_MsgPoolSize
+                0x000000000010f940        0x2 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f940                OSCfg_MsgPoolSize
+ *fill*         0x000000000010f942        0x2 
+ .sdata.OSCfg_MsgPoolBasePtr
+                0x000000000010f944        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f944                OSCfg_MsgPoolBasePtr
+ .sdata.OSCfg_StkSizeMin
+                0x000000000010f948        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f948                OSCfg_StkSizeMin
+ .sdata.OSCfg_TickRate_Hz
+                0x000000000010f94c        0x4 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000010f94c                OSCfg_TickRate_Hz
+ .sdata.sysClockFreq
+                0x000000000010f950        0x4 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x000000000010f950                sysClockFreq
+ .sdata.sysclkFrequency
+                0x000000000010f954        0x4 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x000000000010f954                sysclkFrequency
+ .sdata.rolloverPeriod
+                0x000000000010f958        0x4 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x000000000010f958                rolloverPeriod
+ .sdata.ticksPerSecond
+                0x000000000010f95c        0x4 kernel/timers/libkerneltimer.a(sysDec.o)
+                0x000000000010f95c                ticksPerSecond
+ .sdata.sysEpicSpuriousVector
+                0x000000000010f960        0x2 kernel/epic/libkernelepic.a(sysPic.o)
+                0x000000000010f960                sysEpicSpuriousVector
+ *fill*         0x000000000010f962        0x2 
+ .sdata.dfd     0x000000000010f964        0x4 driver/libhwinit.a(hw_init.o)
+                0x000000000010f964                dfd
+ .sdata.dfd2    0x000000000010f968        0x4 driver/libhwinit.a(hw_init.o)
+                0x000000000010f968                dfd2
+ .sdata.nor_flash_errno
+                0x000000000010f96c        0x4 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010f96c                nor_flash_errno
+ .sdata.FLSTATEOP
+                0x000000000010f970        0x4 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010f970                FLSTATEOP
+ .sdata.g_suspend_state
+                0x000000000010f974        0x1 driver/device/norflash/libnor.a(lld.o)
+                0x000000000010f974                g_suspend_state
+                0x0000000000110000                . = ALIGN (0x1000)
+ *fill*         0x000000000010f975      0x68b 
+                0x0000000000110000                edata = .
+                0x0000000000110000                _edata = .
+                0x0000000000110000                cag_kernel_data_end = .
+                0x0000000000110000                _cag_kernel_data_end = .
+                0x0000000000110000                . = ALIGN (0x1000)
+
+.sbss           0x0000000000110000     0x1000
+                0x0000000000110000                cag_kernel_bss_start = .
+                0x0000000000110000                _cag_kernel_bss_start = .
+ *(.sbss)
+ .sbss          0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+ .sbss          0x0000000000110000        0x8 start/libstart.a(sysCpuLib.o)
+                0x0000000000110000                cachePpcReadOrigin
+                0x0000000000110004                ppcE500DCACHE_FLUSH_NUM
+ .sbss          0x0000000000110008        0x8 arch/libarch.a(sysSpeExcLib.o)
+                0x0000000000110008                e500_spe_exc_mask
+                0x000000000011000c                e500_spe_exc_enable
+ .sbss          0x0000000000110010       0x68 kernel/ports/libkernelport.a(sysEntry.o)
+                0x0000000000110010                OSSchedLockNestingCtr
+                0x0000000000110014                OS_AppTaskReturnHookPtr
+                0x0000000000110018                OSRunning
+                0x0000000000110019                OSPrioHighRdy
+                0x000000000011001c                OS_AppTaskCreateHookPtr
+                0x0000000000110020                OSPrioCur
+                0x0000000000110024                OSTCBCurPtr
+                0x0000000000110028                OSQQty
+                0x000000000011002a                OSPrioSaved
+                0x000000000011002c                OSTCBHighRdyPtr
+                0x0000000000110030                OS_AppTaskDelHookPtr
+                0x0000000000110034                OS_AppTimeTickHookPtr
+                0x0000000000110038                OSTaskCtxSwCtr
+                0x000000000011003c                OSIntNestingCtr
+                0x000000000011003e                OSTaskQty
+                0x0000000000110040                OSMsgPool
+                0x0000000000110048                OSSemQty
+                0x000000000011004c                OSSchedRoundRobinDfltTimeQuanta
+                0x0000000000110050                OS_AppIdleTaskHookPtr
+                0x0000000000110054                OSTickCtr
+                0x0000000000110058                OS_AppTaskSwHookPtr
+                0x000000000011005c                OSIdleTaskCtr
+                0x0000000000110060                OS_AppStatTaskHookPtr
+                0x0000000000110064                OSMutexQty
+                0x0000000000110068                OSTickTaskTimeMax
+                0x000000000011006c                OSSchedRoundRobinEn
+                0x0000000000110070                OSTickListDly
+                0x0000000000110074                OSTickListTimeout
+ .sbss          0x0000000000110078        0x4 kernel/thread/libkernelthread.a(sysPrio.o)
+                0x0000000000110078                OSPrioTbl
+ .sbss          0x000000000011007c        0x4 kernel/epic/libkernelepic.a(sysPic.o)
+                0x000000000011007c                sysEpicIntAckReg
+ .sbss          0x0000000000110080        0x8 driver/device/norflash/libnor.a(lld.o)
+                0x0000000000110080                g_suspend_sector
+                0x0000000000110084                g_writebuffer_sector
+ *(.sbss.*)
+ *(.scommon)
+                0x0000000000111000                . = ALIGN (0x1000)
+ *fill*         0x0000000000110088      0xf78 
+
+.bss            0x0000000000111000   0x102000
+ *(.dynbss)
+ *(.bss)
+ *(.bss.*)
+ .bss.shellBuffer
+                0x0000000000111000      0x100 utility/libutility.a(shell.o)
+ .bss.shellCounterPos
+                0x0000000000111100        0x4 utility/libutility.a(shell.o)
+ .bss.shellCounter
+                0x0000000000111104        0x4 utility/libutility.a(shell.o)
+ .bss.__shell_cmds
+                0x0000000000111108       0x80 utility/libutility.a(shell.o)
+ .bss.siodev    0x0000000000111188        0x4 driver/libc/stdio/libstdio.a(ns16550.o)
+ .bss.dfs_table
+                0x000000000011118c       0x20 driver/device/dfs/libdfs.a(dfs.o)
+ *(COMMON)
+ COMMON         0x00000000001111ac      0x150 arch/libarch.a(sysExcLib.o)
+                0x00000000001111ac                exceptionDescTable
+ COMMON         0x00000000001112fc      0x390 kernel/ports/libkernelport.a(sysEntry.o)
+                0x00000000001112fc                OSRdyList
+                0x000000000011147c                AppTaskStartTCB
+                0x0000000000111500                MainTaskStartTCB
+                0x0000000000111584                OSIdleTaskTCB
+                0x0000000000111608                clockTaskStartTCB
+ COMMON         0x000000000011168c   0x100640 kernel/thread/libkernelthread.a(sysCfg.o)
+                0x000000000011168c                OSCfg_MsgPool
+                0x0000000000111ccc                OSCfg_IdleTaskStk
+ COMMON         0x0000000000211ccc      0xf70 kernel/epic/libkernelepic.a(sysInt.o)
+                0x0000000000211ccc                irqDeseTable
+ COMMON         0x0000000000212c3c       0x90 driver/libhwinit.a(hw_init.o)
+                0x0000000000212c3c                s29gl512pOps2
+                0x0000000000212c70                s29gl512pOps
+                0x0000000000212ca4                s29gl512pSt
+                0x0000000000212cb8                s29gl512pSt2
+ *(.gnu.linkonce.b*)
+                0x0000000000213000                . = ALIGN (0x1000)
+ *fill*         0x0000000000212ccc      0x334 
+                0x0000000000213000                end = .
+                0x0000000000213000                _end = .
+                0x0000000000213000                cag_kernel_bss_end = .
+                0x0000000000213000                _cag_kernel_bss_end = .
+
+.iplt           0x0000000000213000        0x0
+ .iplt          0x0000000000000000        0x0 start/libstart.a(sysCpuALib.o)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+Address of section .text set to 0x100000
+START GROUP
+LOAD start/libstart.a
+LOAD arch/libarch.a
+LOAD kernel/ports/libkernelport.a
+LOAD kernel/thread/libkernelthread.a
+LOAD kernel/timers/libkerneltimer.a
+LOAD kernel/epic/libkernelepic.a
+LOAD utility/libutility.a
+LOAD driver/libc/stdio/libstdio.a
+LOAD driver/libc/string/libstring.a
+LOAD driver/libc/stdlib/libstdlib.a
+LOAD driver/device/dfs/libdfs.a
+LOAD driver/device/pcie/libpcie.a
+LOAD driver/libhwinit.a
+LOAD driver/device/norflash/libnor.a
+LOAD start/libc.a
+LOAD start/libm.a
+LOAD start/libgcc.a
+LOAD start/libgcc_eh.a
+END GROUP
+OUTPUT(/home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/binary/CORE0/cagOsCORE0 elf32-powerpc)
+
+.PPC.EMB.apuinfo
+                0x0000000000000000       0x20
+ .PPC.EMB.apuinfo
+                0x0000000000000000       0x18 start/libstart.a(sysCpuALib.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000018       0x18 start/libstart.a(sysCpuLib.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000030       0x18 start/libstart.a(sysBanner.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000048       0x18 start/libstart.a(sysL2Cache.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000060       0x18 start/libstart.a(sysBoard.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000078       0x1c arch/libarch.a(sysCacheE500Lib.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000094       0x18 arch/libarch.a(sysExcArchLib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000000ac       0x18 arch/libarch.a(sysSpeExcLib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000000c4       0x18 arch/libarch.a(sysCpuE500ALib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000000dc       0x18 arch/libarch.a(sysCacheE500ALib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000000f4       0x18 arch/libarch.a(sysExcArchALib.o)
+ .PPC.EMB.apuinfo
+                0x000000000000010c       0x18 arch/libarch.a(sysExcLib.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000124       0x18 kernel/ports/libkernelport.a(sysEntry.o)
+ .PPC.EMB.apuinfo
+                0x000000000000013c       0x18 kernel/thread/libkernelthread.a(sysCore.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000154       0x18 kernel/thread/libkernelthread.a(sysMutex.o)
+ .PPC.EMB.apuinfo
+                0x000000000000016c       0x18 kernel/thread/libkernelthread.a(sysPrio.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000184       0x18 kernel/thread/libkernelthread.a(sysMsg.o)
+ .PPC.EMB.apuinfo
+                0x000000000000019c       0x18 kernel/thread/libkernelthread.a(sysQueue.o)
+ .PPC.EMB.apuinfo
+                0x00000000000001b4       0x18 kernel/thread/libkernelthread.a(sysSem.o)
+ .PPC.EMB.apuinfo
+                0x00000000000001cc       0x18 kernel/thread/libkernelthread.a(sysTask.o)
+ .PPC.EMB.apuinfo
+                0x00000000000001e4       0x18 kernel/thread/libkernelthread.a(sysTick.o)
+ .PPC.EMB.apuinfo
+                0x00000000000001fc       0x18 kernel/thread/libkernelthread.a(sysTime.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000214       0x18 kernel/thread/libkernelthread.a(sysApi.o)
+ .PPC.EMB.apuinfo
+                0x000000000000022c       0x18 kernel/thread/libkernelthread.a(sysCfg.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000244       0x18 kernel/timers/libkerneltimer.a(sysDec.o)
+ .PPC.EMB.apuinfo
+                0x000000000000025c       0x18 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000274       0x18 kernel/epic/libkernelepic.a(sysInt.o)
+ .PPC.EMB.apuinfo
+                0x000000000000028c       0x1c kernel/epic/libkernelepic.a(sysPic.o)
+ .PPC.EMB.apuinfo
+                0x00000000000002a8       0x18 utility/libutility.a(shell.o)
+ .PPC.EMB.apuinfo
+                0x00000000000002c0       0x18 driver/libc/stdio/libstdio.a(ns16550.o)
+ .PPC.EMB.apuinfo
+                0x00000000000002d8       0x18 driver/libc/stdio/libstdio.a(printk.o)
+ .PPC.EMB.apuinfo
+                0x00000000000002f0       0x18 driver/libc/string/libstring.a(strcpy.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000308       0x18 driver/libc/string/libstring.a(strncpy.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000320       0x18 driver/libc/string/libstring.a(memset.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000338       0x18 driver/libc/string/libstring.a(strcmp.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000350       0x18 driver/libc/string/libstring.a(strlen.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000368       0x18 driver/libc/string/libstring.a(strtok_r.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000380       0x18 driver/libc/string/libstring.a(bLib.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000398       0x18 driver/libc/string/libstring.a(strpbrk.o)
+ .PPC.EMB.apuinfo
+                0x00000000000003b0       0x18 driver/libc/string/libstring.a(strspn.o)
+ .PPC.EMB.apuinfo
+                0x00000000000003c8       0x18 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .PPC.EMB.apuinfo
+                0x00000000000003e0       0x1c driver/device/dfs/libdfs.a(dfs.o)
+ .PPC.EMB.apuinfo
+                0x00000000000003fc       0x18 driver/libhwinit.a(hw_init.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000414       0x18 driver/device/norflash/libnor.a(lld.o)
+ .PPC.EMB.apuinfo
+                0x000000000000042c       0x1c start/libc.a(memcpy.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000448       0x1c start/libgcc.a(_udivdi3.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000464       0x1c start/libgcc.a(_umoddi3.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000480       0x18 start/libstart.a(sysAccess.o)
+ .PPC.EMB.apuinfo
+                0x0000000000000498       0x1c arch/libarch.a(sysSpeALib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000004b4       0x18 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .PPC.EMB.apuinfo
+                0x00000000000004cc       0x18 kernel/ports/libkernelport.a(sysCount.o)
+ .PPC.EMB.apuinfo
+                0x00000000000004e4       0x18 kernel/ports/libkernelport.a(sysOsIrq.o)
+ .PPC.EMB.apuinfo
+                0x00000000000004fc       0x18 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+.comment        0x0000000000000000       0x11
+ .comment       0x0000000000000000       0x11 start/libstart.a(sysCpuLib.o)
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000000       0x12 start/libstart.a(sysBanner.o)
+ .comment       0x0000000000000000       0x12 start/libstart.a(sysL2Cache.o)
+ .comment       0x0000000000000000       0x12 start/libstart.a(sysBoard.o)
+ .comment       0x0000000000000000       0x12 arch/libarch.a(sysCacheE500Lib.o)
+ .comment       0x0000000000000000       0x12 arch/libarch.a(sysExcArchLib.o)
+ .comment       0x0000000000000000       0x12 arch/libarch.a(sysSpeExcLib.o)
+ .comment       0x0000000000000000       0x12 arch/libarch.a(sysExcLib.o)
+ .comment       0x0000000000000000       0x12 kernel/ports/libkernelport.a(sysEntry.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysCore.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysMutex.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysPrio.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysMsg.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysQueue.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysSem.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysTask.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysTick.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysTime.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysApi.o)
+ .comment       0x0000000000000000       0x12 kernel/thread/libkernelthread.a(sysCfg.o)
+ .comment       0x0000000000000000       0x12 kernel/timers/libkerneltimer.a(sysDec.o)
+ .comment       0x0000000000000000       0x12 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .comment       0x0000000000000000       0x12 kernel/epic/libkernelepic.a(sysInt.o)
+ .comment       0x0000000000000000       0x12 kernel/epic/libkernelepic.a(sysPic.o)
+ .comment       0x0000000000000000       0x12 utility/libutility.a(shell.o)
+ .comment       0x0000000000000000       0x12 driver/libc/stdio/libstdio.a(ns16550.o)
+ .comment       0x0000000000000000       0x12 driver/libc/stdio/libstdio.a(printk.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strcpy.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strncpy.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(memset.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strcmp.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strlen.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strtok_r.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(bLib.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strpbrk.o)
+ .comment       0x0000000000000000       0x12 driver/libc/string/libstring.a(strspn.o)
+ .comment       0x0000000000000000       0x12 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .comment       0x0000000000000000       0x12 driver/device/dfs/libdfs.a(dfs.o)
+ .comment       0x0000000000000000       0x12 driver/libhwinit.a(hw_init.o)
+ .comment       0x0000000000000000       0x12 driver/device/norflash/libnor.a(lld.o)
+ .comment       0x0000000000000000       0x12 start/libgcc.a(_udivdi3.o)
+ .comment       0x0000000000000000       0x12 start/libgcc.a(_umoddi3.o)
+ .comment       0x0000000000000000       0x12 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .comment       0x0000000000000000       0x12 kernel/ports/libkernelport.a(sysCount.o)
+
+.note.GNU-stack
+                0x0000000000000000        0x0
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libstart.a(sysCpuLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libstart.a(sysBanner.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libstart.a(sysL2Cache.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libstart.a(sysBoard.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 arch/libarch.a(sysCacheE500Lib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 arch/libarch.a(sysExcArchLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 arch/libarch.a(sysSpeExcLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 arch/libarch.a(sysExcLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysEntry.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCore.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMutex.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysPrio.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysMsg.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysQueue.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysSem.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTask.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTick.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysTime.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysApi.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/thread/libkernelthread.a(sysCfg.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysDec.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysInt.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/epic/libkernelepic.a(sysPic.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 utility/libutility.a(shell.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(ns16550.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/stdio/libstdio.a(printk.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strncpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(memset.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strcmp.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strlen.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strtok_r.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(bLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strpbrk.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/string/libstring.a(strspn.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/device/dfs/libdfs.a(dfs.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/libhwinit.a(hw_init.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 driver/device/norflash/libnor.a(lld.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libc.a(memcpy.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libgcc.a(_udivdi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 start/libgcc.a(_umoddi3.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 kernel/ports/libkernelport.a(sysCount.o)
+
+.gnu.attributes
+                0x0000000000000000       0x10
+ .gnu.attributes
+                0x0000000000000000       0x10 driver/libc/stdio/libstdio.a(printk.o)
+
+.debug_line     0x0000000000000000     0x53f4
+ .debug_line    0x0000000000000000      0x30c start/libstart.a(sysCpuALib.o)
+ .debug_line    0x000000000000030c      0x17f start/libstart.a(sysCpuLib.o)
+ .debug_line    0x000000000000048b       0x63 start/libstart.a(sysBanner.o)
+ .debug_line    0x00000000000004ee      0x109 start/libstart.a(sysL2Cache.o)
+ .debug_line    0x00000000000005f7      0x314 start/libstart.a(sysBoard.o)
+ .debug_line    0x000000000000090b      0x16a arch/libarch.a(sysCacheE500Lib.o)
+ .debug_line    0x0000000000000a75      0x1d7 arch/libarch.a(sysExcArchLib.o)
+ .debug_line    0x0000000000000c4c       0x9e arch/libarch.a(sysSpeExcLib.o)
+ .debug_line    0x0000000000000cea       0x4b arch/libarch.a(sysCpuE500ALib.o)
+ .debug_line    0x0000000000000d35       0xf7 arch/libarch.a(sysCacheE500ALib.o)
+ .debug_line    0x0000000000000e2c      0x1fb arch/libarch.a(sysExcArchALib.o)
+ .debug_line    0x0000000000001027       0xe0 arch/libarch.a(sysExcLib.o)
+ .debug_line    0x0000000000001107       0xde kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_line    0x00000000000011e5      0x603 kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_line    0x00000000000017e8      0x294 kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_line    0x0000000000001a7c      0x108 kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_line    0x0000000000001b84      0x16e kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_line    0x0000000000001cf2      0x21b kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_line    0x0000000000001f0d      0x21c kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_line    0x0000000000002129      0x3d4 kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_line    0x00000000000024fd      0x1d8 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_line    0x00000000000026d5      0x141 kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_line    0x0000000000002816      0x375 kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_line    0x0000000000002b8b       0xae kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_line    0x0000000000002c39       0xbc kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_line    0x0000000000002cf5       0xeb kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_line    0x0000000000002de0      0x14e kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_line    0x0000000000002f2e      0x184 kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_line    0x00000000000030b2      0x3f7 utility/libutility.a(shell.o)
+ .debug_line    0x00000000000034a9       0xe5 driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_line    0x000000000000358e      0x38e driver/libc/stdio/libstdio.a(printk.o)
+ .debug_line    0x000000000000391c       0x43 driver/libc/string/libstring.a(strcpy.o)
+ .debug_line    0x000000000000395f       0xa2 driver/libc/string/libstring.a(strncpy.o)
+ .debug_line    0x0000000000003a01       0x91 driver/libc/string/libstring.a(memset.o)
+ .debug_line    0x0000000000003a92       0x42 driver/libc/string/libstring.a(strcmp.o)
+ .debug_line    0x0000000000003ad4       0x99 driver/libc/string/libstring.a(strlen.o)
+ .debug_line    0x0000000000003b6d       0x4a driver/libc/string/libstring.a(strtok_r.o)
+ .debug_line    0x0000000000003bb7      0x2eb driver/libc/string/libstring.a(bLib.o)
+ .debug_line    0x0000000000003ea2       0x4b driver/libc/string/libstring.a(strpbrk.o)
+ .debug_line    0x0000000000003eed       0x9e driver/libc/string/libstring.a(strspn.o)
+ .debug_line    0x0000000000003f8b       0xe3 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_line    0x000000000000406e      0x1a0 driver/device/dfs/libdfs.a(dfs.o)
+ .debug_line    0x000000000000420e       0xc6 driver/libhwinit.a(hw_init.o)
+ .debug_line    0x00000000000042d4      0x583 driver/device/norflash/libnor.a(lld.o)
+ .debug_line    0x0000000000004857      0x303 start/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000004b5a      0x30f start/libgcc.a(_umoddi3.o)
+ .debug_line    0x0000000000004e69       0x6f start/libstart.a(sysAccess.o)
+ .debug_line    0x0000000000004ed8       0xa3 arch/libarch.a(sysSpeALib.o)
+ .debug_line    0x0000000000004f7b      0x262 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_line    0x00000000000051dd       0xcd kernel/ports/libkernelport.a(sysCount.o)
+ .debug_line    0x00000000000052aa       0x6e kernel/ports/libkernelport.a(sysOsIrq.o)
+ .debug_line    0x0000000000005318       0xdc kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+.debug_info     0x0000000000000000    0x1423d
+ .debug_info    0x0000000000000000       0x78 start/libstart.a(sysCpuALib.o)
+ .debug_info    0x0000000000000078      0x2b7 start/libstart.a(sysCpuLib.o)
+ .debug_info    0x000000000000032f       0xdb start/libstart.a(sysBanner.o)
+ .debug_info    0x000000000000040a      0x1d0 start/libstart.a(sysL2Cache.o)
+ .debug_info    0x00000000000005da      0x3c1 start/libstart.a(sysBoard.o)
+ .debug_info    0x000000000000099b      0x260 arch/libarch.a(sysCacheE500Lib.o)
+ .debug_info    0x0000000000000bfb      0x296 arch/libarch.a(sysExcArchLib.o)
+ .debug_info    0x0000000000000e91       0xd9 arch/libarch.a(sysSpeExcLib.o)
+ .debug_info    0x0000000000000f6a       0x7b arch/libarch.a(sysCpuE500ALib.o)
+ .debug_info    0x0000000000000fe5       0x7d arch/libarch.a(sysCacheE500ALib.o)
+ .debug_info    0x0000000000001062       0x7b arch/libarch.a(sysExcArchALib.o)
+ .debug_info    0x00000000000010dd      0x29b arch/libarch.a(sysExcLib.o)
+ .debug_info    0x0000000000001378      0xe2a kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_info    0x00000000000021a2     0x1710 kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_info    0x00000000000038b2     0x11e1 kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_info    0x0000000000004a93      0x98c kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_info    0x000000000000541f      0xfda kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_info    0x00000000000063f9     0x120d kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_info    0x0000000000007606     0x11a0 kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_info    0x00000000000087a6     0x1359 kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_info    0x0000000000009aff      0xfc0 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_info    0x000000000000aabf      0xe7d kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_info    0x000000000000b93c     0x1622 kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_info    0x000000000000cf5e      0x9fc kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_info    0x000000000000d95a      0x11c kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_info    0x000000000000da76      0x1ce kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_info    0x000000000000dc44      0xa75 kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_info    0x000000000000e6b9      0x317 kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_info    0x000000000000e9d0      0x53b utility/libutility.a(shell.o)
+ .debug_info    0x000000000000ef0b      0x28d driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_info    0x000000000000f198      0x4e8 driver/libc/stdio/libstdio.a(printk.o)
+ .debug_info    0x000000000000f680       0xcd driver/libc/string/libstring.a(strcpy.o)
+ .debug_info    0x000000000000f74d       0xe1 driver/libc/string/libstring.a(strncpy.o)
+ .debug_info    0x000000000000f82e       0xc7 driver/libc/string/libstring.a(memset.o)
+ .debug_info    0x000000000000f8f5       0xb9 driver/libc/string/libstring.a(strcmp.o)
+ .debug_info    0x000000000000f9ae       0xc4 driver/libc/string/libstring.a(strlen.o)
+ .debug_info    0x000000000000fa72       0xd5 driver/libc/string/libstring.a(strtok_r.o)
+ .debug_info    0x000000000000fb47      0x783 driver/libc/string/libstring.a(bLib.o)
+ .debug_info    0x00000000000102ca       0xe6 driver/libc/string/libstring.a(strpbrk.o)
+ .debug_info    0x00000000000103b0       0xf8 driver/libc/string/libstring.a(strspn.o)
+ .debug_info    0x00000000000104a8      0x132 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_info    0x00000000000105da      0x3f9 driver/device/dfs/libdfs.a(dfs.o)
+ .debug_info    0x00000000000109d3      0x345 driver/libhwinit.a(hw_init.o)
+ .debug_info    0x0000000000010d18      0xf9e driver/device/norflash/libnor.a(lld.o)
+ .debug_info    0x0000000000011cb6      0x7e5 start/libgcc.a(_udivdi3.o)
+ .debug_info    0x000000000001249b      0x7d9 start/libgcc.a(_umoddi3.o)
+ .debug_info    0x0000000000012c74       0x77 start/libstart.a(sysAccess.o)
+ .debug_info    0x0000000000012ceb       0x77 arch/libarch.a(sysSpeALib.o)
+ .debug_info    0x0000000000012d62      0xac8 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_info    0x000000000001382a      0x912 kernel/ports/libkernelport.a(sysCount.o)
+ .debug_info    0x000000000001413c       0x7d kernel/ports/libkernelport.a(sysOsIrq.o)
+ .debug_info    0x00000000000141b9       0x84 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+.debug_abbrev   0x0000000000000000     0x34b8
+ .debug_abbrev  0x0000000000000000       0x14 start/libstart.a(sysCpuALib.o)
+ .debug_abbrev  0x0000000000000014      0x136 start/libstart.a(sysCpuLib.o)
+ .debug_abbrev  0x000000000000014a       0x95 start/libstart.a(sysBanner.o)
+ .debug_abbrev  0x00000000000001df       0xc0 start/libstart.a(sysL2Cache.o)
+ .debug_abbrev  0x000000000000029f      0x174 start/libstart.a(sysBoard.o)
+ .debug_abbrev  0x0000000000000413      0x130 arch/libarch.a(sysCacheE500Lib.o)
+ .debug_abbrev  0x0000000000000543      0x18d arch/libarch.a(sysExcArchLib.o)
+ .debug_abbrev  0x00000000000006d0       0x80 arch/libarch.a(sysSpeExcLib.o)
+ .debug_abbrev  0x0000000000000750       0x14 arch/libarch.a(sysCpuE500ALib.o)
+ .debug_abbrev  0x0000000000000764       0x14 arch/libarch.a(sysCacheE500ALib.o)
+ .debug_abbrev  0x0000000000000778       0x14 arch/libarch.a(sysExcArchALib.o)
+ .debug_abbrev  0x000000000000078c      0x118 arch/libarch.a(sysExcLib.o)
+ .debug_abbrev  0x00000000000008a4      0x145 kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_abbrev  0x00000000000009e9      0x20b kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_abbrev  0x0000000000000bf4      0x1ed kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_abbrev  0x0000000000000de1      0x12f kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_abbrev  0x0000000000000f10      0x17b kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_abbrev  0x000000000000108b      0x1d1 kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_abbrev  0x000000000000125c      0x1d1 kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_abbrev  0x000000000000142d      0x1cd kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_abbrev  0x00000000000015fa      0x175 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_abbrev  0x000000000000176f      0x177 kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_abbrev  0x00000000000018e6      0x1de kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_abbrev  0x0000000000001ac4       0xf4 kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_abbrev  0x0000000000001bb8       0xae kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_abbrev  0x0000000000001c66       0xc6 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_abbrev  0x0000000000001d2c      0x172 kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_abbrev  0x0000000000001e9e      0x10c kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_abbrev  0x0000000000001faa      0x18d utility/libutility.a(shell.o)
+ .debug_abbrev  0x0000000000002137       0xf8 driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_abbrev  0x000000000000222f      0x1ec driver/libc/stdio/libstdio.a(printk.o)
+ .debug_abbrev  0x000000000000241b       0x74 driver/libc/string/libstring.a(strcpy.o)
+ .debug_abbrev  0x000000000000248f       0x81 driver/libc/string/libstring.a(strncpy.o)
+ .debug_abbrev  0x0000000000002510       0x78 driver/libc/string/libstring.a(memset.o)
+ .debug_abbrev  0x0000000000002588       0x65 driver/libc/string/libstring.a(strcmp.o)
+ .debug_abbrev  0x00000000000025ed       0x81 driver/libc/string/libstring.a(strlen.o)
+ .debug_abbrev  0x000000000000266e       0x65 driver/libc/string/libstring.a(strtok_r.o)
+ .debug_abbrev  0x00000000000026d3      0x178 driver/libc/string/libstring.a(bLib.o)
+ .debug_abbrev  0x000000000000284b       0x83 driver/libc/string/libstring.a(strpbrk.o)
+ .debug_abbrev  0x00000000000028ce       0x90 driver/libc/string/libstring.a(strspn.o)
+ .debug_abbrev  0x000000000000295e       0x83 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_abbrev  0x00000000000029e1      0x140 driver/device/dfs/libdfs.a(dfs.o)
+ .debug_abbrev  0x0000000000002b21       0xfd driver/libhwinit.a(hw_init.o)
+ .debug_abbrev  0x0000000000002c1e      0x1d0 driver/device/norflash/libnor.a(lld.o)
+ .debug_abbrev  0x0000000000002dee      0x1ab start/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x0000000000002f99      0x1af start/libgcc.a(_umoddi3.o)
+ .debug_abbrev  0x0000000000003148       0x14 start/libstart.a(sysAccess.o)
+ .debug_abbrev  0x000000000000315c       0x14 arch/libarch.a(sysSpeALib.o)
+ .debug_abbrev  0x0000000000003170      0x1f9 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_abbrev  0x0000000000003369      0x127 kernel/ports/libkernelport.a(sysCount.o)
+ .debug_abbrev  0x0000000000003490       0x14 kernel/ports/libkernelport.a(sysOsIrq.o)
+ .debug_abbrev  0x00000000000034a4       0x14 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+.debug_aranges  0x0000000000000000      0xe78
+ .debug_aranges
+                0x0000000000000000       0x20 start/libstart.a(sysCpuALib.o)
+ .debug_aranges
+                0x0000000000000020       0x48 start/libstart.a(sysCpuLib.o)
+ .debug_aranges
+                0x0000000000000068       0x28 start/libstart.a(sysBanner.o)
+ .debug_aranges
+                0x0000000000000090       0x40 start/libstart.a(sysL2Cache.o)
+ .debug_aranges
+                0x00000000000000d0       0x90 start/libstart.a(sysBoard.o)
+ .debug_aranges
+                0x0000000000000160       0x68 arch/libarch.a(sysCacheE500Lib.o)
+ .debug_aranges
+                0x00000000000001c8       0x50 arch/libarch.a(sysExcArchLib.o)
+ .debug_aranges
+                0x0000000000000218       0x20 arch/libarch.a(sysSpeExcLib.o)
+ .debug_aranges
+                0x0000000000000238       0x20 arch/libarch.a(sysCpuE500ALib.o)
+ .debug_aranges
+                0x0000000000000258       0x20 arch/libarch.a(sysCacheE500ALib.o)
+ .debug_aranges
+                0x0000000000000278       0x20 arch/libarch.a(sysExcArchALib.o)
+ .debug_aranges
+                0x0000000000000298       0x30 arch/libarch.a(sysExcLib.o)
+ .debug_aranges
+                0x00000000000002c8       0x28 kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_aranges
+                0x00000000000002f0      0x120 kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_aranges
+                0x0000000000000410       0x70 kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_aranges
+                0x0000000000000480       0x38 kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_aranges
+                0x00000000000004b8       0x40 kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_aranges
+                0x00000000000004f8       0x60 kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_aranges
+                0x0000000000000558       0x60 kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_aranges
+                0x00000000000005b8       0xa0 kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_aranges
+                0x0000000000000658       0x50 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_aranges
+                0x00000000000006a8       0x40 kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_aranges
+                0x00000000000006e8       0xd8 kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_aranges
+                0x00000000000007c0       0x20 kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_aranges
+                0x00000000000007e0       0x28 kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_aranges
+                0x0000000000000808       0x38 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_aranges
+                0x0000000000000840       0x30 kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_aranges
+                0x0000000000000870       0x48 kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_aranges
+                0x00000000000008b8       0x78 utility/libutility.a(shell.o)
+ .debug_aranges
+                0x0000000000000930       0x38 driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_aranges
+                0x0000000000000968       0x60 driver/libc/stdio/libstdio.a(printk.o)
+ .debug_aranges
+                0x00000000000009c8       0x20 driver/libc/string/libstring.a(strcpy.o)
+ .debug_aranges
+                0x00000000000009e8       0x20 driver/libc/string/libstring.a(strncpy.o)
+ .debug_aranges
+                0x0000000000000a08       0x20 driver/libc/string/libstring.a(memset.o)
+ .debug_aranges
+                0x0000000000000a28       0x20 driver/libc/string/libstring.a(strcmp.o)
+ .debug_aranges
+                0x0000000000000a48       0x20 driver/libc/string/libstring.a(strlen.o)
+ .debug_aranges
+                0x0000000000000a68       0x20 driver/libc/string/libstring.a(strtok_r.o)
+ .debug_aranges
+                0x0000000000000a88       0x90 driver/libc/string/libstring.a(bLib.o)
+ .debug_aranges
+                0x0000000000000b18       0x20 driver/libc/string/libstring.a(strpbrk.o)
+ .debug_aranges
+                0x0000000000000b38       0x20 driver/libc/string/libstring.a(strspn.o)
+ .debug_aranges
+                0x0000000000000b58       0x20 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_aranges
+                0x0000000000000b78       0x58 driver/device/dfs/libdfs.a(dfs.o)
+ .debug_aranges
+                0x0000000000000bd0       0x20 driver/libhwinit.a(hw_init.o)
+ .debug_aranges
+                0x0000000000000bf0      0x130 driver/device/norflash/libnor.a(lld.o)
+ .debug_aranges
+                0x0000000000000d20       0x20 start/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x0000000000000d40       0x20 start/libgcc.a(_umoddi3.o)
+ .debug_aranges
+                0x0000000000000d60       0x20 start/libstart.a(sysAccess.o)
+ .debug_aranges
+                0x0000000000000d80       0x20 arch/libarch.a(sysSpeALib.o)
+ .debug_aranges
+                0x0000000000000da0       0x70 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_aranges
+                0x0000000000000e10       0x28 kernel/ports/libkernelport.a(sysCount.o)
+ .debug_aranges
+                0x0000000000000e38       0x20 kernel/ports/libkernelport.a(sysOsIrq.o)
+ .debug_aranges
+                0x0000000000000e58       0x20 kernel/ports/libkernelport.a(sysOsSwitchALib.o)
+
+.debug_ranges   0x0000000000000000      0xc40
+ .debug_ranges  0x0000000000000000       0x38 start/libstart.a(sysCpuLib.o)
+ .debug_ranges  0x0000000000000038       0x18 start/libstart.a(sysBanner.o)
+ .debug_ranges  0x0000000000000050       0x30 start/libstart.a(sysL2Cache.o)
+ .debug_ranges  0x0000000000000080       0x80 start/libstart.a(sysBoard.o)
+ .debug_ranges  0x0000000000000100       0x58 arch/libarch.a(sysCacheE500Lib.o)
+ .debug_ranges  0x0000000000000158       0x40 arch/libarch.a(sysExcArchLib.o)
+ .debug_ranges  0x0000000000000198       0x10 arch/libarch.a(sysSpeExcLib.o)
+ .debug_ranges  0x00000000000001a8       0x20 arch/libarch.a(sysExcLib.o)
+ .debug_ranges  0x00000000000001c8       0x18 kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_ranges  0x00000000000001e0      0x110 kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_ranges  0x00000000000002f0       0x60 kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_ranges  0x0000000000000350       0x28 kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_ranges  0x0000000000000378       0x30 kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_ranges  0x00000000000003a8       0x50 kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_ranges  0x00000000000003f8       0x50 kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_ranges  0x0000000000000448       0x90 kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_ranges  0x00000000000004d8       0x40 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_ranges  0x0000000000000518       0x30 kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_ranges  0x0000000000000548       0xc8 kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_ranges  0x0000000000000610       0x10 kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_ranges  0x0000000000000620       0x18 kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_ranges  0x0000000000000638       0x28 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_ranges  0x0000000000000660       0x20 kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_ranges  0x0000000000000680       0x38 kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_ranges  0x00000000000006b8       0x68 utility/libutility.a(shell.o)
+ .debug_ranges  0x0000000000000720       0x28 driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_ranges  0x0000000000000748       0x50 driver/libc/stdio/libstdio.a(printk.o)
+ .debug_ranges  0x0000000000000798       0x10 driver/libc/string/libstring.a(strcpy.o)
+ .debug_ranges  0x00000000000007a8       0x10 driver/libc/string/libstring.a(strncpy.o)
+ .debug_ranges  0x00000000000007b8       0x10 driver/libc/string/libstring.a(memset.o)
+ .debug_ranges  0x00000000000007c8       0x10 driver/libc/string/libstring.a(strcmp.o)
+ .debug_ranges  0x00000000000007d8       0x10 driver/libc/string/libstring.a(strlen.o)
+ .debug_ranges  0x00000000000007e8       0x10 driver/libc/string/libstring.a(strtok_r.o)
+ .debug_ranges  0x00000000000007f8       0x80 driver/libc/string/libstring.a(bLib.o)
+ .debug_ranges  0x0000000000000878       0x10 driver/libc/string/libstring.a(strpbrk.o)
+ .debug_ranges  0x0000000000000888       0x10 driver/libc/string/libstring.a(strspn.o)
+ .debug_ranges  0x0000000000000898       0x10 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_ranges  0x00000000000008a8       0x48 driver/device/dfs/libdfs.a(dfs.o)
+ .debug_ranges  0x00000000000008f0       0x10 driver/libhwinit.a(hw_init.o)
+ .debug_ranges  0x0000000000000900      0x120 driver/device/norflash/libnor.a(lld.o)
+ .debug_ranges  0x0000000000000a20       0xc0 start/libgcc.a(_udivdi3.o)
+ .debug_ranges  0x0000000000000ae0       0xe8 start/libgcc.a(_umoddi3.o)
+ .debug_ranges  0x0000000000000bc8       0x60 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_ranges  0x0000000000000c28       0x18 kernel/ports/libkernelport.a(sysCount.o)
+
+.debug_str      0x0000000000000000     0x3fa1
+ .debug_str     0x0000000000000000      0x390 start/libstart.a(sysCpuLib.o)
+                                        0x3df (size before relaxing)
+ .debug_str     0x0000000000000390       0x25 start/libstart.a(sysBanner.o)
+                                        0x246 (size before relaxing)
+ .debug_str     0x00000000000003b5       0xd2 start/libstart.a(sysL2Cache.o)
+                                        0x34a (size before relaxing)
+ .debug_str     0x0000000000000487      0x199 start/libstart.a(sysBoard.o)
+                                        0x3c6 (size before relaxing)
+ .debug_str     0x0000000000000620      0x144 arch/libarch.a(sysCacheE500Lib.o)
+                                        0x380 (size before relaxing)
+ .debug_str     0x0000000000000764      0x14b arch/libarch.a(sysExcArchLib.o)
+                                        0x386 (size before relaxing)
+ .debug_str     0x00000000000008af       0x40 arch/libarch.a(sysSpeExcLib.o)
+                                        0x268 (size before relaxing)
+ .debug_str     0x00000000000008ef       0xc3 arch/libarch.a(sysExcLib.o)
+                                        0x390 (size before relaxing)
+ .debug_str     0x00000000000009b2     0x1286 kernel/ports/libkernelport.a(sysEntry.o)
+                                       0x14c0 (size before relaxing)
+ .debug_str     0x0000000000001c38      0x39f kernel/thread/libkernelthread.a(sysCore.o)
+                                       0x17ef (size before relaxing)
+ .debug_str     0x0000000000001fd7      0x114 kernel/thread/libkernelthread.a(sysMutex.o)
+                                       0x15b8 (size before relaxing)
+ .debug_str     0x00000000000020eb       0x65 kernel/thread/libkernelthread.a(sysPrio.o)
+                                        0x86c (size before relaxing)
+ .debug_str     0x0000000000002150       0xd4 kernel/thread/libkernelthread.a(sysMsg.o)
+                                       0x154c (size before relaxing)
+ .debug_str     0x0000000000002224       0x85 kernel/thread/libkernelthread.a(sysQueue.o)
+                                       0x158c (size before relaxing)
+ .debug_str     0x00000000000022a9       0x7e kernel/thread/libkernelthread.a(sysSem.o)
+                                       0x153c (size before relaxing)
+ .debug_str     0x0000000000002327      0x16a kernel/thread/libkernelthread.a(sysTask.o)
+                                       0x1633 (size before relaxing)
+ .debug_str     0x0000000000002491       0xd7 kernel/thread/libkernelthread.a(sysTick.o)
+                                       0x155e (size before relaxing)
+ .debug_str     0x0000000000002568       0x49 kernel/thread/libkernelthread.a(sysTime.o)
+                                       0x14ad (size before relaxing)
+ .debug_str     0x00000000000025b1      0x19a kernel/thread/libkernelthread.a(sysApi.o)
+                                       0x1675 (size before relaxing)
+ .debug_str     0x000000000000274b      0x10d kernel/thread/libkernelthread.a(sysCfg.o)
+                                        0x991 (size before relaxing)
+ .debug_str     0x0000000000002858       0xb9 kernel/timers/libkerneltimer.a(sysDec.o)
+                                        0x29b (size before relaxing)
+ .debug_str     0x0000000000002911       0x5b kernel/timers/libkerneltimer.a(sysTbl.o)
+                                        0x28e (size before relaxing)
+ .debug_str     0x000000000000296c       0xf9 kernel/epic/libkernelepic.a(sysInt.o)
+                                        0x913 (size before relaxing)
+ .debug_str     0x0000000000002a65      0x103 kernel/epic/libkernelepic.a(sysPic.o)
+                                        0x362 (size before relaxing)
+ .debug_str     0x0000000000002b68      0x16b utility/libutility.a(shell.o)
+                                        0x38e (size before relaxing)
+ .debug_str     0x0000000000002cd3      0x119 driver/libc/stdio/libstdio.a(ns16550.o)
+                                        0x303 (size before relaxing)
+ .debug_str     0x0000000000002dec       0xcd driver/libc/stdio/libstdio.a(printk.o)
+                                        0x2f7 (size before relaxing)
+ .debug_str     0x0000000000002eb9       0x65 driver/libc/string/libstring.a(strcpy.o)
+                                        0x23a (size before relaxing)
+ .debug_str     0x0000000000002f1e       0x12 driver/libc/string/libstring.a(strncpy.o)
+                                        0x23e (size before relaxing)
+ .debug_str     0x0000000000002f30       0x10 driver/libc/string/libstring.a(memset.o)
+                                        0x241 (size before relaxing)
+ .debug_str     0x0000000000002f40       0x10 driver/libc/string/libstring.a(strcmp.o)
+                                        0x235 (size before relaxing)
+ .debug_str     0x0000000000002f50       0x10 driver/libc/string/libstring.a(strlen.o)
+                                        0x241 (size before relaxing)
+ .debug_str     0x0000000000002f60       0x26 driver/libc/string/libstring.a(strtok_r.o)
+                                        0x252 (size before relaxing)
+ .debug_str     0x0000000000002f86      0x123 driver/libc/string/libstring.a(bLib.o)
+                                        0x383 (size before relaxing)
+ .debug_str     0x00000000000030a9       0x18 driver/libc/string/libstring.a(strpbrk.o)
+                                        0x23d (size before relaxing)
+ .debug_str     0x00000000000030c1       0x10 driver/libc/string/libstring.a(strspn.o)
+                                        0x241 (size before relaxing)
+ .debug_str     0x00000000000030d1       0x7c driver/libc/stdlib/libstdlib.a(strtoul.o)
+                                        0x256 (size before relaxing)
+ .debug_str     0x000000000000314d      0x105 driver/device/dfs/libdfs.a(dfs.o)
+                                        0x31d (size before relaxing)
+ .debug_str     0x0000000000003252       0xfd driver/libhwinit.a(hw_init.o)
+                                        0x34a (size before relaxing)
+ .debug_str     0x000000000000334f      0x6cc driver/device/norflash/libnor.a(lld.o)
+                                        0x8de (size before relaxing)
+ .debug_str     0x0000000000003a1b      0x45c start/libgcc.a(_udivdi3.o)
+                                        0x535 (size before relaxing)
+ .debug_str     0x0000000000003e77        0xa start/libgcc.a(_umoddi3.o)
+                                        0x535 (size before relaxing)
+ .debug_str     0x0000000000003e81       0xce kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+                                        0x947 (size before relaxing)
+ .debug_str     0x0000000000003f4f       0x52 kernel/ports/libkernelport.a(sysCount.o)
+                                        0x85c (size before relaxing)
+
+.debug_frame    0x0000000000000000     0x2d80
+ .debug_frame   0x0000000000000000       0xe8 start/libstart.a(sysCpuLib.o)
+ .debug_frame   0x00000000000000e8       0x5c start/libstart.a(sysBanner.o)
+ .debug_frame   0x0000000000000144       0xc4 start/libstart.a(sysL2Cache.o)
+ .debug_frame   0x0000000000000208      0x238 start/libstart.a(sysBoard.o)
+ .debug_frame   0x0000000000000440      0x178 arch/libarch.a(sysCacheE500Lib.o)
+ .debug_frame   0x00000000000005b8      0x114 arch/libarch.a(sysExcArchLib.o)
+ .debug_frame   0x00000000000006cc       0x34 arch/libarch.a(sysSpeExcLib.o)
+ .debug_frame   0x0000000000000700       0x84 arch/libarch.a(sysExcLib.o)
+ .debug_frame   0x0000000000000784       0x48 kernel/ports/libkernelport.a(sysEntry.o)
+ .debug_frame   0x00000000000007cc      0x4cc kernel/thread/libkernelthread.a(sysCore.o)
+ .debug_frame   0x0000000000000c98      0x1ac kernel/thread/libkernelthread.a(sysMutex.o)
+ .debug_frame   0x0000000000000e44       0xa0 kernel/thread/libkernelthread.a(sysPrio.o)
+ .debug_frame   0x0000000000000ee4       0xc4 kernel/thread/libkernelthread.a(sysMsg.o)
+ .debug_frame   0x0000000000000fa8      0x168 kernel/thread/libkernelthread.a(sysQueue.o)
+ .debug_frame   0x0000000000001110      0x164 kernel/thread/libkernelthread.a(sysSem.o)
+ .debug_frame   0x0000000000001274      0x29c kernel/thread/libkernelthread.a(sysTask.o)
+ .debug_frame   0x0000000000001510      0x118 kernel/thread/libkernelthread.a(sysTick.o)
+ .debug_frame   0x0000000000001628       0xcc kernel/thread/libkernelthread.a(sysTime.o)
+ .debug_frame   0x00000000000016f4      0x374 kernel/thread/libkernelthread.a(sysApi.o)
+ .debug_frame   0x0000000000001a68       0x34 kernel/thread/libkernelthread.a(sysCfg.o)
+ .debug_frame   0x0000000000001a9c       0x50 kernel/timers/libkerneltimer.a(sysDec.o)
+ .debug_frame   0x0000000000001aec       0xb4 kernel/timers/libkerneltimer.a(sysTbl.o)
+ .debug_frame   0x0000000000001ba0       0x88 kernel/epic/libkernelepic.a(sysInt.o)
+ .debug_frame   0x0000000000001c28       0xec kernel/epic/libkernelepic.a(sysPic.o)
+ .debug_frame   0x0000000000001d14      0x1d0 utility/libutility.a(shell.o)
+ .debug_frame   0x0000000000001ee4       0xa4 driver/libc/stdio/libstdio.a(ns16550.o)
+ .debug_frame   0x0000000000001f88      0x168 driver/libc/stdio/libstdio.a(printk.o)
+ .debug_frame   0x00000000000020f0       0x34 driver/libc/string/libstring.a(strcpy.o)
+ .debug_frame   0x0000000000002124       0x34 driver/libc/string/libstring.a(strncpy.o)
+ .debug_frame   0x0000000000002158       0x34 driver/libc/string/libstring.a(memset.o)
+ .debug_frame   0x000000000000218c       0x34 driver/libc/string/libstring.a(strcmp.o)
+ .debug_frame   0x00000000000021c0       0x34 driver/libc/string/libstring.a(strlen.o)
+ .debug_frame   0x00000000000021f4       0x34 driver/libc/string/libstring.a(strtok_r.o)
+ .debug_frame   0x0000000000002228      0x234 driver/libc/string/libstring.a(bLib.o)
+ .debug_frame   0x000000000000245c       0x34 driver/libc/string/libstring.a(strpbrk.o)
+ .debug_frame   0x0000000000002490       0x34 driver/libc/string/libstring.a(strspn.o)
+ .debug_frame   0x00000000000024c4       0x34 driver/libc/stdlib/libstdlib.a(strtoul.o)
+ .debug_frame   0x00000000000024f8      0x13c driver/device/dfs/libdfs.a(dfs.o)
+ .debug_frame   0x0000000000002634       0x38 driver/libhwinit.a(hw_init.o)
+ .debug_frame   0x000000000000266c      0x51c driver/device/norflash/libnor.a(lld.o)
+ .debug_frame   0x0000000000002b88      0x1a0 kernel/ports/libkernelport.a(sysOsSwitchLib.o)
+ .debug_frame   0x0000000000002d28       0x58 kernel/ports/libkernelport.a(sysCount.o)
+
+.debug_loc      0x0000000000000000     0x14b4
+ .debug_loc     0x0000000000000000      0xacf start/libgcc.a(_udivdi3.o)
+ .debug_loc     0x0000000000000acf      0x9e5 start/libgcc.a(_umoddi3.o)

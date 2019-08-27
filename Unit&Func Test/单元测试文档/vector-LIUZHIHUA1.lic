@@ -1,0 +1,113 @@
+SERVER liuzhihua1 80000BE7DD44
+DAEMON vector C:\VCAST\flexlm\vector.exe
+## Full Evaluation License (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_EVALUATION_KEY_0799 vector 6.4 31-may-2016 1 \
+	4F55ED2561EE VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+FEATURE VCAST_EVALUATION_KEY_0700 vector 6.4 31-may-2016 1 \
+	FE400CC33FA1 VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## VectorCAST/Manage (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_MANAGE_0700 vector 6.4 31-may-2016 1 E1B23D50DB7B \
+	VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## Lint (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_LINT_0772 vector 6.4 31-may-2016 1 F516DAC87BEE \
+	VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## vccover (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_VCCOVER_0700 vector 6.4 31-may-2016 1 E1BF19BDE411 \
+	VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## Dispatcher (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_DISPATCHER_0700 vector 6.4 31-may-2016 1 51723F519D20 \
+	VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## Analytics Client (Windows) 5 seats Expires 31-May-2016
+FEATURE VCAST_ANALYTICS_CLIENT_0700 vector 6.4 31-may-2016 5 \
+	7D02F33EE1AA VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## Full Evaluation License (Windows) 8 seats Expires 09-Jun-2016
+INCREMENT VCAST_EVALUATION_KEY_0799 vector 6.4 09-jun-2016 8 \
+	2232D03B67CE VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+INCREMENT VCAST_EVALUATION_KEY_0700 vector 6.4 09-jun-2016 8 \
+	05DC7333FD38 VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## VectorCAST/Manage (Windows) 8 seats Expires 09-Jun-2016
+FEATURE VCAST_MANAGE_0700 vector 6.4 09-jun-2016 8 9FAB5999BFCF \
+	VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## Lint (Windows) 8 seats Expires 09-Jun-2016
+FEATURE VCAST_LINT_0772 vector 6.4 09-jun-2016 8 8B0EE3171D4E \
+	VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## vccover (Windows) 8 seats Expires 09-Jun-2016
+FEATURE VCAST_VCCOVER_0700 vector 6.4 09-jun-2016 8 44B6FDE2AC8A \
+	VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## Dispatcher (Windows) 8 seats Expires 09-Jun-2016
+FEATURE VCAST_DISPATCHER_0700 vector 6.4 09-jun-2016 8 3277F8D8F8A2 \
+	VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## Analytics Client (Windows) 40 seats Expires 09-Jun-2016
+FEATURE VCAST_ANALYTICS_CLIENT_0700 vector 6.4 09-jun-2016 40 \
+	663408CE3FA2 VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## vpython (Windows) 1 seat Expires 31-May-2016
+FEATURE VCAST_VPYTHON_0700 vector 6.4 31-may-2016 1 0513391F6A44 \
+	VENDOR_STRING=CUST:13582: START=05-Apr-2016 TS_OK
+## Purchase Order(s): EVALUATION
+## GROUP: EVAL
+
+## vpython (Windows) 8 seats Expires 09-Jun-2016
+INCREMENT VCAST_VPYTHON_0700 vector 6.4 09-jun-2016 8 9994F4D50731 \
+	VENDOR_STRING=CUST:13582: START=26-May-2016 TS_OK
+## Purchase Order(s): TRAINING
+## GROUP: TRAINING
+
+## vcshell (Windows) 1 seat Expires 09-Jun-2016
+FEATURE VCAST_VCSHELL_0700 vector 6.4 09-jun-2016 1 715B9795F08C \
+	VENDOR_STRING=CUST:: TS_OK
+## vcdb (Windows) 1 seat Expires 09-Jun-2016
+FEATURE VCAST_VCDB_0700 vector 6.4 09-jun-2016 1 A5845E06691D \
+	VENDOR_STRING=CUST:: TS_OK
+#NOTE: This is the FLEXlm key which will allow you to use the
+#      Vector Software, Inc. products that you have licensed.
+
+#      >>>>> You must verify the path to the DAEMON file <<<<<
+
+#      Please refer to the FLEXlm End User Manual in your
+#      VectorCAST installation directory for installation
+#      and configuration information.
+#      If you use other FLEXlm licensed software, read
+#      the section on Managing Licenses from Multiple Vendors
+
+#      You may change hostname, port address, and VectorCAST
+#      Daemon location.  Any other changes will invalidate
+#      this license file.
+
+#      If you are using multiple license files, the port
+#      address (7650) must be unique per license file.

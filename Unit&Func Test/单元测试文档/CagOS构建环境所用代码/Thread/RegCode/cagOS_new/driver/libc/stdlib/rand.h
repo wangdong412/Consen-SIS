@@ -1,0 +1,25 @@
+#ifndef _RAND_H__
+#define _RAND_H__
+
+typedef int int32_t;
+#define NULL 0
+struct random_data {
+    int32_t *fptr;		/* Front pointer.  */
+    int32_t *rptr;		/* Rear pointer.  */
+    int32_t *state;		/* Array of state values.  */
+    int rand_type;		/* Type of random number generator.  */
+    int rand_deg;		/* Degree of random number generator.  */
+    int rand_sep;		/* Distance between front and rear.  */
+    int32_t *end_ptr;		/* Pointer behind state table.  */
+};
+
+
+long int __random (void);
+extern int __random_r (struct random_data *__buf, int32_t *__result);
+
+extern int rand(void);
+
+#endif
+
+
+

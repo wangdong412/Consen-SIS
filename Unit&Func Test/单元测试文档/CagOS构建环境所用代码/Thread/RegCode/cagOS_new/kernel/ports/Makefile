@@ -1,0 +1,53 @@
+# Makefile - makefile for PPC ARCH cagBl layer
+#
+# Copyright (c) 2015 CAG Systems, Inc.
+#
+# The right to copy, distribute, modify or otherwise make use
+# of this software may be licensed only pursuant to the terms
+# of an applicable CAG license agreement.
+#
+# modification history
+# --------------------
+# 03jun15,Jeff created 
+#
+# DESCRIPTION
+# This file contains the makefile rules for building cagBL
+#
+#
+
+include ../../config.mk
+
+EXTRA_INCLUDE += -I$(TOPDIR) -I$(INCLUDEDIR) 
+
+ifeq (gnu,$(TOOL))
+CC_OPTIM += -std=c99 -fdata-sections -ffunction-sections
+else
+CC_OPTIM += -Xsection-split
+endif
+
+CFLAGS += $(EXTRA_INCLUDE) $(CC_OPTIM)
+ASFLAGS += $(EXTRA_INCLUDE) $(CC_OPTIM)
+
+LIB   = libkernelport.a
+OBJS  = sysEntry.o  sysHook.o sysOsSwitchLib.o sysCount.o
+SOBJS = sysOsIrq.o  sysOsSwitchALib.o
+
+all:$(LIB)
+
+$(LIB): $(OBJS) $(SOBJS) 
+	$(AR) crv $@ $^
+
+.depend:Makefile $(SOBJS) $(OBJS) $@
+	$(CC) -M $(ASFLAGS) $(SOBJS:%.o=%.S) $(CFLAGS) $(OBJS:%.o=%.c) > $@
+
+sinclude .depend
+
+clean:
+	rm -f $(OBJS) $(SOBJS)
+	rm -f $(LIB) *.bak .depend
+
+#########################################################################
+
+sinclude $(obj).depend
+
+#########################################################################

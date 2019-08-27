@@ -1,0 +1,29 @@
+--  QuickParse File Version: EDG_4_9  --
+HOME_DIRECTORY C:\driver\device\dfs
+BEGIN_RECORD dfs.c
+CHECKSUM  2195611695
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   dfs_cap
+   dfs_erase
+   dfs_init
+   dfs_read
+   dfs_register
+   dfs_unregister
+   dfs_write
+   get_dfs
+CALLED_OBJECTS
+   NOLOG
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   i2c_dfd
+   nor_dfd
+   spi_dfd
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD dfs.c

@@ -1,0 +1,8 @@
+dfs.o: dfs.c dfs.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/config.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/drv_config.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ ../../fs/fs_api.h ../../fs/sffs/sffs.h ../../fs/sffs/../bits.h

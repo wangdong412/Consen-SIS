@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2511FBB-C24F-40F5-A37A-00029D64BA21}</ProjectGuid>
+    <RootNamespace>Project2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>E:\libc\Project2\include;C:\Users\RTS\Documents\Visual Studio 2013\Projects\Project2\Project2\include;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>E:\libc\Project2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h" />
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\kernel\sysApi.h" />
+    <ClInclude Include="include\kernel\sysCore.h" />
+    <ClInclude Include="include\kernel\sysCpu.h" />
+    <ClInclude Include="include\kernel\sysDef.h" />
+    <ClInclude Include="include\kernel\sysHook.h" />
+    <ClInclude Include="include\kernel\sysMap.h" />
+    <ClInclude Include="include\kernel\sysOs.h" />
+    <ClInclude Include="include\kernel\sysOsConf.h" />
+    <ClInclude Include="include\kernel\sysOsTimer.h" />
+    <ClInclude Include="include\kernel\sysOsType.h" />
+    <ClInclude Include="include\kernel\sysPic.h" />
+    <ClInclude Include="include\libc\access.h" />
+    <ClInclude Include="include\libc\assert.h" />
+    <ClInclude Include="include\libc\cagboot.h" />
+    <ClInclude Include="include\libc\compiler.h" />
+    <ClInclude Include="include\libc\ctype.h" />
+    <ClInclude Include="include\libc\errno.h" />
+    <ClInclude Include="include\libc\math.h" />
+    <ClInclude Include="include\libc\printk.h" />
+    <ClInclude Include="include\libc\rand.h" />
+    <ClInclude Include="include\libc\shell.h" />
+    <ClInclude Include="include\libc\stdarg.h" />
+    <ClInclude Include="include\libc\stddef.h" />
+    <ClInclude Include="include\libc\stdio.h" />
+    <ClInclude Include="include\libc\string.h" />
+    <ClInclude Include="include\libc\system.h" />
+    <ClInclude Include="include\p1020rdb.h" />
+    <ClInclude Include="src\ppc\archPpc.h" />
+    <ClInclude Include="src\ppc\asmPpc.h" />
+    <ClInclude Include="src\ppc\excPpcLib.h" />
+    <ClInclude Include="src\ppc\mmuE500Lib.h" />
+    <ClInclude Include="src\ppc\ppc85xx.h" />
+    <ClInclude Include="src\ppc\spePpcLib.h" />
+    <ClInclude Include="src\ppc\toolPpc.h" />
+    <ClInclude Include="src\rand.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\abort1.c" />
+    <ClCompile Include="src\abs.c" />
+    <ClCompile Include="src\atof.c" />
+    <ClCompile Include="src\atoi.c" />
+    <ClCompile Include="src\atol.c" />
+    <ClCompile Include="src\bLib.c" />
+    <ClCompile Include="src\memchr.c" />
+    <ClCompile Include="src\memcmp.c" />
+    <ClCompile Include="src\memcpy.c" />
+    <ClCompile Include="src\memmove.c" />
+    <ClCompile Include="src\memset.c" />
+    <ClCompile Include="src\ns16550.c" />
+    <ClCompile Include="src\printk.c" />
+    <ClCompile Include="src\qsort.c" />
+    <ClCompile Include="src\rand.c" />
+    <ClCompile Include="src\random.c" />
+    <ClCompile Include="src\random_r.c" />
+    <ClCompile Include="src\strcat.c" />
+    <ClCompile Include="src\strchr.c" />
+    <ClCompile Include="src\strcmp.c" />
+    <ClCompile Include="src\strcpy.c" />
+    <ClCompile Include="src\strlcat.c" />
+    <ClCompile Include="src\strlcpy.c" />
+    <ClCompile Include="src\strlen.c" />
+    <ClCompile Include="src\strncat.c" />
+    <ClCompile Include="src\strncmp.c" />
+    <ClCompile Include="src\strncpy.c" />
+    <ClCompile Include="src\strpbrk.c" />
+    <ClCompile Include="src\strspn.c" />
+    <ClCompile Include="src\strtod.c" />
+    <ClCompile Include="src\strtok.c" />
+    <ClCompile Include="src\strtok_r.c" />
+    <ClCompile Include="src\strtol.c" />
+    <ClCompile Include="src\strtoul.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

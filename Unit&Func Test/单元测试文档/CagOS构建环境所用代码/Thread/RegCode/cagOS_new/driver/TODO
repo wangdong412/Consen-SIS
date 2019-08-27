@@ -1,0 +1,32 @@
+1. norflash
+	~~a. sector protect~~
+	~~b. specific brand flash's driver~~
+    ~~c. interrupts protect~~
+    ~~d. refactor func erase~~
+	
+2. sffs
+	~~a. flash/file info list show~~
+	~~b. protect~~
+	~~c. file connects with filesystem~~
+	~~d. extend sffs error no ~~
+    ~~e. multi device support, restrict: MACRO definition~~
+    ~~f. fix varable type typo~~
+    ~~g. format hw err or sw err??~~
+    ~~h. multi open/write/read/erase~~
+    ~~i. minimal erase unit in multi-device~~
+
+3. spi flash
+    a. bug to fix: enter protect mode
+
+4. iic/rtc
+    ~~a. driver~~
+    ~~b. operate rtc~~
+
+5. dfs
+    ~~a. encapsulate low level device driver~~
+    b. enhancement
+
+test:
+	~~1. power loss recovery~~
+	2. interrupt
+	~~3. stress test~~

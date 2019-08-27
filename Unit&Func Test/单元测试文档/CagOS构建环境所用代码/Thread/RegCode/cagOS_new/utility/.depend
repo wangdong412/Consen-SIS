@@ -1,0 +1,19 @@
+shell.o: shell.c \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/string.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/shell.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/assert.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/errno.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/ctype.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/config.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/drv_config.h
+os_cmd.o: os_cmd.c \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/rand.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/shell.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h

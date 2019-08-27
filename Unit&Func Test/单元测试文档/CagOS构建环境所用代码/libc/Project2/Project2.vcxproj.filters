@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\p1020rdb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\access.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\assert.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\cagboot.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\compiler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\ctype.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\errno.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\math.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\printk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\rand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\shell.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\stdarg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\stddef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\stdio.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libc\system.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysCore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysCpu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysHook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysOs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysOsConf.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysOsTimer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysOsType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kernel\sysPic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\archPpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\asmPpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\excPpcLib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\mmuE500Lib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\ppc85xx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\spePpcLib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ppc\toolPpc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bLib.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memchr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memcmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memcpy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memmove.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memset.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strcat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strchr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strcmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strcpy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strlcat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strlcpy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strlen.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strncat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strncmp.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strncpy.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strpbrk.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strspn.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtok.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtok_r.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\abs.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atof.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atoi.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atol.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\qsort.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rand.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\random_r.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtod.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtol.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\strtoul.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\abort1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ns16550.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\printk.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+hw_init.o: hw_init.c \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/drv_config.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/config.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/string.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stddef.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/cagboot.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/compiler.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/rand.h \
+ ../driver/device/dfs/dfs.h \
+ /home/CAG_DEV_GIT/Release_DVD_ME/Release_DVD/Source/PM/cagOS/include/libc/stdio.h \
+ ../driver/device/dfs/../../fs/fs_api.h \
+ ../driver/device/dfs/../../fs/sffs/sffs.h \
+ ../driver/device/dfs/../../fs/sffs/../bits.h \
+ ../driver/device/norflash/lld.h \
+ ../driver/device/norflash/lld_target_specific.h \
+ ../driver/device/norflash/S29GLxxxP.h

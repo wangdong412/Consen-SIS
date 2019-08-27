@@ -1,0 +1,28 @@
+-- VectorCAST 6.4d (02/29/16)
+-- Test Case Script
+-- 
+-- Environment    : THREAD
+-- Unit(s) Under Test: sysApi sysCfg sysMsg
+-- 
+-- Script Features
+TEST.SCRIPT_FEATURE:C_DIRECT_ARRAY_INDEXING
+TEST.SCRIPT_FEATURE:CPP_CLASS_OBJECT_REVISION
+TEST.SCRIPT_FEATURE:MULTIPLE_UUT_SUPPORT
+TEST.SCRIPT_FEATURE:MIXED_CASE_NAMES
+TEST.SCRIPT_FEATURE:STATIC_HEADER_FUNCS_IN_UUTS
+--
+
+-- Unit: sysCfg
+
+-- Subprogram: OSCfg_Init
+
+-- Test Case: OSCfg_Init1
+TEST.UNIT:sysCfg
+TEST.SUBPROGRAM:OSCfg_Init
+TEST.NEW
+TEST.NAME:OSCfg_Init1
+TEST.BASIS_PATH:1 of 1
+TEST.NOTES:
+   No branches in subprogram
+TEST.END_NOTES:
+TEST.END

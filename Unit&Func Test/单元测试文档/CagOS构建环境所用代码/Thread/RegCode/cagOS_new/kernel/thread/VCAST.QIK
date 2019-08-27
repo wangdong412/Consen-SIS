@@ -1,0 +1,503 @@
+--  QuickParse File Version: EDG_4_9  --
+HOME_DIRECTORY C:\RegCode\cagOS_new\kernel\thread
+BEGIN_RECORD sysMsg.c
+CHECKSUM 1996050726
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OS_MsgPoolInit
+   OS_MsgQFreeAll
+   OS_MsgQGet
+   OS_MsgQInit
+   OS_MsgQPut
+CALLED_OBJECTS
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   OSCfg_MsgPoolBasePtr
+   OSCfg_MsgPoolSize
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysMsg.c
+BEGIN_RECORD sysMutex.c
+CHECKSUM 1245531168
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OSMutexCreate
+   OSMutexDel
+   OSMutexPend
+   OSMutexPendAbort
+   OSMutexPost
+   OS_MutexClr
+   OS_MutexGrpAdd
+   OS_MutexGrpPostAll
+   OS_MutexGrpPrioFindHighest
+   OS_MutexGrpRemove
+   OS_MutexInit
+CALLED_OBJECTS
+   OSSched
+   OS_Pend
+   OS_PendAbort
+   OS_PendListInit
+   OS_PendObjDel
+   OS_Post
+   OS_PrioInsert
+   OS_RdyListInsertTail
+   OS_RdyListRemove
+   OS_TaskChangePrio
+   getTblms
+   powerpcIntDisable
+   powerpcIntEnable
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysMutex.c
+BEGIN_RECORD sysPrio.c
+CHECKSUM 3042396745
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OS_PrioGetHighest
+   OS_PrioInit
+   OS_PrioInsert
+   OS_PrioRemove
+CALLED_OBJECTS
+   CPU_CntLeadZeros
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSPrioTbl
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysPrio.c
+BEGIN_RECORD sysQueue.c
+CHECKSUM 3306274167
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OSQCreate
+   OSQDel
+   OSQFlush
+   OSQPend
+   OSQPendAbort
+   OSQPost
+   OS_QClr
+   OS_QInit
+   OS_QPost
+CALLED_OBJECTS
+   OSSched
+   OS_MsgQFreeAll
+   OS_MsgQGet
+   OS_MsgQInit
+   OS_MsgQPut
+   OS_Pend
+   OS_PendAbort
+   OS_PendListInit
+   OS_PendObjDel
+   OS_Post
+   getTblms
+   powerpcIntDisable
+   powerpcIntEnable
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysQueue.c
+BEGIN_RECORD sysSem.c
+CHECKSUM 3910491791
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OSSemCreate
+   OSSemDel
+   OSSemPend
+   OSSemPendAbort
+   OSSemPost
+   OSSemSet
+   OS_SemClr
+   OS_SemInit
+   OS_SemPost
+CALLED_OBJECTS
+   OSSched
+   OS_Pend
+   OS_PendAbort
+   OS_PendListInit
+   OS_PendObjDel
+   OS_Post
+   getTblms
+   powerpcIntDisable
+   powerpcIntEnable
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysSem.c
+BEGIN_RECORD sysTask.c
+CHECKSUM 4176960210
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OSTaskCreate
+   OSTaskDel
+   OSTaskResume
+   OSTaskSemPend
+   OSTaskSemPendAbort
+   OSTaskSemPost
+   OSTaskSemSet
+   OSTaskStkChk
+   OSTaskSuspend
+   OSTaskTimeQuantaSet
+   OS_TaskChangePrio
+   OS_TaskInit
+   OS_TaskInitTCB
+   OS_TaskResume
+   OS_TaskReturn
+   OS_TaskSemPost
+   OS_TaskSuspend
+CALLED_OBJECTS
+   OSSched
+   OSTaskCreateHook
+   OSTaskDelHook
+   OSTaskReturnHook
+   OSTaskStkInit
+   OS_MutexGrpPostAll
+   OS_MutexGrpPrioFindHighest
+   OS_Pend
+   OS_PendAbort
+   OS_PendListChangePrio
+   OS_PendListRemove
+   OS_Post
+   OS_PrioInsert
+   OS_RdyListInsert
+   OS_RdyListInsertHead
+   OS_RdyListInsertTail
+   OS_RdyListRemove
+   OS_TickListRemove
+   getTblms
+   powerpcIntDisable
+   powerpcIntEnable
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+   OSCfg_StkSizeMin
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysTask.c
+BEGIN_RECORD sysTick.c
+CHECKSUM 718896272
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OS_TickListInsert
+   OS_TickListInsertDly
+   OS_TickListRemove
+   OS_TickListResetPeak
+   OS_TickUpdate
+CALLED_OBJECTS
+   OS_MutexGrpPrioFindHighest
+   OS_PendListRemove
+   OS_RdyListInsert
+   OS_TaskChangePrio
+   getTblms
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysTick.c
+BEGIN_RECORD sysTime.c
+CHECKSUM  2067545785
+BLACKLIST FALSE
+DEFINED_OBJECTS
+   OSTimeDly
+   OSTimeDlyResume
+   OSTimeGet
+   OSTimeSet
+   OSTimeTick
+CALLED_OBJECTS
+   OSSched
+   OSTimeTickHook
+   OS_RdyListInsert
+   OS_RdyListRemove
+   OS_SchedRoundRobin
+   OS_TickListInsertDly
+   OS_TickListRemove
+   OS_TickUpdate
+   powerpcIntDisable
+   powerpcIntEnable
+CALLED_OBJECTS_FOR_GLOBAL_DATA
+STATIC_MEMBERS_DECLARED
+STATIC_MEMBERS_NEEDED
+GLOBAL_OBJECTS_NEEDED
+GLOBAL_OBJECTS_DEFINED
+   OSIdleTaskCtr
+   OSIdleTaskTCB
+   OSIntNestingCtr
+   OSMsgPool
+   OSMutexQty
+   OSPrioCur
+   OSPrioHighRdy
+   OSPrioSaved
+   OSQQty
+   OSRdyList
+   OSRunning
+   OSSchedLockNestingCtr
+   OSSchedRoundRobinDfltTimeQuanta
+   OSSchedRoundRobinEn
+   OSSemQty
+   OSTCBCurPtr
+   OSTCBHighRdyPtr
+   OSTaskCtxSwCtr
+   OSTaskQty
+   OSTickCtr
+   OSTickListDly
+   OSTickListTimeout
+   OSTickTaskTimeMax
+   OS_AppIdleTaskHookPtr
+   OS_AppStatTaskHookPtr
+   OS_AppTaskCreateHookPtr
+   OS_AppTaskDelHookPtr
+   OS_AppTaskReturnHookPtr
+   OS_AppTaskSwHookPtr
+   OS_AppTimeTickHookPtr
+CONSTRUCTORS_NEEDED
+ALL_TESTABLE_CLASSES
+DEFAULT_TESTABLE_CLASSES
+INCLUDES
+END_RECORD sysTime.c

@@ -1,0 +1,163 @@
+// サンプル
+
+// マウス、キーボード入力をブロックする
+STOPFORM(False)        // Stopウィンドウは出さない
+LOCKHARD(True)         // 管理者権限が必要
+
+// メッセージ表示位置
+PUBLIC msgx = 100
+PUBLIC msgy = 100
+
+// MSAgent/画像表示
+paintid = 0
+ifb ! agent() then        // MSAgentがあれば起動する
+   paintid = paintbmp()   // Win7には MSAgentが無いので代わりに bmp表示
+   ifb paintid > 0 then
+        msgx = G_SCREEN_W / 2
+        msgy = G_SCREEN_H / 2
+   endif
+endif
+
+// 電卓 起動
+電卓ID = EXEC("calc")
+ifb 電卓ID < 0 then
+    MsgBox("電卓が起動できませんでした")
+    Exit              // ダメであれば終了
+endif
+
+// メモ帳 起動
+メモID = GETID("メモ帳", , 0.1)
+ifb メモID < 0                         // 存在してなければ起動
+    メモID = EXEC("notepad", False, 200, 10, 400, 400)
+endif
+// フォントの変更
+ClkItem(メモID, "フォント", CLK_MENU or CLK_SHORT)
+fontid = GETID("フォント", ,2)
+sv_fontStyl = GETSTR(fontid, 2)         // 現在のスタイル
+sv_fontSize = GETSTR(fontid, 3)         // 現在のサイズ
+ClkItem(fontid, "太字", CLK_LIST)       // スタイル変更
+SendStr(fontid, "16", 3, True)          // サイズ変更 (ClkItemでも可)
+Sleep(1)
+ClkItem(fontid, "ＯＫ")
+
+// 電卓で計算
+計算式 = "12345+98765="
+SendStr(電卓ID, 計算式)
+Sleep(2)
+SendStr(メモID, 計算式)
+Sleep(1)
+os = KINDOFOS()
+ifb os >= 22
+   wks = GetStr(電卓ID, 4, STR_STATIC)  // Windows 7
+elseif os >= 13
+   wks = GetStr(電卓ID, 1, STR_EDIT)    // XP, Vista
+else 
+   wks = GetStr(電卓ID, 1, STR_STATIC)  // Win2000, 98
+endif
+SendStr(メモID, wks+"<#CR>")
+
+// 電卓回す
+SendStr(メモID, "電卓をグルグル回してみる<#CR>")
+ifb MsgBox("回してみます？", BTN_YES or BTN_NO) = BTN_YES
+    moji = "音楽を入れますか？<#CR>Ｙｅｓなら５秒以内にスペースキーを叩いてね"
+    ifb 音楽を入れるかキーチェック(VK_SPACE, moji)
+        ifb KINDOFOS() >= 13                  // XP以上
+            musicnm = "flourish.mid"
+        else
+            musicnm = "canyon.mid"
+        endif
+        FUKIDASI("読み込む中...", msgx, msgy)
+        Sound(musicnm) 　                     // バックミュージック
+        FUKIDASI()
+    endif
+    for 回数 = 1 to 3
+       if 回数=2 then FUKIDASI("いつもより余計に回しています<#cr>パチパチパチ"_
+                  , msgx, msgy-20, 3, 14)         // _により前行と繋がっている
+       call .\grugru.uws                          // grugru.uws を実行
+    next
+else
+    FUKIDASI("それは残念", msgx, msgy, 0, 14)
+    Sleep(3)
+endif
+
+// 終了処理
+FUKIDASI("フォントの変更を戻す")
+ClkItem(メモID, "フォント", CLK_MENU or CLK_SHORT) // フォントの変更を戻す
+fontid = GETID("フォント", ,2)
+if fontid<0 then fontid = GETID("Font")
+SendStr(fontid, sv_fontStyl, 2, True)     // スタイル戻す
+SendStr(fontid, sv_fontSize, 3, True)     // サイズ戻す
+Sleep(1)
+ClkItem(fontid, "ＯＫ")
+if paintid>0 then CtrlWin(paintid, CLOSE2)  // Paint終了
+Sound()    　　　　　　　　　  　　   　    // SOUND OFF
+FUKIDASI()                                  // 吹出しOFF
+CtrlWin(電卓ID, CLOSE)                      // 電卓終了
+SendStr(メモID, "終了～")
+Sleep(1)
+CtrlWin(メモID, CLOSE)                      // メモ終了
+Sleep(1)
+ifb ! ClkItem(GETID("メモ帳", "#32770"), "いいえ")    // 保存はしない
+    ClkItem(GETID("メモ帳", "#32770"), "保存しない")  // Vista以上
+endif
+LockHard(False)                        // 入力ブロックの解除
+// メイン処理はここまでになる（関数の前まで）
+
+
+
+// 以下 関数(サブルーチン)
+
+// 指定キーが押されたらTrueを返す
+Function 音楽を入れるかキーチェック(chk_key, moji)
+   Result = False                       // 戻り値
+   LockHard(False)                      // ブロック一時解除
+   sv_tm = GetTime()
+   while GetTime()-sv_tm < 5            // 5秒まで待つ
+       wk_sec = 5 - (GetTime()-sv_tm)
+       FUKIDASI(moji+"　"+wk_sec, msgx, msgy, 0, 14)
+       ifb GETKEYSTATE(chk_key)         // 指定キー(スペースキー) チェック
+　　　     Result = True                // 戻り値=True
+　　　　　 break
+       endif
+       sleep(0.2)
+   wend
+   FUKIDASI()                           // 吹出しOFF
+   LockHard(True)                       // ブロック再開
+fend
+
+
+// MSAgent と SpeechEngine を利用
+Function agent()
+   Result = False
+   public obj_agt            　   // 関数を抜けても維持するようにpublicにしてる
+   キャラ = "Merlin"　　　　　　　　　　         // キャラクタ に Merlin を選択
+   ss = GET_WIN_DIR + "\msagent\chars\" + キャラ +".acs"
+   if ! FOPEN(ss, F_EXISTS) then exit            // 無かった
+   COM_ERR_IGN
+   obj_agt = CreateOLEObj("Agent.Control.1")     // COM
+   if COM_ERR_FLG then exit                      // MSAgentが無い
+   COM_ERR_RET
+   obj_agt.Connected=True
+   obj_agt.Characters.Load(キャラ, ss)
+   agt = obj_agt.Characters(キャラ)
+   agt.show
+   agt.Play("Greet")
+   agt.speak("回してみます？")
+   Result = True
+Fend
+
+
+// usertile12.bmpを Paintで表示
+Function paintbmp()
+   Result = 0
+   if KINDOFOS() < 22 then Exit   // Windows7 未満
+   bmp = "C:\ProgramData\Microsoft\User Account Pictures\Default Pictures\usertile12.bmp"
+   if ! FOPEN(bmp, F_EXISTS) then exit      // 無い
+   id = exec("mspaint.exe <#DBL>"+ bmp +"<#DBL>")
+   sleep(1)
+   ClkItem(id, "表示", CLK_ACC)
+   ClkItem(id, "全画面", CLK_ACC or CLK_BACK)
+   SPEAK("Hello")
+   sleep(1)
+   Result = id                    // IDを返す
+Fend
