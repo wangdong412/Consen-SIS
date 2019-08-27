@@ -1,0 +1,20 @@
+文件夹说明：
+AB：AB版硬件烧录文件
+C：C版硬件烧录文件
+
+MCU_online_update：MCU在线升级版固件，不区分A、B、C版
+MCU_tool：MCU工具烧录版固件，其中hex文件是可以使用Jlink烧录的文件
+
+在线升级说明：
+AB、C版文件夹中，包括FPGA的工具烧录版和在线升级版固件，工具烧录的固件尾缀为.jic，在线升级版固件尾缀为.hex
+	还包括Power_MCU的烧录文件（U235有关的四个hex文件）
+
+CPLD固件：
+CPLD固件没有在线升级版本，同时AB、C版硬件也使用相同的固件，均为：DI3201_CPLD_U276_01.pof。
+
+
+器件标号对应
+PMCU：U235
+FPGA: U174_U175_U176
+MCU:  U162_U166_U170
+CPLD: U276

@@ -1,0 +1,7 @@
+文件夹说明：
+DO3201_IMG_U246_201.hex 为PMCU烧录文件，使用JLink烧录
+DO3201_IMG_U170_U174_U178_201.hex 为MCU烧录文件，使用JLink烧录
+DO3201_IMG_U173_U177_U181_201.hex 为SPI_FLASH烧录文件，使用串口烧录
+DO3201_CPLD_U309_01.pof 为CPLD烧录文件，使用USB Blaster烧录
+
+参考烧录文件中，维修烧录流程 进行烧录

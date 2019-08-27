@@ -1,0 +1,13 @@
+FPGA烧录：
+	烧录工具：USB转串口线。
+	烧录软件：串口工具ttermpro.exe。
+	烧录方法：参见嵌入式软件提供FPGA固件烧录程序。说明：烧录FPGA固件需要断电重启后开始烧录，不能复位重启后开始烧录。
+	烧录文件：https://dataserver/svn/Gamma/trunk/VV/version/hardware/PM01/170713/PM01_FPGA_U5_01_070D.rbf。
+
+
+Power_MCU烧录：
+	烧录工具：JLINK
+	烧录软件：SEGGER J_Flash
+	烧录方法：1、全片擦除（Erase chip）；
+		  2、烧录PM01_IMG_U40_01.hex；
+	烧录文件：https://dataserver/svn/Gamma/trunk/VV/version/hardware/PM01/170721/PM01_IMG_U40_01.hex;

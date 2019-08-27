@@ -1,0 +1,3 @@
+烧录方式如下：
+1、 使用Jlink对STM32进行全片擦除；
+2、 顺序烧录：L1Boot.Hex  ->  L2Boot1.Hex  ->  L2Boot2.Hex  ->  IoApp.Hex
