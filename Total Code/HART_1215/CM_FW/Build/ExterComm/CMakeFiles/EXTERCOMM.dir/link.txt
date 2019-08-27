@@ -1,0 +1,2 @@
+/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/i686-fslsdk-linux/usr/bin/powerpc-fsl-linux-gnuspe/powerpc-fsl-linux-gnuspe-ar cr libEXTERCOMM.a  CMakeFiles/EXTERCOMM.dir/src/ComCommon.c.o CMakeFiles/EXTERCOMM.dir/src/ExterComm.c.o CMakeFiles/EXTERCOMM.dir/src/PCSWCommon.c.o CMakeFiles/EXTERCOMM.dir/src/Socket.c.o
+/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/i686-fslsdk-linux/usr/bin/powerpc-fsl-linux-gnuspe/powerpc-fsl-linux-gnuspe-ranlib libEXTERCOMM.a

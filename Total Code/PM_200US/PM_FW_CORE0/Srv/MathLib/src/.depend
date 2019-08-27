@@ -1,0 +1,3 @@
+Math.o: Math.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/string.h \
+ ../inc/Math.h /vagrant/workspace/PM_FW_COMMON/inc/DataType.h

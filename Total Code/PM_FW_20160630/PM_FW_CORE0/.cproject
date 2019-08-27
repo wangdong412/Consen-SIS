@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?>
+
+<cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.freescale.pa.cdt.gcc.toolchain.aeabi.e5500.debug.1563289519">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.freescale.pa.cdt.gcc.toolchain.aeabi.e5500.debug.1563289519" moduleId="org.eclipse.cdt.core.settings" name="PowerPC AEABI e5500 C Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="RTS-1" buildProperties="" description="" errorParsers="org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser" id="com.freescale.pa.cdt.gcc.toolchain.aeabi.e5500.debug.1563289519" isPrebuildInvalidatingBuild="false" name="PowerPC AEABI e5500 C Debug" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="com.freescale.pa.cdt.gcc.toolchain.aeabi.e5500.debug.1563289519.139946239" name="/" resourcePath="">
+						<toolChain errorParsers="" id="com.freescale.pa.cdt.gcc.toolchain.eabi.e500v2.static.lib.release.909919968" name="PowerPC EABI e500v2 C Static Library ToolChain Release" superClass="com.freescale.pa.cdt.gcc.toolchain.eabi.e500v2.static.lib.release">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.freescale.pa.cdt.gcc.toolchain.targetPlatform1.453064074" superClass="com.freescale.pa.cdt.gcc.toolchain.targetPlatform1"/>
+							<builder arguments="BUILDCORE=CORE0 VB=0" command="make" errorParsers="" id="com.freescale.pa.cdt.gcc.builder.eabi.e500v2.static.lib.release.1272138259" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="PowerPC EABI e500v2 Release Builder" parallelBuildWorkspaceOn="true" superClass="com.freescale.pa.cdt.gcc.builder.eabi.e500v2.static.lib.release"/>
+							<tool errorParsers="" id="com.freescale.pa.cdt.gcc.archiver.eabi.e500v2.static.lib.release.663379192" name="PowerPC EABI e500v2 Archiver" superClass="com.freescale.pa.cdt.gcc.archiver.eabi.e500v2.static.lib.release"/>
+							<tool errorParsers="org.eclipse.cdt.core.GCCErrorParser" id="com.freescale.pa.cdt.gcc.compiler.eabi.e500v2.static.lib.release.163645881" name="PowerPC EABI e500v2 C Compiler" superClass="com.freescale.pa.cdt.gcc.compiler.eabi.e500v2.static.lib.release">
+								<inputType id="com.freescale.pa.cdt.gcc.toolchain.c.compiler.eabi.e500v2.input.1531718830" superClass="com.freescale.pa.cdt.gcc.toolchain.c.compiler.eabi.e500v2.input"/>
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.asmpreproc.1711365997" superClass="cdt.managedbuild.tool.gnu.c.compiler.input.asmpreproc"/>
+							</tool>
+							<tool errorParsers="org.eclipse.cdt.core.GASErrorParser" id="com.freescale.pa.cdt.gcc.assembler.eabi.e500v2.static.lib.release.158902594" name="PowerPC EABI e500v2 Assembler" superClass="com.freescale.pa.cdt.gcc.assembler.eabi.e500v2.static.lib.release">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.2020496642" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+							<tool errorParsers="" id="com.freescale.pa.cdt.gcc.preprocessor.eabi.e500v2.static.lib.release.1431237229" name="PowerPC EABI e500v2 Preprocessor" superClass="com.freescale.pa.cdt.gcc.preprocessor.eabi.e500v2.static.lib.release"/>
+							<tool errorParsers="" id="com.freescale.pa.cdt.gcc.disassembler.eabi.e500v2.static.lib.release.996940142" name="PowerPC EABI e500v2 Disassembler" superClass="com.freescale.pa.cdt.gcc.disassembler.eabi.e500v2.static.lib.release"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="PM_FW_CORE0.null.2113601753" name="PM_FW_CORE0"/>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/PM_FW_CORE0"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.1501447239">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="0.228905709">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>

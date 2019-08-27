@@ -1,0 +1,2 @@
+Log.o: Log.c ../inc/Log.h /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h

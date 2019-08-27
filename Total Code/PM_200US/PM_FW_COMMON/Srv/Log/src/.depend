@@ -1,0 +1,64 @@
+Log.o: Log.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/string.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/stdio.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h ../inc/Log.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h ../inc/LogID.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSys.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCMConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysMonitor.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysSync.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/SharedMem/inc/SharedComm.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysStateMngt.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/SysHardware.h
+LogCore0.o: LogCore0.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/string.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/stdio.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h ../inc/Log.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSys.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCMConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysMonitor.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysSync.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/SharedMem/inc/SharedComm.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysStateMngt.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/SysHardware.h
+LogCore1.o: LogCore1.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/string.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/stdio.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h ../inc/Log.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSys.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCMConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysMonitor.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysSync.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/SharedMem/inc/SharedComm.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysStateMngt.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/SysHardware.h
+LogUser.o: LogUser.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/string.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/stdio.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h ../inc/Log.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSys.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCMConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysMonitor.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysSync.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/SharedMem/inc/SharedComm.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysStateMngt.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/SysHardware.h

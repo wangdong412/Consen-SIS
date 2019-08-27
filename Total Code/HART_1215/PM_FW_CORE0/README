@@ -1,0 +1,98 @@
+/*
+ *------------------------------------------------------------
+ * Project:	cagOS
+ * Goal: 
+ * Copyright (c) 2013, 2014 CAG Systems, Inc.
+ *------------------------------------------------------------
+ *
+ *    @@@@     @@@      @@@@@       ####      ######
+ *  @@       @@  @@    @@         ##    ##   ##
+ * @@       @@    @@  @@   @@@@  ##      ## ######
+ * @@      @@@@@@@@@@ @@    @@    ##    ##      ##
+ *  @@@@@ @@@      @@@  @@@@@@      ####  #######
+ *
+ * The right to copy, distribute, modify or otherwise make use
+ * of this software may be licensed only pursuant to the terms
+ * of an applicable CAG license agreement.
+ *
+ * 1 tab == 4 spaces!
+ *------------------------------------------------------------
+ * modification history
+ * --------------------
+ * 03jun15,Jeff created
+ *
+ * DESCRIPTION
+ * This file contains
+ */
+
+NAME
+`Freescale P1020RDB'
+
+HARDWARE DETAILS
+
+\sh DDR Memory Maps
+Example memory layout for a 1-megabyte board:
+the below shows the CORE0 system map, for Core1
+we added the offset 30M, and the core1 is locate in
+the offset 0x02000000.
+
+\cs
+    /**************/
+ --- |--------------| 0x01E00000  = AMP_SWAP_HIGH
+  >  |              |
+  |  |  AMP SWAP    |
+  |  |     5M       |
+  |  |--------------| 0x01900000  = TASK_STACK_HIGH
+ --- |--------------| 0x00000000  = LOCAL_MEM_LOCAL_ADRS
+\ce
+
+\sh Serial Connections
+Most VxWorks BSPs do not use hardware handshaking in the serial interface,
+and thus a simple 3 wire connection is commonly used.
+
+The P1020RDB board has two RS-232 standard UART ports.
+\sh Serial Configuration
+No special configuration needed.
+Default configuration is:
+    Baud Rate: 115200
+    Data: 8 bit
+    Parity: None
+    Stop: 1 bit
+    Flow Control: None
+
+\sh AMP with MIPC
+
+BOARD LAYOUT
+P1020RDB-PC REV B board is like this:
+\bs
++------------+---+---+---+---+--------+--------+-----+--------+--+--------+----+
+|            |USB|   |com0|  |e1-SW-P4|e1-SW-P2|     |e3-SGMII|  |e2-SGMII|    |
+|            +---+   +----+  +--------+--------+     +--------+  +--------+    |
+|                    |com1|  |e1-SW-P3|e1-SW-P1|                               |
+|                    +----+  +--------+--------+                               |
+|                                                                              |
+|                                                                              |
+|                                               +-------+                      |
+|                                               |       |                      |
+|                                               |VSC7385|                      |
+|                                               |       |                 PCIE |
+|     NorFlash                                  +-------+                 +--+ |
+|     +------+                                                            |  | |
+|     |      |                                                            |  | |
+|     +------+                                                            |  | |
+|     |      |                                                            +--+ |
+|     +------+                                                                 |
+|   lash                                                                       |
+|                                 +-----------+                          +---+ |
+|              SW3                |           |                          |   | |
+| SW2+------+   +------+          |   QorIQ   |                          |   | |
+|    |      |   |      |          |   P1020E  |                          | A | |
+|    +------+   +------+          |           |                          | T | |
+|                                 +-----------+                          | X | |
+| +---------+     +--------------------+                                 |   | |
+| |  JTAG   |     |    DDR-II RAM      |                                 |   | |
+| +----+----+     +--------------------+                                 +---+ |
++------------------------------------------------------------------------------+
+\be
+
+BIBLIOGRAPHY

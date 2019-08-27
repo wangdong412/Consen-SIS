@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Sys/inc/CMLocalbus.h
+DataType.h
+../Sys/inc/DataType.h
+SysCommon.h
+../Sys/inc/SysCommon.h
+
+../Sys/inc/DataType.h
+
+../Sys/inc/Hardware.h
+
+../Sys/inc/SysCommon.h
+DataType.h
+../Sys/inc/DataType.h
+Hardware.h
+../Sys/inc/Hardware.h
+
+/vagrant/workspace/CM_FW/Version/inc/Version.h
+Sys/inc/DataType.h
+/vagrant/workspace/CM_FW/Version/inc/Sys/inc/DataType.h
+
+/vagrant/workspace/CM_FW/Version/src/Version.c
+stdio.h
+-
+../inc/Version.h
+/vagrant/workspace/CM_FW/Version/inc/Version.h
+Sys/inc/CMLocalbus.h
+/vagrant/workspace/CM_FW/Version/src/Sys/inc/CMLocalbus.h
+

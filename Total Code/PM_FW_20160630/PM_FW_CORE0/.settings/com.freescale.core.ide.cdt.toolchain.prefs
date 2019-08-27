@@ -1,0 +1,23 @@
+#Mon Jun 27 14:21:46 CST 2016
+eclipse.preferences.version=1
+hotfix/class\ com.freescale.core.ide.cdt.toolchain.ProjectErrorParserHotFix=true
+hotfix/class\ com.freescale.core.ide.cdt.toolchain.QuotePathsHotFix=true
+hotfix/class\ com.freescale.core.ide.cdt.toolchain.ToolOptionsUpdateHotFix=true
+hotfix/class\ com.freescale.core.ide.cdt.toolchain.UiElementValueTypeHotFix=true
+hotfix/com.freescale.core.ide.util.pbhotfix=true
+hotfix/com.freescale.pa.gcc.e500mc.eabi.toolchain=true
+hotfix/com.freescale.pa.gcc.e500mc.linux.toolchain=true
+hotfix/com.freescale.pa.gcc.e500v1.linux.toolchain=true
+hotfix/com.freescale.pa.gcc.e500v2.eabi.toolchain=true
+hotfix/com.freescale.pa.gcc.e500v2.linux.toolchain=true
+hotfix/com.freescale.pa.gcc.e5500.aeabi.toolchain=true
+hotfix/com.freescale.pa.gcc.e5500.linux.toolchain=true
+hotfix/com.freescale.pa.gcc.e6500.aeabi.toolchain=true
+hotfix/com.freescale.pa.gcc.e6500.linux.toolchain=true
+hotfix/com.freescale.pa.gcc.elf.toolchain=true
+hotfix/com.freescale.pa.gcc.linuxgnu.toolchain=true
+hotfix/com.freescale.pa.gcc.toolchain.Archiver.Flags.ToolOptionsUpdate=true
+hotfix/com.freescale.ppc.cdt.toolchain=true
+hotfix/com.freescale.ppc.toolchain.ToolOptionsUpdate.fileAndProgram_v1=true
+hotfix/com.freescale.ppc.toolchain.UIElementValueTypeUpdate.toSymbolFiles=true
+hotfix/pa.cdt.gcc.toolchain.quotePathsHotFix=true

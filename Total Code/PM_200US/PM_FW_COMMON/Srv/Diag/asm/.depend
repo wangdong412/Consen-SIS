@@ -1,0 +1,44 @@
+BPU_cond_branch_test_bca.o: BPU_cond_branch_test_bca.S \
+ ../inc/common_macro.s ../inc/common_def.h ../inc/processor_s.h
+BPU_cond_branch_test_bcla.o: BPU_cond_branch_test_bcla.S \
+ ../inc/common_macro.s ../inc/common_def.h ../inc/processor_s.h
+BPU_cond_branch_test.o: BPU_cond_branch_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+BPU_uncond_branch_test_ba_bla.o: BPU_uncond_branch_test_ba_bla.S \
+ ../inc/common_macro.s ../inc/common_def.h ../inc/processor_s.h
+BPU_uncond_branch_test.o: BPU_uncond_branch_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+cr_test.o: cr_test.S ../inc/common_macro.s ../inc/common_def.h \
+ ../inc/processor_s.h
+Critical_SPR_interword_test.o: Critical_SPR_interword_test.S \
+ ../inc/common_macro.s ../inc/common_def.h ../inc/processor_s.h
+Critical_SPR_intraword_test.o: Critical_SPR_intraword_test.S \
+ ../inc/common_macro.s ../inc/common_def.h ../inc/processor_s.h
+data_cache_test.o: data_cache_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+GPR_interword_test.o: GPR_interword_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+GPR_intraword_test.o: GPR_intraword_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+inst_cache_test.o: inst_cache_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+IU1_test.o: IU1_test.S ../inc/common_macro.s ../inc/common_def.h \
+ ../inc/processor_s.h
+IU2_test.o: IU2_test.S ../inc/common_macro.s ../inc/common_def.h \
+ ../inc/processor_s.h
+lr_test.o: lr_test.S ../inc/common_macro.s ../inc/common_def.h \
+ ../inc/processor_s.h
+LSU_data_test.o: LSU_data_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+LSU_ea_calc_test.o: LSU_ea_calc_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+LSU_instr_set_test.o: LSU_instr_set_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+SPR_interword_test.o: SPR_interword_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+SPR_intraword_test.o: SPR_intraword_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h
+SPRG_test.o: SPRG_test.S ../inc/common_macro.s ../inc/common_def.h \
+ ../inc/processor_s.h
+Pipeline_test.o: Pipeline_test.S ../inc/common_macro.s \
+ ../inc/common_def.h ../inc/processor_s.h

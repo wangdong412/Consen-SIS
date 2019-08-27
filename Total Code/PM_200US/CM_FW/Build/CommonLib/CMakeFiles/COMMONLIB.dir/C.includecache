@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Sys/inc/DataType.h
+
+../Sys/inc/Hardware.h
+
+/vagrant/workspace/CM_FW/CommonLib/inc/Algrithm.h
+Sys/inc/DataType.h
+/vagrant/workspace/CM_FW/CommonLib/inc/Sys/inc/DataType.h
+Sys/inc/Hardware.h
+/vagrant/workspace/CM_FW/CommonLib/inc/Sys/inc/Hardware.h
+
+/vagrant/workspace/CM_FW/CommonLib/src/Algrithm.c
+../inc/Algrithm.h
+/vagrant/workspace/CM_FW/CommonLib/inc/Algrithm.h
+

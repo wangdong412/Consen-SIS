@@ -1,0 +1,106 @@
+Prompt = '=>'
+
+;                                                                                start address       size
+;#define NOR_FLASH_BASE_ADDR         (0xEC000000)
+;#define FW_FM_RTS_FLG_START_ADDR    (NOR_FLASH_BASE_ADDR)                      // 0xEC000000       0x20000
+;#define FW_FM_FPGA_FLG_START_ADDR   (FW_FM_RTS_FLG_START_ADDR + (128*1024))    // 0xEC020000       0x20000
+;#define FW_FM_CORE0_CRC_START_ADDR1 (FW_FM_FPGA_FLG_START_ADDR + (128*1024))   // 0xEC040000       0x20000
+;#define FW_FM_CORE0_START_ADDR1     (FW_FM_CORE0_CRC_START_ADDR1 + (128*1024)) // 0xEC060000       0x1E0000
+;#define FW_FM_CORE1_CRC_START_ADDR1 (FW_FM_CORE0_START_ADDR1 + (15*128*1024))  // 0xEC240000       0x20000
+;#define FW_FM_CORE1_START_ADDR1     (FW_FM_CORE1_CRC_START_ADDR1 + (128*1024)) // 0xEC260000       0x2E0000
+;#define FW_FM_CORE0_CRC_START_ADDR2 (FW_FM_CORE1_START_ADDR1 + (23*128*1024))  // 0xEC540000       0x20000
+;#define FW_FM_CORE0_START_ADDR2     (FW_FM_CORE0_CRC_START_ADDR2 + (128*1024)) // 0xEC560000       0x1E0000
+;#define FW_FM_CORE1_CRC_START_ADDR2 (FW_FM_CORE0_START_ADDR2 + (15*128*1024))  // 0xEC740000       0x20000
+;#define FW_FM_CORE1_START_ADDR2     (FW_FM_CORE1_CRC_START_ADDR2 + (128*1024)) // 0xEC760000       0x2E0000
+
+;=============================================================================================================
+;download CORE1 RTS
+
+getttdir dir
+;messagebox dir  'send'
+
+dirname predir1 dir 
+;messagebox predir1 'Send'
+
+dirname predir2 predir1 
+;messagebox predir2 'Send'
+
+;dirname predir3 predir2 
+;messagebox predir3 'Send'
+
+;------------------------------------------------------------------------------
+
+
+;------------------------------------------------------------------------------
+
+
+;------------------------------------------------------------------------------
+
+makepath Core1BinFile predir2 'PM_FW_CORE1\binary\CORE1\RTSCORE1.bin'
+;messagebox Core1BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core1BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xEC240000 +0x300000'
+wait Prompt
+
+;write core1.bin to flash
+sendln 'cp.b 0x01000000 0xEC260000 0x2E0000'
+wait Prompt
+
+;------------------------------------------------------------------------------
+
+makepath Core1BinCRCFile predir2 'PM_FW_CORE1\binary\CORE1\RTSCORE1.binCRC'
+;messagebox Core1BinCRCFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core1BinCRCFile
+wait Prompt
+
+;write core1CRC.bin to flash
+sendln 'cp.b 0x01000000 0xEC240000 0x80'
+wait Prompt
+
+;------------------------------------------------------------------------------
+;write flag
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xEC000000 +0x40000'
+wait Prompt
+
+;write flag=1 to flash
+sendln 'mw 0x01000000 1 1'
+wait Prompt
+sendln 'cp 0x01000000 0xEC000000 1'
+wait Prompt
+sendln 'cp 0x01000000 0xEC020000 1'
+wait Prompt
+;------------------------------------------------------------------------------------
+
+
+
+
+messagebox 'Download core1 RTS image sucessful! Have a nice day!' 'Download'
+
+;sendln 'boot'
+
+
+
+
+
+
+
+

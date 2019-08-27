@@ -1,0 +1,3 @@
+Algrithm.o: Algrithm.c ../inc/Algrithm.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h

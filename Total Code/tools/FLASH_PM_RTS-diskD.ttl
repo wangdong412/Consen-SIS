@@ -1,0 +1,122 @@
+Prompt = '=>'
+
+;=======================================================
+;download CORE1 RTS
+
+;------------------------------------------------------------------------------
+makepath Core0BinFile 'D:\RTS' 'RTSCORE0.bin'
+;messagebox Core0BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core0BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xEC040000 +0x200000'
+wait Prompt
+
+;write core0.bin to flash
+sendln 'cp.b 0x01000000 0xEC060000 0x1E0000'
+wait Prompt
+
+;------------------------------------------------------------------------------
+
+makepath Core0BinCRCFile 'D:\RTS' 'RTSCORE0.binCRC'
+;messagebox Core0BinCRCFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core0BinCRCFile
+wait Prompt
+
+;write core0CRC.bin to flash
+sendln 'cp.b 0x01000000 0xEC040000 0x80'
+wait Prompt
+
+;------------------------------------------------------------------------------
+
+makepath Core1BinFile 'D:\RTS' 'RTSCORE1.bin'
+;messagebox Core1BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core1BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xEC240000 +0x300000'
+wait Prompt
+
+;write core1.bin to flash
+sendln 'cp.b 0x01000000 0xEC260000 0x2E0000'
+wait Prompt
+
+;------------------------------------------------------------------------------
+
+makepath Core1BinCRCFile 'D:\RTS' 'RTSCORE1.binCRC'
+;messagebox Core1BinCRCFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core1BinCRCFile
+wait Prompt
+
+;write core1CRC.bin to flash
+sendln 'cp.b 0x01000000 0xEC240000 0x80'
+wait Prompt
+
+;------------------------------------------------------------------------------
+;write flag
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xEC000000 +0x40000'
+wait Prompt
+
+;write flag=1 to flash
+sendln 'mw 0x01000000 1 1'
+wait Prompt
+sendln 'cp 0x01000000 0xEC000000 1'
+wait Prompt
+sendln 'cp 0x01000000 0xEC020000 1'
+wait Prompt
+;------------------------------------------------------------------------------------
+
+;cp core0 core1 crc files
+sendln 'setenv copyimage "cp 0xEC040000 0x04EAF000 0x20 ;cp 0xEC240000 0x00EAF000 0x20;"'
+wait Prompt
+
+sendln 'setenv runrts "cpu 1 release 0x00EB0020 - - -;cpu 1 release 0x00EB0020 - - -;echo boot 0;go 0x04EB0020;"'
+wait Prompt
+
+sendln 'setenv bootcmd "initfpga;run copyimage;ckrts;run runrts;"'
+wait Prompt
+
+sendln 'env save;'
+wait Prompt
+
+
+messagebox 'Download PM RTS image sucessful! Have a nice day!' 'Download'
+
+;sendln 'boot'
+
+
+
+
+
+
+
+

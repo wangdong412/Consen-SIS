@@ -1,0 +1,2 @@
+/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/i686-fslsdk-linux/usr/bin/powerpc-fsl-linux-gnuspe/powerpc-fsl-linux-gnuspe-ar cr libCONFIG.a  CMakeFiles/CONFIG.dir/src/Config.c.o
+/opt/fsl-networking/QorIQ-SDK-V1.7/sysroots/i686-fslsdk-linux/usr/bin/powerpc-fsl-linux-gnuspe/powerpc-fsl-linux-gnuspe-ranlib libCONFIG.a

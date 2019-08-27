@@ -1,0 +1,24 @@
+Prompt = '=>'
+Prompt2 = 'RTS$'
+
+;=======================================================
+;RUN RTS
+
+;load core0.bin to RAM
+sendln 'cp.b 0xefc40000 0x100000 0x300000'
+wait Prompt
+
+;load core1.bin to RAM
+sendln 'cp.b 0xefa40000 0x1E00000 0x200000'
+wait Prompt
+
+
+sendln 'cpu 1 release 0x1e00020 - - -'
+wait Prompt
+
+sendln 'cpu 1 release 0x1e00020 - - -'
+wait Prompt
+
+sendln 'go 0x100020'
+wait Prompt2
+

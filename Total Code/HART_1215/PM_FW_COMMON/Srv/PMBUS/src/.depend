@@ -1,0 +1,3 @@
+PMBUS.o: PMBUS.c /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h \
+ ../inc/PMBUS.h /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h

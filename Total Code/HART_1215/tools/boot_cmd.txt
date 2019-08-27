@@ -1,0 +1,6 @@
+setenv boot0 "echo copy 0;cp 0xefa40000 0x1DFF000 0x80000 ;cp 0xefc40000 0xFF000 0xc0000;"
+setenv boot1 "echo copy 1;cp 0xef540000 0x6DFF000 0x80000 ;cp 0xef740000 0x50FF000 0xc0000;"
+setenv boot2 "echo copy 2;cp 0xef040000 0xbDFF000 0x80000 ;cp 0xef240000 0xA0FF000 0xc0000;"
+setenv runrts "echo boot 1 ;cpu 1 release 0x1e00020 - - -;cpu 1 release 0x1e00020 - - -;echo boot 0;go 0x100020;"
+setenv bootcmd "run boot2;run boot1;run boot0;run runrts;"
+env save;

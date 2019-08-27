@@ -1,0 +1,3 @@
+FILE(REMOVE_RECURSE
+  "libCS1131.a"
+)

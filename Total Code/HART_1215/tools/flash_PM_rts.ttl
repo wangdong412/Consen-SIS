@@ -1,0 +1,67 @@
+Prompt = '=>'
+
+;=======================================================
+;download CORE1 RTS
+
+getttdir dir
+;messagebox dir  'send'
+
+dirname predir1 dir 
+;messagebox predir1 'Send'
+
+dirname predir2 predir1 
+;messagebox predir2 'Send'
+
+;dirname predir3 predir2 
+;messagebox predir3 'Send'
+
+makepath Core0BinFile predir2 'PM_FW_CORE0\binary\CORE0\RTSCORE0.bin'
+;messagebox Core0BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core0BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xefc40000 +0x300000'
+wait Prompt
+
+;write core0.bin to flash
+sendln 'cp.b 0x01000000 0xefc40000 0x300000'
+wait Prompt
+
+makepath Core1BinFile predir2 'PM_FW_CORE1\binary\CORE1\RTSCORE1.bin'
+;messagebox Core1BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core1BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xefa40000 +0x200000'
+wait Prompt
+
+;write core1.bin to flash
+sendln 'cp.b 0x01000000 0xefa40000 0x200000'
+wait Prompt
+
+messagebox 'Download PM RTS sucessful!' 'Send'
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+Ver.o: Ver.c \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/include/stdio.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Scheduler/cagos.h ../inc/Ver.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/DataType.h \
+ /vagrant/workspace/PM_FW_COMMON/inc/Hardware.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSys.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCMConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysConfig.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysMonitor.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysSync.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/SharedMem/inc/SharedComm.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysCommon.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/CommSysStateMngt.h \
+ /vagrant/workspace/PM_FW_COMMON/Srv/Sys/inc/SysHardware.h

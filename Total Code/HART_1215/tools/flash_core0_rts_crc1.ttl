@@ -1,0 +1,47 @@
+Prompt = '=>'
+
+;=======================================================
+;download CORE0 RTS
+
+getttdir dir
+;messagebox dir  'send'
+
+dirname predir1 dir 
+;messagebox predir1 'Send'
+
+dirname predir2 predir1 
+;messagebox predir2 'Send'
+
+;dirname predir3 predir2 
+;messagebox predir3 'Send'
+
+makepath Core0BinFile predir2 'PM_FW_CORE0\binary\CORE0\RTSCORE0.binCRC1'
+;messagebox Core0BinFile 'Send'
+
+sendln 'loady'
+wait 'C'
+
+ymodemsend Core0BinFile
+wait Prompt
+
+sendln 'protect off all'
+wait Prompt
+
+;erase flash
+sendln 'erase 0xef740000 +0x280000'
+wait Prompt
+
+;write core0.bin to flash
+sendln 'cp.b 0x01000000 0xef740000 0x280000'
+wait Prompt
+
+messagebox 'Download RTSCORE0.binCRC1 to flash sucessful!' 'Send'
+
+
+
+
+
+
+
+
+
